@@ -139,6 +139,11 @@ function openDetail(id) {
 function renderMethod() {
   const a = state.data.assumptions;
   const weights = [["Living suitability","Private room/bath, layout, capacity",30],["Monthly supportability","Mortgage, operating cost, rent offset",20],["Investment return","Modeled IRR and 7% hurdle",20],["Pricing and negotiation","Price per square foot, cuts, market time",15],["Risk and optionality","Evidence gaps, conflicts, exit flexibility",15]];
+  const coverage = [
+    ...state.data.sourcePolicy.listingDiscovery.map(item => ({...item, section:"Listing discovery"})),
+    ...state.data.sourcePolicy.propertyVerification.map(item => ({...item, section:"Property verification"})),
+    ...state.data.sourcePolicy.rentEvidence.map(item => ({...item, section:"Rent evidence"}))
+  ];
   $("#method-content").innerHTML = `<div class="method-list">${weights.map(row => `<div class="method-row"><strong>${row[0]}</strong><span>${row[1]}</span><strong>${row[2]}%</strong></div>`).join("")}</div>
     <div class="method-warning"><strong>Hard gates override the score.</strong> A private full bathroom must be confirmed. Shared condos also require documented individual-room rental authority. Shared houses require zoning and occupancy confirmation.</div>
     <h3>Public planning assumptions</h3><div class="assumption-grid">
@@ -150,6 +155,7 @@ function renderMethod() {
       <div class="assumption"><strong>${percent(a.comparison.forwardHurdleRate)}</strong><small>Forward alternative-investment hurdle</small></div>
       <div class="assumption"><strong>${percent(a.comparison.sp500Trailing10YearAnnualized)}</strong><small>Trailing 10-year S&amp;P benchmark as of ${escapeHtml(a.comparison.sp500AsOf)}; historical context only</small></div>
     </div><p class="fine-print">${escapeHtml(a.tax.note)}</p>
+    <h3>Research coverage</h3><div class="coverage-table">${coverage.map(item => `<div class="coverage-row"><span>${escapeHtml(item.section)}</span><strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.sources.join(", "))}</span><em class="coverage-status ${escapeHtml(item.status)}">${escapeHtml(item.status.replaceAll("-", " "))}</em></div>`).join("")}</div>
     <h3>Methodology sources</h3><div class="source-list">${state.data.methodologySources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join("")}</div>`;
 }
 

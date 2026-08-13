@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "listingDiscovery": [
+    {
+      "name": "MLS-syndicated portals",
+      "sources": ["Realtor.com", "Redfin", "Zillow", "Homes.com"],
+      "cadence": "Every run",
+      "status": "required",
+      "purpose": "Discover and cross-check active, coming-soon, price-change, contingent, and back-on-market listings."
+    },
+    {
+      "name": "Canopy MLS direct feed",
+      "sources": ["Canopy MLS broker portal or agent export"],
+      "cadence": "When access is provided",
+      "status": "access-required",
+      "purpose": "Most complete local MLS inventory and status history for York County. Public portals may lag or disagree."
+    },
+    {
+      "name": "Government and GSE inventory",
+      "sources": ["HUD Home Store", "Fannie Mae HomePath", "Freddie Mac HomeSteps"],
+      "cadence": "Every run",
+      "status": "required",
+      "purpose": "Find REO inventory that may not surface promptly in general portal searches. Investor First Look restrictions must be checked."
+    },
+    {
+      "name": "Non-MLS and distressed inventory",
+      "sources": ["Zillow FSBO", "York County Master in Equity", "York County delinquent tax sale"],
+      "cadence": "Every run",
+      "status": "conditional",
+      "purpose": "Identify credible owner-listed or distressed opportunities. Auction and redemption risks prevent automatic recommendation."
+    }
+  ],
+  "propertyVerification": [
+    {
+      "name": "Parcel, assessment, and deed",
+      "sources": ["York County Assessor", "York County One Map", "York County Register of Deeds", "South Carolina public index"],
+      "cadence": "Every candidate",
+      "status": "required",
+      "purpose": "Confirm parcel identity, ownership, transfers, recorded plats, liens or pending actions, assessment, and tax district."
+    },
+    {
+      "name": "Permits, zoning, and rental legality",
+      "sources": ["Rock Hill Evolve permit portal", "York County Evolve permit portal", "Rock Hill zoning and rental registration", "York County zoning map and code"],
+      "cadence": "Every candidate",
+      "status": "required",
+      "purpose": "Check permit history, legal bedroom count, zoning, occupancy, and the proposed unrelated-roommate arrangement."
+    },
+    {
+      "name": "Flood and physical risk",
+      "sources": ["FEMA Flood Map Service Center", "York County One Map"],
+      "cadence": "Every candidate",
+      "status": "required",
+      "purpose": "Flag mapped flood zone and identify insurance or drainage follow-up. This does not replace inspection or an insurance quote."
+    },
+    {
+      "name": "HOA governing documents",
+      "sources": ["Recorded declaration and amendments", "Bylaws", "Rules and rental policy", "Written HOA management confirmation", "Closing attorney review"],
+      "cadence": "Every HOA candidate",
+      "status": "manual-evidence-required",
+      "purpose": "Determine whole-unit and individual-room rental authority. Portal statements and silence are not evidence of permission."
+    }
+  ],
+  "rentEvidence": [
+    {
+      "name": "Private-unit rent",
+      "sources": ["Zillow Rentals", "Apartments.com", "HotPads", "RentCafe"],
+      "cadence": "Every run",
+      "status": "required",
+      "purpose": "Establish current studio and one-bedroom asking-rent range."
+    },
+    {
+      "name": "Individual-room rent",
+      "sources": ["Roomies", "Furnished Finder", "SpareRoom"],
+      "cadence": "Every run",
+      "status": "required",
+      "purpose": "Estimate room rent by private-bath status, furnishing, lease length, and utilities."
+    }
+  ]
+}

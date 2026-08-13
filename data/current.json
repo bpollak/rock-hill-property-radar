@@ -103,6 +103,45 @@
       "sources": [{"label": "Realtor listing and history", "url": "https://www.realtor.com/realestateandhomes-detail/3030-Shannon-St_Sharon_SC_29742_M51225-27519", "accessed": "2026-08-13"}]
     },
     {
+      "id": "mls-4396162",
+      "strategy": "shared-home",
+      "changeCategory": "new",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "lastChanged": "2026-08-13",
+      "address": "725 Rockdale St, Rock Hill, SC 29730",
+      "sourceUrl": "https://www.homes.com/property/725-rockdale-st-rock-hill-sc/7blh0vkm58h9n/",
+      "mls": "4396162",
+      "status": "active",
+      "price": 275000,
+      "originalPrice": 275000,
+      "priceCutPercent": 0,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1417,
+      "pricePerSqft": 194,
+      "marketPricePerSqft": 205,
+      "yearBuilt": 2026,
+      "propertyType": "Single-family home",
+      "hoaMonthly": 0,
+      "oneLevel": true,
+      "privateBath": "yes",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 50,
+      "distanceLabel": "Rock Hill, within target area",
+      "summary": "A new, one-level four-bedroom home with a documented private primary bathroom and no HOA, priced at the offer ceiling. City confirmation of the unrelated-roommate arrangement remains a gate.",
+      "pros": ["Private primary suite is documented", "Three potential renter bedrooms", "All bedrooms are on the main level", "No HOA", "Approximately 5% below the cited Rock Hill median price per square foot"],
+      "concerns": ["Room-rental zoning, occupancy, registration, and lease structure need city confirmation", "Construction is not complete and certificate of occupancy must be verified", "The fourth bedroom is described as small", "Final parking configuration is not fixed in the listing", "At the $275,000 offer ceiling with no current negotiation discount"],
+      "sourceConflicts": [],
+      "hoa": {"exists": false, "wholeUnitRental": "not-applicable", "roomRental": "not-applicable", "evidence": [], "confidence": "high", "followUp": "Ask Rock Hill Planning to confirm the proposed unrelated-occupant and separate-room lease structure. Verify the certificate of occupancy, legal bedroom count, parking capacity, final plans, taxes, insurance, and warranty before relying on rent income."},
+      "listingHistory": [
+        {"date": "2026-06-24", "event": "Listed", "price": 275000}
+      ],
+      "sources": [
+        {"label": "Homes.com listing via Canopy MLS and MLS Grid", "url": "https://www.homes.com/property/725-rockdale-st-rock-hill-sc/7blh0vkm58h9n/", "accessed": "2026-08-13"}
+      ]
+    },
+    {
       "id": "mls-4381157",
       "strategy": "shared-home",
       "changeCategory": "new",
@@ -346,6 +385,19 @@
     {"label": "California residency filing guidance", "url": "https://www.ftb.ca.gov/file/personal/residency-status/index.html"},
     {"label": "California other-state tax credit", "url": "https://www.ftb.ca.gov/file/personal/credits/other-state-tax-credit.html"},
     {"label": "South Carolina nonresident filing guidance", "url": "https://dor.sc.gov/iit/new-sc-filing"},
-    {"label": "State Street SPY performance", "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy"}
+    {"label": "State Street SPY performance", "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy"},
+    {"label": "Canopy MLS York County market coverage", "url": "https://www.canopyrealtors.com/press-releases/5/22/2026/south-carolina-counties-april-report"},
+    {"label": "York County Assessor and property search", "url": "https://www.yorkcountysc.gov/150/Assessor/"},
+    {"label": "York County One Map parcel and flood lookup", "url": "https://www.yorkcountygov.com/FAQ.aspx?QID=203"},
+    {"label": "York County Register of Deeds links", "url": "https://www.yorkcountygov.com/QuickLinks.aspx?CID=27"},
+    {"label": "Rock Hill permit and zoning records", "url": "https://www.cityofrockhill.com/departments/planning-and-development/permits-inspections"},
+    {"label": "Rock Hill public permit portal", "url": "https://rhbuild.cityofrockhill.com/evolvepublic/"},
+    {"label": "York County permit portal", "url": "https://evolvepublic.yorkcountygov.com/"},
+    {"label": "FEMA Flood Map Service Center", "url": "https://msc.fema.gov/portal/home"},
+    {"label": "HUD homes for sale", "url": "https://www.hud.gov/helping-americans/homes-for-sale"},
+    {"label": "Fannie Mae HomePath", "url": "https://homepath.fanniemae.com/property-finder"},
+    {"label": "Freddie Mac HomeSteps", "url": "https://www.homesteps.com/"},
+    {"label": "York County foreclosure sale rosters", "url": "https://www.yorkcountysc.gov/294/Master-in-Equity"},
+    {"label": "York County delinquent tax sales", "url": "https://www.yorkcountysc.gov/216/Tax-Collection"}
   ]
 }

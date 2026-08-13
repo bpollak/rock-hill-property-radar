@@ -6,6 +6,7 @@ const root = new URL("../", import.meta.url);
 const readJson = async path => JSON.parse(await readFile(new URL(path, root), "utf8"));
 const dataset = await readJson("data/current.json");
 const assumptions = await readJson("config/public-assumptions.json");
+const sourcePolicy = await readJson("config/source-policy.json");
 
 const properties = dataset.properties.map(property => {
   const financials = enrichFinancials(property, assumptions);
@@ -21,7 +22,7 @@ const properties = dataset.properties.map(property => {
   return { ...property, recommendation, financials, score, offer };
 });
 
-const appData = { ...dataset, properties, assumptions, generatedAt: new Date().toISOString() };
+const appData = { ...dataset, properties, assumptions, sourcePolicy, generatedAt: new Date().toISOString() };
 const dist = new URL("dist/", root);
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });

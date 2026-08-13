@@ -10,6 +10,7 @@ if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is required for
 if (!anchor) throw new Error("FAMILY_ANCHOR_ADDRESS is required and must be stored as a repository secret.");
 
 const previous = JSON.parse(await readFile(new URL("data/current.json", root), "utf8"));
+const sourcePolicy = JSON.parse(await readFile(new URL("config/source-policy.json", root), "utf8"));
 const known = previous.properties.filter(p => p.strategy !== "rental-benchmark").map(p => ({id:p.id,address:p.address,mls:p.mls,sourceUrl:p.sourceUrl,status:p.status,price:p.price}));
 const prompt = `You are the daily real-estate research analyst for a private family decision. Research actual, currently marketed options within 30 driving miles of the private anchor supplied below. Never repeat the anchor in your output.
 
@@ -27,6 +28,8 @@ Decision requirements:
 - Recheck these known candidates and discover credible new ones: ${JSON.stringify(known)}
 - Include a current Rock Hill studio/one-bedroom rental benchmark and current room-rent evidence.
 - Prefer MLS-fed portals for listing status, official government sources for rules and taxes, recorded HOA documents for restrictions, and primary market sources for investment benchmarks.
+- Audit every source category in this source policy on every run. A category with no matching inventory is a valid zero result, but it must not be silently skipped: ${JSON.stringify(sourcePolicy)}
+- Treat Canopy MLS as the authoritative local inventory source when a broker feed or agent export is available. Until then, explicitly record direct-MLS access as unavailable and reconcile Realtor.com, Redfin, Zillow, and Homes.com rather than claiming exhaustive MLS coverage.
 - Do not output assumptions as facts. Do not invent citations. A source URL must support the corresponding claim.
 
 Return JSON only, with top-level keys market, properties, and methodologySources. Each property must use the same field names and nesting as the examples in the known dataset. Use a stable id of mls-<number> when MLS is available. Include sources as [{label,url,accessed}]. Include hoa as {exists,wholeUnitRental,roomRental,evidence,confidence,followUp}. Include listingHistory, pros, concerns, sourceConflicts, distanceLabel, privateBath, roomRentalLegal, priceCutPercent, and marketPricePerSqft. Do not include the private anchor.`;
