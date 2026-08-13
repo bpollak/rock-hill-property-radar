@@ -29,7 +29,8 @@ Decision requirements:
 - Include a current Rock Hill studio/one-bedroom rental benchmark and current room-rent evidence.
 - Prefer MLS-fed portals for listing status, official government sources for rules and taxes, recorded HOA documents for restrictions, and primary market sources for investment benchmarks.
 - Audit every source category in this source policy on every run. A category with no matching inventory is a valid zero result, but it must not be silently skipped: ${JSON.stringify(sourcePolicy)}
-- Treat Canopy MLS as the authoritative local inventory source when a broker feed or agent export is available. Until then, explicitly record direct-MLS access as unavailable and reconcile Realtor.com, Redfin, Zillow, and Homes.com rather than claiming exhaustive MLS coverage.
+- Do not request, require, or attempt to obtain third-party credentials, paid API keys, broker exports, or direct MLS access. Categories marked not-used are documented limitations, not run failures.
+- Reconcile Realtor.com, Redfin, Zillow, Homes.com, Movoto, indexed brokerage/IDX pages, builder inventory, government/GSE inventory, owner-listed inventory, and public auction sources rather than claiming exhaustive MLS coverage.
 - Do not output assumptions as facts. Do not invent citations. A source URL must support the corresponding claim.
 
 Return JSON only, with top-level keys market, properties, and methodologySources. Each property must use the same field names and nesting as the examples in the known dataset. Use a stable id of mls-<number> when MLS is available. Include sources as [{label,url,accessed}]. Include hoa as {exists,wholeUnitRental,roomRental,evidence,confidence,followUp}. Include listingHistory, pros, concerns, sourceConflicts, distanceLabel, privateBath, roomRentalLegal, priceCutPercent, and marketPricePerSqft. Do not include the private anchor.`;

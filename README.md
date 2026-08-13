@@ -11,7 +11,7 @@ A public, source-backed family decision dashboard for evaluating actual Rock Hil
 - Enforces a $275,000 maximum offer in research, scoring, and every purchase calculation. Listings above it are shown only as negotiation candidates and modeled at the ceiling.
 - Keeps the exact family anchor out of the site and repository.
 - Publishes only after schema, privacy, calculation, and source checks pass.
-- Audits the source categories in `config/source-policy.json`, covering major MLS-syndicated portals, government/GSE inventory, non-MLS and distressed inventory, official parcel and permit records, flood maps, HOA evidence, and rent sources.
+- Audits the public, no-credential source categories in `config/source-policy.json`, covering major MLS-syndicated portals, indexed brokerage and builder pages, government/GSE inventory, owner-listed and distressed inventory, official parcel and permit records, flood maps, HOA evidence, and rent sources. Credentialed feeds are disclosed as a known limitation and are not queried.
 
 ## Local development
 

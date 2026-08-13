@@ -3,17 +3,17 @@
   "listingDiscovery": [
     {
       "name": "MLS-syndicated portals",
-      "sources": ["Realtor.com", "Redfin", "Zillow", "Homes.com"],
+      "sources": ["Realtor.com", "Redfin", "Zillow", "Homes.com", "Movoto"],
       "cadence": "Every run",
       "status": "required",
       "purpose": "Discover and cross-check active, coming-soon, price-change, contingent, and back-on-market listings."
     },
     {
-      "name": "Canopy MLS direct feed",
-      "sources": ["Canopy MLS broker portal or agent export"],
-      "cadence": "When access is provided",
-      "status": "access-required",
-      "purpose": "Most complete local MLS inventory and status history for York County. Public portals may lag or disagree."
+      "name": "Public brokerage and IDX pages",
+      "sources": ["Indexed local brokerage sites", "Listing-agent pages", "Builder inventory pages"],
+      "cadence": "Every run",
+      "status": "required",
+      "purpose": "Catch listings or new-construction inventory that may be indexed differently from national portals. Treat duplicate MLS numbers as one property."
     },
     {
       "name": "Government and GSE inventory",
@@ -28,6 +28,20 @@
       "cadence": "Every run",
       "status": "conditional",
       "purpose": "Identify credible owner-listed or distressed opportunities. Auction and redemption risks prevent automatic recommendation."
+    },
+    {
+      "name": "Public auction and new-construction inventory",
+      "sources": ["Auction.com", "Hubzu", "Xome", "Public builder inventory pages"],
+      "cadence": "Every run",
+      "status": "conditional",
+      "purpose": "Find publicly marketed auction, bank-owned, and builder inventory. Financing, buyer eligibility, title, completion, and auction terms must be verified."
+    },
+    {
+      "name": "Credentialed listing feeds",
+      "sources": ["Canopy MLS Grid", "Zillow Bridge", "RentCast", "BatchData", "ATTOM"],
+      "cadence": "Not queried",
+      "status": "not-used",
+      "purpose": "Known coverage limitation. The family will not obtain third-party credentials or paid API keys, so the workflow must continue using public sources without treating this category as a failed run."
     }
   ],
   "propertyVerification": [
