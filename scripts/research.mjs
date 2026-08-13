@@ -21,7 +21,7 @@ Decision requirements:
 - Mother-in-law must have her own bedroom and private full bathroom. Unknown is acceptable only when explicitly marked unknown.
 - She accepts unrelated housemates and stairs.
 - Strategies: shared-home, shared-condo, private-purchase, rental-benchmark.
-- Purchase target generally at or below $350,000.
+- $275,000 is the absolute maximum offer price. Prioritize listings at or below $275,000. A listing above $275,000 may be retained only when current pricing history or market exposure makes an accepted offer at or below $275,000 credible; explicitly calculate the required seller discount and flag seller acceptance as unresolved. Never model or recommend an offer above $275,000.
 - For condos, separately research whole-unit and individual-room rental authority. Do not infer permission from silence. Use allowed, restricted, prohibited, or unknown. Record governing-document or written-management evidence. Unknown must remain unknown.
 - Capture current list price, original price, beds, full baths, square feet, year, type, HOA dues, days on market, listing history, taxes if reliable, price per square foot, market comparison, private-bath evidence, pros, concerns, source conflicts, and source URLs.
 - Recheck these known candidates and discover credible new ones: ${JSON.stringify(known)}

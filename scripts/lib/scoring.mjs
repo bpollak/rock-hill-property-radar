@@ -1,6 +1,6 @@
 const clamp = value => Math.max(0, Math.min(100, value));
 
-function pricingScore(property) {
+function pricingScore(property, assumptions) {
   let score = 55;
   if (property.priceCutPercent >= 10) score += 15;
   else if (property.priceCutPercent >= 5) score += 8;
@@ -11,6 +11,11 @@ function pricingScore(property) {
     else if (ratio > 1.1) score -= 12;
   }
   if (property.sourceConflicts?.length) score -= 8;
+  const ceiling = assumptions.purchase.maximumOfferPrice;
+  const requiredDiscount = Math.max(0, (property.price - ceiling) / property.price);
+  if (requiredDiscount > 0.10) score -= 25;
+  else if (requiredDiscount > 0.05) score -= 12;
+  else if (requiredDiscount > 0) score -= 6;
   return clamp(score);
 }
 
@@ -27,14 +32,14 @@ export function recommendationStatus(property) {
   return "Qualified";
 }
 
-export function scoreProperty(property, financials) {
+export function scoreProperty(property, financials, assumptions) {
   if (property.strategy === "rental-benchmark") return null;
   const status = recommendationStatus(property);
   const living = clamp(35 + Math.min(property.beds, 4) * 8 + (property.privateBath === "yes" ? 25 : property.privateBath === "unknown" ? 5 : -30) + (property.oneLevel ? 8 : 0));
   const ten = financials[10];
   const support = clamp(100 - ten.monthlySubsidy / 35);
   const investment = clamp(50 + ((ten.irr ?? -0.05) - 0.07) * 350);
-  const pricing = pricingScore(property);
+  const pricing = pricingScore(property, assumptions);
   const risk = clamp(80 - (property.concerns?.length || 0) * 8 - (property.sourceConflicts?.length || 0) * 10 - (status === "Needs verification" ? 15 : 0));
   const total = Math.round(living * 0.30 + support * 0.20 + investment * 0.20 + pricing * 0.15 + risk * 0.15);
   return {

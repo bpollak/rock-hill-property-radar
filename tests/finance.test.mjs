@@ -15,7 +15,7 @@ test("IRR solves a simple doubling", () => {
 
 test("room income reduces the required subsidy", () => {
   const assumptions = {
-    purchase:{downPaymentRate:.25,mortgageRate:.0675,mortgageYears:30,buyerClosingCostRate:.03,sellingCostRate:.07},
+    purchase:{maximumOfferPrice:275000,downPaymentRate:.25,mortgageRate:.0675,mortgageYears:30,buyerClosingCostRate:.03,sellingCostRate:.07},
     operations:{roomRentMonthly:850,vacancyRate:.12,insuranceRate:.0075,maintenanceRate:.01,capitalExpenditureRate:.005,sharedUtilitiesMonthly:400,propertyTaxRate:.0248,rentGrowthRate:.03,expenseGrowthRate:.03,appreciationRate:.03},
     comparison:{forwardHurdleRate:.07},
     tax:{federalCapitalGainRate:.15,depreciationRecaptureRate:.25,statePlanningRate:.093}
@@ -24,4 +24,17 @@ test("room income reduces the required subsidy", () => {
   const privateUse = analyzeProperty({strategy:"private-purchase",price:250000,beds:4,hoaMonthly:0}, assumptions, 10);
   assert.ok(shared.monthlySubsidy < privateUse.monthlySubsidy);
   assert.equal(shared.rentableRooms, 3);
+});
+
+test("purchase calculations never exceed the maximum offer", () => {
+  const assumptions = {
+    purchase:{maximumOfferPrice:275000,downPaymentRate:.25,mortgageRate:.0675,mortgageYears:30,buyerClosingCostRate:.03,sellingCostRate:.07},
+    operations:{roomRentMonthly:850,vacancyRate:.12,insuranceRate:.0075,maintenanceRate:.01,capitalExpenditureRate:.005,sharedUtilitiesMonthly:400,propertyTaxRate:.0248,rentGrowthRate:.03,expenseGrowthRate:.03,appreciationRate:.03},
+    comparison:{forwardHurdleRate:.07},
+    tax:{federalCapitalGainRate:.15,depreciationRecaptureRate:.25,statePlanningRate:.093}
+  };
+  const result = analyzeProperty({strategy:"shared-home",price:300000,beds:4,hoaMonthly:0}, assumptions, 10);
+  assert.equal(result.modeledPurchasePrice, 275000);
+  assert.equal(result.listPrice, 300000);
+  assert.ok(Math.abs(result.requiredSellerDiscount - 1/12) < 0.000001);
 });

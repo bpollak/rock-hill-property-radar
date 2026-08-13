@@ -11,6 +11,7 @@ if (process.env.FAMILY_ANCHOR_ADDRESS && serialized.includes(process.env.FAMILY_
 if (dataset.runStatus !== "successful") errors.push("Only the last successful research snapshot may be published.");
 if (dataset.properties.filter(p => p.strategy !== "rental-benchmark").length < 3) errors.push("At least three actual purchase candidates are required.");
 if (assumptions.comparison.forwardHurdleRate !== 0.07) errors.push("Forward hurdle must remain 7% unless deliberately revised.");
+if (assumptions.purchase.maximumOfferPrice !== 275000) errors.push("Maximum offer price must remain $275,000 unless deliberately revised.");
 for (const property of dataset.properties) {
   try {
     const primary = new URL(property.sourceUrl);

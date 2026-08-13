@@ -10,8 +10,15 @@ const assumptions = await readJson("config/public-assumptions.json");
 const properties = dataset.properties.map(property => {
   const financials = enrichFinancials(property, assumptions);
   const recommendation = recommendationStatus(property);
-  const score = scoreProperty(property, financials);
-  return { ...property, recommendation, financials, score };
+  const score = scoreProperty(property, financials, assumptions);
+  const maximumOfferPrice = assumptions.purchase.maximumOfferPrice;
+  const offer = {
+    maximumOfferPrice,
+    modeledPurchasePrice: Math.min(property.price, maximumOfferPrice),
+    aboveCeiling: property.strategy !== "rental-benchmark" && property.price > maximumOfferPrice,
+    requiredDiscount: property.strategy !== "rental-benchmark" && property.price > maximumOfferPrice ? (property.price - maximumOfferPrice) / property.price : 0
+  };
+  return { ...property, recommendation, financials, score, offer };
 });
 
 const appData = { ...dataset, properties, assumptions, generatedAt: new Date().toISOString() };

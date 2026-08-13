@@ -39,7 +39,7 @@ export function analyzeProperty(property, assumptions, years) {
   const p = assumptions.purchase;
   const o = assumptions.operations;
   const t = assumptions.tax;
-  const price = property.price;
+  const price = Math.min(property.price, p.maximumOfferPrice);
   const down = price * p.downPaymentRate;
   const closing = price * p.buyerClosingCostRate;
   const loan = price - down;
@@ -76,6 +76,9 @@ export function analyzeProperty(property, assumptions, years) {
   const alternativeValue = futureValueOfContributions(down + closing, annualSubsidies, assumptions.comparison.forwardHurdleRate);
   return {
     years,
+    modeledPurchasePrice: Math.round(price),
+    listPrice: Math.round(property.price),
+    requiredSellerDiscount: property.price > price ? (property.price - price) / property.price : 0,
     downPayment: Math.round(down),
     initialCash: Math.round(down + closing),
     mortgageMonthly: Math.round(mortgage),

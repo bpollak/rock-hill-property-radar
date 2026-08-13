@@ -1,6 +1,7 @@
 {
   "asOf": "2026-08-13",
   "purchase": {
+    "maximumOfferPrice": 275000,
     "downPaymentRate": 0.25,
     "mortgageRate": 0.0675,
     "mortgageYears": 30,

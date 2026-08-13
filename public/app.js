@@ -27,20 +27,22 @@ function renderCard(property) {
   const benchmark = property.strategy === "rental-benchmark";
   const price = benchmark ? `${money(property.price)}/mo` : money(property.price);
   const score = property.score?.total ?? "—";
-  const priceNote = property.priceCutPercent ? `${property.priceCutPercent}% below original list` : benchmark ? `${money(property.priceRange[0])}–${money(property.priceRange[1])} observed range` : "No recorded price cut";
+  const priceNote = benchmark ? `${money(property.priceRange[0])}–${money(property.priceRange[1])} observed range` : property.offer.aboveCeiling ? `Model uses ${money(property.offer.modeledPurchasePrice)} max offer · ${(property.offer.requiredDiscount*100).toFixed(1)}% below list required` : property.priceCutPercent ? `${property.priceCutPercent}% below original list · within offer ceiling` : "Within $275,000 offer ceiling";
   return `<article class="property-card" data-id="${escapeHtml(property.id)}">
-    <div class="card-top"><div class="badges">
+    <div class="card-identity"><div class="badges">
       <span class="badge ${property.changeCategory === "new" ? "new" : ""}">${escapeHtml(property.changeCategory === "new" ? "New today" : property.changeCategory)}</span>
       <span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span>
       <span class="badge ${badgeClass(property.recommendation)}">${escapeHtml(property.recommendation)}</span>
-    </div><div class="score"><strong>${score}</strong><small>${benchmark ? "reference" : "score"}</small></div></div>
-    <h3>${escapeHtml(property.address)}</h3><p class="property-type">${escapeHtml(property.propertyType || property.distanceLabel)}</p>
-    <div class="price-row"><span class="price">${price}</span><span class="price-note">${escapeHtml(priceNote)}</span></div>
-    <div class="facts">
-      <div class="fact"><strong>${property.beds ?? "—"}</strong><small>Bedrooms</small></div>
-      <div class="fact"><strong>${property.baths ?? "—"}</strong><small>Bathrooms</small></div>
+    </div><h3>${escapeHtml(property.address)}</h3><p class="property-type">${escapeHtml(property.propertyType || property.distanceLabel)} · ${escapeHtml(priceNote)}</p></div>
+    <div class="score"><strong>${score}</strong><small>${benchmark ? "reference" : "score"}</small></div>
+    <div class="card-facts">
+      <div class="fact"><strong>${price}</strong><small>${benchmark ? "Monthly rent" : "List price"}</small></div>
+      <div class="fact"><strong>${benchmark ? "N/A" : money(property.offer.modeledPurchasePrice)}</strong><small>Modeled offer</small></div>
+      <div class="fact"><strong>${benchmark ? "N/A" : property.offer.aboveCeiling ? `${(property.offer.requiredDiscount*100).toFixed(1)}%` : "0%"}</strong><small>Needed discount</small></div>
+      <div class="fact"><strong>${property.beds ?? "—"} / ${property.baths ?? "—"}</strong><small>Beds / baths</small></div>
       <div class="fact"><strong>${property.daysOnMarket ?? "—"}</strong><small>Days listed</small></div>
-      <div class="fact"><strong>${benchmark ? money(property.price) : money(ten?.monthlySubsidy)}</strong><small>${benchmark ? "Monthly" : "Subsidy/mo"}</small></div>
+      <div class="fact"><strong>${benchmark ? money(property.price) : money(ten?.monthlySubsidy)}</strong><small>${benchmark ? "Monthly" : "Subsidy / mo"}</small></div>
+      <div class="fact"><strong>${benchmark ? "N/A" : percent(ten?.irr)}</strong><small>10-year IRR</small></div>
     </div>
     <p class="card-summary">${escapeHtml(property.summary)}</p>
     <div class="gate ${property.recommendation === "Qualified" || benchmark ? "ok" : ""}"><strong>${escapeHtml(property.recommendation)}:</strong> ${escapeHtml(statusGate(property))}</div>
@@ -95,7 +97,7 @@ function renderComparison() {
   $("#comparison-table tbody").innerHTML = properties.map(property => {
     const result = property.financials[10];
     const gapClass = result.wealthGapVsHurdle >= 0 ? "positive" : "negative";
-    return `<tr><td>${escapeHtml(property.address)}</td><td>${money(result.initialCash)}</td><td>${money(result.monthlySubsidy)}</td><td class="${(result.irr ?? -1) >= .07 ? "positive" : "negative"}">${percent(result.irr)}</td><td>${money(result.netSaleProceeds)}</td><td class="${gapClass}">${result.wealthGapVsHurdle >= 0 ? "+" : ""}${money(result.wealthGapVsHurdle)}</td></tr>`;
+    return `<tr><td>${escapeHtml(property.address)}</td><td>${money(result.modeledPurchasePrice)}${property.offer.aboveCeiling ? "*" : ""}</td><td>${money(result.initialCash)}</td><td>${money(result.monthlySubsidy)}</td><td class="${(result.irr ?? -1) >= .07 ? "positive" : "negative"}">${percent(result.irr)}</td><td>${money(result.netSaleProceeds)}</td><td class="${gapClass}">${result.wealthGapVsHurdle >= 0 ? "+" : ""}${money(result.wealthGapVsHurdle)}</td></tr>`;
   }).join("");
 }
 
@@ -114,6 +116,7 @@ function openDetail(id) {
     <div class="financial-card"><strong>${percent(ten.irr)}</strong><small>10-year modeled IRR</small></div>
     <div class="financial-card"><strong>${percent(fifteen.irr)}</strong><small>15-year modeled IRR</small></div>
     <div class="financial-card"><strong>${money(ten.wealthGapVsHurdle)}</strong><small>10-year wealth gap vs 7%</small></div>
+    <div class="financial-card"><strong>${money(ten.modeledPurchasePrice)}</strong><small>Modeled purchase price${property.offer.aboveCeiling ? `; ${(property.offer.requiredDiscount*100).toFixed(1)}% below list required` : ""}</small></div>
     <div class="financial-card"><strong>${money(ten.initialCash)}</strong><small>Down payment + closing</small></div>
     <div class="financial-card"><strong>${money(ten.taxEstimate)}</strong><small>Estimated sale taxes at year 10</small></div>
   </div>` : `<p>This is a rental benchmark, not a purchase investment.</p>`;
@@ -140,6 +143,7 @@ function renderMethod() {
     <div class="method-warning"><strong>Hard gates override the score.</strong> A private full bathroom must be confirmed. Shared condos also require documented individual-room rental authority. Shared houses require zoning and occupancy confirmation.</div>
     <h3>Public planning assumptions</h3><div class="assumption-grid">
       <div class="assumption"><strong>${(a.purchase.downPaymentRate*100).toFixed(0)}% down</strong><small>Plus ${(a.purchase.buyerClosingCostRate*100).toFixed(0)}% buyer closing costs</small></div>
+      <div class="assumption"><strong>${money(a.purchase.maximumOfferPrice)}</strong><small>Absolute maximum offer and modeled acquisition price</small></div>
       <div class="assumption"><strong>${percent(a.purchase.mortgageRate)}</strong><small>30-year planning mortgage rate</small></div>
       <div class="assumption"><strong>${money(a.operations.roomRentMonthly)}/room</strong><small>${(a.operations.vacancyRate*100).toFixed(0)}% vacancy; ${money(a.operations.roomRentLow)}–${money(a.operations.roomRentHigh)} sensitivity</small></div>
       <div class="assumption"><strong>${percent(a.operations.appreciationRate)}</strong><small>Annual property appreciation assumption</small></div>

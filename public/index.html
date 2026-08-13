@@ -7,9 +7,6 @@
   <meta name="theme-color" content="#17352d">
   <title>Rock Hill Property Radar</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="app.js"></script>
 </head>
@@ -17,44 +14,37 @@
   <a class="skip-link" href="#property-list">Skip to properties</a>
   <header class="site-header">
     <div class="brand">
-      <span class="brand-mark" aria-hidden="true"><span></span></span>
-      <div><strong>Rock Hill</strong><small>Property Radar</small></div>
+      <span class="brand-mark" aria-hidden="true">RH</span>
+      <div><strong>Rock Hill Property Decision Dashboard</strong><small>Family review workspace</small></div>
     </div>
     <div class="header-status"><span class="status-dot"></span><span id="run-status">Loading research status</span></div>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="page-title">
-      <div class="hero-copy">
-        <p class="eyebrow">Family decision workspace</p>
-        <h1 id="page-title">A home that works for her.<br><em>An investment that works for you.</em></h1>
-        <p class="hero-intro">Actual Rock Hill area options, checked against the living arrangement, monthly subsidy, long-term return, and the risks that still need an answer.</p>
-        <div class="hero-meta">
-          <span id="as-of">Research date loading</span>
-          <span>Within 30 miles</span>
-          <span>10 &amp; 15-year model</span>
-        </div>
+    <section class="dashboard-intro" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Property shortlist</h1>
+        <p>Actual listings evaluated for living suitability, monthly subsidy, investment return, pricing, and unresolved risk.</p>
       </div>
-      <aside class="decision-card" aria-label="Current decision snapshot">
-        <p class="eyebrow">Current snapshot</p>
-        <div class="decision-number" id="qualified-count">—</div>
-        <p class="decision-label">fully qualified today</p>
-        <p class="decision-note" id="decision-note">Every candidate must clear the private-bath and rental-authority gates.</p>
-      </aside>
+      <div class="scope" aria-label="Analysis scope">
+        <span id="as-of">Research date loading</span><span>30-mile radius</span><span>$275,000 maximum offer</span><span>10 and 15 years</span>
+      </div>
     </section>
 
     <section class="overview" aria-label="Shortlist overview">
       <div class="metric"><span id="candidate-count">—</span><small>purchase candidates</small></div>
       <div class="metric"><span id="new-count">—</span><small>new today</small></div>
       <div class="metric"><span id="verification-count">—</span><small>need verification</small></div>
+      <div class="metric"><span id="qualified-count">—</span><small>qualified</small></div>
       <div class="metric"><span id="lowest-subsidy">—</span><small>lowest modeled subsidy</small></div>
     </section>
+    <p class="decision-alert" id="decision-note">Every candidate must clear the private-bath and rental-authority gates.</p>
 
     <section class="workspace" aria-labelledby="shortlist-title">
       <div class="workspace-heading">
         <div>
-          <p class="eyebrow">Daily shortlist</p>
-          <h2 id="shortlist-title">What changed, and what deserves attention</h2>
+          <p class="section-kicker">Daily shortlist</p>
+          <h2 id="shortlist-title">Candidate review</h2>
         </div>
         <button class="method-button" id="method-button" type="button">How scoring works</button>
       </div>
@@ -103,15 +93,15 @@
 
     <section class="comparison-section" aria-labelledby="comparison-title">
       <div class="workspace-heading">
-        <div><p class="eyebrow">Investment lens</p><h2 id="comparison-title">Ten-year financial comparison</h2></div>
+        <div><p class="section-kicker">Investment analysis</p><h2 id="comparison-title">Ten-year financial comparison</h2></div>
       </div>
-      <div class="table-scroll"><table id="comparison-table"><thead><tr><th>Option</th><th>Initial cash</th><th>Monthly subsidy</th><th>10-year IRR</th><th>Net sale proceeds</th><th>vs. 7% alternative</th></tr></thead><tbody></tbody></table></div>
+      <div class="table-scroll"><table id="comparison-table"><thead><tr><th>Option</th><th>Modeled purchase</th><th>Initial cash</th><th>Monthly subsidy</th><th>10-year IRR</th><th>Net sale proceeds</th><th>vs. 7% alternative</th></tr></thead><tbody></tbody></table></div>
       <p class="fine-print">Modeled results are planning estimates, not forecasts. The 7% comparison assumes the same initial cash and annual subsidy are invested instead. The historical S&amp;P figure is context only.</p>
     </section>
 
     <section class="source-section" aria-labelledby="source-title">
-      <p class="eyebrow">Trust and traceability</p>
-      <h2 id="source-title">What this dashboard knows, and what it does not</h2>
+      <p class="section-kicker">Controls</p>
+      <h2 id="source-title">Evidence and limitations</h2>
       <div class="source-grid">
         <article><h3>Source-backed facts</h3><p>Each property links to the listing or public record used. Conflicting portal facts are shown, not averaged away.</p></article>
         <article><h3>Hard decision gates</h3><p>An unresolved private bathroom or room-rental authority prevents a recommendation, regardless of score.</p></article>
@@ -126,7 +116,7 @@
   <dialog id="detail-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div><button class="dialog-close" type="button" aria-label="Close details">×</button></dialog>
   <dialog id="method-dialog" aria-labelledby="method-title">
     <div class="dialog-body">
-      <p class="eyebrow">Transparent methodology</p><h2 id="method-title">How the decision score works</h2>
+      <p class="section-kicker">Methodology</p><h2 id="method-title">How the decision score works</h2>
       <div id="method-content"></div>
     </div>
     <button class="dialog-close" type="button" aria-label="Close methodology">×</button>
