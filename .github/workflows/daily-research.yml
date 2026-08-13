@@ -1,9 +1,6 @@
-name: Daily property research
+name: On-demand API property research
 
 on:
-  schedule:
-    - cron: "17 7 * * *"
-      timezone: "America/New_York"
   workflow_dispatch:
 
 permissions:

@@ -21,9 +21,11 @@ npx serve dist
 
 The generated site is in `dist/`.
 
-## Daily research
+## Research automation
 
-The scheduled workflow runs at 7:17 AM Eastern. It requires two encrypted repository secrets:
+The live project is refreshed by a daily Codex research automation at 7:17 AM Eastern. It researches with web access, validates the dataset, commits only material successful changes, waits for the Pages deployment, and verifies production. Its exact distance anchor is held in an ignored local environment file and is never committed or published.
+
+The repository also includes an on-demand GitHub Actions research workflow for future server-side use. It requires two encrypted repository secrets:
 
 - `OPENAI_API_KEY`: server-side key used by the research workflow.
 - `FAMILY_ANCHOR_ADDRESS`: private distance anchor, never written to research output.
@@ -34,7 +36,7 @@ Run locally with the same environment variables:
 npm run research
 ```
 
-The workflow uses OpenAI Responses API web search, validates the result, writes a dated snapshot, commits only successful data, and deploys the validated build. A failed run leaves the current site and prior successful snapshot intact. Listings are archived only after two consecutive misses.
+The on-demand workflow uses OpenAI Responses API web search, validates the result, writes a dated snapshot, commits only successful data, and deploys the validated build. A failed run leaves the current site and prior successful snapshot intact. Listings are archived only after two consecutive misses.
 
 ## Decision model
 
