@@ -1,0 +1,17 @@
+{
+  "name": "rock-hill-property-radar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily, evidence-backed Rock Hill property shortlist for a family housing decision.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test",
+    "check": "npm run validate && npm test && npm run build",
+    "research": "node scripts/research.mjs"
+  },
+  "dependencies": {
+    "openai": "^5.12.2"
+  }
+}

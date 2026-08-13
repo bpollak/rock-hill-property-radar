@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A source-backed daily shortlist of Rock Hill area housing options for a family decision.">
+  <meta name="theme-color" content="#17352d">
+  <title>Rock Hill Property Radar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#property-list">Skip to properties</a>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <div><strong>Rock Hill</strong><small>Property Radar</small></div>
+    </div>
+    <div class="header-status"><span class="status-dot"></span><span id="run-status">Loading research status</span></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Family decision workspace</p>
+        <h1 id="page-title">A home that works for her.<br><em>An investment that works for you.</em></h1>
+        <p class="hero-intro">Actual Rock Hill area options, checked against the living arrangement, monthly subsidy, long-term return, and the risks that still need an answer.</p>
+        <div class="hero-meta">
+          <span id="as-of">Research date loading</span>
+          <span>Within 30 miles</span>
+          <span>10 &amp; 15-year model</span>
+        </div>
+      </div>
+      <aside class="decision-card" aria-label="Current decision snapshot">
+        <p class="eyebrow">Current snapshot</p>
+        <div class="decision-number" id="qualified-count">—</div>
+        <p class="decision-label">fully qualified today</p>
+        <p class="decision-note" id="decision-note">Every candidate must clear the private-bath and rental-authority gates.</p>
+      </aside>
+    </section>
+
+    <section class="overview" aria-label="Shortlist overview">
+      <div class="metric"><span id="candidate-count">—</span><small>purchase candidates</small></div>
+      <div class="metric"><span id="new-count">—</span><small>new today</small></div>
+      <div class="metric"><span id="verification-count">—</span><small>need verification</small></div>
+      <div class="metric"><span id="lowest-subsidy">—</span><small>lowest modeled subsidy</small></div>
+    </section>
+
+    <section class="workspace" aria-labelledby="shortlist-title">
+      <div class="workspace-heading">
+        <div>
+          <p class="eyebrow">Daily shortlist</p>
+          <h2 id="shortlist-title">What changed, and what deserves attention</h2>
+        </div>
+        <button class="method-button" id="method-button" type="button">How scoring works</button>
+      </div>
+
+      <div class="change-tabs" role="tablist" aria-label="Listing recency">
+        <button class="tab active" role="tab" aria-selected="true" data-change="new">New today <span id="tab-new">0</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-change="changed">Changed <span id="tab-changed">0</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-change="existing">Previously reviewed <span id="tab-existing">0</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-change="archived">Removed <span id="tab-archived">0</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-change="all">All active <span id="tab-all">0</span></button>
+      </div>
+
+      <div class="filters" aria-label="Property filters">
+        <label>Strategy
+          <select id="strategy-filter">
+            <option value="all">All strategies</option>
+            <option value="shared-home">Shared house</option>
+            <option value="shared-condo">Shared condo</option>
+            <option value="private-purchase">Private purchase</option>
+            <option value="rental-benchmark">Rental benchmark</option>
+          </select>
+        </label>
+        <label>Decision status
+          <select id="status-filter">
+            <option value="all">All statuses</option>
+            <option value="Qualified">Qualified</option>
+            <option value="Needs verification">Needs verification</option>
+            <option value="Rejected">Rejected</option>
+            <option value="Benchmark">Benchmark</option>
+          </select>
+        </label>
+        <label>Sort by
+          <select id="sort-filter">
+            <option value="score">Best fit score</option>
+            <option value="subsidy">Lowest subsidy</option>
+            <option value="price">Lowest price</option>
+            <option value="days">Newest listing</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="result-summary" id="result-summary" aria-live="polite"></p>
+      <div id="property-list" class="property-grid"></div>
+      <div id="empty-state" class="empty-state" hidden><h3>No matches in this view</h3><p>Try another recency tab or remove a filter.</p></div>
+    </section>
+
+    <section class="comparison-section" aria-labelledby="comparison-title">
+      <div class="workspace-heading">
+        <div><p class="eyebrow">Investment lens</p><h2 id="comparison-title">Ten-year financial comparison</h2></div>
+      </div>
+      <div class="table-scroll"><table id="comparison-table"><thead><tr><th>Option</th><th>Initial cash</th><th>Monthly subsidy</th><th>10-year IRR</th><th>Net sale proceeds</th><th>vs. 7% alternative</th></tr></thead><tbody></tbody></table></div>
+      <p class="fine-print">Modeled results are planning estimates, not forecasts. The 7% comparison assumes the same initial cash and annual subsidy are invested instead. The historical S&amp;P figure is context only.</p>
+    </section>
+
+    <section class="source-section" aria-labelledby="source-title">
+      <p class="eyebrow">Trust and traceability</p>
+      <h2 id="source-title">What this dashboard knows, and what it does not</h2>
+      <div class="source-grid">
+        <article><h3>Source-backed facts</h3><p>Each property links to the listing or public record used. Conflicting portal facts are shown, not averaged away.</p></article>
+        <article><h3>Hard decision gates</h3><p>An unresolved private bathroom or room-rental authority prevents a recommendation, regardless of score.</p></article>
+        <article><h3>Conservative tax treatment</h3><p>The public model assumes no immediate passive-loss benefit and estimates sale taxes. A tax adviser must validate actual treatment.</p></article>
+      </div>
+      <button class="text-button" id="sources-button" type="button">View methodology sources</button>
+    </section>
+  </main>
+
+  <footer><p>Family planning tool. Verify listing status, condition, financing, title, HOA rules, zoning, insurance, and taxes before acting.</p><p id="model-version"></p></footer>
+
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div><button class="dialog-close" type="button" aria-label="Close details">×</button></dialog>
+  <dialog id="method-dialog" aria-labelledby="method-title">
+    <div class="dialog-body">
+      <p class="eyebrow">Transparent methodology</p><h2 id="method-title">How the decision score works</h2>
+      <div id="method-content"></div>
+    </div>
+    <button class="dialog-close" type="button" aria-label="Close methodology">×</button>
+  </dialog>
+</body>
+</html>

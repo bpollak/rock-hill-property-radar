@@ -1,0 +1,38 @@
+{
+  "asOf": "2026-08-13",
+  "purchase": {
+    "downPaymentRate": 0.25,
+    "mortgageRate": 0.0675,
+    "mortgageYears": 30,
+    "buyerClosingCostRate": 0.03,
+    "sellingCostRate": 0.07
+  },
+  "operations": {
+    "roomRentMonthly": 850,
+    "roomRentLow": 700,
+    "roomRentHigh": 1000,
+    "vacancyRate": 0.12,
+    "insuranceRate": 0.0075,
+    "maintenanceRate": 0.01,
+    "capitalExpenditureRate": 0.005,
+    "sharedUtilitiesMonthly": 400,
+    "propertyTaxRate": 0.0248,
+    "rentGrowthRate": 0.03,
+    "expenseGrowthRate": 0.03,
+    "appreciationRate": 0.03
+  },
+  "comparison": {
+    "holdingPeriods": [10, 15],
+    "forwardHurdleRate": 0.07,
+    "sp500Trailing10YearAnnualized": 0.1551,
+    "sp500AsOf": "2026-06-30"
+  },
+  "tax": {
+    "federalCapitalGainRate": 0.15,
+    "depreciationRecaptureRate": 0.25,
+    "statePlanningRate": 0.093,
+    "immediatePassiveLossBenefit": 0,
+    "note": "Conservative planning model: no immediate benefit for passive losses. Related-party use, expense allocation, depreciation, South Carolina filing, California credit, and sale treatment require tax-adviser review."
+  },
+  "modelVersion": "1.0.0"
+}
