@@ -13,6 +13,8 @@ if (dataset.runStatus !== "successful") errors.push("Only the last successful re
 if (dataset.properties.filter(p => p.strategy !== "rental-benchmark").length < 3) errors.push("At least three actual purchase candidates are required.");
 if (assumptions.comparison.forwardHurdleRate !== 0.07) errors.push("Forward hurdle must remain 7% unless deliberately revised.");
 if (assumptions.purchase.maximumOfferPrice !== 275000) errors.push("Maximum offer price must remain $275,000 unless deliberately revised.");
+if (assumptions.livingRequirements?.maximumDrivingMiles !== 30) errors.push("Maximum driving distance must remain 30 miles unless deliberately revised.");
+if (assumptions.livingRequirements?.privateBedroom !== true || assumptions.livingRequirements?.privateFullBathroom !== true) errors.push("Private bedroom and private full bathroom must remain required.");
 if (!Array.isArray(assumptions.ageRisk?.bands) || assumptions.ageRisk.bands.length < 3) errors.push("Age-risk model requires at least three configured bands.");
 for (const [index, band] of (assumptions.ageRisk?.bands || []).entries()) {
   if (!Number.isFinite(band.maxAge) || band.maxAge <= 0) errors.push(`Age-risk band ${index + 1} requires a positive maxAge.`);

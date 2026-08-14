@@ -21,11 +21,10 @@ function rentabilityClass(score) {
 }
 
 function statusGate(property) {
-  if (property.recommendation === "Qualified") return "Living and rental gates are documented as satisfied.";
+  if (property.recommendation === "Qualified") return property.qualification?.cardComment || "All current eligibility gates are documented as satisfied.";
   if (property.recommendation === "Benchmark") return "Reference option, not scored as a purchase.";
-  if (property.privateBath !== "yes") return "Private full bathroom must be confirmed.";
-  if (property.strategy === "shared-condo" && property.hoa.roomRental === "unknown") return "HOA room-rental authority must be documented.";
-  if (property.roomRentalLegal !== "confirmed" && property.strategy === "shared-home") return "Room-rental zoning and occupancy must be confirmed.";
+  const unresolvedGate = property.qualification?.gates?.find(gate => gate.status === "failed") || property.qualification?.gates?.find(gate => gate.status === "unresolved");
+  if (unresolvedGate) return unresolvedGate.reason;
   return "A hard decision gate is unresolved.";
 }
 
@@ -60,7 +59,7 @@ function renderCard(property) {
     </div>
     <p class="card-summary">${escapeHtml(property.summary)}</p>
     <div class="card-decision">
-      <div class="gate ${property.recommendation === "Qualified" || benchmark ? "ok" : ""}"><strong>${escapeHtml(property.recommendation)}:</strong> ${escapeHtml(statusGate(property))}</div>
+      <div class="gate ${property.recommendation === "Qualified" || benchmark ? "ok" : ""}"><strong>${escapeHtml(property.recommendation === "Qualified" ? "Why it qualifies" : property.recommendation)}:</strong> ${escapeHtml(statusGate(property))}</div>
       <div class="card-actions"><button class="detail-button" type="button" data-detail="${escapeHtml(property.id)}">Review details</button><a class="source-link" href="${escapeHtml(property.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open primary source ↗</a></div>
     </div>
   </article>`;
@@ -100,7 +99,7 @@ function renderOverview() {
   $("#verification-count").textContent = verification.length;
   $("#qualified-count").textContent = qualified.length;
   $("#lowest-subsidy").textContent = subsidies.length ? `${money(Math.min(...subsidies))}/mo` : "—";
-  $("#decision-note").textContent = qualified.length ? `${qualified.length} option${qualified.length === 1 ? " clears" : "s clear"} the current hard gates.` : "No purchase candidate clears every hard gate yet. Verification can change that.";
+  $("#decision-note").textContent = qualified.length ? `${qualified.length} option${qualified.length === 1 ? " clears" : "s clear"} every current eligibility gate. Financial hurdles remain separate and are shown in each detail.` : "No purchase candidate clears every eligibility gate yet. Verification can change that.";
   $("#as-of").textContent = `Research current as of ${dateLabel(state.data.asOf)}`;
   $("#run-status").textContent = `Last successful research: ${dateLabel(state.data.asOf)}`;
   $("#model-version").textContent = `Model ${state.data.assumptions.modelVersion} · Data ${state.data.asOf}`;
@@ -210,6 +209,14 @@ function roomRentabilityDetail(property, ten) {
   </div><div class="rentability-table">${factors}</div><h4>Required follow-up</h4><ul>${rentability.followUps.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul><p class="cost-note">The likelihood score is a conservative underwriting heuristic, not an empirical probability. It is applied before the separate ${Math.round(state.data.assumptions.operations.vacancyRate*100)}% vacancy assumption. Documented legal authority, parking, occupant capacity, safety, condition, and property-specific demand can raise the score on a future run.</p>`;
 }
 
+function qualificationDetail(property) {
+  const qualification = property.qualification;
+  if (!qualification?.allRequiredGatesMet) return "";
+  const gates = qualification.gates.map(gate => `<div class="qualification-row"><span aria-hidden="true">✓</span><div><strong>${escapeHtml(gate.label)}</strong><p>${escapeHtml(gate.reason)}</p></div></div>`).join("");
+  const caveats = qualification.caveats.length ? `<div class="qualification-caveats"><strong>Qualification does not resolve these financial or diligence issues</strong><ul>${qualification.caveats.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>` : "";
+  return `<section class="qualification-panel"><h3>Why this property qualifies</h3><p class="qualification-intro">It clears all ${qualification.gates.length} current eligibility gates:</p><div class="qualification-checklist">${gates}</div>${caveats}</section>`;
+}
+
 function ageRiskDetail(property, ten) {
   if (!property.ageRisk || !ten) return `<p class="cost-note">This is a rental benchmark. The landlord retains age-related repair and capital risk.</p>`;
   const risk = property.ageRisk;
@@ -241,6 +248,7 @@ function openDetail(id) {
   const history = property.listingHistory.length ? property.listingHistory.map(item => `<p><strong>${escapeHtml(item.date)}</strong> · ${escapeHtml(item.event)} ${item.price ? `· ${money(item.price)}` : ""}</p>`).join("") : "<p>No purchase history included for this benchmark.</p>";
   $("#dialog-content").innerHTML = `<div class="detail-header"><div class="badges"><span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span><span class="badge ${badgeClass(property.recommendation)}">${escapeHtml(property.recommendation)}</span></div><h2 id="dialog-title">${escapeHtml(property.address)}</h2><p>${escapeHtml(property.summary)}</p></div>
   <section class="detail-verdict ${property.recommendation === "Qualified" ? "qualified" : ""}"><strong>${escapeHtml(property.recommendation)}.</strong> ${escapeHtml(statusGate(property))}</section>
+  ${qualificationDetail(property)}
   <section class="criteria-panel"><h3>Criteria fit</h3><div class="criteria-table">${criteriaAssessment(property, ten)}</div></section>
   <section class="property-facts-panel"><h3>Property specifics</h3><div class="property-facts-grid">${propertyFacts(property, ten)}</div></section>
   <section class="room-rental-panel"><h3>Room-rental viability</h3>${roomRentabilityDetail(property, ten)}</section>
@@ -272,7 +280,7 @@ function renderMethod() {
     ...state.data.sourcePolicy.rentEvidence.map(item => ({...item, section:"Rent evidence"}))
   ];
   $("#method-content").innerHTML = `<div class="method-list">${weights.map(row => `<div class="method-row"><strong>${row[0]}</strong><span>${row[1]}</span><strong>${row[2]}%</strong></div>`).join("")}</div>
-    <div class="method-warning"><strong>Hard gates override the score.</strong> A private full bathroom must be confirmed. Shared condos also require documented individual-room rental authority. Shared houses require zoning and occupancy confirmation. Distance and drive time are measured from the private family reference property without publishing its address.</div>
+    <div class="method-warning"><strong>Eligibility gates override the score.</strong> “Qualified” means the listing is active, the private living arrangement is documented, the property is within 30 driving miles and the offer ceiling, the layout fits, and any room-rental authority required by the strategy is documented. It does not mean the property clears the 7% return hurdle or requires no subsidy. Distance and drive time are measured from the private family reference property without publishing its address.</div>
     <h3>Public planning assumptions</h3><div class="assumption-grid">
       <div class="assumption"><strong>${(a.purchase.downPaymentRate*100).toFixed(0)}% down</strong><small>Plus ${(a.purchase.buyerClosingCostRate*100).toFixed(0)}% buyer closing costs</small></div>
       <div class="assumption"><strong>${money(a.purchase.maximumOfferPrice)}</strong><small>Absolute maximum offer and modeled acquisition price</small></div>

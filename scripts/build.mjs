@@ -2,7 +2,7 @@ import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { enrichFinancials } from "./lib/finance.mjs";
 import { ageRiskProfile } from "./lib/age-risk.mjs";
 import { roomRentabilityProfile } from "./lib/room-rentability.mjs";
-import { recommendationStatus, scoreProperty } from "./lib/scoring.mjs";
+import { qualificationProfile, scoreProperty } from "./lib/scoring.mjs";
 
 const root = new URL("../", import.meta.url);
 const readJson = async path => JSON.parse(await readFile(new URL(path, root), "utf8"));
@@ -13,7 +13,8 @@ const modelAssumptions = { ...assumptions, asOf: dataset.asOf };
 
 const properties = dataset.properties.map(property => {
   const financials = enrichFinancials(property, modelAssumptions);
-  const recommendation = recommendationStatus(property);
+  const qualification = qualificationProfile(property, modelAssumptions, financials);
+  const recommendation = qualification.status;
   const score = scoreProperty(property, financials, modelAssumptions);
   const ageRisk = ageRiskProfile(property, modelAssumptions);
   const roomRentability = roomRentabilityProfile(property, modelAssumptions);
@@ -24,7 +25,7 @@ const properties = dataset.properties.map(property => {
     aboveCeiling: property.strategy !== "rental-benchmark" && property.price > maximumOfferPrice,
     requiredDiscount: property.strategy !== "rental-benchmark" && property.price > maximumOfferPrice ? (property.price - maximumOfferPrice) / property.price : 0
   };
-  return { ...property, recommendation, financials, score, ageRisk, roomRentability, offer };
+  return { ...property, recommendation, qualification, financials, score, ageRisk, roomRentability, offer };
 });
 
 const appData = { ...dataset, properties, assumptions: modelAssumptions, sourcePolicy, generatedAt: new Date().toISOString() };

@@ -8,6 +8,12 @@
     "buyerClosingCostRate": 0.03,
     "sellingCostRate": 0.07
   },
+  "livingRequirements": {
+    "privateBedroom": true,
+    "privateFullBathroom": true,
+    "stairsAcceptable": true,
+    "maximumDrivingMiles": 30
+  },
   "operations": {
     "roomRentMonthly": 850,
     "roomRentLow": 700,
@@ -65,5 +71,5 @@
     "immediatePassiveLossBenefit": 0,
     "note": "Conservative planning model: no immediate benefit for passive losses. Related-party use, expense allocation, depreciation, South Carolina filing, California credit, and sale treatment require tax-adviser review."
   },
-  "modelVersion": "1.2.0"
+  "modelVersion": "1.2.1"
 }
