@@ -1,4 +1,5 @@
 import { ageRiskProfile } from "./age-risk.mjs";
+import { roomRentabilityProfile } from "./room-rentability.mjs";
 
 const clamp = value => Math.max(0, Math.min(100, value));
 
@@ -43,9 +44,11 @@ export function scoreProperty(property, financials, assumptions) {
   const investment = clamp(50 + ((ten.irr ?? -0.05) - 0.07) * 350);
   const pricing = pricingScore(property, assumptions);
   const ageRisk = ageRiskProfile(property, assumptions);
+  const roomRentability = roomRentabilityProfile(property, assumptions);
+  const roomRental = roomRentability?.score ?? 100;
   const nonAgeConcernCount = (property.concerns || []).filter(concern => !/\bbuilt in \d{4}\b.*(?:age|inspection|repair|capital|condition)/i.test(concern)).length;
   const risk = clamp(80 - nonAgeConcernCount * 8 - (property.sourceConflicts?.length || 0) * 10 - (status === "Needs verification" ? 15 : 0) - (ageRisk?.scorePenalty || 0));
-  const total = Math.round(living * 0.30 + support * 0.20 + investment * 0.20 + pricing * 0.15 + risk * 0.15);
+  const total = Math.round(living * 0.25 + support * 0.20 + investment * 0.20 + pricing * 0.10 + roomRental * 0.15 + risk * 0.10);
   return {
     total,
     status,
@@ -55,6 +58,7 @@ export function scoreProperty(property, financials, assumptions) {
       monthlySupportability: Math.round(support),
       investmentReturn: Math.round(investment),
       pricingNegotiation: Math.round(pricing),
+      roomRentalViability: Math.round(roomRental),
       riskOptionality: Math.round(risk)
     }
   };

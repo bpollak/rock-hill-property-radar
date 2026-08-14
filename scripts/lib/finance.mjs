@@ -1,4 +1,5 @@
 import { ageRiskProfile } from "./age-risk.mjs";
+import { roomRentabilityProfile } from "./room-rentability.mjs";
 
 export function monthlyPayment(principal, annualRate, years) {
   if (principal <= 0) return 0;
@@ -47,12 +48,15 @@ export function analyzeProperty(property, assumptions, years) {
   const loan = price - down;
   const mortgage = monthlyPayment(loan, p.mortgageRate, p.mortgageYears);
   const ageRisk = ageRiskProfile(property, assumptions);
+  const roomRentability = roomRentabilityProfile(property, assumptions);
   const reserveMultiplier = ageRisk?.reserveMultiplier || 1;
   const maintenanceReserve = price * o.maintenanceRate * reserveMultiplier / 12;
   const capitalReserve = price * o.capitalExpenditureRate * reserveMultiplier / 12;
   const baselineReserves = price * (o.maintenanceRate + o.capitalExpenditureRate) / 12;
-  const rentableRooms = property.strategy === "private-purchase" ? 0 : Math.max(0, property.beds - 1);
-  const baseRent = rentableRooms * o.roomRentMonthly * (1 - o.vacancyRate);
+  const rentableRooms = roomRentability?.required ? roomRentability.rentableRooms : 0;
+  const fullRoomRevenue = rentableRooms * o.roomRentMonthly * (1 - o.vacancyRate);
+  const roomIncomeRealizationRate = roomRentability?.required ? roomRentability.incomeRealizationRate : 1;
+  const baseRent = fullRoomRevenue * roomIncomeRealizationRate;
   const baseExpenses = mortgage + price * (o.propertyTaxRate + o.insuranceRate) / 12 + maintenanceReserve + capitalReserve + (property.hoaMonthly || 0) + (rentableRooms ? o.sharedUtilitiesMonthly : 0);
   const monthlySubsidy = Math.max(0, baseExpenses - baseRent);
   const annualSubsidies = [];
@@ -93,6 +97,9 @@ export function analyzeProperty(property, assumptions, years) {
     capitalReserveMonthly: Math.round(capitalReserve),
     ageReservePremiumMonthly: Math.round(maintenanceReserve + capitalReserve - baselineReserves),
     ageReserveMultiplier: reserveMultiplier,
+    fullRoomRevenueMonthly: Math.round(fullRoomRevenue),
+    roomIncomeRealizationRate,
+    roomIncomeAtRiskMonthly: Math.round(fullRoomRevenue - baseRent),
     roomRevenueMonthly: Math.round(baseRent),
     operatingCostMonthly: Math.round(baseExpenses),
     monthlySubsidy: Math.round(monthlySubsidy),

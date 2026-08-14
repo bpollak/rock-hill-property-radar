@@ -10,6 +10,7 @@ A public, source-backed family decision dashboard for evaluating actual Rock Hil
 - Shows monthly subsidy, IRR, estimated after-tax sale proceeds, and the wealth gap against a 7% alternative.
 - Enforces a $275,000 maximum offer in research, scoring, and every purchase calculation. Listings above it are shown only as negotiation candidates and modeled at the ceiling.
 - Keeps the exact family anchor out of the site and repository.
+- Lists fastest-route mileage and approximate drive time from the private family reference property for every purchase candidate, without publishing the reference address, coordinates, or route URL.
 - Publishes only after schema, privacy, calculation, and source checks pass.
 - Audits the public, no-credential source categories in `config/source-policy.json`, covering major MLS-syndicated portals, indexed brokerage and builder pages, government/GSE inventory, owner-listed and distressed inventory, official parcel and permit records, flood maps, HOA evidence, and rent sources. Credentialed feeds are disclosed as a known limitation and are not queried.
 
@@ -42,7 +43,7 @@ The on-demand workflow uses OpenAI Responses API web search, validates the resul
 
 ## Decision model
 
-The numeric score weights living suitability 30%, monthly supportability 20%, investment return 20%, pricing and negotiation 15%, and risk and optionality 15%. Property age now affects both monthly supportability and investment return through age-adjusted maintenance and capital reserves, and it deducts points inside risk and optionality. The bands are conservative planning proxies until permits, system ages, inspections, invoices, and contractor bids provide property-specific evidence. Hard gates override the score.
+The numeric score weights living suitability 25%, monthly supportability 20%, investment return 20%, pricing and negotiation 10%, room-rental viability 15%, and risk and optionality 10%. For shared-house and shared-condo strategies, room-rental viability combines legal/HOA authority, bedroom and bathroom capacity, demand fit, parking and operating readiness, and condition. Its 0–100 score is also used as a conservative room-income realization factor before vacancy, so unresolved permission or capacity reduces subsidy and return assumptions as well as the total score. Property age affects both monthly supportability and investment return through age-adjusted maintenance and capital reserves, and it deducts points inside risk and optionality. These are planning proxies until governing documents, local approvals, permits, system ages, inspections, invoices, leases, and contractor bids provide property-specific evidence. Hard gates override the score.
 
 The public planning assumptions are versioned in `config/public-assumptions.json`. Results are estimates, not tax, legal, lending, inspection, or investment advice.
 

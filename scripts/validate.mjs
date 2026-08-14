@@ -19,6 +19,9 @@ for (const [index, band] of (assumptions.ageRisk?.bands || []).entries()) {
   if (!Number.isFinite(band.reserveMultiplier) || band.reserveMultiplier <= 0) errors.push(`Age-risk band ${index + 1} requires a positive reserveMultiplier.`);
   if (!Number.isFinite(band.scorePenalty) || band.scorePenalty < 0 || band.scorePenalty > 100) errors.push(`Age-risk band ${index + 1} has an invalid scorePenalty.`);
 }
+const roomFactorWeights = Object.values(assumptions.roomRentability?.factorWeights || {});
+if (roomFactorWeights.length !== 5 || Math.abs(roomFactorWeights.reduce((sum, value) => sum + value, 0) - 1) > 0.000001) errors.push("Room-rentability factor weights must contain five factors totaling 100%.");
+if (!Number.isFinite(assumptions.roomRentability?.unknownAuthorityScoreCap) || assumptions.roomRentability.unknownAuthorityScoreCap >= 50) errors.push("Unknown room-rental authority must cap likelihood below 50.");
 for (const section of ["listingDiscovery", "propertyVerification", "rentEvidence"]) {
   if (!Array.isArray(sourcePolicy[section]) || sourcePolicy[section].length === 0) errors.push(`Source policy requires ${section}.`);
 }

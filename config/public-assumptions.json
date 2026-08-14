@@ -40,6 +40,18 @@
     ],
     "note": "Age bands are conservative planning assumptions, not repair estimates. They scale the combined maintenance and capital reserve and reduce the risk and optionality score. Verified permits, invoices, system ages, inspections, and contractor bids should replace the age proxy when available."
   },
+  "roomRentability": {
+    "factorWeights": {
+      "legalAndHoaAuthority": 0.35,
+      "bedroomBathroomCapacity": 0.20,
+      "roomDemandFit": 0.20,
+      "parkingAndOperations": 0.15,
+      "conditionAndReadiness": 0.10
+    },
+    "unknownAuthorityScoreCap": 49,
+    "unknownCondoHoaScoreCap": 35,
+    "note": "The 0-100 room-rental likelihood is a conservative underwriting heuristic, not an empirical probability. For strategies that rely on roommates, the score is used as the room-income realization factor before the separate vacancy assumption. Unknown legal or HOA authority therefore materially reduces modeled income and blocks qualification."
+  },
   "comparison": {
     "holdingPeriods": [10, 15],
     "forwardHurdleRate": 0.07,
@@ -53,5 +65,5 @@
     "immediatePassiveLossBenefit": 0,
     "note": "Conservative planning model: no immediate benefit for passive losses. Related-party use, expense allocation, depreciation, South Carolina filing, California credit, and sale treatment require tax-adviser review."
   },
-  "modelVersion": "1.1.0"
+  "modelVersion": "1.2.0"
 }
