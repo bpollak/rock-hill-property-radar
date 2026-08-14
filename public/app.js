@@ -8,6 +8,7 @@ const strategyLabel = value => ({"shared-home":"Shared house","shared-condo":"Sh
 const dateLabel = value => new Date(`${value}T12:00:00`).toLocaleDateString("en-US", {month:"long", day:"numeric", year:"numeric"});
 
 function badgeClass(status) {
+  if (status === "Qualified") return "qualified";
   if (status === "Needs verification") return "verify";
   if (status === "Rejected") return "rejected";
   return "";
@@ -28,7 +29,7 @@ function renderCard(property) {
   const price = benchmark ? `${money(property.price)}/mo` : money(property.price);
   const score = property.score?.total ?? "—";
   const priceNote = benchmark ? `${money(property.priceRange[0])}–${money(property.priceRange[1])} observed range` : property.offer.aboveCeiling ? `Model uses ${money(property.offer.modeledPurchasePrice)} max offer · ${(property.offer.requiredDiscount*100).toFixed(1)}% below list required` : property.priceCutPercent ? `${property.priceCutPercent}% below original list · within offer ceiling` : "Within $275,000 offer ceiling";
-  return `<article class="property-card" data-id="${escapeHtml(property.id)}">
+  return `<article class="property-card ${property.recommendation === "Qualified" ? "qualified" : ""}" data-id="${escapeHtml(property.id)}">
     <div class="card-identity"><div class="badges">
       <span class="badge ${property.changeCategory === "new" ? "new" : ""}">${escapeHtml(property.changeCategory === "new" ? "New today" : property.changeCategory)}</span>
       <span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span>
@@ -38,15 +39,20 @@ function renderCard(property) {
     <div class="card-facts">
       <div class="fact"><strong>${price}</strong><small>${benchmark ? "Monthly rent" : "List price"}</small></div>
       <div class="fact"><strong>${benchmark ? "N/A" : money(property.offer.modeledPurchasePrice)}</strong><small>Modeled offer</small></div>
+      <div class="fact"><strong>${benchmark ? "N/A" : money(ten?.mortgageMonthly)}</strong><small>Mortgage P&amp;I / mo</small></div>
       <div class="fact"><strong>${benchmark ? "N/A" : property.offer.aboveCeiling ? `${(property.offer.requiredDiscount*100).toFixed(1)}%` : "0%"}</strong><small>Needed discount</small></div>
       <div class="fact"><strong>${property.beds ?? "—"} / ${property.baths ?? "—"}</strong><small>Beds / baths</small></div>
+      <div class="fact"><strong>${property.yearBuilt ?? "—"}</strong><small>Year built</small></div>
+      <div class="fact"><strong>${benchmark ? "N/A" : property.hoa?.exists ? `${money(property.hoaMonthly)}/mo` : "None"}</strong><small>Reported HOA</small></div>
       <div class="fact"><strong>${property.daysOnMarket ?? "—"}</strong><small>Days listed</small></div>
       <div class="fact"><strong>${benchmark ? money(property.price) : money(ten?.monthlySubsidy)}</strong><small>${benchmark ? "Monthly" : "Subsidy / mo"}</small></div>
       <div class="fact"><strong>${benchmark ? "N/A" : percent(ten?.irr)}</strong><small>10-year IRR</small></div>
     </div>
     <p class="card-summary">${escapeHtml(property.summary)}</p>
-    <div class="gate ${property.recommendation === "Qualified" || benchmark ? "ok" : ""}"><strong>${escapeHtml(property.recommendation)}:</strong> ${escapeHtml(statusGate(property))}</div>
-    <div class="card-actions"><button class="detail-button" type="button" data-detail="${escapeHtml(property.id)}">Review details</button><a class="source-link" href="${escapeHtml(property.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open primary source ↗</a></div>
+    <div class="card-decision">
+      <div class="gate ${property.recommendation === "Qualified" || benchmark ? "ok" : ""}"><strong>${escapeHtml(property.recommendation)}:</strong> ${escapeHtml(statusGate(property))}</div>
+      <div class="card-actions"><button class="detail-button" type="button" data-detail="${escapeHtml(property.id)}">Review details</button><a class="source-link" href="${escapeHtml(property.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open primary source ↗</a></div>
+    </div>
   </article>`;
 }
 
@@ -106,6 +112,73 @@ function scoreBars(property) {
   return Object.entries(property.score?.components || {}).map(([key,value]) => `<div class="score-bar"><span>${labels[key]}</span><div class="bar-track"><div class="bar-fill" style="width:${value}%"></div></div><strong>${value}</strong></div>`).join("");
 }
 
+function criteriaAssessment(property, ten) {
+  const benchmark = property.strategy === "rental-benchmark";
+  const maxOffer = state.data.assumptions.purchase.maximumOfferPrice;
+  const privateBath = property.privateBath === "yes"
+    ? ["Meets", "Private full bathroom is documented.", "meet"]
+    : ["Verify", "Private full bathroom is not yet documented.", "warn"];
+  const offer = benchmark
+    ? ["Reference", "Rental option has no purchase price.", "info"]
+    : property.price <= maxOffer
+      ? ["Meets", `${money(property.price)} list price is within the ${money(maxOffer)} ceiling.`, "meet"]
+      : ["Conditional", `${money(property.offer.modeledPurchasePrice)} modeled offer requires a ${(property.offer.requiredDiscount*100).toFixed(1)}% seller discount.`, "warn"];
+  const sharing = benchmark || property.strategy === "private-purchase"
+    ? ["Not needed", "This strategy does not rely on individual-room income.", "info"]
+    : property.roomRentalLegal === "confirmed" && (property.strategy !== "shared-condo" || property.hoa.roomRental === "allowed")
+      ? ["Meets", `${Math.max(0, (property.beds || 1) - 1)} potential renter room${(property.beds || 1) - 1 === 1 ? "" : "s"}; authority is documented.`, "meet"]
+      : ["Verify", `${Math.max(0, (property.beds || 1) - 1)} potential renter room${(property.beds || 1) - 1 === 1 ? "" : "s"}, but rental authority is unresolved.`, "warn"];
+  const investment = benchmark
+    ? ["Reference", "No ownership return is modeled.", "info"]
+    : (ten?.irr ?? -1) >= state.data.assumptions.comparison.forwardHurdleRate
+      ? ["Meets", `${percent(ten.irr)} modeled 10-year IRR exceeds the 7% hurdle.`, "meet"]
+      : ["Below hurdle", `${percent(ten?.irr)} modeled 10-year IRR is below the 7% hurdle.`, "no"];
+  const rows = [
+    ["Private living", ...privateBath],
+    ["Location", "Meets", property.distanceLabel, "meet"],
+    ["Offer ceiling", ...offer],
+    ["Room-income strategy", ...sharing],
+    ["10-year return", ...investment]
+  ];
+  return rows.map(([label,status,note,tone]) => `<div class="criteria-row"><strong>${escapeHtml(label)}</strong><span class="criteria-status ${tone}">${escapeHtml(status)}</span><span>${escapeHtml(note)}</span></div>`).join("");
+}
+
+function propertyFacts(property, ten) {
+  const marketDelta = property.pricePerSqft && property.marketPricePerSqft
+    ? `${Math.abs((property.pricePerSqft/property.marketPricePerSqft-1)*100).toFixed(0)}% ${(property.pricePerSqft/property.marketPricePerSqft-1) <= 0 ? "below" : "above"} cited market`
+    : "Not available";
+  const facts = [
+    ["Property type", property.propertyType || "Not available"],
+    ["Beds / baths", `${property.beds ?? "—"} / ${property.baths ?? "—"}`],
+    ["Living area", property.sqft ? `${property.sqft.toLocaleString()} sq ft` : "Not available"],
+    ["Year built", property.yearBuilt ?? "Not available"],
+    ["Days listed", property.daysOnMarket ?? "Not available"],
+    ["Price / sq ft", property.pricePerSqft ? `${money(property.pricePerSqft)} · ${marketDelta}` : "Not available"],
+    ["HOA", property.hoa?.exists ? `${money(property.hoaMonthly)}/mo reported; verify` : "None reported; verify"],
+    ["Layout", property.oneLevel ? "One level" : "Multiple levels / stairs acceptable"],
+    ["Private bath", property.privateBath === "yes" ? "Confirmed" : "Unconfirmed"],
+    ["Monthly subsidy", ten ? money(ten.monthlySubsidy) : "Rental benchmark"]
+  ];
+  return facts.map(([label,value]) => `<div class="property-fact"><small>${escapeHtml(label)}</small><strong>${escapeHtml(value)}</strong></div>`).join("");
+}
+
+function recurringCosts(property, ten) {
+  if (!ten) return `<p class="cost-note">The rental benchmark is the advertised monthly rent. Deposits, application fees, utilities, renter insurance, and move-in charges are not included unless a source explicitly documents them.</p>`;
+  const o = state.data.assumptions.operations;
+  const price = ten.modeledPurchasePrice;
+  const rows = [
+    ["Mortgage principal + interest", ten.mortgageMonthly, "Modeled"],
+    ["Property tax", price * o.propertyTaxRate / 12, "Modeled rate"],
+    ["Insurance", price * o.insuranceRate / 12, "Modeled rate"],
+    ["Maintenance reserve", price * o.maintenanceRate / 12, "Modeled reserve"],
+    ["Capital expenditure reserve", price * o.capitalExpenditureRate / 12, "Modeled reserve"],
+    ["HOA / association", property.hoa?.exists ? property.hoaMonthly || 0 : 0, property.hoa?.exists ? "Reported; verify" : "None reported"],
+    ["Shared utilities", ten.rentableRooms ? o.sharedUtilitiesMonthly : 0, ten.rentableRooms ? "Modeled" : "Not applicable"],
+    ["Less room income", -ten.roomRevenueMonthly, `${ten.rentableRooms} room${ten.rentableRooms === 1 ? "" : "s"}; vacancy adjusted`]
+  ];
+  return `<div class="cost-table">${rows.map(([label,value,basis]) => `<div class="cost-row"><span>${escapeHtml(label)}</span><strong class="${value < 0 ? "cost-offset" : ""}">${value < 0 ? "−" : ""}${money(Math.abs(Math.round(value)))}</strong><small>${escapeHtml(basis)}</small></div>`).join("")}<div class="cost-row cost-total"><span>Estimated monthly subsidy</span><strong>${money(ten.monthlySubsidy)}</strong><small>Year one</small></div></div><p class="cost-note">Components are displayed as rounded dollars; the total is calculated before rounding. Initial cash is ${money(ten.initialCash)}, including the modeled down payment and buyer closing costs. Inspection, appraisal, lender fees beyond the closing-cost allowance, title exceptions, special assessments, repairs, and property-specific insurance surcharges require quotes or documents.</p>`;
+}
+
 function openDetail(id) {
   const property = state.data.properties.find(p => p.id === id);
   if (!property) return;
@@ -123,6 +196,10 @@ function openDetail(id) {
   const sources = property.sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} · checked ${escapeHtml(source.accessed)}</a>`).join("");
   const history = property.listingHistory.length ? property.listingHistory.map(item => `<p><strong>${escapeHtml(item.date)}</strong> · ${escapeHtml(item.event)} ${item.price ? `· ${money(item.price)}` : ""}</p>`).join("") : "<p>No purchase history included for this benchmark.</p>";
   $("#dialog-content").innerHTML = `<div class="detail-header"><div class="badges"><span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span><span class="badge ${badgeClass(property.recommendation)}">${escapeHtml(property.recommendation)}</span></div><h2 id="dialog-title">${escapeHtml(property.address)}</h2><p>${escapeHtml(property.summary)}</p></div>
+  <section class="detail-verdict ${property.recommendation === "Qualified" ? "qualified" : ""}"><strong>${escapeHtml(property.recommendation)}.</strong> ${escapeHtml(statusGate(property))}</section>
+  <section class="criteria-panel"><h3>Criteria fit</h3><div class="criteria-table">${criteriaAssessment(property, ten)}</div></section>
+  <section class="property-facts-panel"><h3>Property specifics</h3><div class="property-facts-grid">${propertyFacts(property, ten)}</div></section>
+  <section class="cost-panel"><h3>Recurring cost components</h3>${recurringCosts(property, ten)}</section>
   <div class="detail-grid">
     <section class="detail-panel"><h3>Decision score</h3>${property.score ? `<div class="score-bars">${scoreBars(property)}</div>` : "<p>Reference option, not scored.</p>"}</section>
     <section class="detail-panel"><h3>Financial model</h3>${financialSection}</section>
@@ -133,7 +210,11 @@ function openDetail(id) {
     <section class="detail-panel"><h3>Sources</h3><div class="source-list">${sources}</div></section>
     <section class="detail-panel"><h3>Location</h3><p>${escapeHtml(property.distanceLabel)}</p><p>Exact family anchor is intentionally excluded from this public site.</p></section>
   </div>`;
-  $("#detail-dialog").showModal();
+  const dialog = $("#detail-dialog");
+  dialog.showModal();
+  dialog.scrollTop = 0;
+  $("#dialog-content").scrollTop = 0;
+  dialog.querySelector(".dialog-close").focus({preventScroll:true});
 }
 
 function renderMethod() {
