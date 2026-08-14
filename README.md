@@ -5,7 +5,8 @@ A public, source-backed family decision dashboard for evaluating actual Rock Hil
 ## What it does
 
 - Separates new, changed, previously reviewed, and inactive properties.
-- Groups shared houses, shared condos, private purchases, and rental benchmarks.
+- Groups shared houses, shared condos, and private purchases as candidate strategies.
+- Keeps rental-market benchmarks in the underlying financial assumptions and evidence, but excludes them from the property-candidate list and candidate counts.
 - Blocks recommendations when the private bathroom or rental authority is unresolved.
 - Explains every qualified candidate with six explicit eligibility gates: active listing, private living arrangement, distance, offer ceiling, room-rental dependency, and layout. Qualification is kept separate from subsidy and return performance.
 - Shows monthly subsidy, IRR, estimated after-tax sale proceeds, and the wealth gap against a 7% alternative.

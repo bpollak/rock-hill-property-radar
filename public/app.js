@@ -67,6 +67,7 @@ function renderCard(property) {
 
 function filteredProperties() {
   const active = state.data.properties.filter(property => {
+    if (property.strategy === "rental-benchmark") return false;
     const changeMatch = state.change === "all" ? property.status === "active" : property.changeCategory === state.change;
     const strategyMatch = state.strategy === "all" || property.strategy === state.strategy;
     const statusMatch = state.status === "all" || property.recommendation === state.status;
@@ -90,7 +91,8 @@ function renderList() {
 }
 
 function renderOverview() {
-  const purchases = state.data.properties.filter(p => p.strategy !== "rental-benchmark" && p.status === "active");
+  const candidates = state.data.properties.filter(p => p.strategy !== "rental-benchmark");
+  const purchases = candidates.filter(p => p.status === "active");
   const qualified = purchases.filter(p => p.recommendation === "Qualified");
   const verification = purchases.filter(p => p.recommendation === "Needs verification");
   const subsidies = purchases.map(p => p.financials?.[10]?.monthlySubsidy).filter(Number.isFinite);
@@ -104,8 +106,8 @@ function renderOverview() {
   $("#run-status").textContent = `Last successful research: ${dateLabel(state.data.asOf)}`;
   $("#model-version").textContent = `Model ${state.data.assumptions.modelVersion} · Data ${state.data.asOf}`;
   const categories = ["new","changed","existing","archived"];
-  categories.forEach(category => $(`#tab-${category}`).textContent = state.data.properties.filter(p => p.changeCategory === category).length);
-  $("#tab-all").textContent = state.data.properties.filter(p => p.status === "active").length;
+  categories.forEach(category => $(`#tab-${category}`).textContent = candidates.filter(p => p.changeCategory === category).length);
+  $("#tab-all").textContent = purchases.length;
 }
 
 function renderComparison() {
