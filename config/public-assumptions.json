@@ -22,6 +22,24 @@
     "expenseGrowthRate": 0.03,
     "appreciationRate": 0.03
   },
+  "ageRisk": {
+    "unknownYear": {
+      "label": "Age unverified",
+      "riskTier": "Elevated",
+      "reserveMultiplier": 1.5,
+      "scorePenalty": 18
+    },
+    "bands": [
+      {"maxAge": 5, "label": "Newer construction", "riskTier": "Lower", "reserveMultiplier": 0.75, "scorePenalty": 0},
+      {"maxAge": 20, "label": "Modern", "riskTier": "Low", "reserveMultiplier": 1.0, "scorePenalty": 2},
+      {"maxAge": 40, "label": "Mature", "riskTier": "Moderate", "reserveMultiplier": 1.2, "scorePenalty": 6},
+      {"maxAge": 60, "label": "Older", "riskTier": "Elevated", "reserveMultiplier": 1.45, "scorePenalty": 12},
+      {"maxAge": 80, "label": "Older, higher systems risk", "riskTier": "High", "reserveMultiplier": 1.7, "scorePenalty": 18},
+      {"maxAge": 100, "label": "Very old", "riskTier": "High", "reserveMultiplier": 1.95, "scorePenalty": 24},
+      {"maxAge": 999, "label": "Century property", "riskTier": "Very high", "reserveMultiplier": 2.25, "scorePenalty": 30}
+    ],
+    "note": "Age bands are conservative planning assumptions, not repair estimates. They scale the combined maintenance and capital reserve and reduce the risk and optionality score. Verified permits, invoices, system ages, inspections, and contractor bids should replace the age proxy when available."
+  },
   "comparison": {
     "holdingPeriods": [10, 15],
     "forwardHurdleRate": 0.07,
@@ -35,5 +53,5 @@
     "immediatePassiveLossBenefit": 0,
     "note": "Conservative planning model: no immediate benefit for passive losses. Related-party use, expense allocation, depreciation, South Carolina filing, California credit, and sale treatment require tax-adviser review."
   },
-  "modelVersion": "1.0.0"
+  "modelVersion": "1.1.0"
 }

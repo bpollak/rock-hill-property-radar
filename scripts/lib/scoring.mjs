@@ -1,3 +1,5 @@
+import { ageRiskProfile } from "./age-risk.mjs";
+
 const clamp = value => Math.max(0, Math.min(100, value));
 
 function pricingScore(property, assumptions) {
@@ -40,11 +42,14 @@ export function scoreProperty(property, financials, assumptions) {
   const support = clamp(100 - ten.monthlySubsidy / 35);
   const investment = clamp(50 + ((ten.irr ?? -0.05) - 0.07) * 350);
   const pricing = pricingScore(property, assumptions);
-  const risk = clamp(80 - (property.concerns?.length || 0) * 8 - (property.sourceConflicts?.length || 0) * 10 - (status === "Needs verification" ? 15 : 0));
+  const ageRisk = ageRiskProfile(property, assumptions);
+  const nonAgeConcernCount = (property.concerns || []).filter(concern => !/\bbuilt in \d{4}\b.*(?:age|inspection|repair|capital|condition)/i.test(concern)).length;
+  const risk = clamp(80 - nonAgeConcernCount * 8 - (property.sourceConflicts?.length || 0) * 10 - (status === "Needs verification" ? 15 : 0) - (ageRisk?.scorePenalty || 0));
   const total = Math.round(living * 0.30 + support * 0.20 + investment * 0.20 + pricing * 0.15 + risk * 0.15);
   return {
     total,
     status,
+    agePenalty: ageRisk?.scorePenalty || 0,
     components: {
       livingSuitability: Math.round(living),
       monthlySupportability: Math.round(support),

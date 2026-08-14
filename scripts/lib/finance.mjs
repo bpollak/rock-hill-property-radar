@@ -1,3 +1,5 @@
+import { ageRiskProfile } from "./age-risk.mjs";
+
 export function monthlyPayment(principal, annualRate, years) {
   if (principal <= 0) return 0;
   const n = years * 12;
@@ -44,9 +46,14 @@ export function analyzeProperty(property, assumptions, years) {
   const closing = price * p.buyerClosingCostRate;
   const loan = price - down;
   const mortgage = monthlyPayment(loan, p.mortgageRate, p.mortgageYears);
+  const ageRisk = ageRiskProfile(property, assumptions);
+  const reserveMultiplier = ageRisk?.reserveMultiplier || 1;
+  const maintenanceReserve = price * o.maintenanceRate * reserveMultiplier / 12;
+  const capitalReserve = price * o.capitalExpenditureRate * reserveMultiplier / 12;
+  const baselineReserves = price * (o.maintenanceRate + o.capitalExpenditureRate) / 12;
   const rentableRooms = property.strategy === "private-purchase" ? 0 : Math.max(0, property.beds - 1);
   const baseRent = rentableRooms * o.roomRentMonthly * (1 - o.vacancyRate);
-  const baseExpenses = mortgage + price * (o.propertyTaxRate + o.insuranceRate + o.maintenanceRate + o.capitalExpenditureRate) / 12 + (property.hoaMonthly || 0) + (rentableRooms ? o.sharedUtilitiesMonthly : 0);
+  const baseExpenses = mortgage + price * (o.propertyTaxRate + o.insuranceRate) / 12 + maintenanceReserve + capitalReserve + (property.hoaMonthly || 0) + (rentableRooms ? o.sharedUtilitiesMonthly : 0);
   const monthlySubsidy = Math.max(0, baseExpenses - baseRent);
   const annualSubsidies = [];
   const cashflows = [-(down + closing)];
@@ -82,6 +89,10 @@ export function analyzeProperty(property, assumptions, years) {
     downPayment: Math.round(down),
     initialCash: Math.round(down + closing),
     mortgageMonthly: Math.round(mortgage),
+    maintenanceReserveMonthly: Math.round(maintenanceReserve),
+    capitalReserveMonthly: Math.round(capitalReserve),
+    ageReservePremiumMonthly: Math.round(maintenanceReserve + capitalReserve - baselineReserves),
+    ageReserveMultiplier: reserveMultiplier,
     roomRevenueMonthly: Math.round(baseRent),
     operatingCostMonthly: Math.round(baseExpenses),
     monthlySubsidy: Math.round(monthlySubsidy),

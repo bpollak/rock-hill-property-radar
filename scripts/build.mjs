@@ -1,5 +1,6 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { enrichFinancials } from "./lib/finance.mjs";
+import { ageRiskProfile } from "./lib/age-risk.mjs";
 import { recommendationStatus, scoreProperty } from "./lib/scoring.mjs";
 
 const root = new URL("../", import.meta.url);
@@ -7,22 +8,24 @@ const readJson = async path => JSON.parse(await readFile(new URL(path, root), "u
 const dataset = await readJson("data/current.json");
 const assumptions = await readJson("config/public-assumptions.json");
 const sourcePolicy = await readJson("config/source-policy.json");
+const modelAssumptions = { ...assumptions, asOf: dataset.asOf };
 
 const properties = dataset.properties.map(property => {
-  const financials = enrichFinancials(property, assumptions);
+  const financials = enrichFinancials(property, modelAssumptions);
   const recommendation = recommendationStatus(property);
-  const score = scoreProperty(property, financials, assumptions);
-  const maximumOfferPrice = assumptions.purchase.maximumOfferPrice;
+  const score = scoreProperty(property, financials, modelAssumptions);
+  const ageRisk = ageRiskProfile(property, modelAssumptions);
+  const maximumOfferPrice = modelAssumptions.purchase.maximumOfferPrice;
   const offer = {
     maximumOfferPrice,
     modeledPurchasePrice: Math.min(property.price, maximumOfferPrice),
     aboveCeiling: property.strategy !== "rental-benchmark" && property.price > maximumOfferPrice,
     requiredDiscount: property.strategy !== "rental-benchmark" && property.price > maximumOfferPrice ? (property.price - maximumOfferPrice) / property.price : 0
   };
-  return { ...property, recommendation, financials, score, offer };
+  return { ...property, recommendation, financials, score, ageRisk, offer };
 });
 
-const appData = { ...dataset, properties, assumptions, sourcePolicy, generatedAt: new Date().toISOString() };
+const appData = { ...dataset, properties, assumptions: modelAssumptions, sourcePolicy, generatedAt: new Date().toISOString() };
 const dist = new URL("dist/", root);
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });

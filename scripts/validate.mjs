@@ -13,6 +13,12 @@ if (dataset.runStatus !== "successful") errors.push("Only the last successful re
 if (dataset.properties.filter(p => p.strategy !== "rental-benchmark").length < 3) errors.push("At least three actual purchase candidates are required.");
 if (assumptions.comparison.forwardHurdleRate !== 0.07) errors.push("Forward hurdle must remain 7% unless deliberately revised.");
 if (assumptions.purchase.maximumOfferPrice !== 275000) errors.push("Maximum offer price must remain $275,000 unless deliberately revised.");
+if (!Array.isArray(assumptions.ageRisk?.bands) || assumptions.ageRisk.bands.length < 3) errors.push("Age-risk model requires at least three configured bands.");
+for (const [index, band] of (assumptions.ageRisk?.bands || []).entries()) {
+  if (!Number.isFinite(band.maxAge) || band.maxAge <= 0) errors.push(`Age-risk band ${index + 1} requires a positive maxAge.`);
+  if (!Number.isFinite(band.reserveMultiplier) || band.reserveMultiplier <= 0) errors.push(`Age-risk band ${index + 1} requires a positive reserveMultiplier.`);
+  if (!Number.isFinite(band.scorePenalty) || band.scorePenalty < 0 || band.scorePenalty > 100) errors.push(`Age-risk band ${index + 1} has an invalid scorePenalty.`);
+}
 for (const section of ["listingDiscovery", "propertyVerification", "rentEvidence"]) {
   if (!Array.isArray(sourcePolicy[section]) || sourcePolicy[section].length === 0) errors.push(`Source policy requires ${section}.`);
 }
@@ -28,6 +34,7 @@ for (const property of dataset.properties) {
     } catch { errors.push(`${property.id}: invalid source URL`); }
   }
   if (property.strategy === "shared-condo" && property.hoa.roomRental === "allowed" && property.hoa.evidence.length === 0) errors.push(`${property.id}: condo room rental cannot be allowed without evidence.`);
+  if (property.strategy !== "rental-benchmark" && (!Number.isFinite(property.yearBuilt) || property.yearBuilt < 1700 || property.yearBuilt > Number(dataset.asOf.slice(0, 4)) + 1)) errors.push(`${property.id}: credible yearBuilt is required for age-risk scoring.`);
   if (property.privateBath === "yes" && property.strategy !== "rental-benchmark" && !property.concerns && !property.pros) errors.push(`${property.id}: suitability evidence missing.`);
 }
 for (const source of dataset.methodologySources || []) {

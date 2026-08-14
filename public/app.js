@@ -133,11 +133,17 @@ function criteriaAssessment(property, ten) {
     : (ten?.irr ?? -1) >= state.data.assumptions.comparison.forwardHurdleRate
       ? ["Meets", `${percent(ten.irr)} modeled 10-year IRR exceeds the 7% hurdle.`, "meet"]
       : ["Below hurdle", `${percent(ten?.irr)} modeled 10-year IRR is below the 7% hurdle.`, "no"];
+  const age = benchmark
+    ? ["Reference", "Repair and capital risk remain with the landlord.", "info"]
+    : property.ageRisk
+      ? [property.ageRisk.riskTier, `${property.ageRisk.ageYears} years old · ${property.ageRisk.reserveMultiplier.toFixed(2)}× reserve factor · ${property.ageRisk.scorePenalty}-point deduction inside risk and optionality.`, ["Lower", "Low"].includes(property.ageRisk.riskTier) ? "meet" : property.ageRisk.riskTier === "Moderate" ? "info" : "warn"]
+      : ["Verify", "Construction year and age risk are not documented.", "warn"];
   const rows = [
     ["Private living", ...privateBath],
     ["Location", "Meets", property.distanceLabel, "meet"],
     ["Offer ceiling", ...offer],
     ["Room-income strategy", ...sharing],
+    ["Age / condition", ...age],
     ["10-year return", ...investment]
   ];
   return rows.map(([label,status,note,tone]) => `<div class="criteria-row"><strong>${escapeHtml(label)}</strong><span class="criteria-status ${tone}">${escapeHtml(status)}</span><span>${escapeHtml(note)}</span></div>`).join("");
@@ -151,7 +157,7 @@ function propertyFacts(property, ten) {
     ["Property type", property.propertyType || "Not available"],
     ["Beds / baths", `${property.beds ?? "—"} / ${property.baths ?? "—"}`],
     ["Living area", property.sqft ? `${property.sqft.toLocaleString()} sq ft` : "Not available"],
-    ["Year built", property.yearBuilt ?? "Not available"],
+    ["Year built / age", property.ageRisk ? `${property.yearBuilt} · ${property.ageRisk.ageYears} years` : property.yearBuilt ?? "Not available"],
     ["Days listed", property.daysOnMarket ?? "Not available"],
     ["Price / sq ft", property.pricePerSqft ? `${money(property.pricePerSqft)} · ${marketDelta}` : "Not available"],
     ["HOA", property.hoa?.exists ? `${money(property.hoaMonthly)}/mo reported; verify` : "None reported; verify"],
@@ -170,13 +176,26 @@ function recurringCosts(property, ten) {
     ["Mortgage principal + interest", ten.mortgageMonthly, "Modeled"],
     ["Property tax", price * o.propertyTaxRate / 12, "Modeled rate"],
     ["Insurance", price * o.insuranceRate / 12, "Modeled rate"],
-    ["Maintenance reserve", price * o.maintenanceRate / 12, "Modeled reserve"],
-    ["Capital expenditure reserve", price * o.capitalExpenditureRate / 12, "Modeled reserve"],
+    ["Age-adjusted maintenance reserve", ten.maintenanceReserveMonthly, `${ten.ageReserveMultiplier.toFixed(2)}× age factor`],
+    ["Age-adjusted capital reserve", ten.capitalReserveMonthly, `${ten.ageReserveMultiplier.toFixed(2)}× age factor`],
     ["HOA / association", property.hoa?.exists ? property.hoaMonthly || 0 : 0, property.hoa?.exists ? "Reported; verify" : "None reported"],
     ["Shared utilities", ten.rentableRooms ? o.sharedUtilitiesMonthly : 0, ten.rentableRooms ? "Modeled" : "Not applicable"],
     ["Less room income", -ten.roomRevenueMonthly, `${ten.rentableRooms} room${ten.rentableRooms === 1 ? "" : "s"}; vacancy adjusted`]
   ];
-  return `<div class="cost-table">${rows.map(([label,value,basis]) => `<div class="cost-row"><span>${escapeHtml(label)}</span><strong class="${value < 0 ? "cost-offset" : ""}">${value < 0 ? "−" : ""}${money(Math.abs(Math.round(value)))}</strong><small>${escapeHtml(basis)}</small></div>`).join("")}<div class="cost-row cost-total"><span>Estimated monthly subsidy</span><strong>${money(ten.monthlySubsidy)}</strong><small>Year one</small></div></div><p class="cost-note">Components are displayed as rounded dollars; the total is calculated before rounding. Initial cash is ${money(ten.initialCash)}, including the modeled down payment and buyer closing costs. Inspection, appraisal, lender fees beyond the closing-cost allowance, title exceptions, special assessments, repairs, and property-specific insurance surcharges require quotes or documents.</p>`;
+  return `<div class="cost-table">${rows.map(([label,value,basis]) => `<div class="cost-row"><span>${escapeHtml(label)}</span><strong class="${value < 0 ? "cost-offset" : ""}">${value < 0 ? "−" : ""}${money(Math.abs(Math.round(value)))}</strong><small>${escapeHtml(basis)}</small></div>`).join("")}<div class="cost-row cost-total"><span>Estimated monthly subsidy</span><strong>${money(ten.monthlySubsidy)}</strong><small>Year one</small></div></div><p class="cost-note">Components are displayed as rounded dollars; the total is calculated before rounding. The age adjustment changes reserves by ${ten.ageReservePremiumMonthly >= 0 ? "+" : "−"}${money(Math.abs(ten.ageReservePremiumMonthly))}/mo versus the baseline. Initial cash is ${money(ten.initialCash)}, including the modeled down payment and buyer closing costs. Inspection, appraisal, lender fees beyond the closing-cost allowance, title exceptions, special assessments, repairs, and property-specific insurance surcharges require quotes or documents.</p>`;
+}
+
+function ageRiskDetail(property, ten) {
+  if (!property.ageRisk || !ten) return `<p class="cost-note">This is a rental benchmark. The landlord retains age-related repair and capital risk.</p>`;
+  const risk = property.ageRisk;
+  const annualReserve = (ten.maintenanceReserveMonthly + ten.capitalReserveMonthly) * 12;
+  return `<div class="age-risk-summary">
+    <div><small>Age at model date</small><strong>${risk.ageYears} years</strong></div>
+    <div><small>Risk tier</small><strong>${escapeHtml(risk.riskTier)}</strong></div>
+    <div><small>Reserve factor</small><strong>${risk.reserveMultiplier.toFixed(2)}×</strong></div>
+    <div><small>Annual reserve</small><strong>${money(annualReserve)}</strong></div>
+    <div><small>Risk-score deduction</small><strong>−${risk.scorePenalty}</strong></div>
+  </div><h4>Inspection and potential rework priorities</h4><ul>${risk.diligence.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul><p class="cost-note">This is an age-based planning proxy, not an upfront repair estimate or contractor bid. Listing claims such as “renovated” do not reduce the factor until permits, invoices, system ages, inspection findings, and warranties substantiate the work.</p>`;
 }
 
 function openDetail(id) {
@@ -199,9 +218,10 @@ function openDetail(id) {
   <section class="detail-verdict ${property.recommendation === "Qualified" ? "qualified" : ""}"><strong>${escapeHtml(property.recommendation)}.</strong> ${escapeHtml(statusGate(property))}</section>
   <section class="criteria-panel"><h3>Criteria fit</h3><div class="criteria-table">${criteriaAssessment(property, ten)}</div></section>
   <section class="property-facts-panel"><h3>Property specifics</h3><div class="property-facts-grid">${propertyFacts(property, ten)}</div></section>
+  <section class="age-risk-panel"><h3>Age, condition and rework risk</h3>${ageRiskDetail(property, ten)}</section>
   <section class="cost-panel"><h3>Recurring cost components</h3>${recurringCosts(property, ten)}</section>
   <div class="detail-grid">
-    <section class="detail-panel"><h3>Decision score</h3>${property.score ? `<div class="score-bars">${scoreBars(property)}</div>` : "<p>Reference option, not scored.</p>"}</section>
+    <section class="detail-panel"><h3>Decision score</h3>${property.score ? `<div class="score-bars">${scoreBars(property)}</div><p class="cost-note">Age deducts ${property.score.agePenalty} points inside the 15%-weighted risk and optionality component. Age-adjusted reserves also flow through subsidy and investment-return scores.</p>` : "<p>Reference option, not scored.</p>"}</section>
     <section class="detail-panel"><h3>Financial model</h3>${financialSection}</section>
     <section class="detail-panel"><h3>Why it could work</h3><ul>${property.pros.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
     <section class="detail-panel"><h3>Concerns and gates</h3><ul>${property.concerns.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>${property.sourceConflicts.length ? `<p><strong>Source conflict:</strong> ${escapeHtml(property.sourceConflicts.join(" "))}</p>` : ""}</section>
@@ -219,7 +239,7 @@ function openDetail(id) {
 
 function renderMethod() {
   const a = state.data.assumptions;
-  const weights = [["Living suitability","Private room/bath, layout, capacity",30],["Monthly supportability","Mortgage, operating cost, rent offset",20],["Investment return","Modeled IRR and 7% hurdle",20],["Pricing and negotiation","Price per square foot, cuts, market time",15],["Risk and optionality","Evidence gaps, conflicts, exit flexibility",15]];
+  const weights = [["Living suitability","Private room/bath, layout, capacity",30],["Monthly supportability","Mortgage, age-adjusted operating reserves, rent offset",20],["Investment return","Age-adjusted modeled IRR and 7% hurdle",20],["Pricing and negotiation","Price per square foot, cuts, market time",15],["Risk and optionality","Evidence gaps, age, systems risk, conflicts, exit flexibility",15]];
   const coverage = [
     ...state.data.sourcePolicy.listingDiscovery.map(item => ({...item, section:"Listing discovery"})),
     ...state.data.sourcePolicy.propertyVerification.map(item => ({...item, section:"Property verification"})),
@@ -233,9 +253,10 @@ function renderMethod() {
       <div class="assumption"><strong>${percent(a.purchase.mortgageRate)}</strong><small>30-year planning mortgage rate</small></div>
       <div class="assumption"><strong>${money(a.operations.roomRentMonthly)}/room</strong><small>${(a.operations.vacancyRate*100).toFixed(0)}% vacancy; ${money(a.operations.roomRentLow)}–${money(a.operations.roomRentHigh)} sensitivity</small></div>
       <div class="assumption"><strong>${percent(a.operations.appreciationRate)}</strong><small>Annual property appreciation assumption</small></div>
+      <div class="assumption"><strong>${percent(a.operations.maintenanceRate + a.operations.capitalExpenditureRate)}</strong><small>Baseline annual maintenance + capital reserve; scaled ${Math.min(...a.ageRisk.bands.map(b => b.reserveMultiplier)).toFixed(2)}×–${Math.max(...a.ageRisk.bands.map(b => b.reserveMultiplier)).toFixed(2)}× by property age</small></div>
       <div class="assumption"><strong>${percent(a.comparison.forwardHurdleRate)}</strong><small>Forward alternative-investment hurdle</small></div>
       <div class="assumption"><strong>${percent(a.comparison.sp500Trailing10YearAnnualized)}</strong><small>Trailing 10-year S&amp;P benchmark as of ${escapeHtml(a.comparison.sp500AsOf)}; historical context only</small></div>
-    </div><p class="fine-print">${escapeHtml(a.tax.note)}</p>
+    </div><p class="fine-print">${escapeHtml(a.ageRisk.note)} ${escapeHtml(a.tax.note)}</p>
     <h3>Research coverage</h3><div class="coverage-table">${coverage.map(item => `<div class="coverage-row"><span>${escapeHtml(item.section)}</span><strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.sources.join(", "))}</span><em class="coverage-status ${escapeHtml(item.status)}">${escapeHtml(item.status.replaceAll("-", " "))}</em></div>`).join("")}</div>
     <h3>Methodology sources</h3><div class="source-list">${state.data.methodologySources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join("")}</div>`;
 }

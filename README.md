@@ -42,7 +42,7 @@ The on-demand workflow uses OpenAI Responses API web search, validates the resul
 
 ## Decision model
 
-The numeric score weights living suitability 30%, monthly supportability 20%, investment return 20%, pricing and negotiation 15%, and risk and optionality 15%. Hard gates override the score.
+The numeric score weights living suitability 30%, monthly supportability 20%, investment return 20%, pricing and negotiation 15%, and risk and optionality 15%. Property age now affects both monthly supportability and investment return through age-adjusted maintenance and capital reserves, and it deducts points inside risk and optionality. The bands are conservative planning proxies until permits, system ages, inspections, invoices, and contractor bids provide property-specific evidence. Hard gates override the score.
 
 The public planning assumptions are versioned in `config/public-assumptions.json`. Results are estimates, not tax, legal, lending, inspection, or investment advice.
 
