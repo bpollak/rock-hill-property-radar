@@ -6,6 +6,7 @@ const percent = value => value == null ? "—" : `${(value * 100).toFixed(1)}%`;
 const escapeHtml = value => String(value ?? "").replace(/[&<>'"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[char]);
 const strategyLabel = value => ({"shared-home":"Shared house","shared-condo":"Shared condo","private-purchase":"Private purchase","rental-benchmark":"Rental benchmark"})[value] || value;
 const dateLabel = value => new Date(`${value}T12:00:00`).toLocaleDateString("en-US", {month:"long", day:"numeric", year:"numeric"});
+const meetsMinimumYearBuilt = property => property.strategy === "rental-benchmark" || (Number.isFinite(property.yearBuilt) && property.yearBuilt >= (state.data?.assumptions?.livingRequirements?.minimumYearBuilt ?? 1980));
 
 function badgeClass(status) {
   if (status === "Qualified") return "qualified";
@@ -286,6 +287,7 @@ function renderMethod() {
     <h3>Public planning assumptions</h3><div class="assumption-grid">
       <div class="assumption"><strong>${(a.purchase.downPaymentRate*100).toFixed(0)}% down</strong><small>Plus ${(a.purchase.buyerClosingCostRate*100).toFixed(0)}% buyer closing costs</small></div>
       <div class="assumption"><strong>${money(a.purchase.maximumOfferPrice)}</strong><small>Absolute maximum offer and modeled acquisition price</small></div>
+      <div class="assumption"><strong>${a.livingRequirements.minimumYearBuilt} or newer</strong><small>Minimum documented construction year</small></div>
       <div class="assumption"><strong>${percent(a.purchase.mortgageRate)}</strong><small>30-year planning mortgage rate</small></div>
       <div class="assumption"><strong>${money(a.operations.roomRentMonthly)}/room</strong><small>${(a.operations.vacancyRate*100).toFixed(0)}% vacancy; ${money(a.operations.roomRentLow)}–${money(a.operations.roomRentHigh)} sensitivity</small></div>
       <div class="assumption"><strong>${percent(a.operations.appreciationRate)}</strong><small>Annual property appreciation assumption</small></div>
@@ -317,6 +319,7 @@ async function init() {
     const response = await fetch("data/app-data.json", {cache:"no-store"});
     if (!response.ok) throw new Error(`Data request failed: ${response.status}`);
     state.data = await response.json();
+    state.data.properties = state.data.properties.filter(meetsMinimumYearBuilt);
     renderOverview(); renderList(); renderComparison(); renderMethod(); setupEvents();
   } catch (error) {
     $("#run-status").textContent = "Research data unavailable";

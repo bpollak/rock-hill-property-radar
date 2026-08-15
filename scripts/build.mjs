@@ -3,6 +3,7 @@ import { enrichFinancials } from "./lib/finance.mjs";
 import { ageRiskProfile } from "./lib/age-risk.mjs";
 import { roomRentabilityProfile } from "./lib/room-rentability.mjs";
 import { qualificationProfile, scoreProperty } from "./lib/scoring.mjs";
+import { meetsMinimumYearBuilt } from "./lib/property-eligibility.mjs";
 
 const root = new URL("../", import.meta.url);
 const readJson = async path => JSON.parse(await readFile(new URL(path, root), "utf8"));
@@ -11,7 +12,8 @@ const assumptions = await readJson("config/public-assumptions.json");
 const sourcePolicy = await readJson("config/source-policy.json");
 const modelAssumptions = { ...assumptions, asOf: dataset.asOf };
 
-const properties = dataset.properties.map(property => {
+const eligibleProperties = dataset.properties.filter(property => meetsMinimumYearBuilt(property, modelAssumptions));
+const properties = eligibleProperties.map(property => {
   const financials = enrichFinancials(property, modelAssumptions);
   const qualification = qualificationProfile(property, modelAssumptions, financials);
   const recommendation = qualification.status;
@@ -36,4 +38,5 @@ await cp(new URL("public/", root), dist, { recursive: true });
 await mkdir(new URL("dist/data/", root), { recursive: true });
 await writeFile(new URL("dist/data/app-data.json", root), `${JSON.stringify(appData, null, 2)}\n`);
 await writeFile(new URL("dist/.nojekyll", root), "");
-console.log(`Built ${properties.length} source-backed options for ${dataset.asOf}.`);
+const filteredCount = dataset.properties.length - eligibleProperties.length;
+console.log(`Built ${properties.length} source-backed options for ${dataset.asOf}; filtered ${filteredCount} purchase properties built before ${modelAssumptions.livingRequirements.minimumYearBuilt}.`);

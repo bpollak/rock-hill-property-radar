@@ -12,7 +12,8 @@
     "privateBedroom": true,
     "privateFullBathroom": true,
     "stairsAcceptable": true,
-    "maximumDrivingMiles": 30
+    "maximumDrivingMiles": 30,
+    "minimumYearBuilt": 1980
   },
   "operations": {
     "roomRentMonthly": 850,
