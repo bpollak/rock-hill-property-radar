@@ -294,7 +294,6 @@ function renderMethod() {
     <h3>Public planning assumptions</h3><div class="assumption-grid">
       <div class="assumption"><strong>${(a.purchase.downPaymentRate*100).toFixed(0)}% down</strong><small>Plus ${(a.purchase.buyerClosingCostRate*100).toFixed(0)}% buyer closing costs</small></div>
       <div class="assumption"><strong>${money(a.purchase.maximumOfferPrice)}</strong><small>Absolute maximum offer and modeled acquisition price</small></div>
-      <div class="assumption"><strong>${a.livingRequirements.minimumYearBuilt} or newer</strong><small>Minimum documented construction year</small></div>
       <div class="assumption"><strong>${percent(a.purchase.mortgageRate)}</strong><small>30-year planning mortgage rate</small></div>
       <div class="assumption"><strong>${money(a.operations.roomRentMonthly)}/room</strong><small>${(a.operations.vacancyRate*100).toFixed(0)}% vacancy; ${money(a.operations.roomRentLow)}–${money(a.operations.roomRentHigh)} sensitivity</small></div>
       <div class="assumption"><strong>${percent(a.operations.appreciationRate)}</strong><small>Annual property appreciation assumption</small></div>
