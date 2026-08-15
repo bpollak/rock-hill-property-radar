@@ -64,7 +64,8 @@
             <option value="Qualified">Qualified</option>
             <option value="Needs verification">Needs verification</option>
             <option value="Rejected">Rejected</option>
-            <option value="Benchmark">Benchmark</option>
+            <option value="Pending">Pending</option>
+            <option value="Contingent">Contingent</option>
           </select>
         </label>
         <label>Sort by
@@ -77,6 +78,17 @@
           </select>
         </label>
       </div>
+
+      <section class="status-key" aria-labelledby="status-key-title">
+        <h3 id="status-key-title">Status key</h3>
+        <div class="status-key-grid">
+          <div><span class="badge qualified">Qualified</span><p>Meets every documented eligibility gate.</p></div>
+          <div><span class="badge verify">Needs verification</span><p>Appears viable, but required facts remain unresolved.</p></div>
+          <div><span class="badge under-contract">Pending</span><p>The seller has accepted an offer; the listing remains visible for tracking.</p></div>
+          <div><span class="badge under-contract">Contingent</span><p>Under contract subject to stated contingencies; the listing remains visible for tracking.</p></div>
+          <div><span class="badge rejected">Rejected</span><p>An active listing fails one or more hard eligibility gates.</p></div>
+        </div>
+      </section>
 
       <p class="result-summary" id="result-summary" aria-live="polite"></p>
       <div id="property-list" class="listing-groups">

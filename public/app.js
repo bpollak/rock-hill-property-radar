@@ -7,15 +7,19 @@ const escapeHtml = value => String(value ?? "").replace(/[&<>'"]/g, char => ({"&
 const strategyLabel = value => ({"shared-home":"Shared house","shared-condo":"Shared condo","private-purchase":"Private purchase","rental-benchmark":"Rental benchmark"})[value] || value;
 const dateLabel = value => new Date(`${value}T12:00:00`).toLocaleDateString("en-US", {month:"long", day:"numeric", year:"numeric"});
 const removedStatuses = new Set(["inactive", "sold", "off-market", "off market", "withdrawn", "expired", "removed"]);
+const underContractStatuses = new Set(["pending", "contingent"]);
 const isRemovedFromMarket = property => removedStatuses.has(String(property.status || "").trim().toLowerCase());
 const meetsMinimumYearBuilt = property => property.strategy === "rental-benchmark" || (Number.isFinite(property.yearBuilt) && property.yearBuilt >= (state.data?.assumptions?.livingRequirements?.minimumYearBuilt ?? 1980));
 const isNewListing = property => property.firstSeen === state.data.asOf;
 const recencyLabel = property => isNewListing(property) ? "New latest day" : "Previous listing";
+const titleCase = value => String(value || "").replace(/\b\w/g, character => character.toUpperCase());
+const displayStatus = property => underContractStatuses.has(String(property.status || "").toLowerCase()) ? titleCase(property.status) : property.recommendation;
 
 function badgeClass(status) {
   if (status === "Qualified") return "qualified";
   if (status === "Needs verification") return "verify";
   if (status === "Rejected") return "rejected";
+  if (status === "Pending" || status === "Contingent") return "under-contract";
   return "";
 }
 
@@ -26,6 +30,8 @@ function rentabilityClass(score) {
 }
 
 function statusGate(property) {
+  const currentStatus = displayStatus(property);
+  if (currentStatus === "Pending" || currentStatus === "Contingent") return `The listing is currently ${currentStatus.toLowerCase()} and remains visible until a public source confirms it is off market.`;
   if (property.recommendation === "Qualified") return property.qualification?.cardComment || "All current eligibility gates are documented as satisfied.";
   if (property.recommendation === "Benchmark") return "Reference option, not scored as a purchase.";
   const unresolvedGate = property.qualification?.gates?.find(gate => gate.status === "failed") || property.qualification?.gates?.find(gate => gate.status === "unresolved");
@@ -41,12 +47,12 @@ function renderCard(property) {
   const priceNote = benchmark ? `${money(property.priceRange[0])}–${money(property.priceRange[1])} observed range` : property.offer.aboveCeiling ? `Model uses ${money(property.offer.modeledPurchasePrice)} max offer · ${(property.offer.requiredDiscount*100).toFixed(1)}% below list required` : property.priceCutPercent ? `${property.priceCutPercent}% below original list · within offer ceiling` : "Within $275,000 offer ceiling";
   const roomBadge = property.roomRentability?.required ? `<span class="badge ${rentabilityClass(property.roomRentability.score)}">Room rental: ${escapeHtml(property.roomRentability.label)} ${property.roomRentability.score}/100</span>` : "";
   const distanceBadge = Number.isFinite(property.distanceMiles) ? `<span class="badge distance">${property.distanceMiles.toFixed(1)} mi · ${property.driveMinutes} min from reference</span>` : "";
+  const currentStatus = displayStatus(property);
   return `<article class="property-card ${property.recommendation === "Qualified" ? "qualified" : ""}" data-id="${escapeHtml(property.id)}">
     <div class="card-identity"><div class="badges">
       <span class="badge ${isNewListing(property) ? "new" : ""}">${escapeHtml(recencyLabel(property))}</span>
-      ${property.status !== "active" ? `<span class="badge">${escapeHtml(property.status)}</span>` : ""}
       <span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span>
-      <span class="badge ${badgeClass(property.recommendation)}">${escapeHtml(property.recommendation)}</span>
+      <span class="badge ${badgeClass(currentStatus)}">${escapeHtml(currentStatus)}</span>
       ${roomBadge}
       ${distanceBadge}
     </div><h3>${escapeHtml(property.address)}</h3><p class="property-type">${escapeHtml(property.propertyType || property.distanceLabel)} · ${escapeHtml(priceNote)}</p></div>
@@ -65,7 +71,7 @@ function renderCard(property) {
     </div>
     <p class="card-summary">${escapeHtml(property.summary)}</p>
     <div class="card-decision">
-      <div class="gate ${property.recommendation === "Qualified" || benchmark ? "ok" : ""}"><strong>${escapeHtml(property.recommendation === "Qualified" ? "Why it qualifies" : property.recommendation)}:</strong> ${escapeHtml(statusGate(property))}</div>
+      <div class="gate ${property.recommendation === "Qualified" || benchmark ? "ok" : ""}"><strong>${escapeHtml(property.recommendation === "Qualified" ? "Why it qualifies" : currentStatus)}:</strong> ${escapeHtml(statusGate(property))}</div>
       <div class="card-actions"><button class="detail-button" type="button" data-detail="${escapeHtml(property.id)}">Review details</button><a class="source-link" href="${escapeHtml(property.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open primary source ↗</a></div>
     </div>
   </article>`;
@@ -75,7 +81,7 @@ function filteredProperties() {
   const available = state.data.properties.filter(property => {
     if (property.strategy === "rental-benchmark") return false;
     const strategyMatch = state.strategy === "all" || property.strategy === state.strategy;
-    const statusMatch = state.status === "all" || property.recommendation === state.status;
+    const statusMatch = state.status === "all" || displayStatus(property) === state.status;
     return !isRemovedFromMarket(property) && strategyMatch && statusMatch;
   });
   return available.sort((a,b) => {
@@ -243,6 +249,7 @@ function ageRiskDetail(property, ten) {
 function openDetail(id) {
   const property = state.data.properties.find(p => p.id === id);
   if (!property) return;
+  const currentStatus = displayStatus(property);
   const ten = property.financials?.[10];
   const fifteen = property.financials?.[15];
   const financialSection = ten ? `<div class="financial-cards">
@@ -256,8 +263,8 @@ function openDetail(id) {
   </div>` : `<p>This is a rental benchmark, not a purchase investment.</p>`;
   const sources = property.sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} · checked ${escapeHtml(source.accessed)}</a>`).join("");
   const history = property.listingHistory.length ? property.listingHistory.map(item => `<p><strong>${escapeHtml(item.date)}</strong> · ${escapeHtml(item.event)} ${item.price ? `· ${money(item.price)}` : ""}</p>`).join("") : "<p>No purchase history included for this benchmark.</p>";
-  $("#dialog-content").innerHTML = `<div class="detail-header"><div class="badges"><span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span><span class="badge ${badgeClass(property.recommendation)}">${escapeHtml(property.recommendation)}</span></div><h2 id="dialog-title">${escapeHtml(property.address)}</h2><p>${escapeHtml(property.summary)}</p></div>
-  <section class="detail-verdict ${property.recommendation === "Qualified" ? "qualified" : ""}"><strong>${escapeHtml(property.recommendation)}.</strong> ${escapeHtml(statusGate(property))}</section>
+  $("#dialog-content").innerHTML = `<div class="detail-header"><div class="badges"><span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span><span class="badge ${badgeClass(currentStatus)}">${escapeHtml(currentStatus)}</span></div><h2 id="dialog-title">${escapeHtml(property.address)}</h2><p>${escapeHtml(property.summary)}</p></div>
+  <section class="detail-verdict ${property.recommendation === "Qualified" ? "qualified" : ""}"><strong>${escapeHtml(currentStatus)}.</strong> ${escapeHtml(statusGate(property))}</section>
   ${qualificationDetail(property)}
   <section class="criteria-panel"><h3>Criteria fit</h3><div class="criteria-table">${criteriaAssessment(property, ten)}</div></section>
   <section class="property-facts-panel"><h3>Property specifics</h3><div class="property-facts-grid">${propertyFacts(property, ten)}</div></section>
