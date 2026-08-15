@@ -27,7 +27,7 @@
         <p>Actual listings evaluated for living suitability, monthly subsidy, investment return, pricing, and unresolved risk.</p>
       </div>
       <div class="scope" aria-label="Analysis scope">
-        <span id="as-of">Research date loading</span><span>30-mile radius</span><span>$275,000 maximum offer</span><span>10 and 15 years</span>
+        <span id="as-of">Research date loading</span><span>30-mile radius</span><span>Built 1980 or later</span><span>$275,000 maximum offer</span><span>10 and 15 years</span>
       </div>
     </section>
 
@@ -47,14 +47,6 @@
           <h2 id="shortlist-title">Candidate review</h2>
         </div>
         <button class="method-button" id="method-button" type="button">How scoring works</button>
-      </div>
-
-      <div class="change-tabs" role="tablist" aria-label="Listing recency">
-        <button class="tab active" role="tab" aria-selected="true" data-change="new">New today <span id="tab-new">0</span></button>
-        <button class="tab" role="tab" aria-selected="false" data-change="changed">Changed <span id="tab-changed">0</span></button>
-        <button class="tab" role="tab" aria-selected="false" data-change="existing">Previously reviewed <span id="tab-existing">0</span></button>
-        <button class="tab" role="tab" aria-selected="false" data-change="archived">Removed <span id="tab-archived">0</span></button>
-        <button class="tab" role="tab" aria-selected="false" data-change="all">All active <span id="tab-all">0</span></button>
       </div>
 
       <div class="filters" aria-label="Property filters">
@@ -87,8 +79,21 @@
       </div>
 
       <p class="result-summary" id="result-summary" aria-live="polite"></p>
-      <div id="property-list" class="property-grid"></div>
-      <div id="empty-state" class="empty-state" hidden><h3>No matches in this view</h3><p>Try another recency tab or remove a filter.</p></div>
+      <div id="property-list" class="listing-groups">
+        <section class="listing-group" aria-labelledby="new-listings-title">
+          <div class="listing-group-heading"><div><p class="section-kicker">Latest research day</p><h3 id="new-listings-title">New listings</h3></div><span id="new-listing-count">0</span></div>
+          <p class="listing-group-note">First found in the most recent successful research run.</p>
+          <div id="new-property-list" class="property-grid"></div>
+          <p id="new-listing-empty" class="group-empty" hidden>No new listings match the current filters.</p>
+        </section>
+        <section class="listing-group" aria-labelledby="previous-listings-title">
+          <div class="listing-group-heading"><div><p class="section-kicker">Earlier research days</p><h3 id="previous-listings-title">Previous listings still on market</h3></div><span id="previous-listing-count">0</span></div>
+          <p class="listing-group-note">Kept here until a public source confirms the listing is sold, withdrawn, expired, or otherwise off market.</p>
+          <div id="previous-property-list" class="property-grid"></div>
+          <p id="previous-listing-empty" class="group-empty" hidden>No previous listings match the current filters.</p>
+        </section>
+      </div>
+      <div id="empty-state" class="empty-state" hidden><h3>No matches in this view</h3><p>Remove a filter to see all currently marketed properties.</p></div>
     </section>
 
     <section class="comparison-section" aria-labelledby="comparison-title">

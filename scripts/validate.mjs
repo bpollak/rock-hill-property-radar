@@ -1,5 +1,6 @@
 import { access, readFile } from "node:fs/promises";
 import { validateDataset } from "./lib/schema.mjs";
+import { isRemovedFromMarket } from "./lib/listing-lifecycle.mjs";
 
 const root = new URL("../", import.meta.url);
 const dataset = JSON.parse(await readFile(new URL("data/current.json", root), "utf8"));
@@ -10,7 +11,7 @@ const serialized = JSON.stringify(dataset).toLowerCase();
 
 if (process.env.FAMILY_ANCHOR_ADDRESS && serialized.includes(process.env.FAMILY_ANCHOR_ADDRESS.toLowerCase())) errors.push("Private family anchor appears in public dataset.");
 if (dataset.runStatus !== "successful") errors.push("Only the last successful research snapshot may be published.");
-if (dataset.properties.filter(p => p.strategy !== "rental-benchmark").length < 3) errors.push("At least three actual purchase candidates are required.");
+if (dataset.properties.filter(p => p.strategy !== "rental-benchmark" && !isRemovedFromMarket(p)).length < 3) errors.push("At least three currently marketed purchase candidates are required.");
 if (assumptions.comparison.forwardHurdleRate !== 0.07) errors.push("Forward hurdle must remain 7% unless deliberately revised.");
 if (assumptions.purchase.maximumOfferPrice !== 275000) errors.push("Maximum offer price must remain $275,000 unless deliberately revised.");
 if (assumptions.livingRequirements?.maximumDrivingMiles !== 30) errors.push("Maximum driving distance must remain 30 miles unless deliberately revised.");

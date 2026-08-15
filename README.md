@@ -4,7 +4,7 @@ A public, source-backed family decision dashboard for evaluating actual Rock Hil
 
 ## What it does
 
-- Separates new, changed, previously reviewed, and inactive properties.
+- Shows all currently marketed properties on one page, separating listings first seen in the latest research day from listings found on previous days.
 - Groups shared houses, shared condos, and private purchases as candidate strategies.
 - Keeps rental-market benchmarks in the underlying financial assumptions and evidence, but excludes them from the property-candidate list and candidate counts.
 - Blocks recommendations when the private bathroom or rental authority is unresolved.
@@ -42,7 +42,7 @@ Run locally with the same environment variables:
 npm run research
 ```
 
-The on-demand workflow uses OpenAI Responses API web search, validates the result, writes a dated snapshot, commits only successful data, and deploys the validated build. A failed run leaves the current site and prior successful snapshot intact. Listings are archived only after two consecutive misses.
+The on-demand workflow uses OpenAI Responses API web search, validates the result, writes a dated snapshot, commits only successful data, and deploys the validated build. A failed run leaves the current site and prior successful snapshot intact. Previously found listings remain available until a public source confirms they are sold, withdrawn, expired, or otherwise off market.
 
 ## Decision model
 

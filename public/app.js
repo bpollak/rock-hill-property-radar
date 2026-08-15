@@ -1,4 +1,4 @@
-const state = { data: null, change: "new", strategy: "all", status: "all", sort: "score" };
+const state = { data: null, strategy: "all", status: "all", sort: "score" };
 
 const $ = selector => document.querySelector(selector);
 const money = value => value == null ? "—" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
@@ -6,7 +6,11 @@ const percent = value => value == null ? "—" : `${(value * 100).toFixed(1)}%`;
 const escapeHtml = value => String(value ?? "").replace(/[&<>'"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[char]);
 const strategyLabel = value => ({"shared-home":"Shared house","shared-condo":"Shared condo","private-purchase":"Private purchase","rental-benchmark":"Rental benchmark"})[value] || value;
 const dateLabel = value => new Date(`${value}T12:00:00`).toLocaleDateString("en-US", {month:"long", day:"numeric", year:"numeric"});
+const removedStatuses = new Set(["inactive", "sold", "off-market", "off market", "withdrawn", "expired", "removed"]);
+const isRemovedFromMarket = property => removedStatuses.has(String(property.status || "").trim().toLowerCase());
 const meetsMinimumYearBuilt = property => property.strategy === "rental-benchmark" || (Number.isFinite(property.yearBuilt) && property.yearBuilt >= (state.data?.assumptions?.livingRequirements?.minimumYearBuilt ?? 1980));
+const isNewListing = property => property.firstSeen === state.data.asOf;
+const recencyLabel = property => isNewListing(property) ? "New latest day" : "Previous listing";
 
 function badgeClass(status) {
   if (status === "Qualified") return "qualified";
@@ -39,7 +43,8 @@ function renderCard(property) {
   const distanceBadge = Number.isFinite(property.distanceMiles) ? `<span class="badge distance">${property.distanceMiles.toFixed(1)} mi · ${property.driveMinutes} min from reference</span>` : "";
   return `<article class="property-card ${property.recommendation === "Qualified" ? "qualified" : ""}" data-id="${escapeHtml(property.id)}">
     <div class="card-identity"><div class="badges">
-      <span class="badge ${property.changeCategory === "new" ? "new" : ""}">${escapeHtml(property.changeCategory === "new" ? "New today" : property.changeCategory)}</span>
+      <span class="badge ${isNewListing(property) ? "new" : ""}">${escapeHtml(recencyLabel(property))}</span>
+      ${property.status !== "active" ? `<span class="badge">${escapeHtml(property.status)}</span>` : ""}
       <span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span>
       <span class="badge ${badgeClass(property.recommendation)}">${escapeHtml(property.recommendation)}</span>
       ${roomBadge}
@@ -67,14 +72,13 @@ function renderCard(property) {
 }
 
 function filteredProperties() {
-  const active = state.data.properties.filter(property => {
+  const available = state.data.properties.filter(property => {
     if (property.strategy === "rental-benchmark") return false;
-    const changeMatch = state.change === "all" ? property.status === "active" : property.changeCategory === state.change;
     const strategyMatch = state.strategy === "all" || property.strategy === state.strategy;
     const statusMatch = state.status === "all" || property.recommendation === state.status;
-    return changeMatch && strategyMatch && statusMatch;
+    return !isRemovedFromMarket(property) && strategyMatch && statusMatch;
   });
-  return active.sort((a,b) => {
+  return available.sort((a,b) => {
     if (state.sort === "subsidy") return (a.financials?.[10]?.monthlySubsidy ?? Number.MAX_SAFE_INTEGER) - (b.financials?.[10]?.monthlySubsidy ?? Number.MAX_SAFE_INTEGER);
     if (state.sort === "price") return a.price - b.price;
     if (state.sort === "days") return (a.daysOnMarket ?? 9999) - (b.daysOnMarket ?? 9999);
@@ -85,20 +89,26 @@ function filteredProperties() {
 
 function renderList() {
   const properties = filteredProperties();
-  $("#property-list").innerHTML = properties.map(renderCard).join("");
+  const latest = properties.filter(isNewListing);
+  const previous = properties.filter(property => !isNewListing(property));
+  $("#new-property-list").innerHTML = latest.map(renderCard).join("");
+  $("#previous-property-list").innerHTML = previous.map(renderCard).join("");
+  $("#new-listing-count").textContent = latest.length;
+  $("#previous-listing-count").textContent = previous.length;
+  $("#new-listing-empty").hidden = latest.length > 0;
+  $("#previous-listing-empty").hidden = previous.length > 0;
   $("#empty-state").hidden = properties.length > 0;
-  $("#result-summary").textContent = `${properties.length} option${properties.length === 1 ? "" : "s"} shown`;
+  $("#result-summary").textContent = `${properties.length} currently marketed option${properties.length === 1 ? "" : "s"} shown · ${latest.length} new in the latest research day · ${previous.length} from previous days`;
   document.querySelectorAll("[data-detail]").forEach(button => button.addEventListener("click", () => openDetail(button.dataset.detail)));
 }
 
 function renderOverview() {
-  const candidates = state.data.properties.filter(p => p.strategy !== "rental-benchmark");
-  const purchases = candidates.filter(p => p.status === "active");
+  const purchases = state.data.properties.filter(p => p.strategy !== "rental-benchmark" && !isRemovedFromMarket(p));
   const qualified = purchases.filter(p => p.recommendation === "Qualified");
   const verification = purchases.filter(p => p.recommendation === "Needs verification");
   const subsidies = purchases.map(p => p.financials?.[10]?.monthlySubsidy).filter(Number.isFinite);
   $("#candidate-count").textContent = purchases.length;
-  $("#new-count").textContent = purchases.filter(p => p.changeCategory === "new").length;
+  $("#new-count").textContent = purchases.filter(isNewListing).length;
   $("#verification-count").textContent = verification.length;
   $("#qualified-count").textContent = qualified.length;
   $("#lowest-subsidy").textContent = subsidies.length ? `${money(Math.min(...subsidies))}/mo` : "—";
@@ -106,13 +116,10 @@ function renderOverview() {
   $("#as-of").textContent = `Research current as of ${dateLabel(state.data.asOf)}`;
   $("#run-status").textContent = `Last successful research: ${dateLabel(state.data.asOf)}`;
   $("#model-version").textContent = `Model ${state.data.assumptions.modelVersion} · Data ${state.data.asOf}`;
-  const categories = ["new","changed","existing","archived"];
-  categories.forEach(category => $(`#tab-${category}`).textContent = candidates.filter(p => p.changeCategory === category).length);
-  $("#tab-all").textContent = purchases.length;
 }
 
 function renderComparison() {
-  const properties = state.data.properties.filter(p => p.financials?.[10]).sort((a,b) => b.score.total - a.score.total);
+  const properties = state.data.properties.filter(p => p.strategy !== "rental-benchmark" && !isRemovedFromMarket(p) && p.financials?.[10]).sort((a,b) => b.score.total - a.score.total);
   $("#comparison-table tbody").innerHTML = properties.map(property => {
     const result = property.financials[10];
     const gapClass = result.wealthGapVsHurdle >= 0 ? "positive" : "negative";
@@ -301,10 +308,6 @@ function renderMethod() {
 }
 
 function setupEvents() {
-  document.querySelectorAll(".tab").forEach(tab => tab.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(item => {item.classList.remove("active"); item.setAttribute("aria-selected","false");});
-    tab.classList.add("active"); tab.setAttribute("aria-selected","true"); state.change = tab.dataset.change; renderList();
-  }));
   [["#strategy-filter","strategy"],["#status-filter","status"],["#sort-filter","sort"]].forEach(([selector,key]) => $(selector).addEventListener("change", event => { state[key] = event.target.value; renderList(); }));
   $("#method-button").addEventListener("click", () => $("#method-dialog").showModal());
   $("#sources-button").addEventListener("click", () => $("#method-dialog").showModal());

@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { diffProperty } from "./lib/changes.mjs";
 import { validateDataset } from "./lib/schema.mjs";
+import { isRemovedFromMarket, reconcileProperties } from "./lib/listing-lifecycle.mjs";
 import { meetsMinimumYearBuilt, minimumYearBuilt } from "./lib/property-eligibility.mjs";
 
 const root = new URL("../", import.meta.url);
@@ -15,7 +15,7 @@ const sourcePolicy = JSON.parse(await readFile(new URL("config/source-policy.jso
 const assumptions = JSON.parse(await readFile(new URL("config/public-assumptions.json", root), "utf8"));
 const minimumConstructionYear = minimumYearBuilt(assumptions);
 const eligiblePreviousProperties = previous.properties.filter(property => meetsMinimumYearBuilt(property, assumptions));
-const known = eligiblePreviousProperties.filter(p => p.strategy !== "rental-benchmark").map(p => ({id:p.id,address:p.address,mls:p.mls,sourceUrl:p.sourceUrl,status:p.status,price:p.price,yearBuilt:p.yearBuilt}));
+const known = eligiblePreviousProperties.filter(p => p.strategy !== "rental-benchmark" && !isRemovedFromMarket(p)).map(p => ({id:p.id,address:p.address,mls:p.mls,sourceUrl:p.sourceUrl,status:p.status,price:p.price,yearBuilt:p.yearBuilt}));
 const prompt = `You are the daily real-estate research analyst for a private family decision. Research actual, currently marketed options within 30 driving miles of the private anchor supplied below. Never repeat the anchor in your output.
 
 PRIVATE ANCHOR: ${anchor}
@@ -23,7 +23,7 @@ RUN DATE: ${today}
 
 Decision requirements:
 - Rock Hill area is preferred; absolute maximum 30 driving miles.
-- Purchase candidates must have a documented year built of ${minimumConstructionYear} or later. Reject properties built before ${minimumConstructionYear}, and do not return purchase candidates with an unknown construction year.
+- Purchase candidates must have a documented year built of ${minimumConstructionYear} or later. Exclude properties built before ${minimumConstructionYear}, and do not return purchase candidates with an unknown construction year.
 - For every purchase candidate, calculate the fastest driving route from the private anchor and return distanceMiles, driveMinutes, distanceAsOf, distanceMethod, and a distanceLabel that says only the mileage and approximate drive time from the "family reference property." Never return the anchor address, its coordinates, a route URL containing it, or any other reversible location identifier. Reject candidates beyond 30 driving miles.
 - Mother-in-law must have her own bedroom and private full bathroom. Unknown is acceptable only when explicitly marked unknown.
 - She accepts unrelated housemates and stairs.
@@ -34,7 +34,8 @@ Decision requirements:
 - Capture current list price, original price, beds, full baths, square feet, year, type, HOA dues, days on market, listing history, taxes if reliable, price per square foot, market comparison, private-bath evidence, pros, concerns, source conflicts, and source URLs.
 - Capture any publicly documented mandatory recurring or transaction-specific charges, including HOA dues, special assessments, association transfer or capital-contribution fees, land or lot rent, mandatory amenity fees, and builder fees. Put material fees in concerns and source them. If unavailable, say unknown rather than assuming zero.
 - Capture and verify year built for every purchase candidate. Research public permit records and listing evidence for the roof, HVAC, water heater, electrical service, supply and waste plumbing, sewer or septic, foundation or structural work, and major renovations. Distinguish listing claims from verified permits, invoices, warranties, and system installation dates. Never treat “renovated” as proof that major systems were replaced. Flag missing system ages and permits for follow-up.
-- Recheck these known candidates and discover credible new ones: ${JSON.stringify(known)}
+- Recheck every known candidate and discover credible new ones: ${JSON.stringify(known)}
+- Return every known candidate unless a public source confirms it is sold, withdrawn, expired, or otherwise off market. Do not omit a known listing merely because it is unchanged or difficult to recheck. Preserve active, contingent, and pending statuses. When removal is confirmed, return the property with status "inactive" and include the supporting source.
 - Include a current Rock Hill studio/one-bedroom rental benchmark and current room-rent evidence.
 - Prefer MLS-fed portals for listing status, official government sources for rules and taxes, recorded HOA documents for restrictions, and primary market sources for investment benchmarks.
 - Audit every source category in this source policy on every run. A category with no matching inventory is a valid zero result, but it must not be silently skipped: ${JSON.stringify(sourcePolicy)}
@@ -63,52 +64,24 @@ if (start < 0 || end <= start) throw new Error("Research response did not contai
 const researched = JSON.parse(output.slice(start, end + 1));
 if (!Array.isArray(researched.properties)) throw new Error("Research response omitted properties.");
 
-const researchedProperties = researched.properties.filter(property => meetsMinimumYearBuilt(property, assumptions));
-const priorById = new Map(eligiblePreviousProperties.map(property => [property.id, property]));
-const seenIds = new Set();
-const active = researchedProperties.map(property => {
-  const prior = priorById.get(property.id);
-  const changes = diffProperty(prior, property);
-  seenIds.add(property.id);
-  return {
-    ...property,
-    status: property.status || "active",
-    firstSeen: prior?.firstSeen || today,
-    lastSeen: today,
-    lastChanged: changes.length ? today : prior?.lastChanged || today,
-    changeCategory: prior ? (changes.length ? "changed" : "existing") : "new",
-    changeHistory: changes.length ? [...(prior?.changeHistory || []), {date:today, changes}] : (prior?.changeHistory || []),
-    missingRuns: 0
-  };
-});
-
-for (const prior of eligiblePreviousProperties) {
-  if (seenIds.has(prior.id)) continue;
-  const missingRuns = (prior.missingRuns || 0) + 1;
-  active.push({
-    ...prior,
-    missingRuns,
-    changeCategory: missingRuns >= 2 ? "archived" : "existing",
-    status: missingRuns >= 2 ? "inactive" : prior.status,
-    lastChanged: missingRuns >= 2 ? today : prior.lastChanged
-  });
-}
+const eligibleResearchedProperties = researched.properties.filter(property => meetsMinimumYearBuilt(property, assumptions));
+const reconciledProperties = reconcileProperties(eligiblePreviousProperties, eligibleResearchedProperties, today);
 
 const next = {
   asOf: today,
   runStatus: "successful",
   researchMethod: previous.researchMethod,
   market: researched.market || previous.market,
-  properties: active,
+  properties: reconciledProperties,
   methodologySources: researched.methodologySources || previous.methodologySources
 };
 const errors = validateDataset(next);
 const serialized = JSON.stringify(next).toLowerCase();
 if (serialized.includes(anchor.toLowerCase())) errors.push("Research output leaked the private anchor.");
-if (next.properties.filter(p => p.strategy !== "rental-benchmark" && p.status === "active").length < 3) errors.push("Research returned fewer than three active purchase candidates.");
+if (next.properties.filter(p => p.strategy !== "rental-benchmark" && !isRemovedFromMarket(p)).length < 3) errors.push("Research returned fewer than three currently marketed purchase candidates.");
 if (errors.length) throw new Error(`Research validation failed; prior snapshot preserved:\n${errors.join("\n")}`);
 
 await mkdir(new URL("data/history/", root), { recursive: true });
 await writeFile(new URL(`data/history/${today}.json`, root), `${JSON.stringify(next, null, 2)}\n`);
 await writeFile(new URL("data/current.json", root), `${JSON.stringify(next, null, 2)}\n`);
-console.log(`Saved validated ${today} research: ${active.filter(p => p.changeCategory === "new").length} new, ${active.filter(p => p.changeCategory === "changed").length} changed, ${active.filter(p => p.changeCategory === "archived").length} archived.`);
+console.log(`Saved validated ${today} research: ${reconciledProperties.filter(p => p.changeCategory === "new").length} new, ${reconciledProperties.filter(p => p.changeCategory === "changed").length} changed, ${reconciledProperties.filter(isRemovedFromMarket).length} removed from market.`);
