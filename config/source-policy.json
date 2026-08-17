@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "listingDiscovery": [
     {
       "name": "MLS-syndicated portals",
@@ -45,6 +45,13 @@
     }
   ],
   "propertyVerification": [
+    {
+      "name": "Current marketing status and transfer chronology",
+      "sources": ["Direct MLS-fed source-status fields", "A second current MLS-syndicated or public IDX source", "York County deed or transfer history where available"],
+      "cadence": "Every candidate on every run",
+      "status": "required",
+      "purpose": "Distinguish an active, pending, or contingent current listing from an earlier sale. A property page, contact form, or old listing alone is not evidence that a home is currently for sale. Reconcile the most recent transfer with every later list, relist, price-change, contract, and removal event; use the stricter current status when credible sources conflict."
+    },
     {
       "name": "Parcel, assessment, and deed",
       "sources": ["York County Assessor", "York County One Map", "York County Register of Deeds", "South Carolina public index"],

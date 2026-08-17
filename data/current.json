@@ -1860,12 +1860,12 @@
       "lastSeen": "2026-08-17",
       "lastChanged": "2026-08-17",
       "originalPrice": 300000,
-      "priceCutPercent": 8.3,
-      "pricePerSqft": 244,
+      "priceCutPercent": 6.7,
+      "pricePerSqft": 248,
       "marketPricePerSqft": 207,
       "roomRentalLegal": "unknown",
       "sourceConflicts": [
-        "Fresh public portals conflict between $275,000 and $280,000. The lower current inventory figure is retained, but broker confirmation is required before offer analysis."
+        "Redfin's listing update dated July 16 presents the home active at $280,000 after a July relist; Realtor's older June 20 record still presents active-under-contract at $285,000. Listing-agent confirmation is required."
       ],
       "listingHistory": [
         {
@@ -1884,25 +1884,28 @@
           "price": 285000
         },
         {
+          "date": "2026-06-19",
+          "event": "Contingent"
+        },
+        {
+          "date": "2026-07-03",
+          "event": "Relisted"
+        },
+        {
           "date": "2026-07-09",
           "event": "Price reduced",
           "price": 280000
-        },
-        {
-          "date": "2026-08-04",
-          "event": "Price reduced",
-          "price": 275000
         }
       ],
       "sources": [
         {
-          "label": "Redfin listing, history, HOA, systems, and layout",
+          "label": "Redfin current listing, history, HOA, systems, and layout",
           "url": "https://www.redfin.com/SC/Rock-Hill/552-Chase-Brook-Dr-29732/home/52137125",
           "accessed": "2026-08-17"
         },
         {
-          "label": "Zillow current Rock Hill inventory",
-          "url": "https://www.zillow.com/rock-hill-sc/houses/",
+          "label": "Realtor MLS-fed status comparison",
+          "url": "https://www.realtor.com/realestateandhomes-detail/552-Chase-Brook-Dr_Rock-Hill_SC_29732_M54111-19625",
           "accessed": "2026-08-17"
         }
       ],
@@ -1912,7 +1915,7 @@
       "mls": "4374612",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/552-Chase-Brook-Dr-29732/home/52137125",
       "status": "active",
-      "price": 275000,
+      "price": 280000,
       "beds": 3,
       "baths": 2,
       "sqft": 1129,
@@ -1922,14 +1925,15 @@
       "oneLevel": true,
       "privateBath": "yes",
       "daysOnMarket": 108,
-      "summary": "A one-level home at the ceiling with an explicitly described private primary bath and a 2025 roof claim. Room-rental authority and HOA documents still block a recommendation.",
+      "summary": "A one-level home $5,000 above the offer ceiling with an explicitly described private primary bath. A newer Redfin update shows it active at $280,000, while Realtor shows an older active-under-contract record at $285,000; current availability and HOA rental rules require confirmation.",
       "pros": [
-        "At the $275,000 maximum after a $25,000 cumulative reduction",
+        "A $20,000 cumulative reduction from the original $300,000 ask",
         "The listing explicitly describes a private primary bathroom",
         "One-level layout with city water and public sewer",
         "The listing reports a 2025 roof"
       ],
       "concerns": [
+        "An accepted offer requires a $5,000 seller discount, or 1.8% of the current $280,000 ask; seller acceptance at the $275,000 ceiling is unresolved",
         "Only two bedrooms and one full bathroom remain after reserving the family suite",
         "The reported $280 annual HOA dues are mandatory, but governing documents and all rental restrictions are unavailable",
         "The 2025 roof is a listing claim without permit, invoice, warranty, or installation record; HVAC, water heater, electrical, plumbing and slab evidence remain unresolved",
@@ -1971,33 +1975,45 @@
       "firstSeen": "2026-08-17",
       "lastSeen": "2026-08-17",
       "lastChanged": "2026-08-17",
-      "originalPrice": 279900,
-      "priceCutPercent": 3.6,
-      "pricePerSqft": 193,
+      "originalPrice": 290000,
+      "priceCutPercent": 3.5,
+      "pricePerSqft": 200,
       "marketPricePerSqft": 207,
       "roomRentalLegal": "unknown",
-      "sourceConflicts": [],
+      "sourceConflicts": [
+        "The direct Zillow property record is stale and says off market, while current Zillow, Realtor, and indexed brokerage inventory identify MLS 4393701 as an active Offerpad resale at $279,900."
+      ],
       "listingHistory": [
         {
-          "date": "2026-06-17",
-          "event": "Listed",
-          "price": 279900
+          "date": "2026-05-26",
+          "event": "Sold to current resale owner",
+          "price": 209000
         },
         {
-          "date": "2026-08-14",
+          "date": "2026-06-17",
+          "event": "Relisted",
+          "price": 290000
+        },
+        {
+          "date": "2026-06-22",
           "event": "Price reduced",
-          "price": 269900
+          "price": 279900
         }
       ],
       "sources": [
         {
-          "label": "Zillow current listing and price",
-          "url": "https://www.zillow.com/rock-hill-sc/",
+          "label": "Zillow current Rock Hill inventory",
+          "url": "https://www.zillow.com/rock-hill-sc-29730/",
           "accessed": "2026-08-17"
         },
         {
-          "label": "Redfin current Rock Hill inventory",
-          "url": "https://www.redfin.com/city/15797/SC/Rock-Hill/homes-for-sale-under-300000",
+          "label": "Realtor current school-area inventory",
+          "url": "https://www.realtor.com/realestateandhomes-search/Rock-Hill_SC/schools/Rawlinson-Road-Middle-School-0764301301",
+          "accessed": "2026-08-17"
+        },
+        {
+          "label": "Indexed brokerage MLS status",
+          "url": "https://mikesposatorealtor.com/SC/Rock-Hill?page=8",
           "accessed": "2026-08-17"
         }
       ],
@@ -2005,9 +2021,9 @@
       "strategy": "shared-home",
       "address": "424 Kimbrook Ct, Rock Hill, SC 29730",
       "mls": "4393701",
-      "sourceUrl": "https://www.zillow.com/rock-hill-sc/",
+      "sourceUrl": "https://www.realtor.com/realestateandhomes-search/Rock-Hill_SC/schools/Rawlinson-Road-Middle-School-0764301301",
       "status": "active",
-      "price": 269900,
+      "price": 279900,
       "beds": 3,
       "baths": 2,
       "sqft": 1398,
@@ -2017,7 +2033,7 @@
       "oneLevel": true,
       "privateBath": "unknown",
       "daysOnMarket": 61,
-      "summary": "A one-level home below the ceiling with no reported HOA and a listing claim of a new air conditioner, but the private-bath layout and renovation documentation remain unresolved.",
+      "summary": "An Offerpad resale currently marketed at $279,900 after a May 2026 purchase and June relist. It needs a $4,900 seller discount to reach the offer ceiling, and the private-bath layout and renovation documentation remain unresolved.",
       "pros": [
         "$5,100 below the maximum offer price",
         "One-level 1984 construction",
@@ -2025,7 +2041,9 @@
         "The listing claims a new air conditioner and refreshed interior"
       ],
       "concerns": [
+        "An accepted offer requires a $4,900 seller discount, or 1.8% of the current ask; seller acceptance at the $275,000 ceiling is unresolved",
         "A private full bathroom for the family occupant is not documented",
+        "The May 26, 2026 sale was followed by a new Offerpad listing in June; the current listing is a resale, not the closed May transaction",
         "The new-air-conditioner and renovation statements are listing claims without permit, invoice, warranty, or installation-date support; roof, water heater, electrical, supply and waste plumbing, foundation and sewer evidence remain unresolved",
         "Room-rental zoning, registration, occupancy, separate-room lease authority, and legal bedroom counts remain unresolved",
         "Property-specific room demand is not documented; current public room asks support only the conservative Rock Hill benchmark, not a signed-lease forecast",
@@ -2066,33 +2084,51 @@
       "lastSeen": "2026-08-17",
       "lastChanged": "2026-08-17",
       "originalPrice": 280000,
-      "priceCutPercent": 6.1,
-      "pricePerSqft": 258,
+      "priceCutPercent": 3.9,
+      "pricePerSqft": 264,
       "marketPricePerSqft": 207,
       "roomRentalLegal": "unknown",
-      "sourceConflicts": [
-        "Fresh portal inventory reports $263,000 after the direct Redfin detail previously displayed $269,000; broker confirmation is required before an offer analysis."
-      ],
+      "sourceConflicts": [],
       "listingHistory": [
         {
+          "date": "2025-12-23",
+          "event": "Sold",
+          "price": 256900
+        },
+        {
           "date": "2026-02-05",
-          "event": "Listed",
+          "event": "Relisted",
           "price": 280000
         },
         {
-          "date": "2026-04-29",
+          "date": "2026-02-26",
+          "event": "Price reduced",
+          "price": 278000
+        },
+        {
+          "date": "2026-04-14",
+          "event": "Relisted",
+          "price": 278000
+        },
+        {
+          "date": "2026-04-30",
           "event": "Price reduced",
           "price": 272000
         },
         {
-          "date": "2026-08-13",
+          "date": "2026-05-28",
           "event": "Price reduced",
-          "price": 263000
+          "price": 269000
         }
       ],
       "sources": [
         {
-          "label": "Redfin listing, history, utilities, zoning, and system claims",
+          "label": "Realtor current listing, status, price, and history",
+          "url": "https://www.realtor.com/realestateandhomes-detail/1657-Gresham-Ct_Rock-Hill_SC_29730_M53922-62692",
+          "accessed": "2026-08-17"
+        },
+        {
+          "label": "Redfin MLS listing and property details",
           "url": "https://www.redfin.com/SC/Rock-Hill/1657-Gresham-Ct-29730/home/52138522",
           "accessed": "2026-08-17"
         }
@@ -2101,9 +2137,9 @@
       "strategy": "shared-home",
       "address": "1657 Gresham Ct, Rock Hill, SC 29730",
       "mls": "4343664",
-      "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1657-Gresham-Ct-29730/home/52138522",
+      "sourceUrl": "https://www.realtor.com/realestateandhomes-detail/1657-Gresham-Ct_Rock-Hill_SC_29730_M53922-62692",
       "status": "active",
-      "price": 263000,
+      "price": 269000,
       "beds": 3,
       "baths": 2,
       "sqft": 1018,
@@ -2113,7 +2149,7 @@
       "oneLevel": true,
       "privateBath": "unknown",
       "daysOnMarket": 193,
-      "summary": "A long-exposure one-level home $12,000 below the ceiling with no reported HOA. Its private bath, legal room-rental structure, and new-HVAC documentation remain unresolved.",
+      "summary": "An active, long-exposure one-level home $6,000 below the offer ceiling with no reported HOA. The December 2025 sale preceded a new February 2026 listing; private-bath and new-HVAC documentation remain unresolved.",
       "pros": [
         "$12,000 below the maximum offer price",
         "One-level 2002 construction",
@@ -2123,6 +2159,7 @@
       ],
       "concerns": [
         "A private full bathroom for the family occupant is not documented",
+        "The December 2025 sale was followed by a new MLS listing in February 2026 and is not the current marketing status",
         "The HVAC and warranty are listing claims without permit, invoice, model, installation date, or transferable warranty evidence; roof, water heater, electrical, plumbing and slab evidence remain unresolved",
         "Room-rental zoning, registration, occupancy, separate-room lease authority, and legal bedroom counts remain unresolved",
         "Property-specific room demand is not documented; current public room asks support only the conservative Rock Hill benchmark, not a signed-lease forecast",
@@ -2163,28 +2200,26 @@
       "lastSeen": "2026-08-17",
       "lastChanged": "2026-08-17",
       "originalPrice": 290000,
-      "priceCutPercent": 6.9,
-      "pricePerSqft": 210,
+      "priceCutPercent": 0,
+      "pricePerSqft": 225,
       "marketPricePerSqft": 207,
       "roomRentalLegal": "unknown",
-      "sourceConflicts": [
-        "Fresh portal inventory reports $270,000 after the direct Redfin detail previously displayed $290,000; broker confirmation is required."
-      ],
+      "sourceConflicts": [],
       "listingHistory": [
         {
           "date": "2026-06-12",
           "event": "Listed",
           "price": 290000
-        },
-        {
-          "date": "2026-08-04",
-          "event": "Price reduced",
-          "price": 270000
         }
       ],
       "sources": [
         {
-          "label": "Redfin listing, history, layout, utilities, and system claims",
+          "label": "Realtor current MLS status, price, parcel, utilities, and history",
+          "url": "https://www.realtor.com/realestateandhomes-detail/2065-Neely-Store-Rd_Rock-Hill_SC_29730_M69360-74887",
+          "accessed": "2026-08-17"
+        },
+        {
+          "label": "Redfin listing, layout, and system claims",
           "url": "https://www.redfin.com/SC/Rock-Hill/2065-Neely-Store-Rd-29730/home/52130334",
           "accessed": "2026-08-17"
         }
@@ -2193,9 +2228,9 @@
       "strategy": "shared-home",
       "address": "2065 Neely Store Rd, Rock Hill, SC 29730",
       "mls": "4392950",
-      "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/2065-Neely-Store-Rd-29730/home/52130334",
+      "sourceUrl": "https://www.realtor.com/realestateandhomes-detail/2065-Neely-Store-Rd_Rock-Hill_SC_29730_M69360-74887",
       "status": "active",
-      "price": 270000,
+      "price": 290000,
       "beds": 3,
       "baths": 2,
       "sqft": 1288,
@@ -2205,7 +2240,7 @@
       "oneLevel": true,
       "privateBath": "unknown",
       "daysOnMarket": 66,
-      "summary": "A 0.6-acre one-level home $5,000 below the ceiling with no reported HOA. Well, septic, private-bath, and room-rental capacity evidence are unresolved.",
+      "summary": "An active 0.6-acre one-level home listed at $290,000. It requires a $15,000 seller discount to reach the offer ceiling, and well, septic, private-bath, and room-rental capacity evidence remain unresolved.",
       "pros": [
         "$5,000 below the maximum offer price",
         "One-level 1994 construction on about 0.6 acre",
@@ -2213,6 +2248,7 @@
         "The listing describes a primary suite with a double vanity and separate porch access"
       ],
       "concerns": [
+        "An accepted offer requires a $15,000 seller discount, or 5.2% of the current ask; seller acceptance at the $275,000 ceiling is unresolved",
         "A private full bathroom is not explicit despite the primary-suite description",
         "Well yield and water quality, septic permit, approved bedroom and occupant capacity, pump/tank condition, setbacks, and inspection records remain unresolved",
         "Recent Andersen windows and doors are listing claims without invoices, permits, warranties, or installation dates; roof, HVAC, water heater, electrical, plumbing and foundation ages remain unknown",
@@ -2260,12 +2296,17 @@
       "marketPricePerSqft": 207,
       "roomRentalLegal": "unknown",
       "sourceConflicts": [
-        "Redfin and an indexed brokerage page presented active status while fresher syndicated evidence reported contingent on August 12; the stricter contingent status is used."
+        "The July 22 sale shown in public history occurred in 2024. A new MLS listing began July 9, 2026. Redfin still presents the new listing as for sale, while fresher syndicated evidence reports contingent on August 12; the stricter contingent status is used."
       ],
       "listingHistory": [
         {
+          "date": "2024-07-22",
+          "event": "Sold",
+          "price": 245000
+        },
+        {
           "date": "2026-07-09",
-          "event": "Listed",
+          "event": "Relisted",
           "price": 240000
         },
         {
@@ -2357,14 +2398,14 @@
       "firstSeen": "2026-08-17",
       "lastSeen": "2026-08-17",
       "lastChanged": "2026-08-17",
-      "originalPrice": 215000,
-      "priceCutPercent": 0,
-      "pricePerSqft": 226,
+      "originalPrice": 265000,
+      "priceCutPercent": 9.8,
+      "pricePerSqft": 217,
       "marketPricePerSqft": 207,
       "roomRentalLegal": "unknown",
       "sourceConflicts": [
-        "The direct Redfin listing presents the home for sale, while an indexed brokerage carousel reported a prior sold figure; current availability requires listing-agent confirmation.",
-        "Listing zoning fields conflict between SF-4 and MF-15, and public records still describe vacant land."
+        "The Redfin page still presents stale for-sale data at $249,000, while Realtor and Homes.com report MLS 4305257 pending at $239,000 since June 9. The stricter pending status is used.",
+        "Listing zoning fields conflict between SF-4 and MF-15, and public records still describe the prior vacant-land state."
       ],
       "listingHistory": [
         {
@@ -2386,17 +2427,36 @@
           "date": "2026-03-20",
           "event": "Price reduced",
           "price": 249000
+        },
+        {
+          "date": "2026-04-13",
+          "event": "Price reduced",
+          "price": 244000
+        },
+        {
+          "date": "2026-06-05",
+          "event": "Price reduced",
+          "price": 239000
+        },
+        {
+          "date": "2026-06-09",
+          "event": "Pending"
         }
       ],
       "sources": [
         {
-          "label": "Redfin current listing, deed restriction, permit-facing facts, utilities, and history",
-          "url": "https://www.redfin.com/SC/Rock-Hill/526-Bynum-Ave-29732/home/164907100",
+          "label": "Realtor current MLS status, price, deed restriction, and permit history",
+          "url": "https://www.realtor.com/realestateandhomes-detail/526-Bynum-Ave_Rock-Hill_SC_29732_M94979-21444",
+          "accessed": "2026-08-17"
+        },
+        {
+          "label": "Homes.com MLS history and pending status",
+          "url": "https://www.homes.com/property/526-bynum-ave-rock-hill-sc/q3dbx5n2g2xfr/",
           "accessed": "2026-08-17"
         },
         {
           "label": "City of Rock Hill planning report",
-          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/36040/638817801072300000",
+          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/37357/639082686015600000",
           "accessed": "2026-08-17"
         }
       ],
@@ -2404,9 +2464,9 @@
       "strategy": "shared-home",
       "address": "526 Bynum Ave, Rock Hill, SC 29732",
       "mls": "4305257",
-      "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/526-Bynum-Ave-29732/home/164907100",
-      "status": "active",
-      "price": 249000,
+      "sourceUrl": "https://www.realtor.com/realestateandhomes-detail/526-Bynum-Ave_Rock-Hill_SC_29732_M94979-21444",
+      "status": "pending",
+      "price": 239000,
       "beds": 3,
       "baths": 2,
       "sqft": 1100,
@@ -2416,7 +2476,7 @@
       "oneLevel": true,
       "privateBath": "unknown",
       "daysOnMarket": 262,
-      "summary": "A one-level new build $26,000 below the ceiling, but the 15-year income-qualified deed restriction may constrain buyer eligibility, occupancy, resale, or room rentals and blocks recommendation until the recorded covenant is reviewed.",
+      "summary": "A deed-restricted one-level new build now pending at $239,000. No 2026 closing was found; the current MLS history shows it under contract since June, and the recorded covenant still requires review.",
       "pros": [
         "$26,000 below the maximum offer price",
         "One-level 2025 construction with split-bedroom layout",
@@ -2424,13 +2484,14 @@
         "City water, public sewer, heat pump, and central air are reported"
       ],
       "concerns": [
+        "The listing is pending and is not an active purchase candidate; no subsequent public closing was found",
         "The buyer must meet a published income limit and the property is subject to a 15-year deed restriction; the recorded covenant, buyer eligibility, permitted occupants, separate-room leases, resale formula and enforcement are unresolved",
         "A private full bathroom for the family occupant is not documented",
-        "The listing still describes development as proposed while presenting the home as new construction; final certificate of occupancy, permit closeout, warranties, builder fees and independent inspection are unresolved",
+        "Realtor reports completed February 2026 building, plumbing, HVAC, and electrical permits, but final certificate-of-occupancy evidence, warranties, builder fees, and independent inspection remain unresolved",
         "New construction does not replace the need for roof, HVAC, water heater, electrical, plumbing, sewer-lateral, slab and warranty documentation",
         "Room-rental zoning, registration, occupancy, separate-room lease authority, and legal bedroom counts remain unresolved",
         "Property-specific room demand is not documented; current public room asks support only the conservative Rock Hill benchmark, not a signed-lease forecast",
-        "Official parcel/deed readback, property-specific permit history, FEMA/One Map risk, insurance, and inspection readiness remain unresolved",
+        "Official deed-restriction readback, property-specific FEMA/One Map risk, insurance, and inspection readiness remain unresolved",
         "Special assessments, transfer or capital-contribution fees, mandatory amenity or builder fees, and other transaction-specific charges remain unknown unless expressly listed"
       ],
       "hoa": {
@@ -2728,6 +2789,13 @@
       "runResult": "documented-coverage-limitation",
       "summary": "Credentialed or paid feeds were not queried. The workflow did not request or obtain API keys, broker exports, or direct MLS access.",
       "coverageGap": "The public discovery process cannot claim exhaustive MLS or paid-data coverage."
+    },
+    {
+      "category": "Current marketing status and transfer chronology",
+      "policyStatus": "required",
+      "runResult": "completed-with-corrections",
+      "summary": "Every candidate added August 17 was rechecked against direct MLS-fed listing status and dated sale history. Prior transfers were separated from later relist events. Five stale prices were corrected and Bynum Avenue was corrected from active to pending; no July 2026 closing was found among the six additions.",
+      "coverageGap": "Public portals can lag or conflict. A listing page or contact form alone is not proof of active status; current source-status fields and transfer chronology must be reconciled on every run."
     },
     {
       "category": "Parcel, assessment, and deed",
