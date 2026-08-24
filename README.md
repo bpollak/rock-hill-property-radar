@@ -15,7 +15,7 @@ A public, source-backed family decision dashboard for evaluating actual Rock Hil
 - Keeps the exact family anchor out of the site and repository.
 - Lists fastest-route mileage and approximate drive time from the private family reference property for every purchase candidate, without publishing the reference address, coordinates, or route URL.
 - Publishes only after schema, privacy, calculation, and source checks pass.
-- Audits the public, no-credential source categories in `config/source-policy.json`, covering major MLS-syndicated portals, indexed brokerage and builder pages, government/GSE inventory, owner-listed and distressed inventory, official parcel and permit records, flood maps, HOA evidence, and rent sources. Credentialed feeds are disclosed as a known limitation and are not queried.
+- Audits the source categories in `config/source-policy.json`, including public portals and a user-authorized OneHome / Canopy MLS saved-search snapshot. The OneHome access token is never stored; only sanitized listing facts enter the repository through a tested import contract.
 
 ## Local development
 
@@ -26,6 +26,19 @@ npx serve dist
 ```
 
 The generated site is in `dist/`.
+
+## OneHome saved-search source
+
+OneHome is a durable, supported manual source. During a user-authorized interactive browser session, collect listing facts into a temporary JSON snapshot using the `onehome-snapshot-v1` contract described by `config/onehome-source.json`. Never put the OneHome token, token-bearing URL, family anchor, coordinates, route URL, or private contact information in that file.
+
+Import a sanitized snapshot with:
+
+```bash
+npm run import:onehome -- /absolute/path/to/sanitized-onehome-snapshot.json
+npm run check
+```
+
+The importer deduplicates by MLS number first and normalized address second, retains a prior pending or contingent status when a newer source only says active, withholds records missing required construction-year or route evidence, and writes the current dataset plus the dated history snapshot. Future refreshes require a fresh user-authorized browser session; the repository never persists the bearer token.
 
 ## Research automation
 

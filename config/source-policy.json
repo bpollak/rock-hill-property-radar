@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "listingDiscovery": [
     {
       "name": "MLS-syndicated portals",
@@ -37,8 +37,15 @@
       "purpose": "Find publicly marketed auction, bank-owned, and builder inventory. Financing, buyer eligibility, title, completion, and auction terms must be verified."
     },
     {
+      "name": "User-authorized OneHome / Canopy MLS saved search",
+      "sources": ["Sanitized OneHome snapshot collected during an interactive user-authorized session"],
+      "cadence": "When the saved search is refreshed",
+      "status": "supported-manual",
+      "purpose": "Add direct MLS-fed saved-search results through the token-free import contract in config/onehome-source.json. Deduplicate by MLS number and normalized address, retain stricter credible statuses, and never store the access token."
+    },
+    {
       "name": "Credentialed listing feeds",
-      "sources": ["Canopy MLS Grid", "Zillow Bridge", "RentCast", "BatchData", "ATTOM"],
+      "sources": ["Canopy MLS Grid API", "Zillow Bridge", "RentCast", "BatchData", "ATTOM"],
       "cadence": "Not queried",
       "status": "not-used",
       "purpose": "Known coverage limitation. The family will not obtain third-party credentials or paid API keys, so the workflow must continue using public sources without treating this category as a failed run."

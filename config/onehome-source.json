@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "sourceId": "onehome-canopy-saved-search",
+  "displayName": "User-authorized OneHome / Canopy MLS saved search",
+  "accessMode": "interactive-user-authorized",
+  "credentialPersistence": "forbidden",
+  "snapshotContract": "onehome-snapshot-v1",
+  "deduplicationOrder": ["mls", "normalized-address"],
+  "statusConflictRule": "retain-stricter-credible-status",
+  "requiredFields": ["mls", "address", "price", "yearBuilt", "distanceMiles", "driveMinutes"],
+  "privacyRules": [
+    "Never store or publish the OneHome access token or token-bearing URL.",
+    "Import only sanitized listing facts collected during a user-authorized interactive session.",
+    "Keep the family reference address, coordinates, route URLs, and recipient details private."
+  ]
+}

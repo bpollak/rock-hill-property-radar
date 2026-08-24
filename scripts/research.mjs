@@ -76,7 +76,9 @@ const next = {
   researchMethod: previous.researchMethod,
   market: researched.market || previous.market,
   properties: reconciledProperties,
-  methodologySources: researched.methodologySources || previous.methodologySources
+  methodologySources: researched.methodologySources || previous.methodologySources,
+  sourceAudit: researched.sourceAudit || previous.sourceAudit,
+  importSummary: previous.importSummary
 };
 const errors = validateDataset(next);
 const serialized = JSON.stringify(next).toLowerCase();

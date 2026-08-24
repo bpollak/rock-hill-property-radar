@@ -6,10 +6,15 @@ const root = new URL("../", import.meta.url);
 const dataset = JSON.parse(await readFile(new URL("data/current.json", root), "utf8"));
 const assumptions = JSON.parse(await readFile(new URL("config/public-assumptions.json", root), "utf8"));
 const sourcePolicy = JSON.parse(await readFile(new URL("config/source-policy.json", root), "utf8"));
+const oneHomeSource = JSON.parse(await readFile(new URL("config/onehome-source.json", root), "utf8"));
 const errors = validateDataset(dataset);
 const serialized = JSON.stringify(dataset).toLowerCase();
+const publicConfiguration = JSON.stringify({sourcePolicy, oneHomeSource}).toLowerCase();
 
 if (process.env.FAMILY_ANCHOR_ADDRESS && serialized.includes(process.env.FAMILY_ANCHOR_ADDRESS.toLowerCase())) errors.push("Private family anchor appears in public dataset.");
+if (/token=|eyjpu04i|contactid|setkey|@gmail\.com/i.test(serialized + publicConfiguration)) errors.push("OneHome token or private access marker appears in public data or configuration.");
+if (oneHomeSource.sourceId !== "onehome-canopy-saved-search" || oneHomeSource.credentialPersistence !== "forbidden") errors.push("OneHome source must use the token-free durable import contract.");
+if (!sourcePolicy.listingDiscovery.some(source => source.name === "User-authorized OneHome / Canopy MLS saved search" && source.status === "supported-manual")) errors.push("Source policy must include the supported OneHome saved-search source.");
 if (dataset.runStatus !== "successful") errors.push("Only the last successful research snapshot may be published.");
 if (dataset.properties.filter(p => p.strategy !== "rental-benchmark" && !isRemovedFromMarket(p)).length < 3) errors.push("At least three currently marketed purchase candidates are required.");
 if (assumptions.comparison.forwardHurdleRate !== 0.07) errors.push("Forward hurdle must remain 7% unless deliberately revised.");
