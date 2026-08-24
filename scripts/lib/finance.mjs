@@ -74,9 +74,10 @@ export function analyzeProperty(property, assumptions, years) {
   const rentalShare = property.strategy === "private-purchase" ? 0 : rentableRooms / Math.max(1, property.beds);
   const buildingBasis = price * 0.8;
   const depreciation = Math.min(buildingBasis * rentalShare, buildingBasis * rentalShare / 27.5 * years);
-  const gain = Math.max(0, futurePrice - price - saleCosts);
-  const recaptureTax = depreciation * (t.depreciationRecaptureRate + t.statePlanningRate);
-  const remainingGain = Math.max(0, gain - depreciation);
+  const totalGain = Math.max(0, futurePrice - saleCosts - (price - depreciation));
+  const recapture = Math.min(totalGain, depreciation);
+  const remainingGain = Math.max(0, totalGain - recapture);
+  const recaptureTax = recapture * (t.depreciationRecaptureRate + t.statePlanningRate);
   // The buyer is not expected to occupy the property as a principal residence,
   // so the planning model does not assume a primary-home gain exclusion.
   const gainTax = remainingGain * (t.federalCapitalGainRate + t.statePlanningRate);
