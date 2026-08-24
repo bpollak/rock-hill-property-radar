@@ -123,7 +123,7 @@
         <article><h3>Source-backed facts</h3><p>Each property links to the listing or public record used. Conflicting portal facts are shown, not averaged away.</p></article>
         <article><h3>Hard decision gates</h3><p>An unresolved private bathroom or room-rental authority prevents a recommendation, regardless of score.</p></article>
         <article><h3>Conservative tax treatment</h3><p>The public model assumes no immediate passive-loss benefit and estimates sale taxes. A tax adviser must validate actual treatment.</p></article>
-        <article><h3>OneHome property links</h3><p id="onehome-status">Connect a current OneHome URL once per page load to open MLS-only listings directly.</p><button class="text-button" id="onehome-button" type="button">Connect OneHome</button></article>
+        <article><h3>OneHome property links</h3><p id="onehome-status">Connect a current OneHome URL in one open Property Radar tab to open MLS-only listings directly across those tabs.</p><button class="text-button" id="onehome-button" type="button">Connect OneHome</button></article>
       </div>
       <button class="text-button" id="sources-button" type="button">View methodology sources</button>
     </section>
@@ -142,7 +142,7 @@
   <dialog id="onehome-dialog" aria-labelledby="onehome-title">
     <div class="dialog-body onehome-connect">
       <p class="section-kicker">Private session connection</p><h2 id="onehome-title">Connect OneHome property links</h2>
-      <p>Paste the full URL from your current OneHome search or property page. The dashboard keeps its query parameters only in this page's memory and adds all of them when you open a OneHome property. A private connection link can supply the same URL in its fragment; the dashboard removes that fragment from the address bar immediately after loading it.</p>
+      <p>Paste the full URL from your current OneHome search or property page. The dashboard keeps its query parameters only in memory and shares them with other open Property Radar tabs in the same browser. A private connection link can supply the same URL in its fragment; the dashboard removes that fragment from the address bar immediately after loading it.</p>
       <label for="onehome-url">Current OneHome URL</label>
       <input id="onehome-url" type="password" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://portal.onehome.com/…">
       <p class="connection-message" id="onehome-message" aria-live="polite">Nothing is saved to the public dataset or browser storage.</p>

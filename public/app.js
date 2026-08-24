@@ -1,4 +1,4 @@
-const state = { data: null, strategy: "all", status: "all", sort: "score", oneHomeParams: null, pendingOneHomeUrl: null };
+const state = { data: null, strategy: "all", status: "all", sort: "score", oneHomeParams: null, pendingOneHomeUrl: null, oneHomeChannel: null };
 
 const $ = selector => document.querySelector(selector);
 const money = value => value == null ? "—" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
@@ -40,6 +40,31 @@ function loadOneHomeConnectionFromFragment() {
   finally { history.replaceState(null, "", `${location.pathname}${location.search}`); }
 }
 
+function shareOneHomeConnection() {
+  if (!state.oneHomeChannel || !state.oneHomeParams) return;
+  state.oneHomeChannel.postMessage({type: "connection", parameters: state.oneHomeParams.toString()});
+}
+
+function setupOneHomeSessionBridge() {
+  if (typeof BroadcastChannel !== "function") return;
+  state.oneHomeChannel = new BroadcastChannel("rock-hill-property-radar-onehome");
+  state.oneHomeChannel.addEventListener("message", event => {
+    if (event.data?.type === "request") {
+      shareOneHomeConnection();
+      return;
+    }
+    if (event.data?.type !== "connection" || state.oneHomeParams || typeof event.data.parameters !== "string") return;
+    try {
+      state.oneHomeParams = oneHomeParameters(`https://portal.onehome.com/?${event.data.parameters}`);
+      updateOneHomeLinks();
+    } catch {
+      state.oneHomeParams = null;
+    }
+  });
+  state.oneHomeChannel.postMessage({type: "request"});
+  shareOneHomeConnection();
+}
+
 function sourceAnchor(url, label, className = "") {
   const oneHome = isOneHomeUrl(url);
   const href = oneHome && !state.oneHomeParams ? "#connect-onehome" : connectedOneHomeUrl(url);
@@ -53,8 +78,8 @@ function updateOneHomeLinks() {
   });
   const status = $("#onehome-status");
   if (status) status.textContent = state.oneHomeParams
-    ? "Connected for this page session. OneHome links now open the exact property with the full active query string."
-    : "Connect a current OneHome URL once per page load to open MLS-only listings directly.";
+    ? "Connected privately across open Property Radar tabs. OneHome links now open the exact property with the full active query string."
+    : "Connect a current OneHome URL in one open Property Radar tab to open MLS-only listings directly across those tabs.";
 }
 
 function openOneHomeDialog(url = null) {
@@ -371,6 +396,7 @@ function setupEvents() {
     const input = $("#onehome-url");
     try {
       state.oneHomeParams = oneHomeParameters(input.value.trim());
+      shareOneHomeConnection();
       input.value = "";
       $("#onehome-message").textContent = "Connected for this page session.";
       updateOneHomeLinks();
@@ -403,6 +429,7 @@ function setupEvents() {
 async function init() {
   try {
     loadOneHomeConnectionFromFragment();
+    setupOneHomeSessionBridge();
     const response = await fetch("data/app-data.json", {cache:"no-store"});
     if (!response.ok) throw new Error(`Data request failed: ${response.status}`);
     state.data = await response.json();
