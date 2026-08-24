@@ -25,6 +25,21 @@ function connectedOneHomeUrl(value) {
   return url.toString();
 }
 
+function oneHomeParameters(value) {
+  const accessUrl = new URL(value);
+  if (accessUrl.protocol !== "https:" || accessUrl.hostname !== "portal.onehome.com") throw new Error("Use a portal.onehome.com URL.");
+  for (const required of ["token", "searchId", "defaultId"]) if (!accessUrl.searchParams.has(required)) throw new Error(`The OneHome URL is missing ${required}.`);
+  return new URLSearchParams(accessUrl.searchParams);
+}
+
+function loadOneHomeConnectionFromFragment() {
+  const accessUrl = new URLSearchParams(location.hash.slice(1)).get("onehome");
+  if (!accessUrl) return;
+  try { state.oneHomeParams = oneHomeParameters(accessUrl); }
+  catch { state.oneHomeParams = null; }
+  finally { history.replaceState(null, "", `${location.pathname}${location.search}`); }
+}
+
 function sourceAnchor(url, label, className = "") {
   const oneHome = isOneHomeUrl(url);
   const href = oneHome && !state.oneHomeParams ? "#connect-onehome" : connectedOneHomeUrl(url);
@@ -355,10 +370,7 @@ function setupEvents() {
   $("#onehome-connect").addEventListener("click", () => {
     const input = $("#onehome-url");
     try {
-      const accessUrl = new URL(input.value.trim());
-      if (accessUrl.protocol !== "https:" || accessUrl.hostname !== "portal.onehome.com") throw new Error("Paste a portal.onehome.com URL.");
-      for (const required of ["token", "searchId", "defaultId"]) if (!accessUrl.searchParams.has(required)) throw new Error(`The OneHome URL is missing ${required}.`);
-      state.oneHomeParams = new URLSearchParams(accessUrl.searchParams);
+      state.oneHomeParams = oneHomeParameters(input.value.trim());
       input.value = "";
       $("#onehome-message").textContent = "Connected for this page session.";
       updateOneHomeLinks();
@@ -390,6 +402,7 @@ function setupEvents() {
 
 async function init() {
   try {
+    loadOneHomeConnectionFromFragment();
     const response = await fetch("data/app-data.json", {cache:"no-store"});
     if (!response.ok) throw new Error(`Data request failed: ${response.status}`);
     state.data = await response.json();
