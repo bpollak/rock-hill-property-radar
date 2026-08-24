@@ -1,4 +1,4 @@
-const state = { data: null, strategy: "all", status: "all", sort: "score" };
+const state = { data: null, strategy: "all", status: "all", sort: "score", oneHomeParams: null, pendingOneHomeUrl: null };
 
 const $ = selector => document.querySelector(selector);
 const money = value => value == null ? "—" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
@@ -14,6 +14,40 @@ const isNewListing = property => property.firstSeen === state.data.asOf;
 const recencyLabel = property => isNewListing(property) ? "New latest day" : "Previous listing";
 const titleCase = value => String(value || "").replace(/\b\w/g, character => character.toUpperCase());
 const displayStatus = property => underContractStatuses.has(String(property.status || "").toLowerCase()) ? titleCase(property.status) : property.recommendation;
+const isOneHomeUrl = value => {
+  try { return new URL(value).hostname === "portal.onehome.com"; } catch { return false; }
+};
+
+function connectedOneHomeUrl(value) {
+  if (!isOneHomeUrl(value) || !state.oneHomeParams) return value;
+  const url = new URL(value);
+  url.search = state.oneHomeParams.toString();
+  return url.toString();
+}
+
+function sourceAnchor(url, label, className = "") {
+  const oneHome = isOneHomeUrl(url);
+  const href = oneHome && !state.oneHomeParams ? "#connect-onehome" : connectedOneHomeUrl(url);
+  const connectionAttribute = oneHome ? ` data-onehome-url="${escapeHtml(url)}"` : "";
+  return `<a${className ? ` class="${escapeHtml(className)}"` : ""} href="${escapeHtml(href)}"${connectionAttribute} target="_blank" rel="noopener noreferrer">${label}</a>`;
+}
+
+function updateOneHomeLinks() {
+  document.querySelectorAll("[data-onehome-url]").forEach(link => {
+    link.href = state.oneHomeParams ? connectedOneHomeUrl(link.dataset.onehomeUrl) : "#connect-onehome";
+  });
+  const status = $("#onehome-status");
+  if (status) status.textContent = state.oneHomeParams
+    ? "Connected for this page session. OneHome links now open the exact property with the full active query string."
+    : "Connect a current OneHome URL once per page load to open MLS-only listings directly.";
+}
+
+function openOneHomeDialog(url = null) {
+  state.pendingOneHomeUrl = url;
+  $("#onehome-message").textContent = "Nothing is saved to the public dataset or browser storage.";
+  $("#onehome-dialog").showModal();
+  $("#onehome-url").focus();
+}
 
 function badgeClass(status) {
   if (status === "Qualified") return "qualified";
@@ -72,7 +106,7 @@ function renderCard(property) {
     <p class="card-summary">${escapeHtml(property.summary)}</p>
     <div class="card-decision">
       <div class="gate ${property.recommendation === "Qualified" || benchmark ? "ok" : ""}"><strong>${escapeHtml(property.recommendation === "Qualified" ? "Why it qualifies" : currentStatus)}:</strong> ${escapeHtml(statusGate(property))}</div>
-      <div class="card-actions"><button class="detail-button" type="button" data-detail="${escapeHtml(property.id)}">Review details</button><a class="source-link" href="${escapeHtml(property.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open primary source ↗</a></div>
+      <div class="card-actions"><button class="detail-button" type="button" data-detail="${escapeHtml(property.id)}">Review details</button>${sourceAnchor(property.sourceUrl, "Open primary source ↗", "source-link")}</div>
     </div>
   </article>`;
 }
@@ -261,7 +295,7 @@ function openDetail(id) {
     <div class="financial-card"><strong>${money(ten.initialCash)}</strong><small>Down payment + closing</small></div>
     <div class="financial-card"><strong>${money(ten.taxEstimate)}</strong><small>Estimated sale taxes at year 10</small></div>
   </div>` : `<p>This is a rental benchmark, not a purchase investment.</p>`;
-  const sources = property.sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} · checked ${escapeHtml(source.accessed)}</a>`).join("");
+  const sources = property.sources.map(source => sourceAnchor(source.url, `${escapeHtml(source.label)} · checked ${escapeHtml(source.accessed)}`)).join("");
   const history = property.listingHistory.length ? property.listingHistory.map(item => `<p><strong>${escapeHtml(item.date)}</strong> · ${escapeHtml(item.event)} ${item.price ? `· ${money(item.price)}` : ""}</p>`).join("") : "<p>No purchase history included for this benchmark.</p>";
   $("#dialog-content").innerHTML = `<div class="detail-header"><div class="badges"><span class="badge">${escapeHtml(strategyLabel(property.strategy))}</span><span class="badge ${badgeClass(currentStatus)}">${escapeHtml(currentStatus)}</span></div><h2 id="dialog-title">${escapeHtml(property.address)}</h2><p>${escapeHtml(property.summary)}</p></div>
   <section class="detail-verdict ${property.recommendation === "Qualified" ? "qualified" : ""}"><strong>${escapeHtml(currentStatus)}.</strong> ${escapeHtml(statusGate(property))}</section>
@@ -310,13 +344,44 @@ function renderMethod() {
       <div class="assumption"><strong>${percent(a.comparison.sp500Trailing10YearAnnualized)}</strong><small>Trailing 10-year S&amp;P benchmark as of ${escapeHtml(a.comparison.sp500AsOf)}; historical context only</small></div>
     </div><p class="fine-print">${escapeHtml(a.roomRentability.note)} ${escapeHtml(a.ageRisk.note)} ${escapeHtml(a.tax.note)}</p>
     <h3>Research coverage</h3><div class="coverage-table">${coverage.map(item => `<div class="coverage-row"><span>${escapeHtml(item.section)}</span><strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.sources.join(", "))}</span><em class="coverage-status ${escapeHtml(item.status)}">${escapeHtml(item.status.replaceAll("-", " "))}</em></div>`).join("")}</div>
-    <h3>Methodology sources</h3><div class="source-list">${state.data.methodologySources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join("")}</div>`;
+    <h3>Methodology sources</h3><div class="source-list">${state.data.methodologySources.map(source => sourceAnchor(source.url, escapeHtml(source.label))).join("")}</div>`;
 }
 
 function setupEvents() {
   [["#strategy-filter","strategy"],["#status-filter","status"],["#sort-filter","sort"]].forEach(([selector,key]) => $(selector).addEventListener("change", event => { state[key] = event.target.value; renderList(); }));
   $("#method-button").addEventListener("click", () => $("#method-dialog").showModal());
   $("#sources-button").addEventListener("click", () => $("#method-dialog").showModal());
+  $("#onehome-button").addEventListener("click", () => openOneHomeDialog());
+  $("#onehome-connect").addEventListener("click", () => {
+    const input = $("#onehome-url");
+    try {
+      const accessUrl = new URL(input.value.trim());
+      if (accessUrl.protocol !== "https:" || accessUrl.hostname !== "portal.onehome.com") throw new Error("Paste a portal.onehome.com URL.");
+      for (const required of ["token", "searchId", "defaultId"]) if (!accessUrl.searchParams.has(required)) throw new Error(`The OneHome URL is missing ${required}.`);
+      state.oneHomeParams = new URLSearchParams(accessUrl.searchParams);
+      input.value = "";
+      $("#onehome-message").textContent = "Connected for this page session.";
+      updateOneHomeLinks();
+      $("#onehome-dialog").close();
+      if (state.pendingOneHomeUrl) window.open(connectedOneHomeUrl(state.pendingOneHomeUrl), "_blank", "noopener,noreferrer");
+      state.pendingOneHomeUrl = null;
+    } catch (error) {
+      $("#onehome-message").textContent = error.message;
+    }
+  });
+  $("#onehome-clear").addEventListener("click", () => {
+    state.oneHomeParams = null;
+    state.pendingOneHomeUrl = null;
+    $("#onehome-url").value = "";
+    $("#onehome-message").textContent = "Connection cleared. Nothing was saved.";
+    updateOneHomeLinks();
+  });
+  document.addEventListener("click", event => {
+    const link = event.target.closest("[data-onehome-url]");
+    if (!link || state.oneHomeParams) return;
+    event.preventDefault();
+    openOneHomeDialog(link.dataset.onehomeUrl);
+  });
   document.querySelectorAll("dialog").forEach(dialog => {
     dialog.querySelector(".dialog-close").addEventListener("click", () => dialog.close());
     dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
@@ -329,7 +394,7 @@ async function init() {
     if (!response.ok) throw new Error(`Data request failed: ${response.status}`);
     state.data = await response.json();
     state.data.properties = state.data.properties.filter(meetsMinimumYearBuilt);
-    renderOverview(); renderList(); renderComparison(); renderMethod(); setupEvents();
+    renderOverview(); renderList(); renderComparison(); renderMethod(); setupEvents(); updateOneHomeLinks();
   } catch (error) {
     $("#run-status").textContent = "Research data unavailable";
     $("#property-list").innerHTML = `<div class="empty-state"><h3>Validated property data is unavailable</h3><p>The dashboard will not substitute placeholder listings. Please try again later.</p></div>`;

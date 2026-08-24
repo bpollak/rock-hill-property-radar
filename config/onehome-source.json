@@ -8,6 +8,7 @@
   "deduplicationOrder": ["mls", "normalized-address"],
   "statusConflictRule": "retain-stricter-credible-status",
   "requiredFields": ["mls", "address", "price", "yearBuilt", "distanceMiles", "driveMinutes"],
+  "optionalFields": ["path: token-free /en-US/property/aotf~<id>~CANOPY path used for direct links"],
   "privacyRules": [
     "Never store or publish the OneHome access token or token-bearing URL.",
     "Import only sanitized listing facts collected during a user-authorized interactive session.",

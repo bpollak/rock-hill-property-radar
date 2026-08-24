@@ -38,11 +38,13 @@ for (const property of dataset.properties) {
   try {
     const primary = new URL(property.sourceUrl);
     if (!['http:','https:'].includes(primary.protocol)) errors.push(`${property.id}: invalid primary-source protocol`);
+    if (primary.hostname === 'portal.onehome.com' && primary.search) errors.push(`${property.id}: OneHome primary source must not persist access parameters`);
   } catch { errors.push(`${property.id}: invalid primary-source URL`); }
   for (const source of property.sources || []) {
     try {
       const url = new URL(source.url);
       if (!['http:','https:'].includes(url.protocol)) errors.push(`${property.id}: invalid source protocol`);
+      if (url.hostname === 'portal.onehome.com' && url.search) errors.push(`${property.id}: OneHome source must not persist access parameters`);
     } catch { errors.push(`${property.id}: invalid source URL`); }
   }
   if (property.strategy === "shared-condo" && property.hoa.roomRental === "allowed" && property.hoa.evidence.length === 0) errors.push(`${property.id}: condo room rental cannot be allowed without evidence.`);

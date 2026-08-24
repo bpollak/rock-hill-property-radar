@@ -7,7 +7,7 @@ const sourceProperty = {
 };
 const base = {asOf:"2026-08-24", runStatus:"successful", properties:[sourceProperty]};
 const snapshot = properties => ({contract:"onehome-snapshot-v1", sourceId:"onehome-canopy-saved-search", asOf:"2026-08-24", properties});
-const detail = {mls:"100",address:"10 Main Street, Rock Hill, SC 29730",status:"Active",price:240000,beds:3,baths:2,sqft:1200,yearBuilt:2000,distanceMiles:5,driveMinutes:12};
+const detail = {mls:"100",address:"10 Main Street, Rock Hill, SC 29730",status:"Active",price:240000,beds:3,baths:2,sqft:1200,yearBuilt:2000,distanceMiles:5,driveMinutes:12,path:"/en-US/property/aotf~1234567890~CANOPY"};
 
 test("normalizes equivalent street addresses", () => {
   assert.equal(normalizePropertyAddress("10 Main Street #2"), normalizePropertyAddress("10 Main St Apt 2"));
@@ -35,4 +35,14 @@ test("withholds a listing missing construction year", () => {
 
 test("rejects token-bearing snapshots", () => {
   assert.throws(() => assertSanitizedOneHomeSnapshot({...snapshot([]),sourceUrl:"https://portal.onehome.com/?token=secret"}), /token or private access marker/);
+});
+
+test("retains a token-free property path for direct-link composition", () => {
+  const result = mergeOneHomeSnapshot({...base,properties:[]}, snapshot([detail]));
+  assert.equal(result.dataset.properties[0].sourceUrl, "https://portal.onehome.com/en-US/property/aotf~1234567890~CANOPY");
+  assert.equal(result.dataset.properties[0].sources[0].url, result.dataset.properties[0].sourceUrl);
+});
+
+test("rejects a query string inside a supplied property path", () => {
+  assert.throws(() => assertSanitizedOneHomeSnapshot(snapshot([{...detail,path:`${detail.path}?token=secret`}])), /token or private access marker|invalid or access-bearing/);
 });

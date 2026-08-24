@@ -29,7 +29,7 @@ The generated site is in `dist/`.
 
 ## OneHome saved-search source
 
-OneHome is a durable, supported manual source. During a user-authorized interactive browser session, collect listing facts into a temporary JSON snapshot using the `onehome-snapshot-v1` contract described by `config/onehome-source.json`. Never put the OneHome token, token-bearing URL, family anchor, coordinates, route URL, or private contact information in that file.
+OneHome is a durable, supported manual source. During a user-authorized interactive browser session, collect listing facts into a temporary JSON snapshot using the `onehome-snapshot-v1` contract described by `config/onehome-source.json`. Include the token-free `/en-US/property/aotf~<id>~CANOPY` path when it is available. Never put the OneHome token, token-bearing URL, family anchor, coordinates, route URL, or private contact information in that file.
 
 Import a sanitized snapshot with:
 
@@ -38,7 +38,7 @@ npm run import:onehome -- /absolute/path/to/sanitized-onehome-snapshot.json
 npm run check
 ```
 
-The importer deduplicates by MLS number first and normalized address second, retains a prior pending or contingent status when a newer source only says active, withholds records missing required construction-year or route evidence, and writes the current dataset plus the dated history snapshot. Future refreshes require a fresh user-authorized browser session; the repository never persists the bearer token.
+The importer deduplicates by MLS number first and normalized address second, retains a prior pending or contingent status when a newer source only says active, withholds records missing required construction-year or route evidence, and writes the current dataset plus the dated history snapshot. The dashboard keeps the token-free property path in public data. A user can paste a current OneHome URL into the dashboard's connection dialog; all of its query parameters are then added to property links in page memory only. Refreshing clears the connection. The repository and browser storage never persist the bearer token.
 
 ## Research automation
 

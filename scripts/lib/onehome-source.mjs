@@ -1,5 +1,6 @@
 export const ONEHOME_SOURCE_ID = "onehome-canopy-saved-search";
 export const ONEHOME_PUBLIC_URL = "https://portal.onehome.com/";
+const ONEHOME_PROPERTY_PATH = /^\/en-US\/property\/aotf~\d+~CANOPY$/;
 
 const numberFrom = value => value == null || value === "" ? null : Number(String(value).replace(/[^0-9.]/g, ""));
 const stricterStatuses = new Set(["pending", "contingent"]);
@@ -38,11 +39,16 @@ export function assertSanitizedOneHomeSnapshot(snapshot) {
   if (!Array.isArray(snapshot?.properties)) throw new Error("OneHome snapshot requires a properties array.");
   const serialized = JSON.stringify(snapshot);
   if (/token=|eyJPU04i|contactid|setkey|@gmail\.com/i.test(serialized)) throw new Error("OneHome snapshot contains a token or private access marker.");
+  for (const detail of snapshot.properties) if (detail.path && !ONEHOME_PROPERTY_PATH.test(detail.path)) throw new Error("OneHome snapshot contains an invalid or access-bearing property path.");
   return snapshot;
 }
 
-function sourceRecord(asOf) {
-  return {label:"User-authorized Canopy MLS listing details via OneHome; access token omitted", url:ONEHOME_PUBLIC_URL, accessed:asOf};
+function propertyUrl(path) {
+  return path && ONEHOME_PROPERTY_PATH.test(path) ? new URL(path, ONEHOME_PUBLIC_URL).toString() : ONEHOME_PUBLIC_URL;
+}
+
+function sourceRecord(asOf, path) {
+  return {label:"User-authorized Canopy MLS property listing via OneHome", url:propertyUrl(path), accessed:asOf};
 }
 
 function buildImportedProperty(detail, asOf) {
@@ -72,7 +78,7 @@ function buildImportedProperty(detail, asOf) {
     lastSeen: asOf,
     lastChanged: asOf,
     address: detail.address,
-    sourceUrl: ONEHOME_PUBLIC_URL,
+    sourceUrl: propertyUrl(detail.path),
     mls: String(detail.mls),
     status: oneHomeStatus(detail.status),
     price,
@@ -101,7 +107,7 @@ function buildImportedProperty(detail, asOf) {
     sourceConflicts: [],
     hoa: {exists: condo || hoaMonthly ? true : null, wholeUnitRental:"unknown", roomRental:"unknown", evidence:[], confidence:"low", followUp:"Obtain governing documents and written confirmation for the proposed occupancy and separate-room lease structure."},
     listingHistory: [{date:asOf, event:"Imported from user-authorized Canopy MLS saved search", price}],
-    sources: [sourceRecord(asOf)],
+    sources: [sourceRecord(asOf, detail.path)],
     changeHistory: [],
     missingRuns: 0
   };
@@ -133,7 +139,10 @@ function updateExistingProperty(property, detail, asOf) {
   property.distanceLabel = `${detail.distanceMiles.toFixed(1)} miles · about ${detail.driveMinutes} minutes from the family reference property`;
   property.pricePerSqft = property.sqft ? Math.round(property.price / property.sqft) : null;
   property.sources ||= [];
-  if (!property.sources.some(source => /OneHome|user-authorized Canopy MLS/i.test(source.label || ""))) property.sources.push(sourceRecord(asOf));
+  const oneHomeSource = property.sources.find(source => /OneHome|user-authorized Canopy MLS/i.test(source.label || ""));
+  if (oneHomeSource && detail.path) Object.assign(oneHomeSource, sourceRecord(asOf, detail.path));
+  else if (!oneHomeSource) property.sources.push(sourceRecord(asOf, detail.path));
+  if (detail.path && property.sourceUrl === ONEHOME_PUBLIC_URL) property.sourceUrl = propertyUrl(detail.path);
   if (changes.length) {
     property.changeCategory = "changed";
     property.lastChanged = asOf;
