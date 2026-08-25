@@ -66,27 +66,28 @@ dialog{overflow:hidden}.dialog-body,#dialog-content{max-height:90vh;overflow-y:a
 .source-grid{grid-template-columns:repeat(4,1fr)}.source-grid p{margin-bottom:8px}.onehome-connect{display:grid;gap:10px}.onehome-connect>p{margin:0;color:var(--muted);font-size:11px}.onehome-connect label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}.onehome-connect input{width:100%;padding:9px;border:1px solid var(--line-dark);font:inherit}.connection-actions{display:flex;gap:8px}.connection-message{min-height:18px}
 @media(max-width:720px){.source-grid{grid-template-columns:1fr}}
 
-/* Phone readability: enlarge descriptive copy without changing desktop density. */
-@media(max-width:720px){
-  body{font-size:16px;line-height:1.55}
-  .dashboard-intro p,.decision-alert{font-size:14px;line-height:1.5}
-  .result-summary,.listing-group-note{font-size:13px;line-height:1.5}
-  .property-type{font-size:12px}.property-card h3{font-size:16px}
-  .card-summary{font-size:14px;line-height:1.55}.gate{font-size:13px;line-height:1.5}
-  .fact strong{font-size:13px}.fact small{font-size:9px}
-  .detail-button,.source-link{font-size:13px}.method-button,.text-button{font-size:13px}
-  .status-key p,.source-grid p{font-size:13px;line-height:1.5}
-  .detail-header p,.detail-verdict{font-size:14px;line-height:1.5}
-  .qualification-intro,.qualification-row p,.qualification-caveats{font-size:13px;line-height:1.5}
-  .qualification-row strong{font-size:14px}
-  .criteria-row,.cost-row{font-size:14px;line-height:1.5}.criteria-status{font-size:10px}
-  .property-fact strong{font-size:14px}.property-fact small{font-size:9px}
-  .room-rental-panel li,.age-risk-panel li,.detail-panel p,.detail-panel li{font-size:14px;line-height:1.5}
-  .cost-note{font-size:13px;line-height:1.55}.cost-row small{font-size:12px}
-  .age-risk-summary strong{font-size:14px}.age-risk-summary small{font-size:9px}
-  .rentability-row{font-size:14px;line-height:1.5}.rentability-row span small{font-size:9px}
-  .source-list a{font-size:13px;line-height:1.45}
-  .financial-card small,.assumption small{font-size:11px;line-height:1.4}
-  .method-row,.method-warning{font-size:13px;line-height:1.5}
-  .fine-print{font-size:12px;line-height:1.5}
+/* Phone readability: a deliberately large type scale, including landscape phones. */
+@media(max-width:900px){
+  body{font-size:18px;line-height:1.6;-webkit-text-size-adjust:100%}
+  .dashboard-intro h1{font-size:24px}.dashboard-intro p,.decision-alert{font-size:16px;line-height:1.55}
+  .result-summary,.listing-group-note{font-size:15px;line-height:1.55}
+  .property-type{font-size:14px}.property-card h3{font-size:19px;line-height:1.35}
+  .card-summary{font-size:16px;line-height:1.6}.gate{font-size:15px;line-height:1.55}
+  .fact strong{font-size:15px}.fact small{font-size:11px}
+  .badge{font-size:10px}.score small{font-size:10px}
+  .detail-button,.source-link{font-size:15px}.method-button,.text-button{font-size:15px}
+  .status-key p,.source-grid p{font-size:15px;line-height:1.55}
+  .detail-header h2{font-size:22px}.detail-header p,.detail-verdict{font-size:16px;line-height:1.55}
+  .qualification-intro,.qualification-row p,.qualification-caveats{font-size:15px;line-height:1.55}
+  .qualification-row strong{font-size:16px}
+  .criteria-row,.cost-row{font-size:16px;line-height:1.55}.criteria-status{font-size:12px}
+  .property-fact strong{font-size:16px}.property-fact small{font-size:11px}
+  .room-rental-panel li,.age-risk-panel li,.detail-panel p,.detail-panel li{font-size:16px;line-height:1.55}
+  .cost-note{font-size:15px;line-height:1.6}.cost-row small{font-size:14px}
+  .age-risk-summary strong{font-size:16px}.age-risk-summary small{font-size:11px}
+  .rentability-row{font-size:16px;line-height:1.55}.rentability-row span small{font-size:11px}
+  .source-list a{font-size:15px;line-height:1.5}
+  .financial-card strong{font-size:17px}.financial-card small,.assumption small{font-size:13px;line-height:1.5}
+  .method-row,.method-warning{font-size:15px;line-height:1.55}
+  .fine-print{font-size:14px;line-height:1.55}
 }
