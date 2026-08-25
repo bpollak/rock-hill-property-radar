@@ -37,7 +37,7 @@ function futureValueOfContributions(initial, annualContributions, rate) {
   return value;
 }
 
-export function analyzeProperty(property, assumptions, years) {
+export function analyzeProperty(property, assumptions, years, roomRentEstimate = null) {
   if (property.strategy === "rental-benchmark") return null;
   const p = assumptions.purchase;
   const o = assumptions.operations;
@@ -54,7 +54,9 @@ export function analyzeProperty(property, assumptions, years) {
   const capitalReserve = price * o.capitalExpenditureRate * reserveMultiplier / 12;
   const baselineReserves = price * (o.maintenanceRate + o.capitalExpenditureRate) / 12;
   const rentableRooms = roomRentability?.required ? roomRentability.rentableRooms : 0;
-  const fullRoomRevenue = rentableRooms * o.roomRentMonthly * (1 - o.vacancyRate);
+  const fallbackRoomRent = o.roomRentFallbackMonthly ?? o.roomRentMonthly ?? 850;
+  const scheduledRoomRevenue = roomRentEstimate?.totalExpectedMonthly ?? rentableRooms * fallbackRoomRent;
+  const fullRoomRevenue = scheduledRoomRevenue * (1 - o.vacancyRate);
   const roomIncomeRealizationRate = roomRentability?.required ? roomRentability.incomeRealizationRate : 1;
   const baseRent = fullRoomRevenue * roomIncomeRealizationRate;
   const baseExpenses = mortgage + price * (o.propertyTaxRate + o.insuranceRate) / 12 + maintenanceReserve + capitalReserve + (property.hoaMonthly || 0) + (rentableRooms ? o.sharedUtilitiesMonthly : 0);
@@ -98,6 +100,10 @@ export function analyzeProperty(property, assumptions, years) {
     capitalReserveMonthly: Math.round(capitalReserve),
     ageReservePremiumMonthly: Math.round(maintenanceReserve + capitalReserve - baselineReserves),
     ageReserveMultiplier: reserveMultiplier,
+    scheduledRoomRevenueMonthly: Math.round(scheduledRoomRevenue),
+    roomRentPerRoomMonthly: roomRentEstimate?.expectedPerRoom ?? (rentableRooms ? fallbackRoomRent : 0),
+    roomRentLowPerRoomMonthly: roomRentEstimate?.lowPerRoom ?? (rentableRooms ? Math.round(fallbackRoomRent * 0.8) : 0),
+    roomRentHighPerRoomMonthly: roomRentEstimate?.highPerRoom ?? (rentableRooms ? Math.round(fallbackRoomRent * 1.2) : 0),
     fullRoomRevenueMonthly: Math.round(fullRoomRevenue),
     roomIncomeRealizationRate,
     roomIncomeAtRiskMonthly: Math.round(fullRoomRevenue - baseRent),
@@ -115,8 +121,8 @@ export function analyzeProperty(property, assumptions, years) {
   };
 }
 
-export function enrichFinancials(property, assumptions) {
+export function enrichFinancials(property, assumptions, roomRentEstimate = null) {
   const results = {};
-  for (const years of assumptions.comparison.holdingPeriods) results[years] = analyzeProperty(property, assumptions, years);
+  for (const years of assumptions.comparison.holdingPeriods) results[years] = analyzeProperty(property, assumptions, years, roomRentEstimate);
   return results;
 }

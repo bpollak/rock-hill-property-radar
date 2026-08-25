@@ -226,7 +226,7 @@ function criteriaAssessment(property, ten) {
   const sharing = benchmark || property.strategy === "private-purchase"
     ? ["Not needed", "This strategy does not rely on individual-room income.", "info"]
     : property.roomRentability
-      ? [`${property.roomRentability.label} ${property.roomRentability.score}/100`, `${money(ten?.roomRevenueMonthly)} of ${money(ten?.fullRoomRevenueMonthly)} potential monthly room income is underwritten after the viability haircut. ${property.roomRentability.authorityConfirmed ? "Authority is documented." : "Rental authority remains unresolved."}`, property.roomRentability.score >= 65 ? "meet" : property.roomRentability.score >= 35 ? "warn" : "no"]
+      ? [`${property.roomRentability.label} ${property.roomRentability.score}/100`, `${money(property.roomRentEstimate?.lowPerRoom)}–${money(property.roomRentEstimate?.highPerRoom)} per room from current asking-rent comps. ${money(ten?.roomRevenueMonthly)} monthly income is underwritten after vacancy and the separate authorization adjustment. ${property.roomRentability.authorityConfirmed ? "Authority is documented." : "Rental authority remains unresolved."}`, property.roomRentability.score >= 65 ? "meet" : property.roomRentability.score >= 35 ? "warn" : "no"]
       : ["Verify", "Room-rental viability has not been evaluated.", "warn"];
   const investment = benchmark
     ? ["Reference", "No ownership return is modeled.", "info"]
@@ -264,7 +264,8 @@ function propertyFacts(property, ten) {
     ["Layout", property.oneLevel ? "One level" : "Multiple levels / stairs acceptable"],
     ["Distance / drive", Number.isFinite(property.distanceMiles) ? `${property.distanceMiles.toFixed(1)} miles · about ${property.driveMinutes} minutes` : "Not available"],
     ["Private bath", property.privateBath === "yes" ? "Confirmed" : "Unconfirmed"],
-    [property.roomRentability?.required ? "Room-rental likelihood" : "Monthly subsidy", property.roomRentability?.required ? `${property.roomRentability.label} · ${property.roomRentability.score}/100` : ten ? money(ten.monthlySubsidy) : "Rental benchmark"]
+    [property.roomRentability?.required ? "Room-rental viability" : "Monthly subsidy", property.roomRentability?.required ? `${property.roomRentability.label} · ${property.roomRentability.score}/100` : ten ? money(ten.monthlySubsidy) : "Rental benchmark"],
+    ...(property.roomRentEstimate ? [["Estimated rent / room", `${money(property.roomRentEstimate.expectedPerRoom)} · ${money(property.roomRentEstimate.lowPerRoom)}–${money(property.roomRentEstimate.highPerRoom)}`]] : [])
   ];
   return facts.map(([label,value]) => `<div class="property-fact"><small>${escapeHtml(label)}</small><strong>${escapeHtml(value)}</strong></div>`).join("");
 }
@@ -281,7 +282,7 @@ function recurringCosts(property, ten) {
     ["Age-adjusted capital reserve", ten.capitalReserveMonthly, `${ten.ageReserveMultiplier.toFixed(2)}× age factor`],
     ["HOA / association", property.hoa?.exists ? property.hoaMonthly || 0 : 0, property.hoa?.exists ? "Reported; verify" : "None reported"],
     ["Shared utilities", ten.rentableRooms ? o.sharedUtilitiesMonthly : 0, ten.rentableRooms ? "Modeled" : "Not applicable"],
-    ["Less underwritten room income", -ten.roomRevenueMonthly, ten.rentableRooms ? `${ten.rentableRooms} room${ten.rentableRooms === 1 ? "" : "s"}; ${(ten.roomIncomeRealizationRate*100).toFixed(0)}% viability factor after vacancy` : "Not applicable"]
+    ["Less underwritten room income", -ten.roomRevenueMonthly, ten.rentableRooms ? `${ten.rentableRooms} room${ten.rentableRooms === 1 ? "" : "s"}; current comps, ${(o.vacancyRate*100).toFixed(0)}% vacancy, ${(ten.roomIncomeRealizationRate*100).toFixed(0)}% authorization factor` : "Not applicable"]
   ];
   return `<div class="cost-table">${rows.map(([label,value,basis]) => `<div class="cost-row"><span>${escapeHtml(label)}</span><strong class="${value < 0 ? "cost-offset" : ""}">${value < 0 ? "−" : ""}${money(Math.abs(Math.round(value)))}</strong><small>${escapeHtml(basis)}</small></div>`).join("")}<div class="cost-row cost-total"><span>Estimated monthly subsidy</span><strong>${money(ten.monthlySubsidy)}</strong><small>Year one</small></div></div><p class="cost-note">Components are displayed as rounded dollars; the total is calculated before rounding. The age adjustment changes reserves by ${ten.ageReservePremiumMonthly >= 0 ? "+" : "−"}${money(Math.abs(ten.ageReservePremiumMonthly))}/mo versus the baseline. Initial cash is ${money(ten.initialCash)}, including the modeled down payment and buyer closing costs. Inspection, appraisal, lender fees beyond the closing-cost allowance, title exceptions, special assessments, repairs, and property-specific insurance surcharges require quotes or documents.</p>`;
 }
@@ -289,14 +290,21 @@ function recurringCosts(property, ten) {
 function roomRentabilityDetail(property, ten) {
   const rentability = property.roomRentability;
   if (!rentability?.required || !ten) return `<p class="cost-note">This strategy does not depend on individual-room rental income.</p>`;
+  const estimate = property.roomRentEstimate;
   const factors = rentability.factors.map(factor => `<div class="rentability-row"><span>${escapeHtml(factor.label)}<small>${(factor.weight*100).toFixed(0)}% weight</small></span><strong>${factor.score}/100</strong><p>${escapeHtml(factor.reason)}</p></div>`).join("");
+  const comparableMap = new Map((state.data.roomRentMarket?.comparables || []).map(comparable => [comparable.id, comparable]));
+  const comparables = (estimate?.comparableIds || []).slice(0, 5).map(id => comparableMap.get(id)).filter(Boolean);
+  const compLinks = comparables.length ? `<h4>Most relevant asking-rent evidence</h4><div class="source-list">${comparables.map(comparable => sourceAnchor(comparable.sourceUrl, `${escapeHtml(comparable.provider)} · ${escapeHtml(comparable.zipCode)} · ${money(comparable.monthlyRent)} · ${escapeHtml(comparable.bathroomType)} bath`)).join("")}</div>` : "";
   return `<div class="age-risk-summary rentability-summary">
-    <div><small>Likelihood</small><strong>${escapeHtml(rentability.label)} · ${rentability.score}/100</strong></div>
+    <div><small>Viability</small><strong>${escapeHtml(rentability.label)} · ${rentability.score}/100</strong></div>
     <div><small>Potential rooms</small><strong>${rentability.rentableRooms}</strong></div>
-    <div><small>Potential income</small><strong>${money(ten.fullRoomRevenueMonthly)}/mo</strong></div>
+    <div><small>Estimated rent / room</small><strong>${money(estimate?.expectedPerRoom)}/mo</strong></div>
+    <div><small>Per-room range</small><strong>${money(estimate?.lowPerRoom)}–${money(estimate?.highPerRoom)}</strong></div>
+    <div><small>Scheduled potential</small><strong>${money(ten.scheduledRoomRevenueMonthly)}/mo</strong></div>
+    <div><small>After vacancy</small><strong>${money(ten.fullRoomRevenueMonthly)}/mo</strong></div>
     <div><small>Underwritten income</small><strong>${money(ten.roomRevenueMonthly)}/mo</strong></div>
     <div><small>Income at risk</small><strong>${money(ten.roomIncomeAtRiskMonthly)}/mo</strong></div>
-  </div><div class="rentability-table">${factors}</div><h4>Required follow-up</h4><ul>${rentability.followUps.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul><p class="cost-note">The likelihood score is a conservative underwriting heuristic, not an empirical probability. It is applied before the separate ${Math.round(state.data.assumptions.operations.vacancyRate*100)}% vacancy assumption. Documented legal authority, parking, occupant capacity, safety, condition, and property-specific demand can raise the score on a future run.</p>`;
+  </div><p class="cost-note"><strong>${escapeHtml(estimate?.confidence || "low")} confidence.</strong> ${estimate?.compCount ?? 0} zone comparables across ${estimate?.sourceCount ?? 0} source${estimate?.sourceCount === 1 ? "" : "s"}, checked ${escapeHtml(estimate?.asOf || state.data.asOf)}. ${escapeHtml(estimate?.caveat || "")}</p>${compLinks}<div class="rentability-table">${factors}</div><h4>Required follow-up</h4><ul>${rentability.followUps.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul><p class="cost-note">Market rent, vacancy, and legal/HOA authorization are separate inputs. The viability score is a diligence heuristic, not an empirical probability. Only authorization controls the additional income haircut; parking, capacity, safety, condition, and demand remain visible diligence factors.</p>`;
 }
 
 function qualificationDetail(property) {
@@ -346,7 +354,7 @@ function openDetail(id) {
   <section class="age-risk-panel"><h3>Age, condition and rework risk</h3>${ageRiskDetail(property, ten)}</section>
   <section class="cost-panel"><h3>Recurring cost components</h3>${recurringCosts(property, ten)}</section>
   <div class="detail-grid">
-    <section class="detail-panel"><h3>Decision score</h3>${property.score ? `<div class="score-bars">${scoreBars(property)}</div><p class="cost-note">Room-rental viability is 15% of the total score and also changes underwritten income, subsidy, and investment return. Age deducts ${property.score.agePenalty} points inside risk and optionality and also changes reserves.</p>` : "<p>Reference option, not scored.</p>"}</section>
+    <section class="detail-panel"><h3>Decision score</h3>${property.score ? `<div class="score-bars">${scoreBars(property)}</div><p class="cost-note">Room-rental viability is 15% of the total score. Legal/HOA authorization, vacancy, and the separate comp-based rent estimate change underwritten income, subsidy, and investment return. Age deducts ${property.score.agePenalty} points inside risk and optionality and also changes reserves.</p>` : "<p>Reference option, not scored.</p>"}</section>
     <section class="detail-panel"><h3>Financial model</h3>${financialSection}</section>
     <section class="detail-panel"><h3>Why it could work</h3><ul>${property.pros.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
     <section class="detail-panel"><h3>Concerns and gates</h3><ul>${property.concerns.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>${property.sourceConflicts.length ? `<p><strong>Source conflict:</strong> ${escapeHtml(property.sourceConflicts.join(" "))}</p>` : ""}</section>
@@ -376,10 +384,10 @@ function renderMethod() {
       <div class="assumption"><strong>${(a.purchase.downPaymentRate*100).toFixed(0)}% down</strong><small>Plus ${(a.purchase.buyerClosingCostRate*100).toFixed(0)}% buyer closing costs</small></div>
       <div class="assumption"><strong>${money(a.purchase.maximumOfferPrice)}</strong><small>Absolute maximum offer and modeled acquisition price</small></div>
       <div class="assumption"><strong>${percent(a.purchase.mortgageRate)}</strong><small>30-year planning mortgage rate</small></div>
-      <div class="assumption"><strong>${money(a.operations.roomRentMonthly)}/room</strong><small>${(a.operations.vacancyRate*100).toFixed(0)}% vacancy; ${money(a.operations.roomRentLow)}–${money(a.operations.roomRentHigh)} sensitivity</small></div>
+      <div class="assumption"><strong>${state.data.roomRentMarket.comparables.length} current room asks</strong><small>Property-specific weighted estimate across ${Object.keys(state.data.roomRentMarket.marketZones).length} regional zones; ${(a.operations.vacancyRate*100).toFixed(0)}% vacancy</small></div>
       <div class="assumption"><strong>${percent(a.operations.appreciationRate)}</strong><small>Annual property appreciation assumption</small></div>
       <div class="assumption"><strong>${percent(a.operations.maintenanceRate + a.operations.capitalExpenditureRate)}</strong><small>Baseline annual maintenance + capital reserve; scaled ${Math.min(...a.ageRisk.bands.map(b => b.reserveMultiplier)).toFixed(2)}×–${Math.max(...a.ageRisk.bands.map(b => b.reserveMultiplier)).toFixed(2)}× by property age</small></div>
-      <div class="assumption"><strong>0–100</strong><small>Room-rental likelihood; applied as the income realization factor before vacancy</small></div>
+      <div class="assumption"><strong>0–100</strong><small>Room-rental viability score; only legal/HOA authorization controls the additional income haircut</small></div>
       <div class="assumption"><strong>${percent(a.comparison.forwardHurdleRate)}</strong><small>Forward alternative-investment hurdle</small></div>
       <div class="assumption"><strong>${percent(a.comparison.sp500Trailing10YearAnnualized)}</strong><small>Trailing 10-year S&amp;P benchmark as of ${escapeHtml(a.comparison.sp500AsOf)}; historical context only</small></div>
     </div><p class="fine-print">${escapeHtml(a.roomRentability.note)} ${escapeHtml(a.ageRisk.note)} ${escapeHtml(a.tax.note)}</p>

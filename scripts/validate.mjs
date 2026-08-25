@@ -1,13 +1,16 @@
 import { access, readFile } from "node:fs/promises";
 import { validateDataset } from "./lib/schema.mjs";
 import { isRemovedFromMarket } from "./lib/listing-lifecycle.mjs";
+import { validateRoomRentMarket } from "./lib/room-rent-estimate.mjs";
 
 const root = new URL("../", import.meta.url);
 const dataset = JSON.parse(await readFile(new URL("data/current.json", root), "utf8"));
 const assumptions = JSON.parse(await readFile(new URL("config/public-assumptions.json", root), "utf8"));
 const sourcePolicy = JSON.parse(await readFile(new URL("config/source-policy.json", root), "utf8"));
 const oneHomeSource = JSON.parse(await readFile(new URL("config/onehome-source.json", root), "utf8"));
+const roomRentMarket = JSON.parse(await readFile(new URL("config/room-rent-comps.json", root), "utf8"));
 const errors = validateDataset(dataset);
+errors.push(...validateRoomRentMarket(roomRentMarket));
 const serialized = JSON.stringify(dataset).toLowerCase();
 const publicConfiguration = JSON.stringify({sourcePolicy, oneHomeSource}).toLowerCase();
 
@@ -22,6 +25,13 @@ if (assumptions.purchase.maximumOfferPrice !== 275000) errors.push("Maximum offe
 if (assumptions.livingRequirements?.maximumDrivingMiles !== 30) errors.push("Maximum driving distance must remain 30 miles unless deliberately revised.");
 if (assumptions.livingRequirements?.minimumYearBuilt !== 1980) errors.push("Minimum construction year must remain 1980 unless deliberately revised.");
 if (assumptions.livingRequirements?.privateBedroom !== true || assumptions.livingRequirements?.privateFullBathroom !== true) errors.push("Private bedroom and private full bathroom must remain required.");
+if (roomRentMarket.asOf !== dataset.asOf) errors.push("Room-rent comparable market must match the current dataset date.");
+if (!Number.isFinite(assumptions.operations?.roomRentFallbackMonthly)) errors.push("Room-rent fallback must remain explicit for unavailable-comp failure handling.");
+const roomRentZoneZips = new Set(Object.values(roomRentMarket.marketZones || {}).flat());
+for (const property of dataset.properties.filter(property => ["shared-home", "shared-condo"].includes(property.strategy) && !isRemovedFromMarket(property))) {
+  const propertyZip = String(property.address || "").match(/\b(\d{5})(?:-\d{4})?\s*$/)?.[1];
+  if (!propertyZip || !roomRentZoneZips.has(propertyZip)) errors.push(`${property.id}: active shared property ZIP is not mapped to a room-rent market zone.`);
+}
 if (!Array.isArray(assumptions.ageRisk?.bands) || assumptions.ageRisk.bands.length < 3) errors.push("Age-risk model requires at least three configured bands.");
 for (const [index, band] of (assumptions.ageRisk?.bands || []).entries()) {
   if (!Number.isFinite(band.maxAge) || band.maxAge <= 0) errors.push(`Age-risk band ${index + 1} requires a positive maxAge.`);

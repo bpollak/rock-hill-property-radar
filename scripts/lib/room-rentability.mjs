@@ -59,7 +59,7 @@ export function roomRentabilityProfile(property, assumptions) {
   if (concernMatches(property, /small.*bedroom|fourth bedroom.*small/i)) marketScore -= 10;
   marketScore = clamp(marketScore);
   const marketReason = inRockHill
-    ? `Located in the target Rock Hill market; the model uses the current ${assumptions.operations.roomRentMonthly ? `$${assumptions.operations.roomRentMonthly}` : "configured"} per-room planning rent, but no property-specific signed lease is available.`
+    ? "Located in the target Rock Hill market; the financial model uses a separate property-specific room-comparable estimate, but no signed lease is available."
     : "Outside the preferred Rock Hill core, so the shared-room demand assumption receives a location discount.";
 
   let operationalScore = 60;
@@ -105,7 +105,7 @@ export function roomRentabilityProfile(property, assumptions) {
     required: true,
     score,
     label: likelihoodLabel(score),
-    incomeRealizationRate: score / 100,
+    incomeRealizationRate: authorityProhibited ? 0 : authorityConfirmed ? 1 : property.strategy === "shared-condo" ? (assumptions.roomRentability?.unknownCondoHoaScoreCap ?? 35) / 100 : 0.5,
     rentableRooms,
     tenantBathrooms,
     authorityConfirmed,

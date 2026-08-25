@@ -16,9 +16,7 @@
     "minimumYearBuilt": 1980
   },
   "operations": {
-    "roomRentMonthly": 850,
-    "roomRentLow": 700,
-    "roomRentHigh": 1000,
+    "roomRentFallbackMonthly": 850,
     "vacancyRate": 0.12,
     "insuranceRate": 0.0075,
     "maintenanceRate": 0.01,
@@ -57,7 +55,7 @@
     },
     "unknownAuthorityScoreCap": 49,
     "unknownCondoHoaScoreCap": 35,
-    "note": "The 0-100 room-rental likelihood is a conservative underwriting heuristic, not an empirical probability. For strategies that rely on roommates, the score is used as the room-income realization factor before the separate vacancy assumption. Unknown legal or HOA authority therefore materially reduces modeled income and blocks qualification."
+    "note": "The 0-100 room-rental viability score is a conservative diligence heuristic, not an empirical probability. Market rent is estimated separately from current room-level comparables. Only legal and HOA authorization controls the additional income-realization haircut before the separate vacancy assumption. Unknown authority materially reduces modeled income and blocks qualification."
   },
   "comparison": {
     "holdingPeriods": [10, 15],
@@ -72,5 +70,5 @@
     "immediatePassiveLossBenefit": 0,
     "note": "Conservative planning model: no immediate benefit for passive losses. Related-party use, expense allocation, depreciation, South Carolina filing, California credit, and sale treatment require tax-adviser review."
   },
-  "modelVersion": "1.2.1"
+  "modelVersion": "1.3.0"
 }
