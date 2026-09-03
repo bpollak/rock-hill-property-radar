@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-02",
+  "asOf": "2026-09-03",
   "market": "Rock Hill, South Carolina",
   "targetLease": {
     "roomType": "private-bedroom",
@@ -54,7 +54,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/rooms/rock-hill-sc",
       "note": "Current Rock Hill room asking $665 with its own bathroom."
     },
@@ -72,7 +72,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/rooms/rock-hill-sc",
       "note": "Current Rock Hill private-room asking $825; bathroom and utilities require confirmation."
     },
@@ -90,7 +90,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
       "note": "Current furnished Rock Hill room asking $800 with a private bathroom."
     },
@@ -108,7 +108,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
       "note": "Current Rock Hill private-bath room asking $975 with bills included."
     },
@@ -126,7 +126,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
       "note": "Current Rock Hill private-bath room asking $930."
     },
@@ -144,7 +144,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
       "note": "Current Rock Hill room asking $850 with a shared bathroom."
     },
@@ -162,7 +162,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
       "note": "Current Rock Hill private-room asking $700; bathroom and utilities require confirmation."
     },
@@ -180,7 +180,7 @@
       "leaseType": "medium-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.furnishedfinder.com/housing/us--sc--rock-hill?regionType=CITY&searchType=REGIONAL",
       "note": "Current furnished Rock Hill private-bath room asking $750; medium-term terms may differ from a long-term room lease."
     },
@@ -198,7 +198,7 @@
       "leaseType": "medium-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.furnishedfinder.com/housing/us--sc--rock-hill?regionType=CITY&searchType=REGIONAL",
       "note": "Current furnished Rock Hill private-bath room asking $900; medium-term terms may differ from a long-term room lease."
     },
@@ -216,7 +216,7 @@
       "leaseType": "medium-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.furnishedfinder.com/housing/us--sc--rock-hill?regionType=CITY&searchType=REGIONAL",
       "note": "Current furnished Rock Hill private-bath room asking $950; medium-term terms may differ from a long-term room lease."
     },
@@ -234,7 +234,7 @@
       "leaseType": "medium-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.furnishedfinder.com/housing/us--sc--rock-hill?regionType=CITY&searchType=REGIONAL",
       "note": "Current furnished Rock Hill private-bath room asking $1,100; retained as an upper medium-term comparator."
     },
@@ -252,7 +252,7 @@
       "leaseType": "medium-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.furnishedfinder.com/housing/us--sc--rock-hill?regionType=CITY&searchType=REGIONAL",
       "note": "Current furnished Rock Hill private-bath room asking $1,400; retained only as an upper furnished comparator, not the planning benchmark."
     },
@@ -270,7 +270,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/york-sc",
       "note": "Current York furnished private-bath room asking $850 with utilities and parking."
     },
@@ -288,7 +288,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/rooms/fort-mill-sc",
       "note": "Current Fort Mill furnished private-bath room asking $900 with utilities."
     },
@@ -306,7 +306,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/rooms/gastonia-nc",
       "note": "Current Gastonia furnished private-bath room asking $900 with utilities."
     },
@@ -324,7 +324,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-01",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/chester-sc",
       "note": "Current Chester furnished room asking $926 with utilities; bathroom arrangement requires confirmation."
     },
@@ -342,7 +342,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-02",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/rooms/rock-hill-sc",
       "note": "Current Rock Hill room asking $700 with its own bathroom."
     },
@@ -360,7 +360,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-02",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/rooms/york-sc",
       "note": "Current York room asking $750 with its own bathroom."
     },
@@ -378,7 +378,7 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-02",
-      "accessed": "2026-09-02",
+      "accessed": "2026-09-03",
       "sourceUrl": "https://www.roomies.com/rooms/fort-mill-sc",
       "note": "Current Fort Mill furnished room asking $900 with its own bathroom."
     }
