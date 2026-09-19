@@ -22197,7 +22197,7 @@
         "Listing agent says the HVAC was replaced in September 2026 with a warranty; documentation is needed"
       ],
       "concerns": [
-        "Listing narrative describes two bedrooms and two private full bathrooms plus a main-level half bath, while some MLS-fed metadata reports three bedrooms and three full baths plus a half bath. Use the conservative two-bedroom, 2.5-bath layout until a floor plan and inspection resolve it.",
+        "Listing narrative describes two bedrooms and two private full bathrooms plus a main-level half bath, while some MLS-fed metadata reports three bedrooms and three full baths plus a half bath. The model counts two bedrooms and two full bathrooms; it excludes the reported half bath from tenant-bath capacity until a floor plan and inspection resolve the layout.",
         "Both private suites are upstairs; confirm the family occupant can use the stairs and verify the suite layout in person.",
         "Only one tenant bedroom remains after reserving the family suite. Property-specific room demand and achieved rent are unverified.",
         "The $205 monthly HOA is mandatory per public IDX. Special assessments, association transfer or capital-contribution fees, master insurance, amenity charges, and rental surcharges are unknown.",
@@ -22205,7 +22205,8 @@
         "Confirm the legal bedroom count, tenant bathroom and egress, maximum occupants, parking spaces, sewer capacity, smoke and carbon-monoxide protection, locks, rental inspection readiness, utilities allocation, and common-space practicality.",
         "The September 2026 HVAC replacement and warranty are listing claims, not verified invoices, permit closeout, installation records, or transferable warranty evidence.",
         "Roof, water heater, electrical service, supply and waste plumbing, foundation or structural work, and major renovation ages and permits remain unknown. Inspect systems and confirm the 2004 construction record.",
-        "York County parcel and deed, City permit/zoning, and FEMA/One Map property-specific readback remain unresolved; do not treat public search misses as verified absence of restrictions, permits, or flood risk."
+        "York County parcel and deed, City permit/zoning, and FEMA/One Map property-specific readback remain unresolved; do not treat public search misses as verified absence of restrictions, permits, or flood risk.",
+        "Ten of thirteen direct room-comparable URLs returned HTTP 403 during this run. The planning rent relies on prior listing details and current public market inventory, not verified current room availability or signed leases."
       ],
       "sourceConflicts": [
         "Canopy-fed listing metadata on several IDX pages says three bedrooms and three full bathrooms plus a half bath, but the listing narrative and room-location table describe two upstairs bedroom suites and two full bathrooms. Model the smaller confirmed capacity pending floor plan and inspection. The data model uses two full baths; the main-level half bath is excluded from room-capacity scoring.",
