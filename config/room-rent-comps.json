@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-24",
+  "asOf": "2026-09-27",
   "market": "Rock Hill, South Carolina",
   "targetLease": {
     "roomType": "private-bedroom",
@@ -38,7 +38,7 @@
       "29729"
     ]
   },
-  "methodology": "Thirteen direct provider listing IDs across three providers and five zones requested September 24: three HTTP 200 and ten HTTP 403. Blocked requests remain access gaps rather than fresh status proof. Current visible Roomies, SpareRoom and Furnished Finder search inventory spans roughly $650 to $1,100; Zillow, HotPads, Apartments.com and RentCafe basic one-bedroom asks support unchanged conservative $850 room and $1,150 private-unit benchmarks. Asking rents are not executed leases or property-specific demand.",
+  "methodology": "Fourteen direct provider listing IDs across three providers and five zones were requested September 27: four HTTP 200 and ten HTTP 403. Blocked requests remain access gaps rather than fresh status proof. A current $850 Rock Hill private-bedroom/private-bath SpareRoom ask was added; current visible Roomies, SpareRoom and Furnished Finder inventory plus Zillow, HotPads, Apartments.com and RentCafe one-bedroom asks support unchanged conservative $850 room and $1,150 private-unit benchmarks. Asking rents are not executed leases or property-specific demand.",
   "comparables": [
     {
       "id": "roomies-1017559",
@@ -54,9 +54,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/1017559",
-      "note": "Pursley Street; long-term private room and bathroom. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "Pursley Street; long-term private room and bathroom. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "roomies-1015957",
@@ -72,9 +72,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/1015957",
-      "note": "India Hook; furnished private room and bathroom, advertised ASAP. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "India Hook; furnished private room and bathroom, advertised ASAP. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "roomies-986688",
@@ -90,9 +90,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/986688",
-      "note": "Four private rooms share two baths; six to twelve month terms. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "Four private rooms share two baths; six to twelve month terms. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "roomies-564954",
@@ -108,9 +108,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/564954",
-      "note": "Homestead Road private room; bathroom allocation requires confirmation. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "Homestead Road private room; bathroom allocation requires confirmation. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "roomies-345833",
@@ -126,9 +126,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/345833",
-      "note": "Ebenezer Avenue private room; bathroom allocation requires confirmation. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "Ebenezer Avenue private room; bathroom allocation requires confirmation. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "roomies-1038759",
@@ -144,9 +144,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/1038759",
-      "note": "Fort Mill Steele Meadows ensuite; not evidence of permission at another property. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "Fort Mill Steele Meadows ensuite; not evidence of permission at another property. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "roomies-1031679",
@@ -162,9 +162,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/1031679",
-      "note": "Wilcrest Court private room and bathroom. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "Wilcrest Court private room and bathroom. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "roomies-926973",
@@ -180,9 +180,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/926973",
-      "note": "Chester PadSplit ask displayed monthly; underlying $216 weekly billing and fees require confirmation. Sparse market evidence. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "Chester PadSplit ask displayed monthly; underlying $216 weekly billing and fees require confirmation. Sparse market evidence. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "roomies-1012818",
@@ -198,9 +198,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.roomies.com/rooms/1012818",
-      "note": "York upstairs private room and bathroom; parking reported. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "York upstairs private room and bathroom; parking reported. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
     },
     {
       "id": "spareroom-102755228",
@@ -216,9 +216,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill/102755228",
-      "note": "Two-bedroom/two-bath home, six to twelve month term, one parking space. Direct public URL re-requested 2026-09-24: HTTP 200; current asking rent and availability require direct confirmation."
+      "note": "Two-bedroom/two-bath home, six to twelve month term, one parking space. Direct public URL re-requested 2026-09-27: HTTP 200; current asking rent and availability require direct confirmation."
     },
     {
       "id": "spareroom-101491138",
@@ -234,9 +234,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill/101491138",
-      "note": "Private room, bathroom shared with one other person, three to thirty-six month terms. Direct public URL re-requested 2026-09-24: HTTP 200; current asking rent and availability require direct confirmation."
+      "note": "Private room, bathroom shared with one other person, three to thirty-six month terms. Direct public URL re-requested 2026-09-27: HTTP 200; current asking rent and availability require direct confirmation."
     },
     {
       "id": "spareroom-103138727",
@@ -252,9 +252,9 @@
       "leaseType": "long-term",
       "status": "active",
       "updatedAsOf": "2026-09-04",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill/103138727",
-      "note": "Small room and bathroom; extra occupant charge not included in single-person asking rent. Direct public URL re-requested 2026-09-24: HTTP 200; current asking rent and availability require direct confirmation."
+      "note": "Small room and bathroom; extra occupant charge not included in single-person asking rent. Direct public URL re-requested 2026-09-27: HTTP 200; current asking rent and availability require direct confirmation."
     },
     {
       "id": "furnished-finder-733119_1",
@@ -270,9 +270,27 @@
       "leaseType": "medium-term",
       "status": "active",
       "updatedAsOf": "2026-02-26",
-      "accessed": "2026-09-24",
+      "accessed": "2026-09-27",
       "sourceUrl": "https://www.furnishedfinder.com/property/733119_1",
-      "note": "One-month minimum; calendar last updated February 26, 2026 despite available label. Rock Hill zone proxy ZIP retained, exact postal location not disclosed in the accessed public text. Confirm availability and location; not a precise same-ZIP comp. Direct public URL re-requested 2026-09-24: HTTP 403; current asking rent and availability require direct confirmation."
+      "note": "One-month minimum; calendar last updated February 26, 2026 despite available label. Rock Hill zone proxy ZIP retained, exact postal location not disclosed in the accessed public text. Confirm availability and location; not a precise same-ZIP comp. Direct public URL re-requested 2026-09-27: HTTP 403; current asking rent and availability require direct confirmation."
+    },
+    {
+      "id": "spareroom-103061909",
+      "provider": "SpareRoom",
+      "providerListingId": "103061909",
+      "monthlyRent": 850,
+      "zipCode": "29730",
+      "bathroomType": "private",
+      "furnished": false,
+      "utilitiesIncluded": false,
+      "parking": null,
+      "propertyType": "house",
+      "leaseType": "long-term",
+      "status": "active",
+      "updatedAsOf": "2026-09-27",
+      "accessed": "2026-09-27",
+      "sourceUrl": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill/103061909",
+      "note": "Current Rock Hill unfurnished private room with private bathroom advertised at $850 monthly; utilities excluded. Asking rent and availability require direct confirmation and do not establish permission at another property. Direct public URL re-requested 2026-09-27: HTTP 200."
     }
   ]
 }
