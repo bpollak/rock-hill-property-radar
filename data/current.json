@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-03",
+  "asOf": "2026-10-04",
   "runStatus": "successful",
-  "researchMethod": "Public-only October 3 reconciliation: every configured source-policy category was audited; 189 known purchase primary URLs and all 14 configured room-comparable URLs were requested; current portal, brokerage/IDX, GSE, FSBO, auction, builder, distressed, parcel/deed, permit/zoning, flood-layer, HOA, private-unit-rent and room-rent evidence was reviewed. Twelve eligible-age candidates were admitted and two builder prices changed. New candidates were routed from the private family reference through public geocoding and driving services and remain within 30 driving miles. Public search is not exhaustive MLS coverage.",
+  "researchMethod": "Public-only October 4 reconciliation: all 14 configured source-policy categories were audited; all 192 currently marketed purchase primary URLs and all 14 configured room-comparable URLs were requested. Current portal, brokerage/IDX, GSE, FSBO, auction, builder, distressed, parcel/deed, permit/zoning, flood-layer, HOA, private-unit-rent and room-rent evidence was reviewed. Two eligible-age candidates were admitted, three existing prices were reduced, one builder price was corrected from fresh direct evidence, and one September 28 sale was archived on positive removal evidence. New candidates were routed from the private family reference through public geocoding and driving services and remain within 30 driving miles. The broader route refresh was rate-limited, so prior verified routes were preserved when no reliable replacement completed. Public search is not exhaustive MLS coverage.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -11,7 +11,7 @@
     "medianDaysOnMarket": 50,
     "asOf": "2026-08",
     "sourceUrl": "https://www.realtor.com/realestateandhomes-search/Rock-Hill_SC/overview",
-    "note": "The August Realtor market aggregate is retained with its original period. October 3 public listing, owner-listing, government, auction, builder, parcel, permit, flood-layer, one-bedroom and private-room inventories informed the daily checks; no updated area-wide aggregate was substituted."
+    "note": "The August Realtor market aggregate is retained with its original period. October 4 public listing, owner-listing, government, auction, builder, parcel, permit, flood-layer, one-bedroom and private-room inventories informed the daily checks; no updated area-wide aggregate was substituted."
   },
   "properties": [
     {
@@ -8596,21 +8596,21 @@
     {
       "id": "mls-4345351",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-01",
-      "lastChanged": "2026-09-03",
+      "lastSeen": "2026-10-04",
+      "lastChanged": "2026-10-04",
       "address": "810 Christian Way, Rock Hill, SC 29732",
       "sourceUrl": "https://www.coldwellbankerhomes.com/sc/rock-hill/810-christian-way/pid_73277824/",
       "mls": "4418282",
       "status": "active",
-      "price": 249900,
+      "price": 239900,
       "originalPrice": 279000,
-      "priceCutPercent": 10.4,
+      "priceCutPercent": 14,
       "beds": 2,
       "baths": 2.5,
       "sqft": 1536,
-      "pricePerSqft": 163,
+      "pricePerSqft": 156,
       "marketPricePerSqft": 207,
       "yearBuilt": 2004,
       "propertyType": "Townhouse",
@@ -8624,7 +8624,7 @@
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceAsOf": "2026-09-15",
       "distanceLabel": "3.8 miles · about 10 minutes from the family reference property",
-      "summary": "A 2004 end-unit townhouse relisted at $249,900 under MLS 4418282 with a listing-described primary suite and $180 monthly HOA dues. Governing documents and individual-room rental authority remain unknown.",
+      "summary": "An active two-suite townhouse now asking $239,900. The primary suite and a second full bath are documented, but HOA whole-unit and individual-room rental authority, fee schedules, parking and system proof remain unresolved.",
       "pros": [
         "$25,100 below the maximum offer price",
         "$29,100 below the earliest 2026 asking price",
@@ -8676,6 +8676,11 @@
           "date": "2026-08-20",
           "event": "Relisted under MLS 4418282",
           "price": 249900
+        },
+        {
+          "date": "2026-09-15",
+          "event": "Price reduced",
+          "price": 239900
         }
       ],
       "sources": [
@@ -8698,6 +8703,11 @@
           "label": "Homes.com current listing description, HOA, systems, layout, and days on market",
           "url": "https://www.homes.com/property/810-christian-way-rock-hill-sc/mmsed879fztb6/",
           "accessed": "2026-08-24"
+        },
+        {
+          "label": "Coldwell Banker current Canopy MLS active status and September 15 price reduction",
+          "url": "https://www.coldwellbankerhomes.com/sc/rock-hill/810-christian-way/pid_73277824/",
+          "accessed": "2026-10-04"
         }
       ],
       "changeHistory": [
@@ -8728,12 +8738,23 @@
               "label": "Current asking price"
             }
           ]
+        },
+        {
+          "date": "2026-10-04",
+          "changes": [
+            {
+              "field": "price",
+              "from": 249900,
+              "to": 239900,
+              "label": "$10,000 price reduction confirmed"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
       "publicVerification": {
-        "asOf": "2026-09-19",
-        "marketingAttempt": "Primary public listing URL requested September 15. HTTP success or a token-free OneHome shell does not independently establish current marketing status, price, or transfer chronology; prior source-backed facts remain pending direct reconciliation. Primary public URL requested 2026-09-19: HTTP 200. This access result alone does not establish current price, status, or transfer chronology. Earlier source-backed facts are retained pending direct reconciliation.",
+        "asOf": "2026-10-04",
+        "marketingAttempt": "Fresh public MLS-fed evidence confirmed active status and a $239,900 asking price on October 4, 2026. Confirm status, incentives, and contract terms directly before an offer.",
         "parcelAndDeed": "York County public assessor, One Map, and Register of Deeds entry points were checked; no new property-specific official readback established ownership, title, transfer, assessment, or recorded-restriction changes.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
         "permits": [
@@ -18497,21 +18518,21 @@
     {
       "id": "mls-4412741",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "archived",
       "firstSeen": "2026-09-01",
-      "lastSeen": "2026-10-01",
-      "lastChanged": "2026-09-11",
+      "lastSeen": "2026-10-04",
+      "lastChanged": "2026-10-04",
       "address": "1667 Flintwood Dr, Rock Hill, SC 29732",
       "sourceUrl": "https://www.coldwellbankerhomes.com/sc/rock-hill/1667-flintwood-dr/pid_72974071/",
       "mls": "4412741",
-      "status": "contingent",
-      "price": 240000,
+      "status": "sold",
+      "price": 245000,
       "originalPrice": 240000,
       "priceCutPercent": 0,
       "beds": 2,
       "baths": 2.5,
       "sqft": 1212,
-      "pricePerSqft": 198,
+      "pricePerSqft": 202,
       "marketPricePerSqft": 207,
       "yearBuilt": 2001,
       "propertyType": "Townhouse",
@@ -18521,7 +18542,7 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 24,
       "parcelId": "6361201008",
-      "summary": "A no-HOA townhouse with two private en-suite bedrooms, now under contract with showings. It remains visible as a watch item; listing-claimed mechanical updates still need dates, permits, invoices, and warranties.",
+      "summary": "Closed September 28, 2026 for $245,000. It is archived from the active decision set on positive MLS-fed and public sale evidence.",
       "pros": [
         "$35,000 below the maximum offer price",
         "Two primary suites, each described with a private full bathroom",
@@ -18566,6 +18587,11 @@
           "date": "2026-09-11",
           "event": "Under Contract-Show status observed",
           "price": 240000
+        },
+        {
+          "date": "2026-09-28",
+          "event": "Sold",
+          "price": 245000
         }
       ],
       "sources": [
@@ -18618,6 +18644,16 @@
           "label": "Redwood Realty current active-under-contract cross-check",
           "url": "https://www.redwoodrealtygroup.com/rock-hill-homes-for-sale/2-bedroom/",
           "accessed": "2026-09-11"
+        },
+        {
+          "label": "Coldwell Banker closed listing and $245,000 sale",
+          "url": "https://www.coldwellbankerhomes.com/sc/rock-hill/1667-flintwood-dr/pid_72974071/",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "Zillow recently sold chronology with September 28 closing",
+          "url": "https://www.zillow.com/camelot-woods-rock-hill-sc/sold/",
+          "accessed": "2026-10-04"
         }
       ],
       "changeHistory": [
@@ -18642,6 +18678,23 @@
               "label": "Status changed to under contract with showings"
             }
           ]
+        },
+        {
+          "date": "2026-10-04",
+          "changes": [
+            {
+              "field": "status",
+              "from": "contingent",
+              "to": "sold",
+              "label": "Archived after confirmed September 28 sale"
+            },
+            {
+              "field": "price",
+              "from": 240000,
+              "to": 245000,
+              "label": "Recorded closing price"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
@@ -18651,8 +18704,8 @@
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.5 miles · about 12 minutes from the family reference property",
       "publicVerification": {
-        "asOf": "2026-09-19",
-        "marketingAttempt": "Primary public listing URL requested September 15. HTTP success or a token-free OneHome shell does not independently establish current marketing status, price, or transfer chronology; prior source-backed facts remain pending direct reconciliation. Primary public URL requested 2026-09-19: HTTP 200. This access result alone does not establish current price, status, or transfer chronology. Earlier source-backed facts are retained pending direct reconciliation.",
+        "asOf": "2026-10-04",
+        "marketingAttempt": "Fresh Coldwell Banker MLS-fed evidence identifies the listing as closed at $245,000; Zillow and Trulia recently-sold inventory dates the sale to September 28, 2026. Positive sale evidence archives the record immediately.",
         "parcelAndDeed": "York County public assessor, One Map, and Register of Deeds entry points were checked; no new property-specific official readback established ownership, title, transfer, assessment, or recorded-restriction changes.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
         "permits": [
@@ -20537,21 +20590,21 @@
     {
       "id": "mls-4420862",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-10",
-      "lastSeen": "2026-10-01",
-      "lastChanged": "2026-09-10",
+      "lastSeen": "2026-10-04",
+      "lastChanged": "2026-10-04",
       "address": "808 Dillard Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://www.coldwellbankerhomes.com/sc/rock-hill/808-dillard-rd/pid_73482583/",
       "mls": "4420862",
       "status": "active",
-      "price": 250000,
+      "price": 248000,
       "originalPrice": 250000,
-      "priceCutPercent": 0,
+      "priceCutPercent": 0.8,
       "beds": 3,
       "baths": 2.5,
       "sqft": 1513,
-      "pricePerSqft": 165,
+      "pricePerSqft": 164,
       "marketPricePerSqft": 207,
       "yearBuilt": 2003,
       "propertyType": "Townhouse",
@@ -20561,7 +20614,7 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 6,
       "parcelId": "667-03-01-112",
-      "summary": "A newly listed three-bedroom end-unit townhouse at $250,000. The price and two full bathrooms are promising, but the private-bath layout and mandatory HOA's whole-unit and individual-room rental authority remain undocumented.",
+      "summary": "An active three-bedroom Manchester Village townhouse reduced to $248,000, with a reported owner suite and two additional bedrooms. The $240 monthly HOA and unverified whole-unit and individual-room rental rules keep it in needs-verification status.",
       "pros": [
         "$25,000 below the maximum offer price",
         "Three bedrooms and two full bathrooms plus a half bath",
@@ -20593,6 +20646,11 @@
           "date": "2026-09-04",
           "event": "Listed",
           "price": 250000
+        },
+        {
+          "date": "2026-09-22",
+          "event": "Price reduced",
+          "price": 248000
         }
       ],
       "sources": [
@@ -20635,6 +20693,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-10"
+        },
+        {
+          "label": "Zillow current Canopy MLS active status and September 22 price reduction",
+          "url": "https://www.zillow.com/homedetails/808-Dillard-Rd-Rock-Hill-SC-29730/70604298_zpid/",
+          "accessed": "2026-10-04"
         }
       ],
       "changeHistory": [
@@ -20648,6 +20711,17 @@
               "label": "New listing"
             }
           ]
+        },
+        {
+          "date": "2026-10-04",
+          "changes": [
+            {
+              "field": "price",
+              "from": 250000,
+              "to": 248000,
+              "label": "$2,000 price reduction confirmed"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
@@ -20657,8 +20731,8 @@
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.9 miles · about 17 minutes from the family reference property",
       "publicVerification": {
-        "asOf": "2026-09-19",
-        "marketingAttempt": "Primary public listing URL requested September 15. HTTP success or a token-free OneHome shell does not independently establish current marketing status, price, or transfer chronology; prior source-backed facts remain pending direct reconciliation. Primary public URL requested 2026-09-19: HTTP 200. This access result alone does not establish current price, status, or transfer chronology. Earlier source-backed facts are retained pending direct reconciliation.",
+        "asOf": "2026-10-04",
+        "marketingAttempt": "Fresh public MLS-fed evidence confirmed active status and a $248,000 asking price on October 4, 2026. Confirm status, incentives, and contract terms directly before an offer.",
         "parcelAndDeed": "York County public assessor, One Map, and Register of Deeds entry points were checked; no new property-specific official readback established ownership, title, transfer, assessment, or recorded-restriction changes.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
         "permits": [
@@ -22015,18 +22089,18 @@
     {
       "id": "mls-4415086",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-12",
-      "lastSeen": "2026-10-02",
-      "lastChanged": "2026-10-02",
+      "lastSeen": "2026-10-04",
+      "lastChanged": "2026-10-04",
       "address": "634 Sparano Loop Unit 158, York, SC 29745",
       "sourceUrl": "https://www.compass.com/homedetails/634-Sparano-Loop-Unit-158-York-SC-29745/2FAF37_pid/",
       "mls": "4415086",
       "parcelId": "0701601705",
       "status": "active",
-      "price": 245449,
+      "price": 245499,
       "originalPrice": 273499,
-      "priceCutPercent": 10.3,
+      "priceCutPercent": 10.2,
       "beds": 3,
       "baths": 2.5,
       "sqft": 1688,
@@ -22044,15 +22118,15 @@
       "distanceAsOf": "2026-09-15",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's current structured inventory lists this move-in-ready three-bedroom townhouse at $250,849, an $18,650 reduction from the prior dashboard price. The private primary bath is documented, but HOA rental authority, controlling fees, occupancy, completion records, insurance, and transaction charges still block recommendation.",
+      "summary": "Lennar's current structured inventory and fresh MLS-fed evidence list this move-in-ready three-bedroom townhouse at $245,499. The private primary bath is documented, but HOA rental authority, controlling fees, occupancy, completion records, insurance, incentives and transaction charges still block recommendation.",
       "pros": [
-        "$24,151 below the absolute offer ceiling at current builder pricing",
+        "$29,501 below the absolute offer ceiling at current builder pricing",
         "Primary en-suite plus second full bath and powder room are described in MLS-fed listing",
         "Two-car attached garage may improve shared-occupancy practicality, subject to parking rules",
         "2026 construction and roughly 12.5 driving miles from the family reference property"
       ],
       "concerns": [
-        "Lennar's current direct inventory shows $250,849 while older MLS-fed pages show higher prices; obtain a dated builder price sheet and purchase agreement before relying on the reduction.",
+        "Fresh direct builder and MLS-fed evidence supports $245,499, while older public pages show higher asks; obtain a dated builder price sheet and purchase agreement before relying on the reduction or any incentive.",
         "Lennar reports approximately $290 monthly HOA dues while Compass reports $172; the higher amount is underwritten until current association evidence resolves it",
         "Two-car garage is listed, but legal parking allocation and use by unrelated occupants remain unverified",
         "Builder inventory reports 1,688 square feet while Compass reports 1,680; use the builder area provisionally",
@@ -22066,7 +22140,7 @@
         "Builder/association transfer, capital-contribution, amenity and other mandatory transaction fees, special assessments, insurance allocation, and resale restrictions remain unknown"
       ],
       "sourceConflicts": [
-        "Lennar's September 27 direct structured inventory shows $250,849; older MLS-fed sources show $269,499. The current builder figure is provisional until documented in the purchase agreement.",
+        "Fresh direct builder and MLS-fed evidence supports $245,499; older public pages show higher prices. The current builder figure remains provisional until documented in the purchase agreement.",
         "York County official GIS matches homesite 158 to parcel 0701601705; the earlier MLS-fed parcel value 0701601740 is not used.",
         "Lennar reports approximate $290 HOA dues; Compass reports $172. Underwriting uses $290 pending written confirmation.",
         "Lennar reports 1,688 square feet while Compass reports 1,680; builder figure is provisional."
@@ -22101,6 +22175,11 @@
           "date": "2026-10-02",
           "event": "Builder price reduced",
           "price": 245449
+        },
+        {
+          "date": "2026-09-28",
+          "event": "Direct builder and MLS-fed price confirmed",
+          "price": 245499
         }
       ],
       "sources": [
@@ -22158,6 +22237,11 @@
           "label": "Lennar current homesite 158 structured inventory and price",
           "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600158",
           "accessed": "2026-10-02"
+        },
+        {
+          "label": "Lennar direct homesite inventory and current MLS-fed $245,499 price",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600158",
+          "accessed": "2026-10-04"
         }
       ],
       "changeHistory": [
@@ -22193,12 +22277,23 @@
               "label": "Builder price reduced"
             }
           ]
+        },
+        {
+          "date": "2026-10-04",
+          "changes": [
+            {
+              "field": "price",
+              "from": 245449,
+              "to": 245499,
+              "label": "$50 builder price correction"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
       "publicVerification": {
-        "asOf": "2026-10-02",
-        "marketingAttempt": "Lennar current homesite 158 direct inventory lists the homesite as available at $245,449 on October 2, 2026. Confirm price, incentives, financing conditions, status, and contract terms directly.",
+        "asOf": "2026-10-04",
+        "marketingAttempt": "Fresh public MLS-fed evidence confirmed active status and a $245,499 asking price on October 4, 2026. Confirm status, incentives, and contract terms directly before an offer.",
         "parcelAndDeed": "York County official GIS matched 634 Sparano Loop, homesite 158, to parcel 0701601705, correcting the older MLS-fed parcel value. Current ownership, title, liens, easements, restrictions and instrument contents remain unresolved.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
         "permits": [
@@ -22634,21 +22729,21 @@
     {
       "id": "mls-4425298",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-10-01",
-      "lastChanged": "2026-09-19",
+      "lastSeen": "2026-10-04",
+      "lastChanged": "2026-10-04",
       "address": "1719 Hidden Creek Dr, Rock Hill, SC 29732",
       "sourceUrl": "https://www.highgarden-charlotte.com/1719-Hidden-Creek-Dr-Rock-Hill-SC-29732/mls4425298",
       "mls": "4425298",
       "status": "active",
-      "price": 263000,
+      "price": 252000,
       "originalPrice": 263000,
-      "priceCutPercent": 0,
+      "priceCutPercent": 4.2,
       "beds": 2,
       "baths": 2,
       "sqft": 1417,
-      "pricePerSqft": 186,
+      "pricePerSqft": 178,
       "marketPricePerSqft": 207,
       "yearBuilt": 2004,
       "propertyType": "Townhouse",
@@ -22663,7 +22758,7 @@
       "distanceAsOf": "2026-09-19",
       "distanceMethod": "ArcGIS public geocoding with public OpenStreetMap driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 13 minutes from the family reference property",
-      "summary": "New $263,000 townhouse listing after a June sale, with two upstairs private bathroom suites described by the listing agent. The $205 monthly HOA and unverified rental rules make it a needs-verification option.",
+      "summary": "An active $252,000 Lexington Commons townhouse with two upstairs private bathroom suites described by the listing agent. The $205 monthly HOA and unverified whole-unit and individual-room rental rules keep it in needs-verification status.",
       "pros": [
         "$12,000 below the maximum offer price",
         "Listing agent describes two upstairs bedrooms, each with its own full bathroom",
@@ -22712,6 +22807,11 @@
           "date": "2026-09-19",
           "event": "Current public IDX active status corroborated",
           "price": 263000
+        },
+        {
+          "date": "2026-10-04",
+          "event": "Current public price confirmed",
+          "price": 252000
         }
       ],
       "sources": [
@@ -22754,6 +22854,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-19"
+        },
+        {
+          "label": "Highgarden current Canopy IDX active status and $252,000 asking price",
+          "url": "https://www.highgarden-charlotte.com/1719-Hidden-Creek-Dr-Rock-Hill-SC-29732/mls4425298",
+          "accessed": "2026-10-04"
         }
       ],
       "changeHistory": [
@@ -22765,6 +22870,17 @@
               "from": null,
               "to": "added",
               "label": "New listing"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-04",
+          "changes": [
+            {
+              "field": "price",
+              "from": 263000,
+              "to": 252000,
+              "label": "$11,000 price reduction confirmed"
             }
           ]
         }
@@ -22781,8 +22897,8 @@
         "hvac": "New heating and cooling September 2026 with warranty claimed by listing agent; proof pending"
       },
       "publicVerification": {
-        "asOf": "2026-09-24",
-        "marketingAttempt": "The Highgarden Canopy IDX page and current indexed public sources continued to present MLS 4425298 as active on September 24. Older Realtor.com and Zillow pages still show the June closed listing, so confirm the September relist directly before an offer.",
+        "asOf": "2026-10-04",
+        "marketingAttempt": "Fresh public MLS-fed evidence confirmed active status and a $252,000 asking price on October 4, 2026. Confirm status, incentives, and contract terms directly before an offer.",
         "parcelAndDeed": "Listing and third-party records identify parcel 6620501083, but York County public GIS query returned no match and the deed index did not yield property-specific readback. Ownership, current transfer, restrictions, assessment, and title remain unverified.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked. No property-specific official flood determination was obtained; flood and insurance risk remain unresolved.",
         "permits": [
@@ -23881,7 +23997,7 @@
     {
       "id": "builder-29017600176",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -24066,7 +24182,7 @@
     {
       "id": "builder-29017600178",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -25707,7 +25823,7 @@
     {
       "id": "mls-4427866",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -25852,7 +25968,7 @@
     {
       "id": "mls-4427645",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -25997,7 +26113,7 @@
     {
       "id": "mls-4426547",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -26142,7 +26258,7 @@
     {
       "id": "mls-4425135",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -26288,7 +26404,7 @@
     {
       "id": "mls-4424902",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -26428,7 +26544,7 @@
     {
       "id": "mls-4425435",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -26570,7 +26686,7 @@
     {
       "id": "mls-4426778",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -26717,7 +26833,7 @@
     {
       "id": "mls-4427519",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -26863,7 +26979,7 @@
     {
       "id": "mls-4428888",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -27012,7 +27128,7 @@
     {
       "id": "mls-4422299",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -27157,7 +27273,7 @@
     {
       "id": "mls-4427005",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -27302,7 +27418,7 @@
     {
       "id": "mls-4422825",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
       "lastChanged": "2026-10-03",
@@ -27443,6 +27559,338 @@
             "result": "Public portal checked; property-specific permit, zoning and rental-occupancy conclusions remain unresolved.",
             "permitHeaders": [],
             "caveat": "Obtain complete permits, trade finals, zoning and written occupancy or rental guidance from the applicable authority."
+          }
+        ]
+      }
+    },
+    {
+      "id": "mls-4427356",
+      "strategy": "shared-home",
+      "changeCategory": "new",
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "lastChanged": "2026-10-04",
+      "address": "359 Blanche Cir, Rock Hill, SC 29730",
+      "sourceUrl": "https://www.zillow.com/homedetails/359-Blanche-Cir-Rock-Hill-SC-29730/243728817_zpid/",
+      "mls": "4427356",
+      "parcelId": "5990308035",
+      "status": "pending",
+      "price": 200000,
+      "originalPrice": 200000,
+      "priceCutPercent": 0,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1222,
+      "pricePerSqft": 164,
+      "marketPricePerSqft": 207,
+      "yearBuilt": 2026,
+      "propertyType": "Deed-restricted Made It Home new-construction single-family home",
+      "hoaMonthly": 0,
+      "oneLevel": true,
+      "privateBath": "yes",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 6,
+      "distanceMiles": 8.1,
+      "driveMinutes": 17,
+      "distanceAsOf": "2026-10-04",
+      "distanceMethod": "ArcGIS World Geocoder with public OSRM driving-route estimate from the private family reference property",
+      "distanceLabel": "8.1 miles · about 17 minutes from the family reference property",
+      "summary": "A $200,000 one-level Made It Home new build with a documented private owner suite, already under contract. Buyer eligibility, the 15-year deed restriction, separate-room leasing authority, permit completion and insurance remain unresolved.",
+      "pros": [
+        "$75,000 below the absolute offer ceiling",
+        "Listing documents a one-level owner suite with a private full bathroom",
+        "Two bedrooms remain after reserving the family suite",
+        "City water, public sewer and two driveway spaces are reported",
+        "City plan review identifies a three-bedroom, two-bath, one-story new residence"
+      ],
+      "concerns": [
+        "The property became pending September 30, two days after listing; it is not available for an ordinary active offer unless the contract fails.",
+        "The Made It Home disclosure requires owner occupancy, income qualification, an approved lender and a 15-year deed restriction; family eligibility and the mother-in-law arrangement need written program and closing-attorney confirmation.",
+        "Separate-room leasing may be restricted by the deed program, zoning, occupancy rules or lender terms. Unknown written authority caps viability below 50 and reduces underwritten room income.",
+        "The city plan report shows conditional approval, not a final certificate of occupancy or completed trade inspections. Obtain final building, electrical, plumbing and mechanical approvals plus warranties.",
+        "Roof, HVAC, water heater, electrical service, supply and waste plumbing, sewer lateral and foundation are new-construction claims until final permits, invoices, installation records and warranties are produced.",
+        "Official current deed and title, deed-restriction instrument, property-specific FEMA or One Map determination, insurer acceptance, parking and occupancy limits, rental registration and safety readiness remain unresolved.",
+        "No HOA is reported, but recorded covenants, special assessments, builder, transfer, capital-contribution, amenity, land, lot and other mandatory fees remain unknown until closing disclosure."
+      ],
+      "sourceConflicts": [
+        "Zillow shows Under Contract-No Show after a September 30 pending event, while several indexed brokerage pages still display active. The stricter pending status is used."
+      ],
+      "hoa": {
+        "exists": false,
+        "wholeUnitRental": "not-applicable",
+        "roomRental": "not-applicable",
+        "evidence": [
+          "Current MLS-fed evidence reports no HOA; recorded covenants and deed-program restrictions still require title review."
+        ],
+        "confidence": "medium",
+        "followUp": "Confirm no association or mandatory community charges; obtain the Made It Home deed covenant, written room-lease determination, buyer-eligibility decision, final closing disclosure and permit closeout."
+      },
+      "listingHistory": [
+        {
+          "date": "2026-09-28",
+          "event": "Listed",
+          "price": 200000
+        },
+        {
+          "date": "2026-09-30",
+          "event": "Pending / Under Contract-No Show",
+          "price": 200000
+        }
+      ],
+      "sources": [
+        {
+          "label": "Zillow current Canopy MLS pending status, layout, program restrictions, parcel, zoning, utilities and history",
+          "url": "https://www.zillow.com/homedetails/359-Blanche-Cir-Rock-Hill-SC-29730/243728817_zpid/",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "Realtor.com current new-construction discovery inventory",
+          "url": "https://www.realtor.com/realestateandhomes-search/29730/price-162000-250000",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "City of Rock Hill March 2026 plan report for the three-bedroom, two-bath residence",
+          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/37585/639120349477830000",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "York County official parcel feature service",
+          "url": "https://www.arcgis.com/home/item.html?id=e827d330f20a4508aa6777bf2c0b94e3",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "York County public deed search",
+          "url": "https://search.yorkdeeds.com/",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "FEMA Flood Map Service Center",
+          "url": "https://msc.fema.gov/portal/home",
+          "accessed": "2026-10-04"
+        }
+      ],
+      "changeHistory": [
+        {
+          "date": "2026-10-04",
+          "changes": [
+            {
+              "field": "listing",
+              "from": null,
+              "to": "added",
+              "label": "New public listing; already pending"
+            }
+          ]
+        }
+      ],
+      "missingRuns": 0,
+      "listingDetails": {
+        "parcelId": "5990308035",
+        "zoning": "SF-4 reported by listing; written room-rental interpretation pending",
+        "subdivision": "Made It Home program",
+        "sewer": "Public sewer (listing claim)",
+        "water": "City water (listing claim)",
+        "parking": "Two driveway spaces reported",
+        "roof": "2026 new-construction claim; final documentation pending",
+        "hvac": "2026 new-construction claim; final documentation pending"
+      },
+      "publicVerification": {
+        "asOf": "2026-10-04",
+        "marketingAttempt": "Zillow current Canopy MLS evidence shows Under Contract-No Show after a September 30 pending event; stale active brokerage pages do not override the stricter status.",
+        "parcelAndDeed": "Listing evidence identifies parcel 5990308035. York County official parcel and deed entry points were checked, but current ownership, title, liens and the full 15-year deed-restriction instrument remain unresolved.",
+        "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; no property-specific official determination was obtained.",
+        "permits": [
+          {
+            "jurisdiction": "City of Rock Hill",
+            "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+            "result": "March 2026 city plan report identifies a new one-story, three-bedroom, two-bath residence with conditional approval.",
+            "permitHeaders": [
+              {
+                "permit": "20242548",
+                "status": "Conditional Approval",
+                "scope": "New single-family residence; 3 bedrooms, 2 baths, 1 story"
+              }
+            ],
+            "caveat": "Conditional plan approval is not a certificate of occupancy or proof of final building and trade inspections."
+          },
+          {
+            "jurisdiction": "York County",
+            "url": "https://evolvepublic.yorkcountygov.com/",
+            "result": "Applicable county entry point checked; no separate property-specific final readback established.",
+            "permitHeaders": [],
+            "caveat": "Confirm jurisdiction, all trade permits and finals before closing."
+          }
+        ]
+      }
+    },
+    {
+      "id": "mls-4415646",
+      "strategy": "shared-condo",
+      "changeCategory": "new",
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "lastChanged": "2026-10-04",
+      "address": "1429 Valann Farm Ct, Rock Hill, SC 29732",
+      "sourceUrl": "https://www.ezhomesearch.com/propertydetails/us/sc/rock-hill/1429-valann-farm-court-29732/4415646/",
+      "mls": "4415646",
+      "parcelId": "6620501086",
+      "status": "active",
+      "price": 275000,
+      "originalPrice": 310000,
+      "priceCutPercent": 11.3,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1675,
+      "pricePerSqft": 164,
+      "marketPricePerSqft": 207,
+      "yearBuilt": 2004,
+      "propertyType": "Townhouse in Lexington Commons",
+      "hoaMonthly": 205,
+      "oneLevel": false,
+      "privateBath": "unknown",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 47,
+      "distanceMiles": 5.1,
+      "driveMinutes": 14,
+      "distanceAsOf": "2026-10-04",
+      "distanceMethod": "ArcGIS World Geocoder with public OSRM driving-route estimate from the private family reference property",
+      "distanceLabel": "5.1 miles · about 14 minutes from the family reference property",
+      "summary": "An active Lexington Commons townhouse reduced from $310,000 to the $275,000 ceiling, with a main-level primary bedroom and full bath plus two upstairs bedrooms. Exclusive private-bath allocation and both HOA rental authorities remain unknown and block recommendation.",
+      "pros": [
+        "Current asking price is exactly at the absolute offer ceiling after $35,000 in reductions",
+        "Main-level primary bedroom and a main-level full bathroom are documented",
+        "Two additional upstairs bedrooms and another full bathroom support potential capacity",
+        "One-car attached garage and driveway parking are reported",
+        "Public sewer and city water are reported"
+      ],
+      "concerns": [
+        "The listing does not establish that the main-level full bathroom is exclusive to the family bedroom; the same level also has a half bath, so a floor plan and in-person verification are required.",
+        "The $205 monthly HOA is mandatory. Special assessments, transfer or capital-contribution fees, master insurance, amenity charges, reserves, litigation and rental surcharges are unknown.",
+        "Whole-unit and individual-room rental authority require separate controlling-document or written management evidence. Unknown condo authority applies the stricter viability cap and reduces underwritten room income.",
+        "Only one garage space is documented. Confirm driveway allocation, guest parking, enforceability and capacity for unrelated occupants.",
+        "Confirm legal bedroom count and egress, maximum occupants, local zoning and registration, separate-room leases, sewer capacity, smoke and carbon-monoxide protection, locks, inspection readiness, utilities allocation, common-space practicality and insurer approval.",
+        "Roof, HVAC, water heater, electrical service, supply and waste plumbing, slab/foundation and renovation ages are not verified by permits, invoices, installation records or transferable warranties. Carpet replacement in 2025 is only a listing claim.",
+        "Official current title, recorded restrictions, permit finals, property-specific FEMA or One Map determination, drainage and insurer acceptance remain unresolved."
+      ],
+      "sourceConflicts": [
+        "Older Zillow and Realtor inventory still shows $290,000, while fresh Canopy-fed sources report a September 28 reduction to $275,000. The fresher $275,000 ask is used pending direct seller confirmation."
+      ],
+      "hoa": {
+        "exists": true,
+        "wholeUnitRental": "unknown",
+        "roomRental": "unknown",
+        "evidence": [
+          "Fresh Canopy-fed sources report $205 monthly Lexington Commons dues; no controlling declaration, rules or written management rental decision was located."
+        ],
+        "confidence": "low",
+        "followUp": "Obtain recorded declaration, bylaws, rules and amendments, current budget, reserve study, assessment history, master insurance, litigation, resale certificate, transfer and capital fees, parking rules, and separate written whole-unit and individual-room rental decisions."
+      },
+      "listingHistory": [
+        {
+          "date": "2026-08-19",
+          "event": "Listed",
+          "price": 310000
+        },
+        {
+          "date": "2026-08-30",
+          "event": "Price reduced",
+          "price": 300000
+        },
+        {
+          "date": "2026-09-11",
+          "event": "Price reduced",
+          "price": 290000
+        },
+        {
+          "date": "2026-09-28",
+          "event": "Price reduced",
+          "price": 275000
+        }
+      ],
+      "sources": [
+        {
+          "label": "ez Home Search current Canopy MLS active status, $275,000 price, chronology, HOA and deed history",
+          "url": "https://www.ezhomesearch.com/propertydetails/us/sc/rock-hill/1429-valann-farm-court-29732/4415646/",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "Current local IDX property details, systems, utilities, parking and HOA",
+          "url": "https://lakefp.com/listings/1429-valann-farm-court-rock-hill-sc-29732",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "Current MLS-fed $275,000 price history and parcel details",
+          "url": "https://www.realtyhop.com/building/1429-valann-farm-court-rock-hill-sc-29732/townhouse/55404121",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "York County official parcel feature service",
+          "url": "https://www.arcgis.com/home/item.html?id=e827d330f20a4508aa6777bf2c0b94e3",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "York County public deed search",
+          "url": "https://search.yorkdeeds.com/",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "City of Rock Hill public permit and inspection portal",
+          "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "York County 2017 DFIRM flood layer",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Flood%20Hazard%20Zone%20Areas%20%28DFIRM%202017%29/FeatureServer/0",
+          "accessed": "2026-10-04"
+        },
+        {
+          "label": "FEMA Flood Map Service Center",
+          "url": "https://msc.fema.gov/portal/home",
+          "accessed": "2026-10-04"
+        }
+      ],
+      "changeHistory": [
+        {
+          "date": "2026-10-04",
+          "changes": [
+            {
+              "field": "listing",
+              "from": null,
+              "to": "added",
+              "label": "New active listing at the offer ceiling"
+            }
+          ]
+        }
+      ],
+      "missingRuns": 0,
+      "listingDetails": {
+        "parcelId": "6620501086",
+        "zoning": "MF-15 reported by public record; written room-rental interpretation pending",
+        "subdivision": "Lexington Commons",
+        "sewer": "Public sewer (listing claim)",
+        "water": "City water (listing claim)",
+        "parking": "One-car attached garage plus driveway reported; allocation and guest capacity unknown",
+        "roof": "Fiberglass roof reported; installation age unknown",
+        "hvac": "Central air and natural-gas heat reported; installation ages unknown"
+      },
+      "publicVerification": {
+        "asOf": "2026-10-04",
+        "marketingAttempt": "Fresh Canopy-fed and local IDX evidence supports active status and a September 28 reduction to $275,000. Older portal pages remain stale at $290,000; confirm directly before an offer.",
+        "parcelAndDeed": "Public records and current listing evidence identify parcel 6620501086, 2004 construction, prior March 2016 transfer at $137,500 and Lexington Commons legal description. Official instrument contents, current ownership, liens and restrictions remain unresolved.",
+        "flood": "FEMA Flood Map Service Center and York County DFIRM entry points were checked; no property-specific official parcel intersection was established in this run. Survey, drainage review and insurer acceptance remain required.",
+        "permits": [
+          {
+            "jurisdiction": "City of Rock Hill",
+            "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+            "result": "Public portal checked; no property-specific permit scope or final inspection was established.",
+            "permitHeaders": [],
+            "caveat": "Missing or inaccessible records do not prove work was unpermitted or establish system installation dates."
+          },
+          {
+            "jurisdiction": "York County",
+            "url": "https://evolvepublic.yorkcountygov.com/",
+            "result": "Applicable county entry point checked; no separate property-specific final readback established.",
+            "permitHeaders": [],
+            "caveat": "Confirm jurisdiction and obtain complete permits, trade finals and written rental authority."
           }
         ]
       }
@@ -27678,17 +28126,17 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public inventory were reviewed. All 189 known purchase primary URLs were requested: 86 HTTP 200, 66 HTTP 403, one HTTP 404 and 36 HTTP 429. Fresh cross-checks admitted 12 eligible-age listings and verified two builder price changes.",
-      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, blocks, rate limits, shells and stale pages are not independent status proof.",
-      "asOf": "2026-10-03"
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public inventory were reviewed. All 192 currently marketed purchase primary URLs were requested: 91 HTTP 200, 67 HTTP 403 and 34 HTTP 429. Fresh cross-checks admitted two eligible-age candidates, confirmed three price reductions, corrected one builder price and established one sale.",
+      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, blocks, rate limits, token-free shells and stale pages are not independent status proof.",
+      "asOf": "2026-10-04"
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "Indexed local brokerage, listing-agent and Canopy-fed IDX pages were cross-checked. Current pages supplied property-specific price, status, layout, HOA, condition and system claims for the 12 new candidates and resolved the two Sparano availability misses with positive active evidence.",
+      "summary": "Indexed local brokerage, listing-agent, Canopy-fed IDX and direct builder pages were cross-checked. Fresh property-specific pages supported both additions, three reductions, a $50 builder correction and the confirmed Flintwood closing.",
       "coverageGap": "IDX and syndicated records can lag or conflict; written seller, builder and association confirmation remains necessary before an offer.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "Government and GSE inventory",
@@ -27696,7 +28144,7 @@
       "runResult": "completed-with-documented-gaps",
       "summary": "HUD Home Store, Fannie Mae HomePath and Freddie Mac HomeSteps public entry points and indexed area results were checked; no independently verified eligible new GSE candidate emerged.",
       "coverageGap": "Public inventory and investor-first-look details were not fully retrievable; no credentialed feed was requested or used.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "Non-MLS and distressed inventory",
@@ -27704,15 +28152,15 @@
       "runResult": "completed-with-documented-gaps",
       "summary": "Zillow FSBO, York County delinquent-tax and Master in Equity materials, public foreclosure notices and credible owner-listing results were reviewed. No new owner-listed or distressed property met the verified price, age, layout and availability requirements.",
       "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing and occupancy checks.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "summary": "Auction.com, Hubzu, Xome and public builder inventory were checked. Xome helped identify current traditional listings. Hubzu’s occupied 786 Laney Terrace sale remains withheld because the opening bid is TBD and title, access, condition and layout are unresolved. Positive syndicated evidence retained both Sparano homes and updated their prices.",
+      "summary": "Auction.com, Hubzu, Xome and public builder inventory were checked. Hubzu's occupied 786 Laney Terrace auction remains excluded by the 1973 construction year, unknown opening bid and access/title risk. Xome's Rock Hill result was a 1910 one-bath property. Direct Lennar evidence corrected 634 Sparano to $245,499.",
       "coverageGap": "Auction outcomes, premiums, title, condition and financing remain unresolved. Builder prices can depend on incentives or affiliated financing.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
@@ -27720,7 +28168,7 @@
       "runResult": "supported-manual-not-refreshed",
       "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained.",
       "coverageGap": "Manual saved-search coverage was unavailable this run.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "Credentialed listing feeds",
@@ -27728,63 +28176,63 @@
       "runResult": "not-used",
       "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports or direct MLS access.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "All 189 known purchase primary URLs were requested. Twelve new active listings were admitted. Current Redfin and Zillow-fed evidence positively retained 716 and 724 Sparano Loop despite direct builder redirects and established updated asks of $239,499 and $261,999.",
+      "summary": "All 192 currently marketed purchase primary URLs were requested. Fresh current sources admitted two candidates, confirmed active status for three reduced listings, corrected one builder price and established that 1667 Flintwood closed September 28 for $245,000.",
       "coverageGap": "HTTP access is not status proof. Official current transfer, title and seller or builder contract terms remain unresolved for many records.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "York County official parcel GIS and public deed entry points were checked for all 12 new candidates. Parcel identity, reported construction year, official area, prior transfer references and assessed value were captured where available without treating prior transfers as current title proof.",
-      "coverageGap": "Current ownership, title, liens, easements, restrictions, full deed instruments, manufactured-home title and governing-document chains remain unresolved.",
-      "asOf": "2026-10-03"
+      "summary": "York County official parcel GIS and public deed entry points were checked for both new candidates. Parcel identity, construction year, prior transfer reference and assessed facts were captured where available without treating prior transfers as current title proof.",
+      "coverageGap": "Current ownership, title, liens, easements, restrictions, full deed instruments and governing-document chains remain unresolved.",
+      "asOf": "2026-10-04"
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "Applicable York County and City of Rock Hill public permit and zoning entry points were checked. No new property-specific final permit or written separate-room rental determination was established; listing system claims remain claims, not verified installation records.",
+      "summary": "Applicable York County and City of Rock Hill public permit and zoning entry points were checked. The March city plan report identifies 359 Blanche as a one-story, three-bedroom, two-bath new residence with conditional approval; no final certificate or written separate-room rental determination was established for either addition.",
       "coverageGap": "Written zoning, occupancy, registration, parking and room-lease authority plus complete permit scopes, finals, invoices, warranties and inspection readiness remain required.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "York County’s 2017 DFIRM layer returned zero intersecting features for nine new parcel geometries, was not reliable for two condominium parcel queries, and intersected Zone AE for the larger Brownstone manufactured-home park parcel. No result was promoted to an affirmative unit-level FEMA determination.",
-      "coverageGap": "County-layer hits and misses do not replace a FEMA determination, survey, drainage review, master-policy review, unit-location evidence, inspection or insurer acceptance.",
-      "asOf": "2026-10-03"
+      "summary": "FEMA Flood Map Service Center and York County One Map or DFIRM entry points were checked for both additions. No new property-specific official determination was promoted from an inaccessible or zero-result readback.",
+      "coverageGap": "Portal hits and misses do not replace a FEMA determination, survey, drainage review, master-policy review, inspection or insurer acceptance.",
+      "asOf": "2026-10-04"
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "Current listing dues were captured for the new condominium, townhouse and leased-land candidates, including the mandatory $635 Brownstone lot rent. No controlling declaration, park lease or written management evidence separately authorizes whole-unit and individual-room rentals.",
-      "coverageGap": "Unknown governing documents, park rules, fees, assessments, insurance, reserves, litigation, parking and separate rental authority block recommendation.",
-      "asOf": "2026-10-03"
+      "summary": "Fresh public listing evidence reports no HOA for 359 Blanche and $205 monthly Lexington Commons dues for 1429 Valann Farm. No controlling declaration or written management evidence separately authorizes whole-unit and individual-room rentals.",
+      "coverageGap": "Unknown governing documents, deed-program rules, fees, assessments, insurance, reserves, litigation, parking and separate rental authority block recommendation.",
+      "asOf": "2026-10-04"
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "Current Zillow, Apartments.com and furnished private-unit inventory was reviewed. Public asks continued to support retention of the conservative $1,150 monthly private-unit planning benchmark.",
+      "summary": "Current Zillow, Apartments.com, HotPads, RentCafe and furnished private-unit inventory was reviewed. Public asks continued to support retention of the conservative $1,150 monthly private-unit planning benchmark.",
       "coverageGap": "Asking rent is not a signed lease; availability, deposits, fees, utilities, condition and unit quality vary.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh SpareRoom and Furnished Finder evidence showed Rock Hill room asks from about $750 to $1,400, including current private-bath asks around $800, $950 and $1,100; the conservative $850 planning input was retained.",
+      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh Roomies, SpareRoom and Furnished Finder evidence showed current Rock Hill asks from about $700 to $1,400, including private-bath examples at $750, $800, $850, $950 and $1,100; the conservative $850 planning input was retained.",
       "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand or legal room-rental authority.",
-      "asOf": "2026-10-03"
+      "asOf": "2026-10-04"
     }
   ],
   "importSummary": {
