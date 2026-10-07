@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-06",
+  "asOf": "2026-10-07",
   "runStatus": "successful",
-  "researchMethod": "Public-only October 6 reconciliation: all 14 configured source-policy categories were audited; all 193 currently marketed purchase primary URLs and all 14 configured room-comparable URLs were requested. Public portal, brokerage/IDX, GSE, FSBO, auction, builder, distressed, parcel/deed, permit/zoning, official flood-layer, HOA, private-unit-rent and individual-room evidence was reviewed. One eligible active candidate was admitted and one October 2 sale was archived on positive removal evidence. A coming-soon listing was withheld until active and a tenant-occupied townhouse was withheld because its lease runs through July 2027 and its single full bathroom cannot support shared occupancy. The new candidate was routed from the private family reference through public geocoding and OSRM and is within 30 driving miles. Public search is not exhaustive MLS coverage.",
+  "researchMethod": "Public-only October 7 reconciliation: all 14 configured source-policy categories were audited; all 193 currently marketed purchase primary URLs and all 14 configured room-comparable URLs were requested. Public portal, brokerage/IDX, GSE, FSBO, auction, builder, distressed, parcel/deed, permit/zoning, flood, HOA, private-unit-rent and individual-room evidence was reviewed. No independently verified eligible new candidate was admitted. Fresh Canopy MLS-fed sources support returning 2017 Bristol Parkway from pending to active at $281,000; the required $6,000 seller discount and acceptance at or below the absolute $275,000 offer ceiling remain unresolved. Newly surfaced leads were excluded by pre-1980 construction, pending or sold status, or an unsupported above-ceiling discount. Public search is not exhaustive MLS coverage.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -11,7 +11,7 @@
     "medianDaysOnMarket": 50,
     "asOf": "2026-08",
     "sourceUrl": "https://www.realtor.com/realestateandhomes-search/Rock-Hill_SC/overview",
-    "note": "The August Realtor market aggregate is retained with its original period. October 6 public listing, owner-listing, government, auction, builder, parcel, permit, zoning, flood-layer, private-unit and private-room inventories informed the daily checks; no updated area-wide aggregate was substituted."
+    "note": "The August Realtor market aggregate is retained with its original period. October 7 public listing, owner-listing, government, auction, builder, parcel, permit, zoning, flood-layer, private-unit and private-room inventories informed the daily checks; no updated area-wide aggregate was substituted."
   },
   "properties": [
     {
@@ -7305,14 +7305,14 @@
     {
       "id": "mls-4408474",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-08-23",
-      "lastSeen": "2026-10-01",
-      "lastChanged": "2026-09-13",
+      "lastSeen": "2026-10-07",
+      "lastChanged": "2026-10-07",
       "address": "2017 Bristol Pkwy, Rock Hill, SC 29732",
       "sourceUrl": "https://www.zillow.com/homedetails/2017-Bristol-Pkwy-Rock-Hill-SC-29732/55176520_zpid/",
       "mls": "4408474",
-      "status": "pending",
+      "status": "active",
       "price": 281000,
       "originalPrice": 281000,
       "priceCutPercent": 0,
@@ -7327,13 +7327,13 @@
       "oneLevel": true,
       "privateBath": "yes",
       "roomRentalLegal": "unknown",
-      "daysOnMarket": 34,
+      "daysOnMarket": 72,
       "distanceMiles": 4.4,
       "driveMinutes": 12,
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceAsOf": "2026-09-15",
       "distanceLabel": "4.4 miles · about 12 minutes from the family reference property",
-      "summary": "Current MLS-fed IDX shows under contract with no showings at $281,000; an accepted offer at or below $275,000 remains unverified and no higher offer is modeled. An active one-level 1997 home with a listing-documented private primary bathroom. The $281,000 ask requires a $6,000 seller discount to reach the absolute offer ceiling; acceptance is unresolved and underwriting remains capped at $275,000.",
+      "summary": "Fresh Canopy MLS-fed Realtor.com, Zillow and Redfin evidence supports active marketing again at $281,000 after the September pending observation. This one-level 1997 home has a listing-documented private primary bathroom. The ask requires a $6,000 seller discount to reach the absolute offer ceiling; seller acceptance remains unresolved and underwriting stays capped at $275,000.",
       "pros": [
         "Private primary bathroom with separate tub and shower is documented in the listing",
         "One-level three-bedroom, two-full-bath layout",
@@ -7341,7 +7341,7 @@
         "The required seller discount is 2.1% of the ask"
       ],
       "concerns": [
-        "September 13 status is pending; it is not an active offer opportunity unless the contract fails and current status is reconfirmed.",
+        "Fresh public MLS-fed pages show active marketing again after the September 13 pending observation; confirm the contract release and current showing availability directly before outreach.",
         "Fresh paint, new flooring, and a buyer-activated 100-day warranty are listing claims and do not establish major-system replacement, coverage scope, or installation dates",
         "An accepted offer requires a $6,000 seller discount to reach the $275,000 ceiling; seller acceptance is unresolved and no offer above the ceiling is modeled",
         "Room-rental zoning, registration, legal bedroom count, parking and occupancy capacity, separate-room lease authority, sewer or septic capacity, safety readiness, utilities, common-space practicality, and property-specific room demand remain unresolved",
@@ -7351,7 +7351,7 @@
         "No controlling public evidence establishes the proposed unrelated-room leasing arrangement; written city and closing-attorney confirmation remains a recommendation gate"
       ],
       "sourceConflicts": [
-        "Current MLS-fed IDX shows under contract with no showings at $281,000; an accepted offer at or below $275,000 remains unverified and no higher offer is modeled."
+        "A September 13 MLS-fed IDX page showed pending with no showings, while October 7 Realtor.com, Zillow and Redfin pages show active at $281,000. The fresher active status is retained, but direct contract-release confirmation is still required."
       ],
       "hoa": {
         "exists": false,
@@ -7378,6 +7378,11 @@
           "date": "2026-09-13",
           "event": "Observed pending",
           "price": 281000
+        },
+        {
+          "date": "2026-10-07",
+          "event": "Returned to active marketing",
+          "price": 281000
         }
       ],
       "sources": [
@@ -7400,6 +7405,21 @@
           "label": "September 13 current MLS-fed or indexed IDX marketing-status reconciliation",
           "url": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car309272631-nccanopy/2017-bristol-pkwy-rock-hill-sc-29732",
           "accessed": "2026-09-13"
+        },
+        {
+          "label": "October 7 Realtor.com Canopy MLS active status, price, layout, parcel, zoning and utilities",
+          "url": "https://www.realtor.com/realestateandhomes-detail/2017-Bristol-Pkwy_Rock-Hill_SC_29732_M63862-27278",
+          "accessed": "2026-10-07"
+        },
+        {
+          "label": "October 7 Zillow Canopy MLS active status, price and listing chronology",
+          "url": "https://www.zillow.com/homedetails/2017-Bristol-Pkwy-Rock-Hill-SC-29732/55176520_zpid/",
+          "accessed": "2026-10-07"
+        },
+        {
+          "label": "October 7 Redfin active inventory corroboration",
+          "url": "https://www.redfin.com/city/15797/SC/Rock-Hill/open-houses",
+          "accessed": "2026-10-07"
         }
       ],
       "changeHistory": [
@@ -7424,12 +7444,23 @@
               "label": "Current marketing status corrected"
             }
           ]
+        },
+        {
+          "date": "2026-10-07",
+          "changes": [
+            {
+              "field": "status",
+              "from": "pending",
+              "to": "active",
+              "label": "Returned to active marketing"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
       "publicVerification": {
-        "asOf": "2026-09-19",
-        "marketingAttempt": "Current MLS-fed IDX shows under contract with no showings at $281,000; an accepted offer at or below $275,000 remains unverified and no higher offer is modeled. Most recent recorded transfer and any later relist still require official deed readback. Primary public listing URL was re-requested September 15; no newer fully reconciled status evidence replaced that specific finding. Primary public URL requested 2026-09-19: HTTP 403. This access result alone does not establish current price, status, or transfer chronology. Earlier source-backed facts are retained pending direct reconciliation.",
+        "asOf": "2026-10-07",
+        "marketingAttempt": "Fresh Canopy MLS-fed Realtor.com and Zillow pages plus Redfin active inventory show active marketing at $281,000 after the September 13 pending observation. The fresher status is retained, but direct confirmation that the prior contract was released and that showings are available remains required. The $6,000 discount to the $275,000 ceiling is unresolved; no higher offer is modeled.",
         "parcelAndDeed": "York County public assessor, One Map, and Register of Deeds entry points were checked; no new property-specific official readback established ownership, title, transfer, assessment, or recorded-restriction changes.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
         "permits": [
@@ -15062,7 +15093,7 @@
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-10-06",
       "lastChanged": "2026-10-06",
-      "changeCategory": "archived",
+      "changeCategory": "existing",
       "changeHistory": [
         {
           "date": "2026-08-25",
@@ -27923,7 +27954,7 @@
     {
       "id": "mls-4431369",
       "strategy": "private-purchase",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-06",
       "lastSeen": "2026-10-06",
       "lastChanged": "2026-10-06",
@@ -28318,23 +28349,23 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public inventory were reviewed. All 193 currently marketed purchase primary URLs were requested: 91 HTTP 200, 68 HTTP 403 and 34 HTTP 429. Fresh evidence admitted one eligible active candidate and established one closing.",
+      "asOf": "2026-10-07",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public inventory were reviewed. All 193 currently marketed purchase primary URLs were requested: 131 HTTP 200, 23 HTTP 202, 4 HTTP 403 and 35 HTTP 429, with no 404 or request failure. Fresh evidence supported one status change and no eligible new candidate.",
       "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, blocks, rate limits, token-free shells and stale pages are not independent status proof."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "Indexed local brokerage, listing-agent, Canopy-fed IDX and direct builder pages were cross-checked. Current property-specific pages supported the Bridgewater addition and Devonshire closing; Booker Washington remains coming soon and Lotts Place was withheld for a lease through July 2027 and one-full-bath capacity.",
+      "asOf": "2026-10-07",
+      "summary": "Indexed local brokerage, listing-agent, Canopy-fed IDX and direct builder pages were cross-checked. Fresh Realtor.com, Zillow and Redfin evidence supports returning 2017 Bristol Parkway from pending to active at $281,000. The newly surfaced Oakridge Meadows and Westover leads were pre-1980; Ramble Wood required an unsupported $42,000 discount.",
       "coverageGap": "IDX and syndicated records can lag or conflict; written seller, builder and association confirmation remains necessary before an offer."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
+      "asOf": "2026-10-07",
       "summary": "HUD Home Store, Fannie Mae HomePath and Freddie Mac HomeSteps public entry points and indexed area results were checked; no independently verified eligible new GSE candidate emerged.",
       "coverageGap": "Public inventory and investor-first-look details were not fully retrievable; no credentialed feed was requested or used."
     },
@@ -28342,23 +28373,23 @@
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity materials, foreclosure notices and owner-listing results were reviewed. An owner-listed Eisenhower Road home and current foreclosure leads were excluded by pre-1980 construction or unresolved title, condition, bid and occupancy risks.",
+      "asOf": "2026-10-07",
+      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity entry points, foreclosure notices and owner-listing results were reviewed. No independently verified age-eligible owner-listed or distressed candidate cleared current status, title, condition, bid and occupancy gates.",
       "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing and occupancy checks."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "Auction.com, Hubzu, Xome and public builder inventory were checked. Indexed Hubzu and Xome leads were excluded by pre-1980 construction; no new eligible public auction candidate was verified. Direct Lennar inventory remained part of the active-listing reconciliation.",
+      "asOf": "2026-10-07",
+      "summary": "Auction.com, Hubzu, Xome and public builder inventory were checked. No new eligible public auction candidate was verified. Current builder and indexed new-construction inventory remained subject to completion, incentive, fee, title and governing-document follow-up.",
       "coverageGap": "Auction outcomes, premiums, title, condition and financing remain unresolved. Builder prices can depend on incentives or affiliated financing."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "supported-manual-not-refreshed",
-      "asOf": "2026-10-06",
+      "asOf": "2026-10-07",
       "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained.",
       "coverageGap": "Manual saved-search coverage was unavailable this run."
     },
@@ -28366,7 +28397,7 @@
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-10-06",
+      "asOf": "2026-10-07",
       "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports or direct MLS access.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure."
     },
@@ -28374,56 +28405,56 @@
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "All 193 currently marketed purchase primary URLs were requested. Fresh Canopy-fed evidence admitted 3050 Bridgewater and positive MLS-fed closing evidence archived 3154 Devonshire at $210,000. Booker Washington is not active until October 9 and Lotts Place is leased through July 2027.",
+      "asOf": "2026-10-07",
+      "summary": "All 193 currently marketed purchase primary URLs were requested. Fresh Canopy MLS-fed sources support returning 2017 Bristol Parkway from pending to active at $281,000. No known listing was archived without positive removal evidence or the two-miss rule, and no new eligible candidate cleared admission gates.",
       "coverageGap": "HTTP access is not status proof. Official current transfer, title and seller or builder contract terms remain unresolved for many records."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "York County's official parcel service and public deed entry point were checked for Bridgewater, Booker Washington and Lotts Place. Parcel identities, construction years, sizes and transfer anchors were captured where available without treating them as current title proof.",
+      "asOf": "2026-10-07",
+      "summary": "York County official assessor, One Map and Register of Deeds entry points were checked. Prior property-specific evidence was preserved where portals were blocked or no newer official readback established ownership, title, assessment or transfer changes.",
       "coverageGap": "Current ownership, title, liens, easements, restrictions, full deed instruments and governing-document chains remain unresolved."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "Applicable York County and City of Rock Hill permit entry points and official zoning layers were checked. Bridgewater maps to county AGC, Booker Washington to city SF-4 and Lotts Place to city SF-A; no new property-specific official permit final or written rental interpretation was promoted.",
+      "asOf": "2026-10-07",
+      "summary": "York County, City of Rock Hill and City of York public permit and zoning entry points were checked. No new property-specific permit final, verified system installation date, certificate of occupancy or written room-rental interpretation was promoted.",
       "coverageGap": "Written zoning, occupancy, registration, parking and room-lease authority plus complete permit scopes, finals, invoices, warranties and inspection readiness remain required where applicable."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "Parcel geometries for Bridgewater, Booker Washington and Lotts Place were queried against York County's official 2017 DFIRM layer; each returned zero intersecting features. FEMA Map Service Center and physical-risk follow-ups remain required.",
+      "asOf": "2026-10-07",
+      "summary": "FEMA Map Service Center and York County One Map entry points were checked. No new property-specific affirmative flood determination replaced prior evidence; survey, drainage, inspection and insurer confirmation remain required.",
       "coverageGap": "A zero-result GIS query does not replace an affirmative FEMA determination, survey, drainage review, septic and well review, master-policy review, inspection or insurer acceptance."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "The Bridgewater listing reports no HOA. Pennington Place dues conflict between a fresh $103 monthly listing and an older $98 page; no controlling declaration or written management evidence separately authorizes whole-unit and individual-room rentals.",
+      "asOf": "2026-10-07",
+      "summary": "Public HOA and association evidence was reviewed for relevant candidates. No new controlling declaration, written management decision or complete fee schedule separately established whole-unit and individual-room rental authority.",
       "coverageGap": "Unknown governing documents, fees, assessments, insurance, reserves, litigation, parking and separate rental authority block recommendation for association-governed candidates."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "Current Zillow, HotPads and RentCafe Rock Hill studio and one-bedroom inventory was reviewed. Public asks included approximately $875 to $1,460 for studios and $1,125 to $1,427 for several one-bedroom options, supporting retention of the conservative $1,150 monthly private-unit planning benchmark.",
+      "asOf": "2026-10-07",
+      "summary": "Current Zillow, HotPads, Apartments.com and RentCafe Rock Hill studio and one-bedroom inventory was reviewed. Public asks included approximately $850 to $1,464, with multiple one-bedroom options near $1,100 to $1,250, supporting retention of the conservative $1,150 monthly private-unit planning benchmark.",
       "coverageGap": "Asking rent is not a signed lease; availability, deposits, fees, utilities, condition and unit quality vary."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-06",
-      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh Roomies, SpareRoom and Furnished Finder evidence continued to show Rock Hill asks around $700 to $1,100 for relevant rooms, including private-bath examples; the conservative $850 planning input was retained.",
+      "asOf": "2026-10-07",
+      "summary": "All 14 configured room-comparable URLs were requested: seven HTTP 200 and seven HTTP 403. Fresh Roomies, SpareRoom and Furnished Finder discovery evidence showed relevant Rock Hill asks around $725 to $1,010, including private-bath examples at $795, $850 and $950; the conservative $850 planning input was retained.",
       "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand or legal room-rental authority."
     }
   ],
