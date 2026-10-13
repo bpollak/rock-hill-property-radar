@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-12",
+  "asOf": "2026-10-13",
   "runStatus": "successful",
-  "researchMethod": "Public-only October 12 reconciliation: all 14 configured source-policy categories were audited; all 198 previously tracked non-removed purchase primary URLs and all 14 configured room-comparable URLs were requested. Live portal, brokerage and IDX, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent, and individual-room evidence was reviewed. Six current direct-builder townhomes were admitted after property-specific route, parcel, price, private-bath, and flood-layer checks. 104 Neely changed to pending under conflicting portal evidence; 642 and 646 Sparano received direct-builder price reductions. Four prior builder homes recorded a first availability miss and were retained under the two-miss archive rule. Public search is not exhaustive MLS coverage.",
+  "researchMethod": "Public-only October 13 reconciliation: all 14 configured source-policy categories were audited; all 204 previously tracked non-removed purchase primary URLs and all 14 configured room-comparable URLs were requested. Live national portals, brokerage and IDX, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent, and individual-room evidence was reviewed. Two current Rock Hill listings were admitted after property-specific route, parcel, price, private-bath, permit, zoning and flood-layer checks. Six existing listings materially changed, and four builder records were archived after a second consecutive live-inventory miss. Public search is not exhaustive MLS coverage.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -11,7 +11,7 @@
     "medianDaysOnMarket": 50,
     "asOf": "2026-08",
     "sourceUrl": "https://www.realtor.com/realestateandhomes-search/Rock-Hill_SC/overview",
-    "note": "The August Realtor market aggregate is retained with its original period. October 12 public listing, brokerage/IDX, owner-listing, government, auction, builder, parcel, deed, permit, zoning, flood-layer, private-unit, and private-room sources informed the daily checks; no updated area-wide aggregate was substituted."
+    "note": "The August Realtor market aggregate is retained with its original period. October 13 public listing, brokerage/IDX, owner-listing, government, auction, builder, parcel, deed, permit, zoning, flood-layer, private-unit, and private-room sources informed the daily checks; no updated area-wide aggregate was substituted."
   },
   "properties": [
     {
@@ -1341,21 +1341,21 @@
     {
       "id": "mls-4406823",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-10-01",
-      "lastChanged": "2026-08-14",
+      "lastSeen": "2026-10-13",
+      "lastChanged": "2026-10-13",
       "address": "20 Wright St, Rock Hill, SC 29730",
       "sourceUrl": "https://www.zillow.com/homedetails/20-Wright-St-Rock-Hill-SC-29730/243728769_zpid/",
       "mls": "4406823",
       "status": "active",
-      "price": 275000,
+      "price": 265000,
       "originalPrice": 275000,
-      "priceCutPercent": 0,
+      "priceCutPercent": 3.6,
       "beds": 3,
       "baths": 2,
       "sqft": 1293,
-      "pricePerSqft": 213,
+      "pricePerSqft": 205,
       "marketPricePerSqft": 207,
       "yearBuilt": 2017,
       "propertyType": "Single-family home",
@@ -1369,7 +1369,7 @@
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceAsOf": "2026-09-15",
       "distanceLabel": "6.0 miles · about 14 minutes from the family reference property",
-      "summary": "A one-level home at the offer ceiling with a documented private primary suite and manageable reported annual HOA dues. Room-leasing authority and the association's controlling documents remain recommendation gates.",
+      "summary": "A one-level 2017 home now $10,000 below the offer ceiling with a documented private primary suite and manageable reported annual HOA dues. Room-leasing authority and the association's controlling documents remain recommendation gates.",
       "pros": [
         "Private primary bedroom with ensuite bath and walk-in closet is documented",
         "One-level 2017 construction",
@@ -1416,6 +1416,11 @@
           "date": "2026-08-24",
           "event": "Canopy MLS portal price and status check",
           "price": 275000
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Current public price reduction observed",
+          "price": 265000
         }
       ],
       "sources": [
@@ -1433,9 +1438,26 @@
           "label": "User-authorized Canopy MLS property listing via OneHome",
           "url": "https://portal.onehome.com/en-US/property/aotf~1177948296~CANOPY",
           "accessed": "2026-08-24"
+        },
+        {
+          "label": "Trulia current listing and dated price history",
+          "url": "https://www.trulia.com/home/20-wright-st-rock-hill-sc-29730-243728769",
+          "accessed": "2026-10-13"
         }
       ],
-      "changeHistory": [],
+      "changeHistory": [
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "price",
+              "from": 275000,
+              "to": 265000,
+              "label": "Current public price reduction observed"
+            }
+          ]
+        }
+      ],
       "missingRuns": 0,
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -3909,21 +3931,21 @@
     {
       "id": "mls-4399533",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-10-01",
-      "lastChanged": "2026-08-20",
+      "lastSeen": "2026-10-13",
+      "lastChanged": "2026-10-13",
       "address": "314 Friedheim Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/314-Friedheim-Rd-29730/home/52109205",
       "mls": "4399533",
       "status": "contingent",
-      "price": 265000,
+      "price": 259500,
       "originalPrice": 275000,
-      "priceCutPercent": 3.6,
+      "priceCutPercent": 5.6,
       "beds": 3,
       "baths": 2,
       "sqft": 1179,
-      "pricePerSqft": 225,
+      "pricePerSqft": 220,
       "marketPricePerSqft": 207,
       "yearBuilt": 2026,
       "propertyType": "New-construction single-family home",
@@ -3937,7 +3959,7 @@
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceAsOf": "2026-09-15",
       "distanceLabel": "6.4 miles · about 14 minutes from the family reference property",
-      "summary": "A completed one-level new build $10,000 below the ceiling with a documented private primary bathroom, now shown under contract with showings. Permit closeout, builder fees, and room-rental authority remain unresolved.",
+      "summary": "A completed one-level new build at a current public asking price of $259,500 with a documented private primary bathroom. The stricter contingent status is preserved because public status sources conflict; permit closeout, builder fees, and room-rental authority remain unresolved.",
       "pros": [
         "$10,000 below the maximum offer price",
         "A private primary suite with a tiled full bathroom is documented",
@@ -3958,7 +3980,8 @@
       ],
       "sourceConflicts": [
         "The MLS reports a 0.35-acre lot while the public-record panel still shows a smaller vacant-land parcel footprint; post-construction parcel and deed readback is required.",
-        "The user-authorized Canopy MLS portal displayed Active on 2026-08-24, while the prior snapshot retained the stricter contingent status pending independent resolution."
+        "The user-authorized Canopy MLS portal displayed Active on 2026-08-24, while the prior snapshot retained the stricter contingent status pending independent resolution.",
+        "Current public search evidence reports a $259,500 asking price, while an older direct Realtor page retained $265,000 and active status; the stricter prior contingent status is preserved until seller or MLS confirmation."
       ],
       "hoa": {
         "exists": false,
@@ -3988,6 +4011,11 @@
           "date": "2026-08-24",
           "event": "Canopy MLS portal price and status check",
           "price": 265000
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Current public asking price observed",
+          "price": 259500
         }
       ],
       "sources": [
@@ -4015,6 +4043,11 @@
           "label": "User-authorized Canopy MLS property listing via OneHome",
           "url": "https://portal.onehome.com/en-US/property/aotf~1176307243~CANOPY",
           "accessed": "2026-08-24"
+        },
+        {
+          "label": "Current Realtor.com new-construction result and price",
+          "url": "https://www.realtor.com/realestateandhomes-detail/314-Friedheim-Rd_Rock-Hill_SC_29730_M55183-93904",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -4037,6 +4070,17 @@
               "from": "active",
               "to": "contingent",
               "label": "Under contract"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "price",
+              "from": 265000,
+              "to": 259500,
+              "label": "Current public asking price observed"
             }
           ]
         }
@@ -6209,21 +6253,21 @@
     {
       "id": "mls-4374605",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-10-01",
-      "lastChanged": "2026-08-24",
+      "lastSeen": "2026-10-13",
+      "lastChanged": "2026-10-13",
       "address": "211 Baker St, Rock Hill, SC 29730",
       "sourceUrl": "https://www.zillow.com/homedetails/211-Baker-St-Rock-Hill-SC-29730/152156425_zpid/",
       "mls": "4374605",
       "status": "active",
-      "price": 269900,
+      "price": 249900,
       "originalPrice": 285000,
-      "priceCutPercent": 3.5,
+      "priceCutPercent": 12.3,
       "beds": 3,
       "baths": 2,
       "sqft": 1337,
-      "pricePerSqft": 202,
+      "pricePerSqft": 187,
       "marketPricePerSqft": 207,
       "yearBuilt": 2022,
       "propertyType": "Single-family home",
@@ -6254,7 +6298,9 @@
         "The split-bedroom listing language does not document an ensuite full bathroom",
         "A 2022 single-family construction permit appears in a city activity report, but final closeout, certificate of occupancy, warranties, and installation documents remain unresolved"
       ],
-      "sourceConflicts": [],
+      "sourceConflicts": [
+        "Current Movoto and other MLS-fed public evidence shows $249,900, while the older direct Redfin detail retained $269,900; current lower pricing is used with direct confirmation still required."
+      ],
       "hoa": {
         "exists": false,
         "wholeUnitRental": "not-applicable",
@@ -6287,6 +6333,11 @@
           "date": "2026-08-24",
           "event": "Canopy MLS portal price and status check",
           "price": 269900
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Current public price reduction observed",
+          "price": 249900
         }
       ],
       "sources": [
@@ -6304,6 +6355,11 @@
           "label": "User-authorized Canopy MLS property listing via OneHome",
           "url": "https://portal.onehome.com/en-US/property/aotf~1158602739~CANOPY",
           "accessed": "2026-08-24"
+        },
+        {
+          "label": "Movoto current Canopy MLS-fed price corroboration",
+          "url": "https://www.movoto.com/rock-hill-sc/211-baker-st-rock-hill-sc-29730/pid_9x1zzw1xmh/",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -6326,6 +6382,17 @@
               "from": 274900,
               "to": 269900,
               "label": "Canopy MLS portal price reconciliation"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "price",
+              "from": 269900,
+              "to": 249900,
+              "label": "Current public price reduction observed"
             }
           ]
         }
@@ -23182,15 +23249,15 @@
     {
       "id": "builder-29016600154",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-01",
-      "lastChanged": "2026-10-01",
+      "lastChanged": "2026-10-13",
       "address": "616 Sparano Loop Unit 154, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600154",
       "mls": "4360835",
       "parcelId": "0701601701",
-      "status": "active",
+      "status": "off-market",
       "price": 229139,
       "originalPrice": 234089,
       "priceCutPercent": 2.1,
@@ -23211,7 +23278,7 @@
       "distanceAsOf": "2026-10-01",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's current public homesite page lists move-in-ready homesite 154, a three-bedroom Titan townhouse at $229,139 after a public $45,000 price cut. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
+      "summary": "No longer present in Lennar's live Cannon Village inventory after two consecutive daily availability misses. Preserved as an archived record; the prior builder price is not a current offer.",
       "pros": [
         "$45,861 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a documented owner’s en-suite plus a second full bath and powder room",
@@ -23220,6 +23287,7 @@
         "County water and sewer are reported by MLS or builder materials"
       ],
       "concerns": [
+        "Archived after two consecutive misses from live direct-builder inventory; current availability and price require fresh written builder confirmation.",
         "The prior property-specific public page no longer provides a current positive availability readback. This is the first consecutive miss and does not yet trigger archival; confirm builder or seller availability directly.",
         "Current Lennar direct inventory lists $229,139 and describes a $45,000 cut; obtain a dated builder price sheet and identify lender, incentive, deposit, closing-cost, and availability conditions.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer/capital fees, amenity charges, and builder closing schedule.",
@@ -23254,6 +23322,11 @@
         {
           "date": "2026-10-01",
           "event": "Public builder price reduced",
+          "price": 229139
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Archived after second consecutive live-inventory miss",
           "price": 229139
         }
       ],
@@ -23302,6 +23375,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-27"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -23326,9 +23404,20 @@
               "label": "Price reduced to $229,139"
             }
           ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Archived after two consecutive direct-builder inventory misses"
+            }
+          ]
         }
       ],
-      "missingRuns": 1,
+      "missingRuns": 2,
       "listingDetails": {
         "parcelId": "0701601701",
         "zoning": "R-5 reported by MLS for the community; official homesite confirmation pending",
@@ -23364,18 +23453,18 @@
     {
       "id": "builder-29016600159",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-27",
-      "lastSeen": "2026-10-12",
-      "lastChanged": "2026-10-02",
+      "lastSeen": "2026-10-13",
+      "lastChanged": "2026-10-13",
       "address": "638 Sparano Loop Unit 159, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600159",
       "mls": "4415090",
       "parcelId": "0701601706",
       "status": "active",
-      "price": 250449,
+      "price": 250000,
       "originalPrice": 255849,
-      "priceCutPercent": 2.1,
+      "priceCutPercent": 2.3,
       "beds": 3,
       "baths": 2.5,
       "sqft": 1691,
@@ -23393,7 +23482,7 @@
       "distanceAsOf": "2026-09-27",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's current structured inventory lists move-in-ready homesite 159, a three-bedroom Titan townhouse at $255,849. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, and builder charges still block recommendation.",
+      "summary": "Lennar's live structured inventory lists move-in-ready homesite 159 at $250,000. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, and builder charges still block recommendation.",
       "pros": [
         "$19,151 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a documented owner’s en-suite plus a second full bath and powder room",
@@ -23436,6 +23525,11 @@
           "date": "2026-10-02",
           "event": "Builder price reduced",
           "price": 250449
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Direct builder price reduced",
+          "price": 250000
         }
       ],
       "sources": [
@@ -23483,6 +23577,16 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-27"
+        },
+        {
+          "label": "Lennar current homesite 159 structured inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600159",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -23507,6 +23611,17 @@
               "label": "Builder price reduced"
             }
           ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "price",
+              "from": 250449,
+              "to": 250000,
+              "label": "Direct builder price reduced"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
@@ -23520,8 +23635,8 @@
         "completion": "Move-in ready per current builder inventory; certificate of occupancy not independently obtained"
       },
       "publicVerification": {
-        "asOf": "2026-10-02",
-        "marketingAttempt": "Lennar current homesite 159 direct inventory lists the homesite as available at $250,449 on October 2, 2026. Confirm price, incentives, financing conditions, status, and contract terms directly.",
+        "asOf": "2026-10-13",
+        "marketingAttempt": "Lennar's live direct homesite page lists homesite 159 as available at $250,000 on October 13, 2026. Confirm price, incentives, financing conditions, status and contract terms directly.",
         "parcelAndDeed": "York County GIS matched parcel 0701601706, address and homesite 159. Recorded transfer references appear to cover builder or bulk transactions and are not treated as individual retail price. Current title, liens, easements, restrictions and instrument contents remain unresolved.",
         "flood": "A parcel-geometry query against York County's 2017 DFIRM layer returned zero intersecting flood-hazard features. This is not an affirmative FEMA determination; grading, drainage, master-policy coverage and insurer acceptance remain required.",
         "permits": [
@@ -23545,9 +23660,9 @@
     {
       "id": "builder-29016600160",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-27",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-12",
       "address": "642 Sparano Loop Unit 160, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600160",
@@ -23668,6 +23783,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-27"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -23741,9 +23861,9 @@
     {
       "id": "builder-29016600161",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-27",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-12",
       "address": "646 Sparano Loop Unit 161, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600161",
@@ -23864,6 +23984,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-27"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -23937,15 +24062,15 @@
     {
       "id": "builder-29017600174",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-01",
-      "lastChanged": "2026-10-01",
+      "lastChanged": "2026-10-13",
       "address": "708 Sparano Loop Unit 174, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600174",
       "mls": "4415051",
       "parcelId": "0701601721",
-      "status": "active",
+      "status": "off-market",
       "price": 234549,
       "originalPrice": 239000,
       "priceCutPercent": 1.9,
@@ -23966,7 +24091,7 @@
       "distanceAsOf": "2026-10-01",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's current public homesite page lists move-in-ready homesite 174, a three-bedroom Drayton townhouse at $234,549 after a public $16,000 price cut. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
+      "summary": "No longer present in Lennar's live Cannon Village inventory after two consecutive daily availability misses. Preserved as an archived record; the prior builder price is not a current offer.",
       "pros": [
         "$40,451 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a documented owner’s en-suite plus a second full bath and powder room",
@@ -23975,6 +24100,7 @@
         "County water and sewer are reported by MLS or builder materials"
       ],
       "concerns": [
+        "Archived after two consecutive misses from live direct-builder inventory; current availability and price require fresh written builder confirmation.",
         "The prior property-specific public page no longer provides a current positive availability readback. This is the first consecutive miss and does not yet trigger archival; confirm builder or seller availability directly.",
         "Current Lennar direct inventory lists $234,549 and describes a $16,000 cut; obtain a dated builder price sheet and identify lender, incentive, deposit, closing-cost, and availability conditions.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer/capital fees, amenity charges, and builder closing schedule.",
@@ -24009,6 +24135,11 @@
         {
           "date": "2026-10-01",
           "event": "Public builder price reduced",
+          "price": 234549
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Archived after second consecutive live-inventory miss",
           "price": 234549
         }
       ],
@@ -24057,6 +24188,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-27"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -24081,9 +24217,20 @@
               "label": "Price reduced to $234,549"
             }
           ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Archived after two consecutive direct-builder inventory misses"
+            }
+          ]
         }
       ],
-      "missingRuns": 1,
+      "missingRuns": 2,
       "listingDetails": {
         "parcelId": "0701601721",
         "zoning": "R-5 reported by MLS for the community; official homesite confirmation pending",
@@ -24119,14 +24266,14 @@
     {
       "id": "builder-29017600176",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-03",
-      "lastChanged": "2026-10-03",
+      "lastChanged": "2026-10-13",
       "address": "716 Sparano Loop Unit 176, York, SC 29745",
       "sourceUrl": "https://www.redfin.com/SC/York/716-Sparano-Loop-29745/home/204540046",
       "parcelId": "0701601723",
-      "status": "active",
+      "status": "off-market",
       "price": 239499,
       "originalPrice": 243399,
       "priceCutPercent": 1.6,
@@ -24147,7 +24294,7 @@
       "distanceAsOf": "2026-09-27",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's current structured inventory lists move-in-ready homesite 176, a three-bedroom Drayton townhouse at $239,499. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, and builder charges still block recommendation.",
+      "summary": "No longer present in Lennar's live Cannon Village inventory after two consecutive daily availability misses. Preserved as an archived record; the prior builder price is not a current offer.",
       "pros": [
         "$31,601 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a documented owner’s en-suite plus a second full bath and powder room",
@@ -24156,6 +24303,7 @@
         "County water and sewer are reported by MLS or builder materials"
       ],
       "concerns": [
+        "Archived after two consecutive misses from live direct-builder inventory; current availability and price require fresh written builder confirmation.",
         "The prior property-specific public page no longer provides a current positive availability readback. This is the first consecutive miss and does not yet trigger archival; confirm builder or seller availability directly.",
         "Current Redfin/Zillow-fed evidence lists $239,499 while older Lennar and Homes.com pages show higher asks; obtain a dated builder price sheet and all incentive conditions.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer/capital fees, amenity charges, and builder closing schedule.",
@@ -24190,6 +24338,11 @@
         {
           "date": "2026-10-03",
           "event": "Public syndicated price reduced",
+          "price": 239499
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Archived after second consecutive live-inventory miss",
           "price": 239499
         }
       ],
@@ -24243,6 +24396,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-27"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -24267,9 +24425,20 @@
               "label": "Price reduced to $239,499"
             }
           ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Archived after two consecutive direct-builder inventory misses"
+            }
+          ]
         }
       ],
-      "missingRuns": 1,
+      "missingRuns": 2,
       "listingDetails": {
         "parcelId": "0701601723",
         "zoning": "R-5 reported by MLS for the community; official homesite confirmation pending",
@@ -24305,15 +24474,15 @@
     {
       "id": "builder-29017600178",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-03",
-      "lastChanged": "2026-10-03",
+      "lastChanged": "2026-10-13",
       "address": "724 Sparano Loop Unit 178, York, SC 29745",
       "sourceUrl": "https://www.redfin.com/SC/York/724-Sparano-Loop-29745/home/204591076",
       "mls": "4415050",
       "parcelId": "0701601725",
-      "status": "active",
+      "status": "off-market",
       "price": 261999,
       "originalPrice": 253399,
       "priceCutPercent": -3.4,
@@ -24334,7 +24503,7 @@
       "distanceAsOf": "2026-10-01",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's current public Glen Collection inventory lists move-in-ready homesite 178, a three-bedroom Drayton townhouse at $261,999 after a public $13,000 price cut. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
+      "summary": "No longer present in Lennar's live Cannon Village inventory after two consecutive daily availability misses. Preserved as an archived record; the prior builder price is not a current offer.",
       "pros": [
         "$27,901 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a documented owner’s en-suite plus a second full bath and powder room",
@@ -24343,6 +24512,7 @@
         "County water and sewer are reported by MLS or builder materials"
       ],
       "concerns": [
+        "Archived after two consecutive misses from live direct-builder inventory; current availability and price require fresh written builder confirmation.",
         "The prior property-specific public page no longer provides a current positive availability readback. This is the first consecutive miss and does not yet trigger archival; confirm builder or seller availability directly.",
         "Current Redfin/Zillow-fed evidence lists $261,999, above the prior $247,099 snapshot; obtain a dated builder price sheet and all incentive conditions.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer/capital fees, amenity charges, and builder closing schedule.",
@@ -24382,6 +24552,11 @@
         {
           "date": "2026-10-03",
           "event": "Public syndicated price increased",
+          "price": 261999
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Archived after second consecutive live-inventory miss",
           "price": 261999
         }
       ],
@@ -24435,6 +24610,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-09-27"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -24470,9 +24650,20 @@
               "label": "Price increased to $261,999"
             }
           ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Archived after two consecutive direct-builder inventory misses"
+            }
+          ]
         }
       ],
-      "missingRuns": 1,
+      "missingRuns": 2,
       "listingDetails": {
         "parcelId": "0701601725",
         "zoning": "R-5 reported by MLS for the community; official homesite confirmation pending",
@@ -25125,7 +25316,7 @@
     {
       "id": "mls-4403840",
       "strategy": "private-purchase",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-29",
       "lastSeen": "2026-10-12",
       "lastChanged": "2026-10-12",
@@ -25637,15 +25828,15 @@
     {
       "id": "mls-4430433",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-10-02",
-      "lastChanged": "2026-10-02",
+      "lastSeen": "2026-10-13",
+      "lastChanged": "2026-10-13",
       "address": "333 Bynum Ave, Rock Hill, SC 29732",
       "sourceUrl": "https://uphomes.com/home/333-bynum-ave-rock-hill-sc-29732-02777af4",
       "mls": "4430433",
       "parcelId": "5980203006",
-      "status": "active",
+      "status": "contingent",
       "price": 275000,
       "originalPrice": 275000,
       "priceCutPercent": 0,
@@ -25666,7 +25857,7 @@
       "distanceAsOf": "2026-10-02",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
-      "summary": "A newly listed four-bedroom home at the $275,000 offer ceiling with a main-floor primary bedroom. The City of Rock Hill's indexed permit report corroborates a 2020 new-home permit; private full-bath access, room-rental legality, solar obligations, and current condition remain unresolved.",
+      "summary": "A four-bedroom home at the $275,000 ceiling now shown active under contract. Main-floor primary placement is documented, but private full-bath access, room-rental legality, solar obligations, and current condition remain unresolved.",
       "pros": [
         "At the absolute offer ceiling with no above-ceiling negotiation required",
         "Four bedrooms leave three potential renter rooms after reserving the family bedroom",
@@ -25707,6 +25898,11 @@
         {
           "date": "2026-10-02",
           "event": "Listed",
+          "price": 275000
+        },
+        {
+          "date": "2026-10-05",
+          "event": "Active under contract / under contract-show observed",
           "price": 275000
         }
       ],
@@ -25755,6 +25951,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-10-02"
+        },
+        {
+          "label": "Houzeo current Canopy MLS-fed under-contract status",
+          "url": "https://www.houzeo.com/homes-for-sale/south-carolina/rock-hill/333-bynum-ave",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -25766,6 +25967,17 @@
               "from": null,
               "to": "added",
               "label": "New public listing"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "contingent",
+              "label": "Active under contract / under contract-show"
             }
           ]
         }
@@ -28549,22 +28761,22 @@
     {
       "id": "mls-4430521",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
-      "lastChanged": "2026-10-10",
+      "lastSeen": "2026-10-13",
+      "lastChanged": "2026-10-13",
       "address": "1334 Flint Hill St, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1334-Flint-Hill-St-29730/home/52110875",
       "mls": "4430521",
       "parcelId": "6001601026",
       "status": "active",
-      "price": 245000,
+      "price": 242500,
       "originalPrice": 245000,
-      "priceCutPercent": 0,
+      "priceCutPercent": 1,
       "beds": 3,
       "baths": 2,
       "sqft": 1078,
-      "pricePerSqft": 227,
+      "pricePerSqft": 225,
       "marketPricePerSqft": 207,
       "yearBuilt": 2023,
       "propertyType": "One-level single-family home",
@@ -28578,7 +28790,7 @@
       "distanceAsOf": "2026-10-10",
       "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
       "distanceLabel": "7.6 miles · about 15 minutes from the family reference property",
-      "summary": "A newly active 2023 one-level home well below the ceiling with an expressly documented private primary bathroom. City plan evidence supports demolition and new construction activity, but the final certificate of occupancy, trade finals and separate-room rental authority remain unresolved.",
+      "summary": "A 2023 one-level home at $242,500 with an expressly documented private primary bathroom. City plan evidence supports demolition and new construction activity, but the final certificate of occupancy, trade finals and separate-room rental authority remain unresolved.",
       "pros": [
         "$30,000 below the absolute offer ceiling",
         "Listing expressly documents a private primary bathroom",
@@ -28614,6 +28826,11 @@
           "date": "2026-10-07",
           "event": "Listed active",
           "price": 245000
+        },
+        {
+          "date": "2026-10-13",
+          "event": "Current public price reduction observed",
+          "price": 242500
         }
       ],
       "sources": [
@@ -28666,6 +28883,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-10-10"
+        },
+        {
+          "label": "EZ Home Search current Canopy MLS-fed price and active status",
+          "url": "https://www.ezhomesearch.com/propertydetails/us/sc/rock-hill/1334-flint-hill-street-29730/4430521/",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -28677,6 +28899,17 @@
               "from": null,
               "to": "added",
               "label": "New active public listing"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "price",
+              "from": 245000,
+              "to": 242500,
+              "label": "Current public price reduction observed"
             }
           ]
         }
@@ -29050,9 +29283,9 @@
     {
       "id": "builder-29017600106",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-12",
       "address": "703 Sparano Loop Unit 106, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600106",
@@ -29163,6 +29396,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-10-12"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -29214,9 +29452,9 @@
     {
       "id": "builder-29017600105",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-12",
       "address": "707 Sparano Loop Unit 105, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/bristol/29017600105",
@@ -29327,6 +29565,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-10-12"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -29378,9 +29621,9 @@
     {
       "id": "builder-29017600104",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-12",
       "address": "711 Sparano Loop Unit 104, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600104",
@@ -29491,6 +29734,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-10-12"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -29542,9 +29790,9 @@
     {
       "id": "builder-29017600103",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-12",
       "address": "715 Sparano Loop Unit 103, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/bristol/29017600103",
@@ -29655,6 +29903,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-10-12"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -29706,9 +29959,9 @@
     {
       "id": "builder-29017600102",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-12",
       "address": "719 Sparano Loop Unit 102, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600102",
@@ -29819,6 +30072,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-10-12"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -29870,9 +30128,9 @@
     {
       "id": "builder-29017600101",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-12",
       "address": "723 Sparano Loop Unit 101, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/bristol/29017600101",
@@ -29983,6 +30241,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-10-12"
+        },
+        {
+          "label": "Lennar current Cannon Village direct inventory",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-13"
         }
       ],
       "changeHistory": [
@@ -30027,6 +30290,376 @@
             "result": "Public project portal checked; property-specific certificate of occupancy and zoning readback were not established.",
             "permitHeaders": [],
             "caveat": "Obtain complete building and trade permit closeout, certificate of occupancy, and written room-rental guidance from the applicable authority."
+          }
+        ]
+      }
+    },
+    {
+      "id": "mls-4429145",
+      "strategy": "shared-home",
+      "changeCategory": "new",
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "lastChanged": "2026-10-13",
+      "address": "1157 Calhoun St, Rock Hill, SC 29732",
+      "sourceUrl": "https://www.coldwellbankerhomes.com/sc/rock-hill/1157-calhoun-st/pid_74163999/",
+      "mls": "4429145",
+      "parcelId": "5980702030",
+      "status": "active",
+      "price": 259900,
+      "originalPrice": 259900,
+      "priceCutPercent": 0,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1168,
+      "pricePerSqft": 223,
+      "marketPricePerSqft": 207,
+      "yearBuilt": 2023,
+      "propertyType": "One-level single-family home",
+      "hoaMonthly": 0,
+      "oneLevel": true,
+      "privateBath": "yes",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 5,
+      "distanceMiles": 5.3,
+      "driveMinutes": 11,
+      "distanceAsOf": "2026-10-13",
+      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceLabel": "5.3 miles · about 11 minutes from the family reference property",
+      "summary": "A newly active one-level 2023 home at $259,900 with an expressly documented private primary suite. Official parcel and indexed city permit evidence support the new-home history, but final trade inspections, room-rental authority and transaction charges remain unresolved.",
+      "pros": [
+        "$15,100 below the absolute offer ceiling",
+        "Listing expressly documents a primary suite with an ensuite full bathroom",
+        "One-level split-bedroom plan with 2023 construction",
+        "City water, public sewer and no HOA are reported",
+        "Official city reports identify the new-house permit and later energy-efficiency approval",
+        "About 5.3 driving miles from the family reference property"
+      ],
+      "concerns": [
+        "Written City of Rock Hill zoning, rental-registration, occupancy, parking and separate-room lease authority is unknown and caps room-rental viability below 50.",
+        "Only two bedrooms and one full bathroom remain after reserving the family suite; verify legal bedroom, egress, privacy, common-space and occupant capacity.",
+        "The city record trail includes an initially not-approved plan before the issued new-house permit; obtain the complete permit file, trade finals and certificate of occupancy.",
+        "Roof, HVAC, water heater, electrical service, supply and waste plumbing, sewer lateral, crawl space, foundation and structural condition require invoices, warranties and inspection despite recent construction.",
+        "Property-specific achieved room demand is unproven; the room-rent input is a conservative market heuristic, not a signed lease forecast.",
+        "No HOA is reported, but recorded covenants, title restrictions, special charges, transfer fees, insurance constraints and other transaction-specific fees remain unknown.",
+        "A zero-result county DFIRM intersection is non-affirmative; survey, drainage and insurer review remain required."
+      ],
+      "sourceConflicts": [],
+      "hoa": {
+        "exists": false,
+        "wholeUnitRental": "not-applicable",
+        "roomRental": "not-applicable",
+        "evidence": [
+          "Current public listing evidence reports no HOA."
+        ],
+        "confidence": "medium",
+        "followUp": "Confirm the no-HOA representation against title and recorded covenants; obtain any mandatory fee schedule. Separately obtain written city room-rental, occupancy, parking and registration guidance."
+      },
+      "listingHistory": [
+        {
+          "date": "2022-05-26",
+          "event": "Recorded transfer",
+          "price": 55000
+        },
+        {
+          "date": "2026-10-08",
+          "event": "Listed active",
+          "price": 259900
+        }
+      ],
+      "sources": [
+        {
+          "label": "Coldwell Banker current Canopy MLS-fed listing",
+          "url": "https://www.coldwellbankerhomes.com/sc/rock-hill/1157-calhoun-st/pid_74163999/",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "Redfin current listing corroboration",
+          "url": "https://www.redfin.com/SC/Rock-Hill/1157-Calhoun-St-29732/home/164907107",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "City of Rock Hill initial new-home plan report",
+          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/31655/637981824513970000",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "City of Rock Hill issued single-family permit report",
+          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/32380/638076689986770000",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "City of Rock Hill change-order review report",
+          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/32494/638091307724430000",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "City of Rock Hill energy-efficiency approval report",
+          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/32955/638159471914100000",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "York County official parcel feature service",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Parcels/FeatureServer/0",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "York County public deed search",
+          "url": "https://search.yorkdeeds.com/",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "City of Rock Hill public permit portal",
+          "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "York County official 2017 DFIRM flood layer",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Flood%20Hazard%20Zone%20Areas%20%28DFIRM%202017%29/FeatureServer/0",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "FEMA Flood Map Service Center",
+          "url": "https://msc.fema.gov/portal/home",
+          "accessed": "2026-10-13"
+        }
+      ],
+      "changeHistory": [
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "listing",
+              "from": null,
+              "to": "added",
+              "label": "New active public listing"
+            }
+          ]
+        }
+      ],
+      "missingRuns": 0,
+      "listingDetails": {
+        "parcelId": "5980702030",
+        "zoning": "SF-5 reported by public listing evidence; written city room-rental interpretation pending",
+        "subdivision": "None reported",
+        "sewer": "Public sewer reported; lateral condition and responsibility unverified",
+        "water": "City water reported; service condition unverified",
+        "parking": "Four driveway spaces reported; legal occupant parking capacity requires confirmation",
+        "foundation": "Crawl-space construction reported; current moisture, pest and structural condition require inspection",
+        "roof": "Composition roof reported; installation documentation, warranty and condition unverified",
+        "hvac": "Central system expected from new construction; trade final, installation record, warranty and condition unverified",
+        "plumbing": "New-construction context only; materials, trade final, warranty and condition unverified",
+        "waterHeater": "Type, installation record, permit final, warranty and condition unknown"
+      },
+      "publicVerification": {
+        "asOf": "2026-10-13",
+        "marketingAttempt": "Current Coldwell Banker and Redfin Canopy MLS-fed evidence supports active status at $259,900. Direct seller confirmation remains required; public discovery is not exhaustive MLS coverage.",
+        "parcelAndDeed": "York County official parcel evidence matches parcel 5980702030, the address, land-use code RI and a May 26, 2022 $55,000 transfer reference at deed book 20206 page 266. Current title, liens, easements, restrictions and complete instruments remain unresolved.",
+        "flood": "A parcel-geometry query against York County's official 2017 DFIRM layer returned zero intersecting features. This is not an affirmative FEMA determination, survey, drainage analysis or insurer acceptance.",
+        "permits": [
+          {
+            "jurisdiction": "City of Rock Hill",
+            "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+            "result": "Indexed official reports identify demolition permit 201103129, initially not-approved plan 20221261, issued single-family permit 202209584 at $181,054 valuation, a conditional change order and approved energy-efficiency results.",
+            "permitHeaders": [
+              "201103129",
+              "20221261",
+              "202209584"
+            ],
+            "caveat": "Obtain the complete permit scope, trade finals, certificate of occupancy, invoices, warranties and system installation dates; indexed reports do not prove final completion or current condition."
+          },
+          {
+            "jurisdiction": "York County",
+            "url": "https://evolvepublic.yorkcountygov.com/",
+            "result": "County entry point checked as a jurisdiction cross-check; city evidence is primary.",
+            "permitHeaders": [],
+            "caveat": "Confirm jurisdiction and obtain written local room-rental, occupancy, parking and registration guidance."
+          }
+        ]
+      }
+    },
+    {
+      "id": "mls-4428099",
+      "strategy": "shared-home",
+      "changeCategory": "new",
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "lastChanged": "2026-10-13",
+      "address": "450 Hall St, Rock Hill, SC 29730",
+      "sourceUrl": "https://www.ezhomesearch.com/propertydetails/us/sc/rock-hill/450-hall-street-29730/4428099/",
+      "mls": "4428099",
+      "parcelId": "5981302002",
+      "status": "active",
+      "price": 255500,
+      "originalPrice": 279900,
+      "priceCutPercent": 8.7,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1400,
+      "pricePerSqft": 183,
+      "marketPricePerSqft": 207,
+      "yearBuilt": 2026,
+      "propertyType": "One-level new-construction single-family home",
+      "hoaMonthly": 0,
+      "oneLevel": true,
+      "privateBath": "unknown",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 15,
+      "distanceMiles": 5.4,
+      "driveMinutes": 12,
+      "distanceAsOf": "2026-10-13",
+      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceLabel": "5.4 miles · about 12 minutes from the family reference property",
+      "summary": "A completed one-level new build at $255,500 after two public price reductions. Current listing evidence reports two full bathrooms, but older MLS-fed evidence reports one; the required private full bathroom, permit closeout and room-rental authority remain unresolved.",
+      "pros": [
+        "$19,500 below the absolute offer ceiling after $24,400 in public price reductions",
+        "One-level 2026 construction with three bedrooms",
+        "Public sewer, city water, driveway parking and no HOA are reported",
+        "About 5.4 driving miles from the family reference property",
+        "Current public evidence reports two full bathrooms, subject to floor-plan and inspection confirmation"
+      ],
+      "concerns": [
+        "The required private full bathroom is not established: current sources report two baths, while older MLS-fed evidence reports only one.",
+        "The official city plan report describes a proposed four-bedroom, two-bath house, while current listing evidence reports three bedrooms; approved plans, final configuration and legal bedroom count require reconciliation.",
+        "The indexed city plan was not approved in December 2025; no issued building permit, trade finals or certificate of occupancy were independently established.",
+        "Written City of Rock Hill zoning, rental-registration, occupancy, parking and separate-room lease authority is unknown and caps room-rental viability below 50.",
+        "Roof, HVAC, water heater, electrical service, supply and waste plumbing, sewer connection, slab, structure, invoices, warranties and independent inspection remain unresolved despite new construction.",
+        "Property-specific achieved room demand is unproven; the room-rent input is a conservative market heuristic, not a signed lease forecast.",
+        "No HOA is reported, but recorded covenants, title restrictions, builder charges, transfer fees, special charges, insurance constraints and other transaction-specific fees remain unknown.",
+        "A zero-result county DFIRM intersection is non-affirmative; survey, drainage and insurer review remain required."
+      ],
+      "sourceConflicts": [
+        "Current Realtor-derived and EZ Home Search evidence reports two bathrooms, while an older Redfin MLS-fed page reports one bathroom.",
+        "The official December 2025 plan report describes four bedrooms and two bathrooms, while the current listing reports three bedrooms and two bathrooms."
+      ],
+      "hoa": {
+        "exists": false,
+        "wholeUnitRental": "not-applicable",
+        "roomRental": "not-applicable",
+        "evidence": [
+          "Current public listing evidence reports no HOA."
+        ],
+        "confidence": "medium",
+        "followUp": "Confirm the no-HOA representation against title and recorded covenants; obtain any builder or mandatory fee schedule. Separately obtain written city room-rental, occupancy, parking and registration guidance."
+      },
+      "listingHistory": [
+        {
+          "date": "2024-08-19",
+          "event": "Recorded transfer",
+          "price": 50000
+        },
+        {
+          "date": "2026-09-28",
+          "event": "Listed",
+          "price": 279900
+        },
+        {
+          "date": "2026-10-07",
+          "event": "Price reduced",
+          "price": 269900
+        },
+        {
+          "date": "2026-10-11",
+          "event": "Price reduced",
+          "price": 255500
+        }
+      ],
+      "sources": [
+        {
+          "label": "EZ Home Search current Canopy MLS-fed price and active status",
+          "url": "https://www.ezhomesearch.com/propertydetails/us/sc/rock-hill/450-hall-street-29730/4428099/",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "Realtor-derived current listing, history and two-bath evidence",
+          "url": "https://www.highrises.com/realestateandhomes-detail/450-Hall-St_Rock-Hill_SC_29730_M95705-10735",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "Redfin older conflicting one-bath evidence",
+          "url": "https://www.redfin.com/SC/Rock-Hill/450-Hall-St-29730/home/164907213",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "City of Rock Hill December 2025 plan-review report",
+          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/37157/639035650474070000",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "York County official parcel feature service",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Parcels/FeatureServer/0",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "York County public deed search",
+          "url": "https://search.yorkdeeds.com/",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "City of Rock Hill public permit portal",
+          "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "York County official 2017 DFIRM flood layer",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Flood%20Hazard%20Zone%20Areas%20%28DFIRM%202017%29/FeatureServer/0",
+          "accessed": "2026-10-13"
+        },
+        {
+          "label": "FEMA Flood Map Service Center",
+          "url": "https://msc.fema.gov/portal/home",
+          "accessed": "2026-10-13"
+        }
+      ],
+      "changeHistory": [
+        {
+          "date": "2026-10-13",
+          "changes": [
+            {
+              "field": "listing",
+              "from": null,
+              "to": "added",
+              "label": "New active public listing"
+            }
+          ]
+        }
+      ],
+      "missingRuns": 0,
+      "listingDetails": {
+        "parcelId": "5981302002",
+        "zoning": "SF-5 reported by public listing evidence; written city room-rental interpretation pending",
+        "subdivision": "None reported",
+        "sewer": "Public sewer reported; service and lateral condition unverified",
+        "water": "City water reported; service condition unverified",
+        "parking": "Driveway reported; legal occupant parking capacity requires confirmation",
+        "foundation": "Slab foundation reported; plans and current condition require confirmation",
+        "roof": "New-construction listing context only; permit, installation documentation, warranty and condition unverified",
+        "hvac": "Heat pump and central cooling reported; trade final, installation record, warranty and condition unverified",
+        "plumbing": "New-construction listing context only; materials, trade final, warranty and condition unverified",
+        "waterHeater": "Type, installation record, permit final, warranty and condition unknown"
+      },
+      "publicVerification": {
+        "asOf": "2026-10-13",
+        "marketingAttempt": "Current EZ Home Search and Realtor-derived evidence supports active status at $255,500. Bath-count and plan conflicts require direct seller documentation; public discovery is not exhaustive MLS coverage.",
+        "parcelAndDeed": "York County official parcel evidence matches parcel 5981302002, the address, land-use code RV and an August 19, 2024 $50,000 transfer reference at deed book 21460 page 445. Current title, liens, easements, restrictions and complete instruments remain unresolved.",
+        "flood": "A parcel-geometry query against York County's official 2017 DFIRM layer returned zero intersecting features. This is not an affirmative FEMA determination, survey, drainage analysis or insurer acceptance.",
+        "permits": [
+          {
+            "jurisdiction": "City of Rock Hill",
+            "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+            "result": "The indexed December 2025 plan report identifies project 20252549 as not approved for a proposed one-story four-bedroom, two-bath detached house and references prior demolition permit 201101756. No issued building permit, trade finals or certificate of occupancy were independently established.",
+            "permitHeaders": [
+              "201101756",
+              "20252549"
+            ],
+            "caveat": "Obtain approved plans, issued building and trade permits, final inspections, certificate of occupancy, invoices, warranties and the as-built bedroom and bathroom configuration."
+          },
+          {
+            "jurisdiction": "York County",
+            "url": "https://evolvepublic.yorkcountygov.com/",
+            "result": "County entry point checked as a jurisdiction cross-check; city evidence is primary.",
+            "permitHeaders": [],
+            "caveat": "Confirm jurisdiction and obtain written local room-rental, occupancy, parking and registration guidance."
           }
         ]
       }
@@ -30266,23 +30899,23 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com, and Movoto public inventory were reviewed. All 198 previously tracked non-removed purchase primary URLs were requested: 130 HTTP 200, 24 HTTP 202, three HTTP 301, two HTTP 307, four HTTP 403, and 35 HTTP 429, with no 404 or request failure. Fresh evidence changed 104 Neely to pending under a cross-source conflict.",
-      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, redirects, blocks, rate limits, token-free shells, and stale pages are not independent status proof."
+      "asOf": "2026-10-13",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com, and Movoto public inventory were reviewed. All 204 previously tracked non-removed purchase primary URLs were requested: 125 HTTP 200, two HTTP 301, three HTTP 307, 39 HTTP 403, and 35 HTTP 429. Two new Rock Hill candidates were admitted; 20 Wright, 1334 Flint Hill, 314 Friedheim, 211 Baker, and 333 Bynum materially changed.",
+      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, redirects, blocks, rate limits, token-free shells, snippets and stale pages are not independent status proof."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "Indexed local brokerage, listing-agent, Canopy-fed IDX, and public builder pages were cross-checked. Lennar's live inventory exposed six newly released under-construction homes and direct price reductions at 642 and 646 Sparano; no other eligible new resale candidate was verified.",
-      "coverageGap": "IDX and syndicated records can lag or conflict; written seller, builder, and association confirmation remains necessary before an offer."
+      "asOf": "2026-10-13",
+      "summary": "Indexed local brokerage, listing-agent, Canopy-fed IDX, and public builder pages were cross-checked. Current evidence admitted 1157 Calhoun and 450 Hall; Lennar's live inventory reduced 638 Sparano to $250,000 and supported four second-miss archives.",
+      "coverageGap": "IDX and syndicated records can lag or conflict; written seller, builder and association confirmation remains necessary before an offer."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
+      "asOf": "2026-10-13",
       "summary": "HUD Home Store, Fannie Mae HomePath, and Freddie Mac HomeSteps public entry points and indexed South Carolina results were checked; no independently verified eligible new GSE candidate emerged in the target area.",
       "coverageGap": "Public inventory and investor-first-look details were not fully retrievable; no credentialed feed was requested or used."
     },
@@ -30290,23 +30923,23 @@
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "Public FSBO, York County delinquent-tax and Master in Equity entry points, foreclosure results, and owner-listing pages were reviewed. Visible leads were stale, pre-1980, sold, too small, or otherwise failed current-status and family-requirement gates.",
-      "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing, and occupancy checks."
+      "asOf": "2026-10-13",
+      "summary": "Public FSBO, York County delinquent-tax and Master in Equity entry points, foreclosure results, and owner-listing pages were reviewed. Visible leads were pre-1980, lacked the required private bath, or had unresolved sale, bid, title, occupancy, condition or year-built evidence.",
+      "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing and occupancy checks."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "Auction.com, Hubzu, Xome, and public builder inventory were checked. Auction leads at 1501 Andora Drive and 2474 Catawba Church Road were not admitted because bid, title, occupancy, interior, and sale certainty remained unresolved. Lennar's live Cannon Village inventory produced six qualified-for-review under-construction candidates.",
-      "coverageGap": "Auction outcomes, premiums, title, condition, and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status, and undisclosed transaction fees."
+      "asOf": "2026-10-13",
+      "summary": "Auction.com, Hubzu, Xome, and public builder inventory were checked. Auction leads at 1501 Andora Drive and 2474 Catawba Church Road were not admitted because bid, title, occupancy, interior and sale certainty remained unresolved. Lennar's live Cannon Village inventory showed eight current homes; four prior records reached a second miss and were archived.",
+      "coverageGap": "Auction outcomes, premiums, title, condition and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status and undisclosed transaction fees."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "supported-manual-not-refreshed",
-      "asOf": "2026-10-12",
+      "asOf": "2026-10-13",
       "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained.",
       "coverageGap": "Manual saved-search coverage was unavailable this run."
     },
@@ -30314,65 +30947,65 @@
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-10-12",
-      "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports, or direct MLS access.",
+      "asOf": "2026-10-13",
+      "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports or direct MLS access.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure."
     },
     {
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "Every known non-removed primary URL was requested and current search surfaces were reviewed. Six direct-builder records were added, 104 Neely changed to pending, and 642 and 646 Sparano received price reductions. Four prior builder records recorded a first availability miss; none reached the required two consecutive misses, so no property was archived.",
-      "coverageGap": "HTTP access is not status proof. Current seller acceptance, title, transfer instruments, builder availability, and contract status remain unresolved for many records."
+      "asOf": "2026-10-13",
+      "summary": "Every known non-removed primary URL was requested and current search surfaces were reviewed. Two listings were added, six existing records materially changed, and four builder records were archived after two consecutive direct-inventory misses.",
+      "coverageGap": "HTTP access and search snippets are not status proof. Seller acceptance, title, transfer instruments, builder availability and contract status remain unresolved for many records."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "York County official parcel and deed entry points were checked for all six new builder homes. Each address and homesite matched an official parcel; the shared $1,330,872 record was treated as a developer or bulk transfer rather than an individual retail price.",
-      "coverageGap": "Current ownership, title, liens, easements, restrictions, transaction type, and full deed instruments remain unresolved until official instrument and closing review."
+      "asOf": "2026-10-13",
+      "summary": "York County official parcel and deed entry points were checked for both new candidates. Parcel IDs, addresses, land-use codes and historic transfer references were matched; current title and full instruments were not obtained.",
+      "coverageGap": "Current ownership, title, liens, easements, restrictions, transaction type and full deed instruments remain unresolved until official instrument and closing review."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "York County and City of York public permit and zoning entry points were checked for all six new builder homes. Property-specific building and trade permits, final inspections, certificates of occupancy, and written separate-room rental authority were not established.",
-      "coverageGap": "Written zoning, occupancy, registration, parking, and room-lease authority plus complete permit scopes, finals, invoices, warranties, and inspection readiness remain required."
+      "asOf": "2026-10-13",
+      "summary": "City and county public permit and zoning evidence was checked for both new candidates. 1157 Calhoun has indexed new-house and energy-efficiency evidence; 450 Hall has a not-approved plan with bedroom-count conflict. Complete trade finals, certificates of occupancy and written separate-room rental authority were not established.",
+      "coverageGap": "Written zoning, occupancy, registration, parking and room-lease authority plus complete permit scopes, finals, invoices, warranties and inspection readiness remain required."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "York County's 2017 DFIRM layer and FEMA entry point were checked. Parcel-geometry queries for all six new builder homes returned no intersecting mapped flood-hazard feature; the records preserve this as non-affirmative and require survey, drainage, and insurer review.",
-      "coverageGap": "A zero-result GIS query does not replace an affirmative FEMA determination, parcel survey, drainage review, master-policy review, inspection, or insurer acceptance."
+      "asOf": "2026-10-13",
+      "summary": "York County's 2017 DFIRM layer and FEMA entry point were checked. Parcel-geometry queries for both new candidates returned no intersecting mapped flood-hazard feature; records preserve this as non-affirmative and require survey, drainage and insurer review.",
+      "coverageGap": "A zero-result GIS query does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection or insurer acceptance."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "Lennar reports approximate $290 monthly HOA dues for Cannon Village. No governing-document set or written whole-unit and separate-room rental decision was obtained; all six new association-governed homes remain blocked from recommendation.",
-      "coverageGap": "Unknown governing documents, transfer or capital fees, special assessments, insurance, reserves, litigation, parking, and separate rental authority block recommendation."
+      "asOf": "2026-10-13",
+      "summary": "Both new Rock Hill listings report no HOA, subject to title and recorded-covenant review. Cannon Village whole-unit and individual-room rental authority remains unknown and continues to block recommendation.",
+      "coverageGap": "Unknown governing documents, transfer or capital fees, special assessments, insurance, reserves, litigation, parking and separate rental authority block recommendation where an association exists."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "Current Apartments.com, HotPads, RentCafe, and other indexed Rock Hill studio and one-bedroom evidence was reviewed. Visible asks ranged from roughly $825 to above $1,500, supporting retention of the conservative $1,150 monthly private-unit planning benchmark.",
-      "coverageGap": "Asking rent is not a signed lease; availability, deposits, fees, utilities, condition, and unit quality vary."
+      "asOf": "2026-10-13",
+      "summary": "Current HotPads and indexed Rock Hill studio and one-bedroom evidence was reviewed. Visible asks around $1,325 to $1,450 at one current complex, together with lower prior public evidence, support retaining the conservative $1,150 monthly private-unit planning benchmark.",
+      "coverageGap": "Asking rent is not a signed lease; availability, deposits, fees, utilities, condition and unit quality vary."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-12",
-      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh Roomies, SpareRoom, and Furnished Finder evidence showed Rock Hill room asks from roughly $500 to $1,400, with many shared and private-bath examples around $700 to $1,010; the conservative $850 monthly planning benchmark was retained.",
-      "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand, or legal room-rental authority."
+      "asOf": "2026-10-13",
+      "summary": "All 14 configured room-comparable URLs were requested: five HTTP 200 and nine HTTP 403. Fresh Roomies, SpareRoom and Furnished Finder discovery showed Rock Hill asks broadly from roughly $650 to $1,400, with shared and private-bath examples around $750 to $1,000; the conservative $850 monthly planning benchmark was retained.",
+      "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand or legal room-rental authority."
     }
   ],
   "importSummary": {
