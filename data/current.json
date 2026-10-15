@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-14",
+  "asOf": "2026-10-15",
   "runStatus": "successful",
-  "researchMethod": "Public-only October 14 reconciliation: all 14 configured source-policy categories were audited; all 202 previously tracked non-removed purchase primary URLs and all 14 configured room-comparable URLs were requested. Live national portals, brokerage and IDX, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent, and individual-room evidence was reviewed. No newly discovered listing cleared the configured age, private-bath, availability and price gates. Three existing listings materially changed, including two closed sales archived on positive evidence; two builder homes were retained after a first live-inventory miss. Public search is not exhaustive MLS coverage.",
+  "researchMethod": "Public-only October 15 reconciliation: all 14 configured source-policy categories were audited; all 200 previously tracked non-removed purchase primary URLs and all 14 configured room-comparable URLs were requested. Live national portals, brokerage and IDX, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent, and individual-room evidence was reviewed. One newly discovered active listing met the configured age, private-bath, distance, availability, and price admission gates but remains needs-verification because HOA rental authority and other diligence are unknown. Two builder homes were archived after second consecutive live-inventory misses. Public search is not exhaustive MLS coverage.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -11,7 +11,7 @@
     "medianDaysOnMarket": 50,
     "asOf": "2026-08",
     "sourceUrl": "https://www.realtor.com/realestateandhomes-search/Rock-Hill_SC/overview",
-    "note": "The August Realtor market aggregate is retained with its original period. October 13 public listing, brokerage/IDX, owner-listing, government, auction, builder, parcel, deed, permit, zoning, flood-layer, private-unit, and private-room sources informed the daily checks; no updated area-wide aggregate was substituted."
+    "note": "The August Realtor market aggregate is retained with its original period. October 15 public listing, brokerage/IDX, owner-listing, government, auction, builder, parcel, deed, permit, zoning, flood-layer, private-unit, and private-room sources informed the daily checks; no updated area-wide aggregate was substituted."
   },
   "properties": [
     {
@@ -2081,7 +2081,7 @@
     {
       "id": "mls-4411534",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-16",
       "lastSeen": "2026-10-01",
       "lastChanged": "2026-10-14",
@@ -2453,7 +2453,7 @@
     {
       "id": "mls-4411752",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-16",
       "lastSeen": "2026-10-14",
       "lastChanged": "2026-10-14",
@@ -4339,7 +4339,7 @@
     {
       "id": "mls-4380431",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-19",
       "lastSeen": "2026-10-01",
       "lastChanged": "2026-10-14",
@@ -18131,7 +18131,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-30",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-15",
       "lastChanged": "2026-08-30",
       "address": "403 N Wilson St Apt 106, Rock Hill, SC 29730",
       "sourceUrl": "https://homefinder.com/realestateandhomes-detail/403-Wilson-St-N-Apt-106_Rock-Hill_SC_29730_M63420-25344",
@@ -18151,7 +18151,7 @@
       "oneLevel": false,
       "privateBath": "unknown",
       "roomRentalLegal": "unknown",
-      "daysOnMarket": 26,
+      "daysOnMarket": 69,
       "summary": "An active two-bedroom, two-full-bath end-unit townhouse below the offer ceiling. The current layout does not document a private full bathroom for the family occupant, and controlling HOA whole-unit and individual-room rental authority remain unknown.",
       "pros": [
         "$55,000 below the maximum offer price",
@@ -18168,7 +18168,7 @@
         "Special assessments, transfer or capital-contribution fees, mandatory amenity or builder fees, and other transaction-specific charges are unknown unless expressly listed."
       ],
       "sourceConflicts": [
-        "Older public pages report approximately 1,094 to 1,200 square feet; the current public listing reports 1,219 square feet."
+        "Current Canopy MLS-fed brokerage pages report the property active at $220,000, while a stale Redfin public-record page displays off-market history. The current MLS-fed status is carried but requires direct confirmation before an offer."
       ],
       "hoa": {
         "exists": true,
@@ -18232,6 +18232,16 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-08-30"
+        },
+        {
+          "label": "Current Citadel Cofield Canopy MLS active status, layout, HOA, and utilities",
+          "url": "https://citadelcofield.com/homedetails/403-Wilson-Street-N-Apt-106-Rock-Hill-SC-29730/CAR4410529",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "Public record parcel, zoning, transfer, and flood-risk context",
+          "url": "https://www.redfin.com/SC/Rock-Hill/403-Wilson-St-N-29730/unit-106/home/52138634",
+          "accessed": "2026-10-15"
         }
       ],
       "changeHistory": [
@@ -18251,31 +18261,24 @@
       "distanceMiles": 5.6,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceAsOf": "2026-10-15",
       "distanceLabel": "5.6 miles · about 11 minutes from the family reference property",
       "publicVerification": {
-        "asOf": "2026-09-19",
-        "marketingAttempt": "Primary public listing URL requested September 15. HTTP success or a token-free OneHome shell does not independently establish current marketing status, price, or transfer chronology; prior source-backed facts remain pending direct reconciliation. Primary public URL requested 2026-09-19: HTTP 200. This access result alone does not establish current price, status, or transfer chronology. Earlier source-backed facts are retained pending direct reconciliation.",
-        "parcelAndDeed": "York County public assessor, One Map, and Register of Deeds entry points were checked; no new property-specific official readback established ownership, title, transfer, assessment, or recorded-restriction changes.",
-        "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
+        "asOf": "2026-10-15",
+        "marketingAttempt": "Multiple current Canopy MLS-fed public pages reported active status at $220,000 on October 15, 2026. A stale public-record page conflicts and is not treated as current marketing evidence.",
+        "parcelAndDeed": "Public-record evidence identifies parcel 6272202038 and a July 2017 sale at $95,000. Official deed instrument, current ownership, title, liens, easements, restrictions, and transaction details remain unresolved.",
+        "flood": "A commercial risk summary reports minimal modeled flood risk, but York County One Map and FEMA entry-point review did not establish an affirmative property-specific FEMA determination.",
         "permits": [
-          {
-            "jurisdiction": "York County",
-            "url": "https://evolvepublic.yorkcountygov.com/",
-            "result": "0 permits listed.",
-            "permitHeaders": [],
-            "caveat": "Address-query results require exact parcel, unit, scope and final-inspection matching. Zero results do not prove no permits or no violations. Header status alone does not verify a system installation date."
-          },
           {
             "jurisdiction": "City of Rock Hill",
             "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
-            "result": "0 permits listed.",
+            "result": "Public portal checked; complete property-specific permit history and final inspections were not established.",
             "permitHeaders": [],
-            "caveat": "Address-query results require exact parcel, unit, scope and final-inspection matching. Zero results do not prove no permits or no violations. Header status alone does not verify a system installation date."
+            "caveat": "Obtain complete building and trade permit scopes, finals, invoices, warranties, and current system ages."
           }
-        ],
-        "permitPortalReadback": "September 15 address searches at both public permit portals returned zero-result tables for all 136 queried properties, including addresses with previously documented permit leads. This portal-wide anomaly does not prove permits or violations are absent; prior source-backed permit evidence is preserved."
-      }
+        ]
+      },
+      "parcelId": "6272202038"
     },
     {
       "id": "mls-4388044",
@@ -23527,15 +23530,15 @@
     {
       "id": "builder-29016600159",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-13",
-      "lastChanged": "2026-10-13",
+      "lastChanged": "2026-10-15",
       "address": "638 Sparano Loop Unit 159, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600159",
       "mls": "4415090",
       "parcelId": "0701601706",
-      "status": "active",
+      "status": "off-market",
       "price": 250000,
       "originalPrice": 255849,
       "priceCutPercent": 2.3,
@@ -23556,7 +23559,7 @@
       "distanceAsOf": "2026-09-27",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's live structured inventory lists move-in-ready homesite 159 at $250,000. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, and builder charges still block recommendation.",
+      "summary": "The carried homesite 159 snapshot is archived after two consecutive absences from Lennar's live Cannon Village inventory. Prior price and layout evidence are retained for history, but current availability is not established.",
       "pros": [
         "$19,151 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a documented owner’s en-suite plus a second full bath and powder room",
@@ -23565,7 +23568,7 @@
         "County water and sewer are reported by MLS or builder materials"
       ],
       "concerns": [
-        "The home is absent from Lennar's seven-home live inventory on October 14. This is the first consecutive miss and does not trigger archival; confirm availability and price directly before relying on the prior offer.",
+        "The home is absent from Lennar's live seven-home inventory for a second consecutive daily run and is archived under the configured two-miss rule. Re-admit only with fresh direct availability and price evidence.",
         "Current Lennar direct structured inventory controls the provisional price; older MLS-fed pages may retain prior pricing.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer/capital fees, amenity charges, and builder closing schedule.",
         "Whole-unit rental and individual-room rental authority are separately unknown. Recorded declarations, bylaws, rules, amendments, management decisions, local zoning, rental registration, occupancy limits, and insurer approval are required.",
@@ -23578,7 +23581,7 @@
         "Utilities allocation, common-space practicality, locks, smoke and carbon-monoxide protection, association maintenance boundaries, litigation, resale restrictions and leasing surcharges remain unknown."
       ],
       "sourceConflicts": [
-        "The prior homesite page and earlier direct inventory supported the carried price, but the homesite is absent from Lennar's seven-home live inventory on October 14. One miss is not removal evidence."
+        "The prior homesite page and earlier direct inventory supported the carried price, but Lennar's live Cannon Village inventory omitted homesite 159 on both October 14 and October 15. The direct homesite URL now redirects to the generic Titan plan."
       ],
       "hoa": {
         "exists": true,
@@ -23605,6 +23608,10 @@
           "date": "2026-10-13",
           "event": "Direct builder price reduced",
           "price": 250000
+        },
+        {
+          "date": "2026-10-15",
+          "event": "Archived after second consecutive live-builder-inventory miss"
         }
       ],
       "sources": [
@@ -23667,6 +23674,11 @@
           "label": "Lennar current seven-home inventory; homesite absent for first consecutive run",
           "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
           "accessed": "2026-10-14"
+        },
+        {
+          "label": "Lennar current seven-home inventory; homesite 159 absent for second consecutive run",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-15"
         }
       ],
       "changeHistory": [
@@ -23702,9 +23714,20 @@
               "label": "Direct builder price reduced"
             }
           ]
+        },
+        {
+          "date": "2026-10-15",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Archived after second consecutive direct-builder inventory miss"
+            }
+          ]
         }
       ],
-      "missingRuns": 1,
+      "missingRuns": 2,
       "listingDetails": {
         "parcelId": "0701601706",
         "zoning": "R-5 reported by MLS for the community; official homesite confirmation pending",
@@ -23715,8 +23738,8 @@
         "completion": "Move-in ready per current builder inventory; certificate of occupancy not independently obtained"
       },
       "publicVerification": {
-        "asOf": "2026-10-13",
-        "marketingAttempt": "Lennar's live direct homesite page lists homesite 159 as available at $250,000 on October 13, 2026. Confirm price, incentives, financing conditions, status and contract terms directly.",
+        "asOf": "2026-10-15",
+        "marketingAttempt": "Lennar's rendered Cannon Village page showed seven available homes on October 15, 2026 and did not include homesite 159; the direct homesite URL redirected to the generic Titan plan. This is the second consecutive miss, so the record is archived pending fresh direct availability evidence.",
         "parcelAndDeed": "York County GIS matched parcel 0701601706, address and homesite 159. Recorded transfer references appear to cover builder or bulk transactions and are not treated as individual retail price. Current title, liens, easements, restrictions and instrument contents remain unresolved.",
         "flood": "A parcel-geometry query against York County's 2017 DFIRM layer returned zero intersecting flood-hazard features. This is not an affirmative FEMA determination; grading, drainage, master-policy coverage and insurer acceptance remain required.",
         "permits": [
@@ -23740,14 +23763,14 @@
     {
       "id": "builder-29016600160",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-13",
-      "lastChanged": "2026-10-12",
+      "lastChanged": "2026-10-15",
       "address": "642 Sparano Loop Unit 160, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600160",
       "parcelId": "0701601707",
-      "status": "active",
+      "status": "off-market",
       "price": 245799,
       "originalPrice": 255899,
       "priceCutPercent": 3.9,
@@ -23768,7 +23791,7 @@
       "distanceAsOf": "2026-09-27",
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's live direct inventory lists move-in-ready homesite 160, a three-bedroom Titan townhouse at $245,799. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
+      "summary": "The carried homesite 160 snapshot is archived after two consecutive absences from Lennar's live Cannon Village inventory. Prior price and layout evidence are retained for history, but current availability is not established.",
       "pros": [
         "$29,201 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a documented owner’s en-suite plus a second full bath and powder room",
@@ -23777,7 +23800,7 @@
         "County water and sewer are reported by MLS or builder materials"
       ],
       "concerns": [
-        "The home is absent from Lennar's seven-home live inventory on October 14. This is the first consecutive miss and does not trigger archival; confirm availability and price directly before relying on the prior offer.",
+        "The home is absent from Lennar's live seven-home inventory for a second consecutive daily run and is archived under the configured two-miss rule. Re-admit only with fresh direct availability and price evidence.",
         "Lennar's live direct inventory lists $245,799; obtain a dated builder price sheet and identify lender, incentive, deposit, closing-cost, and availability conditions.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer/capital fees, amenity charges, and builder closing schedule.",
         "Whole-unit rental and individual-room rental authority are separately unknown. Recorded declarations, bylaws, rules, amendments, management decisions, local zoning, rental registration, occupancy limits, and insurer approval are required.",
@@ -23790,7 +23813,7 @@
         "Utilities allocation, common-space practicality, locks, smoke and carbon-monoxide protection, association maintenance boundaries, litigation, resale restrictions and leasing surcharges remain unknown."
       ],
       "sourceConflicts": [
-        "The prior homesite page and earlier direct inventory supported the carried price, but the homesite is absent from Lennar's seven-home live inventory on October 14. One miss is not removal evidence."
+        "The prior homesite page and earlier direct inventory supported the carried price, but Lennar's live Cannon Village inventory omitted homesite 160 on both October 14 and October 15. The direct homesite URL now redirects to the generic Titan plan."
       ],
       "hoa": {
         "exists": true,
@@ -23817,6 +23840,10 @@
           "date": "2026-10-12",
           "event": "Builder price reduced",
           "price": 245799
+        },
+        {
+          "date": "2026-10-15",
+          "event": "Archived after second consecutive live-builder-inventory miss"
         }
       ],
       "sources": [
@@ -23874,6 +23901,11 @@
           "label": "Lennar current seven-home inventory; homesite absent for first consecutive run",
           "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
           "accessed": "2026-10-14"
+        },
+        {
+          "label": "Lennar current seven-home inventory; homesite 160 absent for second consecutive run",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-10-15"
         }
       ],
       "changeHistory": [
@@ -23909,9 +23941,20 @@
               "label": "Builder price reduced to $245,799"
             }
           ]
+        },
+        {
+          "date": "2026-10-15",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Archived after second consecutive direct-builder inventory miss"
+            }
+          ]
         }
       ],
-      "missingRuns": 1,
+      "missingRuns": 2,
       "listingDetails": {
         "parcelId": "0701601707",
         "zoning": "R-5 reported by MLS for the community; official homesite confirmation pending",
@@ -23922,8 +23965,8 @@
         "completion": "Move-in ready per current builder inventory; certificate of occupancy not independently obtained"
       },
       "publicVerification": {
-        "asOf": "2026-10-12",
-        "marketingAttempt": "Lennar's live direct homesite page lists homesite 160 as available at $245,799 on October 12, 2026. Confirm price, incentives, financing conditions, status and contract terms directly.",
+        "asOf": "2026-10-15",
+        "marketingAttempt": "Lennar's rendered Cannon Village page showed seven available homes on October 15, 2026 and did not include homesite 160; the direct homesite URL redirected to the generic Titan plan. This is the second consecutive miss, so the record is archived pending fresh direct availability evidence.",
         "parcelAndDeed": "York County GIS matched parcel 0701601707, address and homesite 160. Recorded transfer references appear to cover builder or bulk transactions and are not treated as individual retail price. Current title, liens, easements, restrictions and instrument contents remain unresolved.",
         "flood": "A parcel-geometry query against York County's 2017 DFIRM layer returned zero intersecting flood-hazard features. This is not an affirmative FEMA determination; grading, drainage, master-policy coverage and insurer acceptance remain required.",
         "permits": [
@@ -30749,6 +30792,176 @@
           }
         ]
       }
+    },
+    {
+      "id": "mls-4434689",
+      "strategy": "shared-condo",
+      "changeCategory": "new",
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "lastChanged": "2026-10-15",
+      "address": "849 Dillard Rd, Rock Hill, SC 29730",
+      "sourceUrl": "https://www.howardhanna.com/property/849-dillard-road-rock-hill-sc-29730-450002462323",
+      "mls": "4434689",
+      "parcelId": "667-03-01-104",
+      "status": "active",
+      "price": 185000,
+      "originalPrice": 185000,
+      "priceCutPercent": 0,
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": 1474,
+      "pricePerSqft": 126,
+      "marketPricePerSqft": 207,
+      "yearBuilt": 2003,
+      "propertyType": "Townhouse",
+      "hoaMonthly": 224.56,
+      "oneLevel": false,
+      "privateBath": "yes",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 1,
+      "distanceMiles": 7.7,
+      "driveMinutes": 17,
+      "distanceAsOf": "2026-10-15",
+      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
+      "summary": "A newly listed two-bedroom Manchester Village townhouse at $185,000 with a documented primary suite and private full bathroom. The low acquisition price and reported system updates are attractive, but controlling HOA rental rules, fees, permit closeout, and condition remain unresolved and block recommendation.",
+      "pros": [
+        "$90,000 below the maximum offer price",
+        "The listing documents a primary suite with a private full bathroom plus a second full bath and powder room",
+        "The listing reports a 2024 roof and windows and a 2021 HVAC system",
+        "Public sewer, city water, and 7.7 driving miles from the family reference property are documented"
+      ],
+      "concerns": [
+        "Whole-unit and individual-room rental authority are independently unknown and block recommendation",
+        "The mandatory HOA is reported at $224.56 monthly; special assessments, transfer or capital-contribution fees, mandatory amenity fees, master insurance, reserves, litigation, parking rules, and leasing surcharges remain unknown",
+        "After reserving the primary suite, only one renter bedroom remains; confirm legal bedroom, bathroom, egress, occupancy, parking, utilities, common-space practicality, and property-specific room demand",
+        "The 2024 roof and window replacement and 2021 HVAC replacement are listing claims. A public 2021 permit report corroborates an HVAC change-out application, but final inspection, invoices, warranties, exact installation dates, and transferable coverage were not obtained",
+        "Water-heater age, electrical service, supply and waste plumbing, sewer lateral, foundation or structural work, other renovations, safety readiness, condition, and insurance constraints remain unresolved",
+        "Official deed instrument, current title, liens, easements, recorded restrictions, property-specific zoning and room-rental approval, parcel-level FEMA determination, and independent inspection remain unresolved"
+      ],
+      "sourceConflicts": [],
+      "hoa": {
+        "exists": true,
+        "wholeUnitRental": "unknown",
+        "roomRental": "unknown",
+        "evidence": [
+          "Current Canopy MLS-fed sources report a mandatory $224.56 monthly fee and Revelation Community Management; no controlling documents were obtained."
+        ],
+        "confidence": "low",
+        "followUp": "Obtain declarations, bylaws, amendments, rules, budget, resale certificate, master insurance, written whole-unit and separate-room rental decisions, assessments, transfer and capital fees, amenity charges, reserves, litigation, and parking rules."
+      },
+      "listingHistory": [
+        {
+          "date": "2020-09-23",
+          "event": "Listed",
+          "price": 184900
+        },
+        {
+          "date": "2020-11-19",
+          "event": "Sold",
+          "price": 182000
+        },
+        {
+          "date": "2026-10-14",
+          "event": "Listed",
+          "price": 185000
+        }
+      ],
+      "sources": [
+        {
+          "label": "Current Howard Hanna Canopy MLS price, status, layout, HOA, utilities, and system claims",
+          "url": "https://www.howardhanna.com/property/849-dillard-road-rock-hill-sc-29730-450002462323",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "Current Uphomes Canopy MLS listing and primary-suite detail",
+          "url": "https://uphomes.com/home/849-dillard-rd-rock-hill-sc-29730-5c48d1bf",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "Current Movoto parcel, price history, HOA, and market context",
+          "url": "https://www.movoto.com/rock-hill-sc/849-dillard-rd-rock-hill-sc-29730/pid_m9uyzz8xmh/",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "City of Rock Hill December 2021 public plan report for HVAC change-out application",
+          "url": "https://www.cityofrockhill.com/home/showpublisheddocument/30397/637775085085300000",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "York County Assessor public entry point",
+          "url": "https://www.yorkcountysc.gov/150/Assessor/",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "York County Register of Deeds public entry point",
+          "url": "https://search.yorkdeeds.com/",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "City of Rock Hill public permit and inspection portal",
+          "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "York County One Map parcel, zoning, and flood guidance",
+          "url": "https://www.yorkcountygov.com/FAQ.aspx?QID=506",
+          "accessed": "2026-10-15"
+        },
+        {
+          "label": "FEMA Flood Map Service Center",
+          "url": "https://msc.fema.gov/portal/home",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "changeHistory": [
+        {
+          "date": "2026-10-15",
+          "changes": [
+            {
+              "field": "listing",
+              "from": null,
+              "to": "added",
+              "label": "New public MLS-fed listing"
+            }
+          ]
+        }
+      ],
+      "missingRuns": 0,
+      "listingDetails": {
+        "parcelId": "667-03-01-104",
+        "zoning": "Not independently established from the applicable public portal",
+        "subdivision": "Manchester Village",
+        "sewer": "Public sewer (listing claim)",
+        "water": "City water (listing claim)",
+        "parking": "Driveway and on-street parking reported; allocation and enforceability unresolved",
+        "completion": "Existing construction; independent inspection and permit closeout pending"
+      },
+      "publicVerification": {
+        "asOf": "2026-10-15",
+        "marketingAttempt": "Multiple current Canopy MLS-fed public pages reported active status at $185,000 on October 15, 2026.",
+        "parcelAndDeed": "Public MLS-fed evidence identifies parcel 667-03-01-104 and a 2020 sale at $182,000. Official deed instrument, current ownership, title, liens, easements, restrictions, and transaction details remain unresolved.",
+        "flood": "York County One Map and FEMA public entry points were checked; a property-specific affirmative FEMA determination was not established.",
+        "permits": [
+          {
+            "jurisdiction": "City of Rock Hill",
+            "url": "https://www.cityofrockhill.com/home/showpublisheddocument/30397/637775085085300000",
+            "result": "A December 2021 public plan report lists an HVAC change-out application for the address.",
+            "permitHeaders": [
+              "Mechanical permit application: like-for-like 2-ton AC, evaporator coil, and furnace change-out; no ductwork"
+            ],
+            "caveat": "The report corroborates an application, not final inspection, paid invoice, warranty, exact installation date, or current condition."
+          },
+          {
+            "jurisdiction": "City of Rock Hill",
+            "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+            "result": "Public portal checked; complete property-specific permit history and final inspections were not established.",
+            "permitHeaders": [],
+            "caveat": "Obtain complete permit scopes, finals, invoices, warranties, and inspection records."
+          }
+        ]
+      }
     }
   ],
   "methodologySources": [
@@ -30985,113 +31198,113 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com, and Movoto public inventory were reviewed. All 202 previously tracked non-removed purchase primary URLs were requested: 97 HTTP 200, two HTTP 301, two HTTP 307, 66 HTTP 403, and 35 HTTP 429. Fresh visible inventory was pre-1980, land-only, one-bath, coming-soon, already tracked, or otherwise ineligible; no new candidate was admitted. Current evidence moved 4858 York Highway to pending and confirmed two closed sales.",
-      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, redirects, blocks, rate limits, token-free shells, snippets and stale pages are not independent status proof."
+      "asOf": "2026-10-15",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com, and Movoto public inventory were reviewed. All 200 previously tracked non-removed primary URLs were requested: 110 HTTP 200, 20 HTTP 202, three HTTP 301, two HTTP 307, 30 HTTP 403, and 35 HTTP 429. Fresh current evidence admitted 849 Dillard Road at $185,000 and reconfirmed the already tracked 403 Wilson Street North Unit 106 at $220,000. Pre-1980, one-bath, contingent, land-only, duplicate, and above-ceiling results were withheld.",
+      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, redirects, blocks, rate limits, token-free shells, snippets, and stale pages are not independent status proof."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "Indexed local brokerage, listing-agent, Canopy-fed IDX, and public builder pages were cross-checked. Bluefield confirms 4858 York Highway pending at $239,900; Coldwell Banker, Compass, Trulia and Homes.com confirm the 821 Carolina and 429 Castlewood closings. Lennar's rendered community page shows seven current homes, all already tracked.",
-      "coverageGap": "IDX and syndicated records can lag or conflict; written seller, builder and association confirmation remains necessary before an offer."
+      "asOf": "2026-10-15",
+      "summary": "Current Canopy MLS-fed brokerage and listing pages supported the new 849 Dillard record and refreshed the already tracked 403 Wilson record. Indexed local brokerage, listing-agent, and public builder pages were cross-checked. Lennar's rendered Cannon Village page showed seven current homes and excluded homesites 159 and 160 for a second consecutive daily run.",
+      "coverageGap": "IDX and syndicated records can lag or conflict; written seller, builder, association, and closing confirmation remain necessary before an offer."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "HUD Home Store, Fannie Mae HomePath, and Freddie Mac HomeSteps public entry points and indexed South Carolina results were checked; no independently verified eligible new GSE candidate emerged in the target area.",
+      "asOf": "2026-10-15",
+      "summary": "HUD Home Store, Fannie Mae HomePath, Freddie Mac HomeSteps, and public government-linked inventory entry points were checked. No independently verified eligible new GSE candidate with a current public price emerged in the target area.",
       "coverageGap": "Public inventory and investor-first-look details were not fully retrievable; no credentialed feed was requested or used."
     },
     {
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity entry points, foreclosure results, and owner-listing pages were reviewed. Visible leads were pre-1980, lacked the required private bath, were no longer active, or had unresolved sale, bid, title, occupancy, condition or year-built evidence.",
-      "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing and occupancy checks."
+      "asOf": "2026-10-15",
+      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity materials, foreclosure notices, and owner-listing pages were reviewed. A November 2 foreclosure sale for 1501 Andora Drive is a credible new lead, but no public opening bid, title clearance, access, occupancy, condition, private-bath layout, or financing evidence supports admission. Other visible leads were pre-1980, one-bath, above the ceiling, or already tracked.",
+      "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing, occupancy, year-built, and private-bath checks."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "Auction.com, Hubzu, Xome, and public builder inventory were checked. The public Hubzu auction at 786 Laney Terrace had ended and remained pre-1980, occupied, cash-only and inaccessible; no eligible verified auction candidate emerged. Lennar's live Cannon Village page showed seven current homes, all already tracked. 638 and 642 Sparano were retained after a first consecutive inventory miss.",
-      "coverageGap": "Auction outcomes, premiums, title, condition and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status and undisclosed transaction fees."
+      "asOf": "2026-10-15",
+      "summary": "Auction.com, Hubzu, Xome, York County sale notices, and public builder inventory were checked. No eligible auction candidate with a public qualifying purchase price emerged. Lennar's live Cannon Village page showed seven available homes; homesites 159 and 160 were archived after second consecutive misses and direct-page redirects to the generic plan.",
+      "coverageGap": "Auction opening bids, premiums, title, redemption, condition, access, occupancy, and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status, and undisclosed fees."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "supported-manual-not-refreshed",
-      "asOf": "2026-10-14",
-      "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained.",
+      "asOf": "2026-10-15",
+      "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained and public current sources were used for this run.",
       "coverageGap": "Manual saved-search coverage was unavailable this run."
     },
     {
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-10-14",
-      "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports or direct MLS access.",
+      "asOf": "2026-10-15",
+      "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports, or direct MLS access.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure."
     },
     {
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "Every known non-removed primary URL was requested and current search surfaces were reviewed. No new record was admitted. Three records materially changed: 4858 York Highway moved to pending, while 821 Carolina and 429 Castlewood were archived after current sale evidence. Two builder records remain active after a first live-inventory miss.",
-      "coverageGap": "HTTP access and search snippets are not status proof. Seller acceptance, title, transfer instruments, builder availability and contract status remain unresolved for many records."
+      "asOf": "2026-10-15",
+      "summary": "Every previously known non-removed primary URL was requested, current public search surfaces were reviewed, and new results were deduplicated by MLS and normalized address. One new active record was admitted, one known active record received fresh corroboration, and two builder records were archived after second consecutive direct-inventory misses. No other known record had sufficient positive status or transfer evidence for a material change.",
+      "coverageGap": "HTTP access and search snippets are not status proof. Seller acceptance, title, transfer instruments, builder availability, and contract status remain unresolved for many records."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "York County parcel and deed entry points were checked. No new candidate required property-specific admission review. Current public transfer reporting corroborated the 429 Castlewood closing; full deed instruments, title, liens, easements and restrictions remain unresolved.",
-      "coverageGap": "Current ownership, title, liens, easements, restrictions, transaction type and full deed instruments remain unresolved until official instrument and closing review."
+      "asOf": "2026-10-15",
+      "summary": "York County parcel and deed entry points were checked for the new 849 Dillard candidate and refreshed 403 Wilson evidence. Public listing and record evidence supplied parcel identifiers and earlier transfer chronology, but official deed instruments, current title, liens, easements, restrictions, and transaction details were not established.",
+      "coverageGap": "Current ownership, title, liens, easements, restrictions, transaction type, and full deed instruments remain unresolved until official instrument and closing review."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "Rock Hill, York County and City of York public permit and zoning entry points were checked. No new candidate was admitted. Existing property-specific permits, system ages, finals, certificates of occupancy, zoning, occupancy, parking and separate-room rental authority remain unresolved where not already documented.",
-      "coverageGap": "Written zoning, occupancy, registration, parking and room-lease authority plus complete permit scopes, finals, invoices, warranties and inspection readiness remain required."
+      "asOf": "2026-10-15",
+      "summary": "Rock Hill, York County, and City of York public permit and zoning entry points were checked. A City of Rock Hill report corroborates a 2021 HVAC change-out application for 849 Dillard, but final inspection, invoice, warranty, and exact installation date remain unresolved. Complete permit history, written zoning and separate-room rental authority remain unresolved for both new candidates.",
+      "coverageGap": "Written zoning, occupancy, registration, parking, and room-lease authority plus complete permit scopes, finals, invoices, warranties, and inspection readiness remain required."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "York County's DFIRM and FEMA public entry points were checked. No new candidate required a parcel-level flood query. Prior zero-intersection records remain non-affirmative and do not replace survey, drainage, condition or insurer review.",
-      "coverageGap": "A zero-result GIS query does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection or insurer acceptance."
+      "asOf": "2026-10-15",
+      "summary": "York County One Map and FEMA public entry points were checked for the new candidates. No affirmative property-specific FEMA determination was established; commercial modeled risk for 403 Wilson is not treated as official FEMA evidence.",
+      "coverageGap": "A zero-result or modeled GIS result does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection, or insurer acceptance."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "No new association-governed candidate was admitted. Cannon Village whole-unit and individual-room rental authority, transfer or capital fees, special assessments, insurance, reserves, litigation and parking rules remain unknown and continue to block recommendation.",
-      "coverageGap": "Unknown governing documents, transfer or capital fees, special assessments, insurance, reserves, litigation, parking and separate rental authority block recommendation where an association exists."
+      "asOf": "2026-10-15",
+      "summary": "The new 849 Dillard townhouse reports a mandatory $224.56 monthly association fee; fresh evidence reconfirmed $40 monthly for the already tracked 403 Wilson townhouse. No declarations, bylaws, amendments, rules, budgets, resale certificates, written whole-unit or separate-room rental decisions, assessment statements, fee schedules, master insurance, reserves, litigation, or parking rules were obtained, so both remain capped and blocked from recommendation.",
+      "coverageGap": "Unknown governing documents, transfer or capital fees, special assessments, insurance, reserves, litigation, parking, and separate rental authority block recommendation where an association exists."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "Current Zillow, HotPads and Apartments.com Rock Hill rental inventory was reviewed. Visible two-bedroom asks ranged from roughly $1,150 to $1,775, with Apartments.com reporting a $1,503 average; the conservative $1,150 monthly private-unit planning benchmark was retained.",
-      "coverageGap": "Asking rent is not a signed lease; availability, deposits, mandatory fees, utilities, condition and unit quality vary."
+      "asOf": "2026-10-15",
+      "summary": "Current public Rock Hill rental evidence included an October median of $1,150 for one bedroom, plus visible one-bedroom asks around $1,150 to $1,550 before utilities and mandatory fees. The conservative $1,150 monthly private-unit planning benchmark was retained.",
+      "coverageGap": "Asking rent is not a signed lease; availability, deposits, mandatory fees, utilities, condition, and unit quality vary."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-14",
-      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Current HotPads discovery showed 16 Rock Hill room listings, with visible asks broadly from $650 to $1,100 and private-bath examples around $695 to $1,000; the conservative $850 monthly planning benchmark was retained.",
-      "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand or legal room-rental authority."
+      "asOf": "2026-10-15",
+      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh visible Rock Hill room asks included $750 shared-bath, $800 private-bath, $875, $950 private-bath, $1,000, and $1,200 studio-style examples; the conservative $850 monthly planning benchmark was retained.",
+      "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand, or legal room-rental authority."
     }
   ],
   "importSummary": {
