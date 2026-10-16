@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-15",
+  "asOf": "2026-10-16",
   "runStatus": "successful",
-  "researchMethod": "Public-only October 15 reconciliation: all 14 configured source-policy categories were audited; all 200 previously tracked non-removed purchase primary URLs and all 14 configured room-comparable URLs were requested. Live national portals, brokerage and IDX, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent, and individual-room evidence was reviewed. One newly discovered active listing met the configured age, private-bath, distance, availability, and price admission gates but remains needs-verification because HOA rental authority and other diligence are unknown. Two builder homes were archived after second consecutive live-inventory misses. Public search is not exhaustive MLS coverage.",
+  "researchMethod": "Public-only October 16 reconciliation: all 14 configured source-policy categories were audited; all 198 previously tracked marketed purchase primary URLs and all 14 configured room-comparable URLs were requested. Live national portals, brokerage and IDX, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent, and individual-room evidence was reviewed. Fresh positive Canopy MLS-fed sale evidence archived two stale active records. Newly surfaced inventory was pre-1980, one-bath, land-only, already tracked, or above the ceiling without credible acceptance evidence. Public search is not exhaustive MLS coverage.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -7478,21 +7478,21 @@
     {
       "id": "mls-4408474",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-08-23",
       "lastSeen": "2026-10-07",
-      "lastChanged": "2026-10-07",
+      "lastChanged": "2026-10-16",
       "address": "2017 Bristol Pkwy, Rock Hill, SC 29732",
       "sourceUrl": "https://www.zillow.com/homedetails/2017-Bristol-Pkwy-Rock-Hill-SC-29732/55176520_zpid/",
       "mls": "4408474",
-      "status": "active",
-      "price": 281000,
+      "status": "off-market",
+      "price": 275000,
       "originalPrice": 281000,
-      "priceCutPercent": 0,
+      "priceCutPercent": 2.1,
       "beds": 3,
       "baths": 2,
       "sqft": 1348,
-      "pricePerSqft": 208,
+      "pricePerSqft": 204,
       "marketPricePerSqft": 207,
       "yearBuilt": 1997,
       "propertyType": "Single-family home",
@@ -7506,7 +7506,7 @@
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceAsOf": "2026-09-15",
       "distanceLabel": "4.4 miles · about 12 minutes from the family reference property",
-      "summary": "Fresh Canopy MLS-fed Realtor.com, Zillow and Redfin evidence supports active marketing again at $281,000 after the September pending observation. This one-level 1997 home has a listing-documented private primary bathroom. The ask requires a $6,000 seller discount to reach the absolute offer ceiling; seller acceptance remains unresolved and underwriting stays capped at $275,000.",
+      "summary": "Closed October 1, 2026 for $275,000 and archived from the active decision set. Current Canopy MLS-fed sold history supersedes the October 7 stale active observation; official deed-instrument review remains a follow-up.",
       "pros": [
         "Private primary bathroom with separate tub and shower is documented in the listing",
         "One-level three-bedroom, two-full-bath layout",
@@ -7514,6 +7514,7 @@
         "The required seller discount is 2.1% of the ask"
       ],
       "concerns": [
+        "Closed 2026-10-01 for $275,000 and is no longer an active purchase candidate.",
         "Fresh public MLS-fed pages show active marketing again after the September 13 pending observation; confirm the contract release and current showing availability directly before outreach.",
         "Fresh paint, new flooring, and a buyer-activated 100-day warranty are listing claims and do not establish major-system replacement, coverage scope, or installation dates",
         "An accepted offer requires a $6,000 seller discount to reach the $275,000 ceiling; seller acceptance is unresolved and no offer above the ceiling is modeled",
@@ -7524,7 +7525,8 @@
         "No controlling public evidence establishes the proposed unrelated-room leasing arrangement; written city and closing-attorney confirmation remains a recommendation gate"
       ],
       "sourceConflicts": [
-        "A September 13 MLS-fed IDX page showed pending with no showings, while October 7 Realtor.com, Zillow and Redfin pages show active at $281,000. The fresher active status is retained, but direct contract-release confirmation is still required."
+        "A September 13 MLS-fed IDX page showed pending with no showings, while October 7 Realtor.com, Zillow and Redfin pages show active at $281,000. The fresher active status is retained, but direct contract-release confirmation is still required.",
+        "The October 7 public pages showed active marketing after an earlier pending observation, but current Canopy MLS-fed sold history confirms an October 1 closing at $275,000 and supersedes those stale active pages."
       ],
       "hoa": {
         "exists": false,
@@ -7556,6 +7558,11 @@
           "date": "2026-10-07",
           "event": "Returned to active marketing",
           "price": 281000
+        },
+        {
+          "date": "2026-10-01",
+          "event": "Sold",
+          "price": 275000
         }
       ],
       "sources": [
@@ -7593,6 +7600,11 @@
           "label": "October 7 Redfin active inventory corroboration",
           "url": "https://www.redfin.com/city/15797/SC/Rock-Hill/open-houses",
           "accessed": "2026-10-07"
+        },
+        {
+          "label": "October 16 current Trulia Canopy MLS sold status, closing price, and chronology",
+          "url": "https://www.trulia.com/home/2017-bristol-pkwy-rock-hill-sc-29732-55176520",
+          "accessed": "2026-10-16"
         }
       ],
       "changeHistory": [
@@ -7628,12 +7640,29 @@
               "label": "Returned to active marketing"
             }
           ]
+        },
+        {
+          "date": "2026-10-16",
+          "changes": [
+            {
+              "field": "price",
+              "from": 281000,
+              "to": 275000,
+              "label": "Closed sale price confirmed"
+            },
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Closed sale confirmed and archived"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
       "publicVerification": {
-        "asOf": "2026-10-07",
-        "marketingAttempt": "Fresh Canopy MLS-fed Realtor.com and Zillow pages plus Redfin active inventory show active marketing at $281,000 after the September 13 pending observation. The fresher status is retained, but direct confirmation that the prior contract was released and that showings are available remains required. The $6,000 discount to the $275,000 ceiling is unresolved; no higher offer is modeled.",
+        "asOf": "2026-10-16",
+        "marketingAttempt": "Current Canopy MLS-fed sale history confirms a 2026-10-01 closing at $275,000. The property is archived from the active decision set; official deed-instrument and title review remain follow-ups.",
         "parcelAndDeed": "York County public assessor, One Map, and Register of Deeds entry points were checked; no new property-specific official readback established ownership, title, transfer, assessment, or recorded-restriction changes.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
         "permits": [
@@ -16768,21 +16797,21 @@
     {
       "id": "mls-4360238",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-08-29",
       "lastSeen": "2026-10-01",
-      "lastChanged": "2026-09-01",
+      "lastChanged": "2026-10-16",
       "address": "2033 Brer Rabbit Run, Rock Hill, SC 29730",
       "sourceUrl": "https://www.realtor.com/realestateandhomes-detail/2033-Brer-Rabbit-Run_Rock-Hill_SC_29730_M66982-38903",
       "mls": "4360238",
-      "status": "active",
-      "price": 259000,
+      "status": "off-market",
+      "price": 246000,
       "originalPrice": 269500,
-      "priceCutPercent": 5.4,
+      "priceCutPercent": 8.7,
       "beds": 3,
       "baths": 2,
       "sqft": 1539,
-      "pricePerSqft": 168,
+      "pricePerSqft": 160,
       "marketPricePerSqft": 207,
       "yearBuilt": 2000,
       "propertyType": "Manufactured home on permanent foundation",
@@ -16796,7 +16825,7 @@
       "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceAsOf": "2026-09-15",
       "distanceLabel": "15.5 miles · about 31 minutes from the family reference property",
-      "summary": "An active 2000 three-bedroom manufactured home on 1.13 acres with a documented primary en-suite, no reported HOA, and a $14,500 reduction. Financing, title, foundation, well, septic, system claims, and room-rental authority require verification.",
+      "summary": "Closed October 9, 2026 for $246,000 and archived from the active decision set. Current Canopy MLS-fed sold history supersedes stale active pages; official deed-instrument review remains a follow-up.",
       "pros": [
         "$20,000 below the offer ceiling",
         "Primary en-suite is stated in current listing evidence",
@@ -16805,6 +16834,7 @@
         "1.13-acre site may support parking and separation"
       ],
       "concerns": [
+        "Closed 2026-10-09 for $246,000 and is no longer an active purchase candidate.",
         "Manufactured-home title, permanent-foundation certification, financing eligibility, and insurance availability require specialist confirmation",
         "Listing claims approximately 2019 HVAC, metal roof, and windows, but no permit, invoice, warranty, or installation-date evidence was located",
         "Private well and septic capacity must be verified for the proposed occupancy",
@@ -16814,7 +16844,8 @@
         "Special assessments, transfer or capital-contribution fees, mandatory amenity or builder fees, and other transaction-specific charges are unknown unless expressly listed"
       ],
       "sourceConflicts": [
-        "Some secondary pages retain the earlier $259,000 asking price; the current Realtor.com and Zillow pages support $255,000."
+        "Some secondary pages retain the earlier $259,000 asking price; the current Realtor.com and Zillow pages support $255,000.",
+        "Older Realtor.com and Redfin pages retained active marketing details, but current Zillow and Coldwell Banker Canopy MLS sale histories confirm the October 9 closing at $246,000."
       ],
       "hoa": {
         "exists": false,
@@ -16846,6 +16877,11 @@
           "date": "2026-08-08",
           "event": "Relisted price increased",
           "price": 259000
+        },
+        {
+          "date": "2026-10-09",
+          "event": "Sold",
+          "price": 246000
         }
       ],
       "sources": [
@@ -16898,6 +16934,11 @@
           "label": "Realtor.com current list price and August 8 relist history",
           "url": "https://www.realtor.com/realestateandhomes-detail/2033-Brer-Rabbit-Run_Rock-Hill_SC_29730_M66982-38903",
           "accessed": "2026-09-01"
+        },
+        {
+          "label": "October 16 current Coldwell Banker Canopy MLS sold status, closing price, and chronology",
+          "url": "https://www.coldwellbankerhomes.com/sc/rock-hill/2033-brer-rabbit-run/pid_70242318/",
+          "accessed": "2026-10-16"
         }
       ],
       "changeHistory": [
@@ -16922,12 +16963,29 @@
               "label": "current list price reconciled"
             }
           ]
+        },
+        {
+          "date": "2026-10-16",
+          "changes": [
+            {
+              "field": "price",
+              "from": 259000,
+              "to": 246000,
+              "label": "Closed sale price confirmed"
+            },
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Closed sale confirmed and archived"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
       "publicVerification": {
-        "asOf": "2026-09-19",
-        "marketingAttempt": "Primary public listing URL requested September 15. HTTP success or a token-free OneHome shell does not independently establish current marketing status, price, or transfer chronology; prior source-backed facts remain pending direct reconciliation. Primary public URL requested 2026-09-19: HTTP 429. This access result alone does not establish current price, status, or transfer chronology. Earlier source-backed facts are retained pending direct reconciliation.",
+        "asOf": "2026-10-16",
+        "marketingAttempt": "Current Canopy MLS-fed sale history confirms a 2026-10-09 closing at $246,000. The property is archived from the active decision set; official deed-instrument and title review remain follow-ups.",
         "parcelAndDeed": "York County public assessor, One Map, and Register of Deeds entry points were checked; no new property-specific official readback established ownership, title, transfer, assessment, or recorded-restriction changes.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
         "permits": [
@@ -23530,7 +23588,7 @@
     {
       "id": "builder-29016600159",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-15",
@@ -23763,7 +23821,7 @@
     {
       "id": "builder-29016600160",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-10-13",
       "lastChanged": "2026-10-15",
@@ -30796,7 +30854,7 @@
     {
       "id": "mls-4434689",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-15",
       "lastSeen": "2026-10-15",
       "lastChanged": "2026-10-15",
@@ -31198,23 +31256,23 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com, and Movoto public inventory were reviewed. All 200 previously tracked non-removed primary URLs were requested: 110 HTTP 200, 20 HTTP 202, three HTTP 301, two HTTP 307, 30 HTTP 403, and 35 HTTP 429. Fresh current evidence admitted 849 Dillard Road at $185,000 and reconfirmed the already tracked 403 Wilson Street North Unit 106 at $220,000. Pre-1980, one-bath, contingent, land-only, duplicate, and above-ceiling results were withheld.",
+      "asOf": "2026-10-16",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com, and Movoto public inventory were reviewed. All 198 previously tracked marketed primary URLs were requested: 95 HTTP 200, two HTTP 301, 66 HTTP 403, and 35 HTTP 429. Fresh positive Canopy MLS-fed evidence confirmed that 2017 Bristol Parkway and 2033 Brer Rabbit Run had closed and should be archived. Newly surfaced inventory was pre-1980, one-bath, land-only, already tracked, or above the ceiling without credible acceptance evidence.",
       "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, redirects, blocks, rate limits, token-free shells, snippets, and stale pages are not independent status proof."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "Current Canopy MLS-fed brokerage and listing pages supported the new 849 Dillard record and refreshed the already tracked 403 Wilson record. Indexed local brokerage, listing-agent, and public builder pages were cross-checked. Lennar's rendered Cannon Village page showed seven current homes and excluded homesites 159 and 160 for a second consecutive daily run.",
+      "asOf": "2026-10-16",
+      "summary": "Current Canopy MLS-fed brokerage and IDX pages corroborated the two closed sales and current status for the three qualified private-purchase options. Indexed local brokerage, listing-agent, and public builder pages were cross-checked. Lennar's rendered Cannon Village page showed seven current homes, all already tracked.",
       "coverageGap": "IDX and syndicated records can lag or conflict; written seller, builder, association, and closing confirmation remain necessary before an offer."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
+      "asOf": "2026-10-16",
       "summary": "HUD Home Store, Fannie Mae HomePath, Freddie Mac HomeSteps, and public government-linked inventory entry points were checked. No independently verified eligible new GSE candidate with a current public price emerged in the target area.",
       "coverageGap": "Public inventory and investor-first-look details were not fully retrievable; no credentialed feed was requested or used."
     },
@@ -31222,23 +31280,23 @@
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity materials, foreclosure notices, and owner-listing pages were reviewed. A November 2 foreclosure sale for 1501 Andora Drive is a credible new lead, but no public opening bid, title clearance, access, occupancy, condition, private-bath layout, or financing evidence supports admission. Other visible leads were pre-1980, one-bath, above the ceiling, or already tracked.",
+      "asOf": "2026-10-16",
+      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity materials, foreclosure notices, and owner-listing pages were reviewed. The October tax-sale process and November foreclosure leads remain diligence-only because public opening bids, title clearance, redemption, access, occupancy, condition, private-bath layout, or financing evidence are incomplete. Other visible leads were pre-1980, one-bath, above the ceiling, or already tracked.",
       "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing, occupancy, year-built, and private-bath checks."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "Auction.com, Hubzu, Xome, York County sale notices, and public builder inventory were checked. No eligible auction candidate with a public qualifying purchase price emerged. Lennar's live Cannon Village page showed seven available homes; homesites 159 and 160 were archived after second consecutive misses and direct-page redirects to the generic plan.",
+      "asOf": "2026-10-16",
+      "summary": "Auction.com, Hubzu, Xome, York County sale notices, and public builder inventory were checked. No eligible auction candidate with a public qualifying purchase price emerged. Xome's current Rock Hill leads lacked a qualifying two-full-bath layout or public opening bid. Lennar's live Cannon Village page showed seven available homes, all already tracked.",
       "coverageGap": "Auction opening bids, premiums, title, redemption, condition, access, occupancy, and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status, and undisclosed fees."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "supported-manual-not-refreshed",
-      "asOf": "2026-10-15",
+      "asOf": "2026-10-16",
       "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained and public current sources were used for this run.",
       "coverageGap": "Manual saved-search coverage was unavailable this run."
     },
@@ -31246,7 +31304,7 @@
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-10-15",
+      "asOf": "2026-10-16",
       "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports, or direct MLS access.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure."
     },
@@ -31254,56 +31312,56 @@
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "Every previously known non-removed primary URL was requested, current public search surfaces were reviewed, and new results were deduplicated by MLS and normalized address. One new active record was admitted, one known active record received fresh corroboration, and two builder records were archived after second consecutive direct-inventory misses. No other known record had sufficient positive status or transfer evidence for a material change.",
+      "asOf": "2026-10-16",
+      "summary": "Every previously tracked marketed primary URL was requested, current public search surfaces were reviewed, and results were deduplicated by MLS and normalized address. Fresh positive Canopy MLS-fed sale evidence archived 2017 Bristol Parkway after an October 1 closing at $275,000 and 2033 Brer Rabbit Run after an October 9 closing at $246,000. No other known record had sufficient positive current-status or transfer evidence for a material change.",
       "coverageGap": "HTTP access and search snippets are not status proof. Seller acceptance, title, transfer instruments, builder availability, and contract status remain unresolved for many records."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "York County parcel and deed entry points were checked for the new 849 Dillard candidate and refreshed 403 Wilson evidence. Public listing and record evidence supplied parcel identifiers and earlier transfer chronology, but official deed instruments, current title, liens, easements, restrictions, and transaction details were not established.",
+      "asOf": "2026-10-16",
+      "summary": "York County parcel, assessment, One Map, and deed entry points were checked and responded publicly. The two newly confirmed sales were reconciled from current Canopy MLS-fed closing histories; official deed instruments, current title, liens, easements, restrictions, and transaction details remain unresolved pending county recording and closing review.",
       "coverageGap": "Current ownership, title, liens, easements, restrictions, transaction type, and full deed instruments remain unresolved until official instrument and closing review."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "Rock Hill, York County, and City of York public permit and zoning entry points were checked. A City of Rock Hill report corroborates a 2021 HVAC change-out application for 849 Dillard, but final inspection, invoice, warranty, and exact installation date remain unresolved. Complete permit history, written zoning and separate-room rental authority remain unresolved for both new candidates.",
+      "asOf": "2026-10-16",
+      "summary": "Rock Hill and York County permit and zoning entry points were checked and responded publicly. Current official code evidence was reviewed for occupancy and rental-use context, but no new property-specific permit final, zoning interpretation, or written separate-room rental authorization was established.",
       "coverageGap": "Written zoning, occupancy, registration, parking, and room-lease authority plus complete permit scopes, finals, invoices, warranties, and inspection readiness remain required."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "York County One Map and FEMA public entry points were checked for the new candidates. No affirmative property-specific FEMA determination was established; commercial modeled risk for 403 Wilson is not treated as official FEMA evidence.",
+      "asOf": "2026-10-16",
+      "summary": "York County One Map, the official 2017 DFIRM feature service, and FEMA public entry points were checked and responded publicly. No new affirmative property-specific FEMA determination was established; prior zero-intersection or modeled results remain non-affirmative evidence.",
       "coverageGap": "A zero-result or modeled GIS result does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection, or insurer acceptance."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "The new 849 Dillard townhouse reports a mandatory $224.56 monthly association fee; fresh evidence reconfirmed $40 monthly for the already tracked 403 Wilson townhouse. No declarations, bylaws, amendments, rules, budgets, resale certificates, written whole-unit or separate-room rental decisions, assessment statements, fee schedules, master insurance, reserves, litigation, or parking rules were obtained, so both remain capped and blocked from recommendation.",
+      "asOf": "2026-10-16",
+      "summary": "Public searches for Manchester Village, Oakland Villas, and Cannon Village governing documents and rental rules did not produce controlling declarations, bylaws, amendments, budgets, resale certificates, or written whole-unit and separate-room rental decisions. Unknown authority, assessments, transfer or capital fees, insurance, reserves, litigation, parking, and builder charges remain recommendation blockers.",
       "coverageGap": "Unknown governing documents, transfer or capital fees, special assessments, insurance, reserves, litigation, parking, and separate rental authority block recommendation where an association exists."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "Current public Rock Hill rental evidence included an October median of $1,150 for one bedroom, plus visible one-bedroom asks around $1,150 to $1,550 before utilities and mandatory fees. The conservative $1,150 monthly private-unit planning benchmark was retained.",
+      "asOf": "2026-10-16",
+      "summary": "Current public Rock Hill one-bedroom rental surfaces were reviewed. Visible asking rents remained consistent with the existing conservative $1,150 monthly private-unit planning benchmark, which was retained.",
       "coverageGap": "Asking rent is not a signed lease; availability, deposits, mandatory fees, utilities, condition, and unit quality vary."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-15",
-      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh visible Rock Hill room asks included $750 shared-bath, $800 private-bath, $875, $950 private-bath, $1,000, and $1,200 studio-style examples; the conservative $850 monthly planning benchmark was retained.",
+      "asOf": "2026-10-16",
+      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh public Roomies, Furnished Finder, and SpareRoom evidence continued to show a broad range from lower-cost shared-bath rooms to roughly $800-$1,000 private-bath rooms, with higher furnished short-term examples. The conservative $850 monthly planning benchmark was retained.",
       "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand, or legal room-rental authority."
     }
   ],
