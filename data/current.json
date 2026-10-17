@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-16",
+  "asOf": "2026-10-17",
   "runStatus": "successful",
-  "researchMethod": "Public-only October 16 reconciliation: all 14 configured source-policy categories were audited; all 198 previously tracked marketed purchase primary URLs and all 14 configured room-comparable URLs were requested. Live national portals, brokerage and IDX, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent, and individual-room evidence was reviewed. Fresh positive Canopy MLS-fed sale evidence archived two stale active records. Newly surfaced inventory was pre-1980, one-bath, land-only, already tracked, or above the ceiling without credible acceptance evidence. Public search is not exhaustive MLS coverage.",
+  "researchMethod": "Public-only October 17 reconciliation: all 14 configured source-policy categories were audited; all 218 deduplicated purchase-source URLs and all 14 configured room-comparable URLs were requested. Live national portals, brokerage and IDX, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent, and individual-room evidence was reviewed. Fresh current evidence moved 3050 Bridgewater Road to pending, added one contingent townhouse and one scheduled judicial-auction lead, and excluded surfaced inventory that was pre-1980, one-bath, already sold, land-only, already tracked, or above the ceiling without credible acceptance evidence. Public search is not exhaustive MLS coverage.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -7478,7 +7478,7 @@
     {
       "id": "mls-4408474",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-23",
       "lastSeen": "2026-10-07",
       "lastChanged": "2026-10-16",
@@ -16797,7 +16797,7 @@
     {
       "id": "mls-4360238",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-29",
       "lastSeen": "2026-10-01",
       "lastChanged": "2026-10-16",
@@ -28439,15 +28439,15 @@
     {
       "id": "mls-4431369",
       "strategy": "private-purchase",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-06",
-      "lastChanged": "2026-10-06",
+      "lastSeen": "2026-10-17",
+      "lastChanged": "2026-10-17",
       "address": "3050 Bridgewater Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://citadelcofield.com/homedetails/3050-Bridgewater-Road-Rock-Hill-SC-29730/CAR4431369",
       "mls": "4431369",
       "parcelId": "5100000015",
-      "status": "active",
+      "status": "pending",
       "price": 250000,
       "originalPrice": 250000,
       "priceCutPercent": 0,
@@ -28462,13 +28462,13 @@
       "oneLevel": true,
       "privateBath": "yes",
       "roomRentalLegal": "not-applicable",
-      "daysOnMarket": 1,
+      "daysOnMarket": 9,
       "distanceMiles": 6.7,
       "driveMinutes": 14,
       "distanceAsOf": "2026-10-06",
       "distanceMethod": "Photon public geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.7 miles · about 14 minutes from the family reference property",
-      "summary": "An active $250,000 one-level private-living option with three bedrooms and no reported HOA. Exclusive occupancy can reserve the sole full bathroom for the family member, but the 1987 construction year, septic and well systems, current title, permits, system ages and physical condition remain unresolved.",
+      "summary": "A $250,000 one-level private-living option that is now pending or under contract. Exclusive occupancy can reserve the sole full bathroom for the family member, but the listing is no longer unrestricted active inventory and the 1987 construction year, septic and well systems, title, permits, system ages and physical condition remain unresolved.",
       "pros": [
         "$25,000 below the absolute offer ceiling",
         "One-level brick ranch within the verified driving-distance limit",
@@ -28477,6 +28477,7 @@
         "York County official parcel GIS corroborates the 1,010-square-foot size and 1987 construction year"
       ],
       "concerns": [
+        "Current brokerage evidence says pending or active under contract; treat the property as unavailable unless the contract falls through and the seller confirms renewed availability.",
         "The private-full-bath requirement is met only under the private-purchase strategy: the sole full bathroom must remain exclusive to the family occupant; a shared-room strategy is not underwritten.",
         "Built in 1987 and approaching the 40-year risk threshold; age-adjusted maintenance and capital reserves apply.",
         "The listing's remodeled language is limited to fresh paint and flooring and does not prove replacement of the roof, HVAC, water heater, electrical service, supply or waste plumbing, septic system, well equipment, crawlspace or structural components.",
@@ -28488,7 +28489,7 @@
         "The listing reports no HOA, but recorded covenants, road or shared-maintenance duties, special charges and title restrictions remain unresolved."
       ],
       "sourceConflicts": [
-        "A fresh Canopy-fed brokerage page reports an active listing, while older Homes.com and property-record pages still say not listed. The current MLS-fed active evidence is used pending direct seller confirmation."
+        "Current Coldwell Banker and Citadel Cofield pages report pending or active under contract, while Zillow still presents active marketing and Homes.com shows older off-market language. The stricter pending status is used."
       ],
       "hoa": {
         "exists": false,
@@ -28505,13 +28506,28 @@
           "date": "2026-10-05",
           "event": "Listed active under Canopy MLS 4431369",
           "price": 250000
+        },
+        {
+          "date": "2026-10-14",
+          "event": "Pending / active under contract on current public brokerage pages",
+          "price": 250000
         }
       ],
       "sources": [
         {
-          "label": "Citadel Cofield current Canopy MLS active status, price, layout, condition claims, utilities, roof type and HOA",
+          "label": "Coldwell Banker current pending status and October 14 update",
+          "url": "https://www.coldwellbankerhomes.com/sc/rock-hill/3050-bridgewater-rd/pid_74115699/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "Zillow current marketing-status conflict",
+          "url": "https://www.zillow.com/homedetails/3050-Bridgewater-Rd-Rock-Hill-SC-29730/11852570_zpid/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "Citadel Cofield current Canopy MLS active-under-contract status, price, layout, condition claims, utilities, roof type and HOA",
           "url": "https://citadelcofield.com/homedetails/3050-Bridgewater-Road-Rock-Hill-SC-29730/CAR4431369",
-          "accessed": "2026-10-06"
+          "accessed": "2026-10-17"
         },
         {
           "label": "Homes.com older property-record status conflict",
@@ -28560,6 +28576,17 @@
               "label": "New active public listing"
             }
           ]
+        },
+        {
+          "date": "2026-10-17",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "pending",
+              "label": "Current brokerage sources show pending / under contract"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
@@ -28577,8 +28604,8 @@
         "waterHeater": "Fuel, age, condition, permit history, invoice and warranty unknown"
       },
       "publicVerification": {
-        "asOf": "2026-10-06",
-        "marketingAttempt": "A current Canopy MLS-fed brokerage page identifies MLS 4431369 as active at $250,000. Older property-record pages show off-market language, so status must be confirmed directly before an offer; public discovery is not exhaustive MLS coverage.",
+        "asOf": "2026-10-17",
+        "marketingAttempt": "Current Coldwell Banker and Citadel Cofield pages identify MLS 4431369 as pending or active under contract after an October 14 update. Zillow still presents active marketing and Homes.com has older off-market language, so the stricter pending status is used; public discovery is not exhaustive MLS coverage.",
         "parcelAndDeed": "York County official parcel GIS matches parcel 5100000015 to 3050 Bridgewater Road, 1,010 finished square feet, year built 1987 and an August 28, 2026 transfer reference at book 22788 page 127 for $62,800. The public deed-search entry point was checked, but transaction type, current title, ownership, liens, easements, restrictions and full instrument contents were not verified.",
         "flood": "A parcel-intersection query against York County's official 2017 DFIRM layer returned no intersecting flood-hazard feature. This is not an affirmative FEMA determination, survey, drainage analysis or insurer acceptance.",
         "permits": [
@@ -31020,6 +31047,333 @@
           }
         ]
       }
+    },
+    {
+      "id": "mls-4423607",
+      "strategy": "shared-home",
+      "changeCategory": "new",
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "lastChanged": "2026-10-17",
+      "address": "4337 Macey Ln, Rock Hill, SC 29732",
+      "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/4337-Macey-Ln-29732/home/52072137",
+      "mls": "4423607",
+      "parcelId": "5890101157",
+      "status": "contingent",
+      "price": 235000,
+      "originalPrice": 235000,
+      "priceCutPercent": 0,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1480,
+      "pricePerSqft": 159,
+      "marketPricePerSqft": 207,
+      "yearBuilt": 2011,
+      "propertyType": "Two-story fee-simple townhouse in Pennington Place",
+      "hoaMonthly": 103.64,
+      "oneLevel": false,
+      "privateBath": "yes",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 36,
+      "distanceMiles": 2.7,
+      "driveMinutes": 8,
+      "distanceAsOf": "2026-10-17",
+      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceLabel": "2.7 miles · about 8 minutes from the family reference property",
+      "summary": "A nearby $235,000 two-suite townhouse with two full bathrooms and one main-level suite, but it is already contingent. Separate-room rental authority, controlling HOA documents, association charges beyond monthly dues, permit closeout, flood evidence, insurance, title and system condition remain unresolved.",
+      "pros": [
+        "$40,000 below the absolute offer ceiling",
+        "Verified public driving estimate is well inside the 30-mile limit",
+        "Two bedrooms and two full bathrooms support a private family suite while preserving one bedroom and full bath for a potential tenant",
+        "The listing describes one primary suite on the main level and a second upstairs suite",
+        "2011 construction carries a lower age reserve than older tracked homes"
+      ],
+      "concerns": [
+        "The listing is contingent, so it is not unrestricted active inventory; confirm backup-offer status and renewed availability before relying on it.",
+        "No controlling Pennington Place declaration, bylaws, amendments or written management decision was obtained. Whole-unit and separate-room rental authority are both unknown and block recommendation.",
+        "Rock Hill SF-A zoning material indicates no more than 25% of dwelling units may be rented, but property-specific eligibility, registration, occupancy, parking and separate-room leasing authority remain unresolved.",
+        "The public listing reports mandatory HOA dues of $103.64 monthly; special assessments, transfer or capital-contribution fees, insurance allocation, reserves, litigation and other recurring charges are unknown.",
+        "A 2021 HVAC permit is shown as issued, not affirmatively finaled. The installation date, final inspection, invoice, warranty and remaining life require documents.",
+        "The 2011 new-construction and trade permits are shown as completed, but roof, water-heater, electrical, supply plumbing, waste plumbing and current-condition evidence remain incomplete.",
+        "Flood-zone, drainage, title, easements, restrictions, insurance eligibility and independent inspection evidence remain unresolved.",
+        "Two assigned parking spaces are reported, but guest and tenant-parking rules and enforcement require HOA confirmation."
+      ],
+      "sourceConflicts": [
+        "Current public sources agree the property is under contract or contingent; wording differs between contingent and under contract, so the stricter non-active treatment is used."
+      ],
+      "hoa": {
+        "exists": true,
+        "wholeUnitRental": "unknown",
+        "roomRental": "unknown",
+        "evidence": [
+          "The public listing reports Pennington Place HOA dues of $103.64 monthly; no controlling governing document or written rental decision was obtained."
+        ],
+        "confidence": "low",
+        "followUp": "Obtain the declaration, bylaws, amendments, rules, budget, resale certificate, insurance, reserve and litigation disclosures; verify whole-unit and separate-room rental authority independently, plus special assessments, transfer or capital fees and parking rules."
+      },
+      "listingHistory": [
+        {
+          "date": "2026-09-11",
+          "event": "Listed under Canopy MLS 4423607",
+          "price": 235000
+        },
+        {
+          "date": "2026-09-16",
+          "event": "Contingent / under contract on current public listing pages",
+          "price": 235000
+        }
+      ],
+      "sources": [
+        {
+          "label": "Redfin current contingent status, price, dimensions, layout, HOA and parking",
+          "url": "https://www.redfin.com/SC/Rock-Hill/4337-Macey-Ln-29732/home/52072137",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "Realtor.com current under-contract status, MLS facts, two suites and permit history",
+          "url": "https://www.realtor.com/realestateandhomes-detail/4337-Macey-Ln_Rock-Hill_SC_29732_M56696-11915",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "York County official parcel feature service",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Parcels/FeatureServer/0",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "York County public deed search",
+          "url": "https://search.yorkdeeds.com/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "City of Rock Hill public permit portal",
+          "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "City of Rock Hill public zoning and code entry point",
+          "url": "https://www.cityofrockhill.com/departments/planning-and-development/planning-and-zoning",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "York County One Map public GIS",
+          "url": "https://onemap.yorkcountygov.com/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "FEMA Flood Map Service Center",
+          "url": "https://msc.fema.gov/portal/home",
+          "accessed": "2026-10-17"
+        }
+      ],
+      "changeHistory": [
+        {
+          "date": "2026-10-17",
+          "changes": [
+            {
+              "field": "listing",
+              "from": null,
+              "to": "added",
+              "label": "New contingent public listing"
+            }
+          ]
+        }
+      ],
+      "missingRuns": 0,
+      "listingDetails": {
+        "parcelId": "5890101157",
+        "zoning": "SF-A in current public listing/GIS evidence; the 25% rental cap and property-specific rental eligibility require written City interpretation",
+        "subdivision": "Pennington Place",
+        "sewer": "City sewer reported by the listing; connection, capacity and condition unverified",
+        "water": "City water reported by the listing; service line material and condition unverified",
+        "parking": "Two assigned spaces reported; guest and tenant rules require HOA confirmation",
+        "foundation": "Slab reported; condition and drainage unverified",
+        "roof": "Material, installation date, permit, warranty and condition unknown",
+        "hvac": "2021 HVAC permit shown as issued; final inspection, installed equipment, invoice, warranty and condition unverified",
+        "plumbing": "2011 new-construction plumbing permit shown complete; current supply and waste materials and condition unverified",
+        "waterHeater": "2011 construction-era evidence only; installation date, fuel, permit, warranty and current condition unknown"
+      },
+      "publicVerification": {
+        "asOf": "2026-10-17",
+        "marketingAttempt": "Current Redfin and Realtor.com pages identify MLS 4423607 as contingent or under contract at $235,000. It is retained as a possible backup opportunity, not unrestricted active inventory.",
+        "parcelAndDeed": "York County parcel and deed entry points were checked for parcel 5890101157; current title, liens, easements, restrictions, transfer chronology and full instrument contents were not independently verified.",
+        "flood": "York County One Map and FEMA public entry points were checked, but no affirmative property-specific flood determination, elevation evidence, drainage review or insurer acceptance was established.",
+        "permits": [
+          {
+            "jurisdiction": "City of Rock Hill",
+            "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+            "result": "Public listing evidence reports completed 2011 new-construction and trade permits and a 2021 HVAC permit shown as issued.",
+            "permitHeaders": [
+              "2011 new construction and trade permits — completed (listing evidence)",
+              "2021 HVAC permit — issued (listing evidence)"
+            ],
+            "caveat": "Listing-displayed permit history is not a final inspection, invoice, warranty or current-condition report. Obtain permit cards, scope and finals directly."
+          }
+        ]
+      }
+    },
+    {
+      "id": "auction-1186-shenandoah-circle",
+      "strategy": "shared-home",
+      "changeCategory": "new",
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "lastChanged": "2026-10-17",
+      "address": "1186 Shenandoah Cir, Rock Hill, SC 29730",
+      "sourceUrl": "https://www.brockandscott.com/foreclosure-sales/?_sft_foreclosure_state=sc&dir=asc&sort=address",
+      "mls": null,
+      "parcelId": "6190901003",
+      "status": "auction-scheduled",
+      "price": 192290,
+      "originalPrice": 192290,
+      "priceCutPercent": 0,
+      "beds": null,
+      "baths": 2.5,
+      "sqft": 1620,
+      "pricePerSqft": 119,
+      "marketPricePerSqft": 207,
+      "yearBuilt": 2004,
+      "propertyType": "Two-story single-family home; judicial foreclosure lead",
+      "hoaMonthly": 15,
+      "oneLevel": false,
+      "privateBath": "unknown",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 1,
+      "distanceMiles": 8.9,
+      "driveMinutes": 18,
+      "distanceAsOf": "2026-10-17",
+      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceLabel": "8.9 miles · about 18 minutes from the family reference property",
+      "summary": "A November 2 judicial-auction lead with a published $192,290 opening bid, not an ordinary marketed sale or guaranteed purchase price. Bedroom count, private-full-bath allocation, final sale availability, title, redemption, occupancy, access, condition, financing, buyer charges, HOA authority, permits and insurance remain unresolved.",
+      "pros": [
+        "Published opening bid is $82,710 below the absolute offer ceiling, although final price and charges are unknown",
+        "Verified public driving estimate is inside the 30-mile limit",
+        "Public property records report 2.5 bathrooms, 1,620 square feet and 2004 construction",
+        "The public foreclosure notice identifies a scheduled November 2 judicial sale and case number for follow-up"
+      ],
+      "concerns": [
+        "This is a scheduled foreclosure auction, not an active conventional listing. The opening bid is not a guaranteed purchase price, and no bid or modeled offer may exceed $275,000.",
+        "Bedroom count and private-full-bath allocation are not established; the family bedroom and private full bathroom requirement is unresolved.",
+        "Final sale roster, continuance or cancellation, upset-bid or redemption rights, title, liens, taxes, easements, restrictions, occupancy, possession, access, condition and closing requirements need attorney and official court confirmation.",
+        "Cash, financing, deposit, buyer premium, court, deed, transfer, association and other transaction-specific charges are unknown and must not be assumed zero.",
+        "The public property page reports $15 monthly HOA dues, but governing documents, rental rules, assessments, transfer or capital fees, reserves, insurance and litigation are unknown.",
+        "No property-specific permit scope or final was established for the roof, HVAC, water heater, electrical service, supply or waste plumbing, sewer, foundation or renovations.",
+        "Flood, drainage, structural condition, environmental condition, insurance eligibility and inspection access remain unresolved.",
+        "The 2023 $500 deed reference appears non-arm's-length and is not market-value evidence."
+      ],
+      "sourceConflicts": [
+        "The foreclosure notice shows a scheduled judicial sale while Zillow labels the property off market. These describe different channels; the record is treated only as a scheduled auction lead pending the official sale roster."
+      ],
+      "hoa": {
+        "exists": true,
+        "wholeUnitRental": "unknown",
+        "roomRental": "unknown",
+        "evidence": [
+          "Zillow's public property record reports HOA dues of $15 monthly; no controlling governing document or written rental decision was obtained."
+        ],
+        "confidence": "low",
+        "followUp": "Confirm the association, governing documents, whole-unit and separate-room rental authority, dues, assessments, transfer or capital fees, insurance, reserves, litigation and parking rules before treating room income as available."
+      },
+      "listingHistory": [
+        {
+          "date": "2004-07-30",
+          "event": "Public property record sale",
+          "price": 124544
+        },
+        {
+          "date": "2023-03-23",
+          "event": "Public property record deed transfer; transaction type unresolved",
+          "price": 500
+        },
+        {
+          "date": "2026-10-16",
+          "event": "Public foreclosure notice lists November 2 judicial sale",
+          "price": 192290
+        }
+      ],
+      "sources": [
+        {
+          "label": "Brock & Scott public foreclosure notice with sale date, case, opening bid and deed reference",
+          "url": "https://www.brockandscott.com/foreclosure-sales/?_sft_foreclosure_state=sc&dir=asc&sort=address",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "York County official Master in Equity sale-process entry point",
+          "url": "https://www.yorkcountysc.gov/294/Master-in-Equity",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "Zillow public property record for off-market status, size, baths, year and reported HOA",
+          "url": "https://www.zillow.com/homedetails/1186-Shenandoah-Cir-Rock-Hill-SC-29730/71258916_zpid/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "York County official parcel feature service",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Parcels/FeatureServer/0",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "York County public deed search",
+          "url": "https://search.yorkdeeds.com/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "York County public permit portal",
+          "url": "https://evolvepublic.yorkcountygov.com/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "York County One Map public GIS",
+          "url": "https://onemap.yorkcountygov.com/",
+          "accessed": "2026-10-17"
+        },
+        {
+          "label": "FEMA Flood Map Service Center",
+          "url": "https://msc.fema.gov/portal/home",
+          "accessed": "2026-10-17"
+        }
+      ],
+      "changeHistory": [
+        {
+          "date": "2026-10-17",
+          "changes": [
+            {
+              "field": "listing",
+              "from": null,
+              "to": "added",
+              "label": "New scheduled judicial-auction lead"
+            }
+          ]
+        }
+      ],
+      "missingRuns": 0,
+      "listingDetails": {
+        "parcelId": "6190901003",
+        "zoning": "Property-specific zoning and written room-rental interpretation unresolved",
+        "subdivision": "Holly Hills",
+        "sewer": "Public record indicates sewer service context; connection, capacity and condition unverified",
+        "water": "Public water context indicated; service-line material and condition unverified",
+        "parking": "Driveway/garage capacity and HOA or tenant rules unverified",
+        "foundation": "Type and structural condition unknown",
+        "roof": "Material, installation date, permit, warranty and condition unknown",
+        "hvac": "Equipment, installation date, permit, warranty and condition unknown",
+        "plumbing": "Supply and waste materials, age, permit history and condition unknown",
+        "waterHeater": "Fuel, installation date, permit, warranty and condition unknown"
+      },
+      "publicVerification": {
+        "asOf": "2026-10-17",
+        "marketingAttempt": "A public foreclosure notice identifies York County case 2025-CP-46-03801, a November 2, 2026 judicial sale and a $192,290 opening bid. The official Master in Equity entry point confirms the public sale process, but the final roster, continuance, cancellation and sale terms require official confirmation.",
+        "parcelAndDeed": "Public evidence identifies parcel 6190901003 and deed book/page 6201/99. York County parcel and deed entry points were checked, but current title, liens, taxes, easements, restrictions, transaction type and full instrument contents were not independently verified.",
+        "flood": "York County One Map and FEMA public entry points were checked, but no affirmative property-specific flood determination, elevation evidence, drainage review or insurer acceptance was established.",
+        "permits": [
+          {
+            "jurisdiction": "York County",
+            "url": "https://evolvepublic.yorkcountygov.com/",
+            "result": "Applicable public permit entry point checked; no property-specific scope or final inspection was established.",
+            "permitHeaders": [],
+            "caveat": "Missing or inaccessible records do not prove work was unpermitted or establish system installation dates. Obtain complete building, electrical, mechanical, plumbing and final-inspection records."
+          }
+        ]
+      }
     }
   ],
   "methodologySources": [
@@ -31136,8 +31490,9 @@
       "url": "https://www.homesteps.com/"
     },
     {
-      "label": "York County foreclosure sale rosters",
-      "url": "https://www.yorkcountysc.gov/294/Master-in-Equity"
+      "label": "York County official Master in Equity",
+      "url": "https://www.yorkcountysc.gov/294/Master-in-Equity",
+      "accessed": "2026-10-17"
     },
     {
       "label": "York County delinquent tax sales",
@@ -31165,7 +31520,8 @@
     },
     {
       "label": "HotPads Rock Hill one-bedroom rentals",
-      "url": "https://hotpads.com/rock-hill-sc/1-bedroom-apartments-for-rent"
+      "url": "https://hotpads.com/rock-hill-sc/1-bedroom-apartments-for-rent",
+      "accessed": "2026-10-17"
     },
     {
       "label": "RentCafe Rock Hill rentals",
@@ -31224,8 +31580,9 @@
       "url": "https://www.yorkcountygov.com/FAQ.aspx?QID=506"
     },
     {
-      "label": "Rock Hill individual-room inventory",
-      "url": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill"
+      "label": "SpareRoom current Rock Hill private-room inventory",
+      "url": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
+      "accessed": "2026-10-17"
     },
     {
       "label": "RentCafe Rock Hill market trends",
@@ -31249,6 +31606,21 @@
     {
       "label": "City of York public permit portal",
       "url": "https://evolve-public.infovisionsoftware.com/YorkCity/?portal=permit"
+    },
+    {
+      "label": "Brock & Scott South Carolina public foreclosure notices",
+      "url": "https://www.brockandscott.com/foreclosure-sales/?_sft_foreclosure_state=sc&dir=asc&sort=address",
+      "accessed": "2026-10-17"
+    },
+    {
+      "label": "Redfin 4337 Macey Lane current listing",
+      "url": "https://www.redfin.com/SC/Rock-Hill/4337-Macey-Ln-29732/home/52072137",
+      "accessed": "2026-10-17"
+    },
+    {
+      "label": "Coldwell Banker 3050 Bridgewater current status",
+      "url": "https://www.coldwellbankerhomes.com/sc/rock-hill/3050-bridgewater-rd/pid_74115699/",
+      "accessed": "2026-10-17"
     }
   ],
   "sourceAudit": [
@@ -31256,47 +31628,47 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com, and Movoto public inventory were reviewed. All 198 previously tracked marketed primary URLs were requested: 95 HTTP 200, two HTTP 301, 66 HTTP 403, and 35 HTTP 429. Fresh positive Canopy MLS-fed evidence confirmed that 2017 Bristol Parkway and 2033 Brer Rabbit Run had closed and should be archived. Newly surfaced inventory was pre-1980, one-bath, land-only, already tracked, or above the ceiling without credible acceptance evidence.",
-      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, redirects, blocks, rate limits, token-free shells, snippets, and stale pages are not independent status proof."
+      "asOf": "2026-10-17",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com, and Movoto public inventory were reviewed. All 218 deduplicated purchase-source URLs were requested: 101 HTTP 200, 79 HTTP 403, one HTTP 404, and 37 HTTP 429. Current evidence moved 3050 Bridgewater Road to pending, surfaced 4337 Macey Lane as contingent, and preserved the stricter status where portals conflicted. The only 404 was an already-sold record and was not treated as new removal evidence.",
+      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, blocks, rate limits, token-free shells, snippets, and stale pages are not independent status proof."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "Current Canopy MLS-fed brokerage and IDX pages corroborated the two closed sales and current status for the three qualified private-purchase options. Indexed local brokerage, listing-agent, and public builder pages were cross-checked. Lennar's rendered Cannon Village page showed seven current homes, all already tracked.",
+      "asOf": "2026-10-17",
+      "summary": "Current Canopy MLS-fed brokerage and IDX pages corroborated 3050 Bridgewater Road as pending, 4337 Macey Lane as contingent, and the current active status of the leading private-purchase options at 967 Church Road and 1109 Pinewood Road. Indexed local brokerage, listing-agent, and public builder pages were cross-checked.",
       "coverageGap": "IDX and syndicated records can lag or conflict; written seller, builder, association, and closing confirmation remain necessary before an offer."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "HUD Home Store, Fannie Mae HomePath, Freddie Mac HomeSteps, and public government-linked inventory entry points were checked. No independently verified eligible new GSE candidate with a current public price emerged in the target area.",
+      "asOf": "2026-10-17",
+      "summary": "HUD Home Store, Fannie Mae HomePath, Freddie Mac HomeSteps, and public government-linked inventory entry points were checked. HomeSteps showed South Carolina inventory but no eligible target-area candidate, and no independently verified eligible new HomePath or HUD candidate with a current public price emerged.",
       "coverageGap": "Public inventory and investor-first-look details were not fully retrievable; no credentialed feed was requested or used."
     },
     {
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity materials, foreclosure notices, and owner-listing pages were reviewed. The October tax-sale process and November foreclosure leads remain diligence-only because public opening bids, title clearance, redemption, access, occupancy, condition, private-bath layout, or financing evidence are incomplete. Other visible leads were pre-1980, one-bath, above the ceiling, or already tracked.",
-      "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing, occupancy, year-built, and private-bath checks."
+      "asOf": "2026-10-17",
+      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity materials, foreclosure notices, and owner-listing pages were reviewed. A public notice added 1186 Shenandoah Circle as a November 2 judicial-auction lead with a $192,290 opening bid; final roster, title, redemption, access, occupancy, condition, private-bath layout, financing and charges remain unresolved. A surfaced Soulsville FSBO lead had already sold, and other visible leads were ineligible or incomplete.",
+      "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing, occupancy, year-built, private-bath and all-charge checks."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "Auction.com, Hubzu, Xome, York County sale notices, and public builder inventory were checked. No eligible auction candidate with a public qualifying purchase price emerged. Xome's current Rock Hill leads lacked a qualifying two-full-bath layout or public opening bid. Lennar's live Cannon Village page showed seven available homes, all already tracked.",
-      "coverageGap": "Auction opening bids, premiums, title, redemption, condition, access, occupancy, and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status, and undisclosed fees."
+      "asOf": "2026-10-17",
+      "summary": "Auction.com, Hubzu, Xome, York County sale notices, and public builder inventory were checked. The scheduled 1186 Shenandoah Circle judicial sale was added as a gated auction lead; Hubzu's visible Rock Hill event had ended, and no other eligible auction candidate with complete public attributes and a qualifying price emerged. Public builder results produced no new eligible under-ceiling candidate beyond tracked inventory.",
+      "coverageGap": "Auction opening bids, premiums, title, redemption, condition, access, occupancy, final roster and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status and undisclosed fees."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "supported-manual-not-refreshed",
-      "asOf": "2026-10-16",
+      "asOf": "2026-10-17",
       "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained and public current sources were used for this run.",
       "coverageGap": "Manual saved-search coverage was unavailable this run."
     },
@@ -31304,7 +31676,7 @@
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-10-16",
+      "asOf": "2026-10-17",
       "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports, or direct MLS access.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure."
     },
@@ -31312,57 +31684,57 @@
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "Every previously tracked marketed primary URL was requested, current public search surfaces were reviewed, and results were deduplicated by MLS and normalized address. Fresh positive Canopy MLS-fed sale evidence archived 2017 Bristol Parkway after an October 1 closing at $275,000 and 2033 Brer Rabbit Run after an October 9 closing at $246,000. No other known record had sufficient positive current-status or transfer evidence for a material change.",
-      "coverageGap": "HTTP access and search snippets are not status proof. Seller acceptance, title, transfer instruments, builder availability, and contract status remain unresolved for many records."
+      "asOf": "2026-10-17",
+      "summary": "Every known purchase source was re-requested, current public search surfaces were reviewed, and results were deduplicated by MLS and normalized address. Fresh current evidence moved 3050 Bridgewater Road from active to pending, added 4337 Macey Lane as contingent, and added 1186 Shenandoah Circle only as a scheduled auction lead. No other known record had sufficient positive current-status or transfer evidence for a material change.",
+      "coverageGap": "HTTP access and search snippets are not status proof. Seller acceptance, title, transfer instruments, builder availability, auction roster and contract status remain unresolved for many records."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "York County parcel, assessment, One Map, and deed entry points were checked and responded publicly. The two newly confirmed sales were reconciled from current Canopy MLS-fed closing histories; official deed instruments, current title, liens, easements, restrictions, and transaction details remain unresolved pending county recording and closing review.",
-      "coverageGap": "Current ownership, title, liens, easements, restrictions, transaction type, and full deed instruments remain unresolved until official instrument and closing review."
+      "asOf": "2026-10-17",
+      "summary": "York County parcel, assessment, One Map, and deed entry points were checked and responded publicly. Parcel identifiers were established for the two new leads, and the foreclosure notice supplied a deed book/page reference; current instruments, transaction type, title, liens, easements and restrictions remain unresolved.",
+      "coverageGap": "Current ownership, title, liens, easements, restrictions, transaction type and full deed instruments remain unresolved until official instrument and closing review."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "Rock Hill and York County permit and zoning entry points were checked and responded publicly. Current official code evidence was reviewed for occupancy and rental-use context, but no new property-specific permit final, zoning interpretation, or written separate-room rental authorization was established.",
-      "coverageGap": "Written zoning, occupancy, registration, parking, and room-lease authority plus complete permit scopes, finals, invoices, warranties, and inspection readiness remain required."
+      "asOf": "2026-10-17",
+      "summary": "Rock Hill and York County permit and zoning entry points were checked. Listing evidence for 4337 Macey Lane showed completed 2011 construction/trade permits and a 2021 HVAC permit shown only as issued; no final was established. SF-A rental limits, property-specific eligibility and separate-room authority require written interpretation. No property-specific permit scope was established for the auction lead.",
+      "coverageGap": "Written zoning, occupancy, registration, parking and room-lease authority plus complete permit scopes, finals, invoices, warranties and inspection readiness remain required."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "York County One Map, the official 2017 DFIRM feature service, and FEMA public entry points were checked and responded publicly. No new affirmative property-specific FEMA determination was established; prior zero-intersection or modeled results remain non-affirmative evidence.",
-      "coverageGap": "A zero-result or modeled GIS result does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection, or insurer acceptance."
+      "asOf": "2026-10-17",
+      "summary": "York County One Map, the official 2017 DFIRM feature service, and FEMA public entry points were checked. No new affirmative property-specific FEMA determination was established for either new lead; prior zero-intersection or modeled results remain non-affirmative evidence.",
+      "coverageGap": "A zero-result or modeled GIS result does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection or insurer acceptance."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "Public searches for Manchester Village, Oakland Villas, and Cannon Village governing documents and rental rules did not produce controlling declarations, bylaws, amendments, budgets, resale certificates, or written whole-unit and separate-room rental decisions. Unknown authority, assessments, transfer or capital fees, insurance, reserves, litigation, parking, and builder charges remain recommendation blockers.",
-      "coverageGap": "Unknown governing documents, transfer or capital fees, special assessments, insurance, reserves, litigation, parking, and separate rental authority block recommendation where an association exists."
+      "asOf": "2026-10-17",
+      "summary": "Public searches for Pennington Place and Holly Hills did not produce controlling declarations, bylaws, amendments, budgets, resale certificates or written whole-unit and separate-room rental decisions. Reported monthly dues were captured, while special assessments, transfer or capital fees, insurance, reserves, litigation, parking and rental authority remain unknown and block recommendation.",
+      "coverageGap": "Unknown governing documents, transfer or capital fees, special assessments, insurance, reserves, litigation, parking and separate rental authority block recommendation where an association exists."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "Current public Rock Hill one-bedroom rental surfaces were reviewed. Visible asking rents remained consistent with the existing conservative $1,150 monthly private-unit planning benchmark, which was retained.",
-      "coverageGap": "Asking rent is not a signed lease; availability, deposits, mandatory fees, utilities, condition, and unit quality vary."
+      "asOf": "2026-10-17",
+      "summary": "Current public Rock Hill one-bedroom rental surfaces were reviewed. RentCafe reported current local inventory and HotPads showed visible one-bedroom asks around the prior range; the existing conservative $1,150 monthly private-unit planning benchmark was retained.",
+      "coverageGap": "Asking rent is not a signed lease; availability, deposits, mandatory fees, utilities, condition and unit quality vary."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-16",
-      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh public Roomies, Furnished Finder, and SpareRoom evidence continued to show a broad range from lower-cost shared-bath rooms to roughly $800-$1,000 private-bath rooms, with higher furnished short-term examples. The conservative $850 monthly planning benchmark was retained.",
-      "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand, or legal room-rental authority."
+      "asOf": "2026-10-17",
+      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh public SpareRoom and Roomies evidence showed visible Rock Hill asks from lower-cost shared-bath rooms through approximately $800-$1,000 private-bath rooms, with higher furnished medium-term examples. The conservative $850 monthly planning benchmark was retained.",
+      "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand or legal room-rental authority."
     }
   ],
   "importSummary": {
