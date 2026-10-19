@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-18",
+  "asOf": "2026-10-19",
   "runStatus": "successful",
-  "researchMethod": "Public-only October 18 reconciliation: all 14 configured source-policy categories were audited; all 220 known purchase-source URLs and all 14 configured room-comparable URLs were requested. A current Canopy MLS-fed index returned 163 filtered Rock Hill results and was reconciled against national portals, local brokerage and listing-agent pages, GSE, FSBO, auction, builder, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent and individual-room evidence. Four candidates were added, 27 asking prices changed, three listings had current return-to-market evidence, and no new positive removal evidence met the two-miss archive rule. Public search is not exhaustive MLS coverage.",
+  "researchMethod": "Public-only October 19 reconciliation: all 14 configured source-policy categories were audited; all 203 unique currently marketed purchase-source URLs and all 14 configured room-comparable URLs were requested. A current Canopy MLS-fed Rock Hill index returned 162 filtered results and was reconciled against national portals, local brokerage and listing-agent pages, public builder inventory, GSE, FSBO, auction, distressed, parcel and deed, permit and zoning, flood, HOA, private-unit-rent and individual-room evidence. One asking price changed, no eligible new candidates emerged, and no property reached the two-miss archive threshold. Public search is not exhaustive MLS coverage.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -11,7 +11,7 @@
     "medianDaysOnMarket": 50,
     "asOf": "2026-08",
     "sourceUrl": "https://www.realtor.com/realestateandhomes-search/Rock-Hill_SC/overview",
-    "note": "The August Realtor market aggregate is retained with its original period. October 18 public listing, brokerage and IDX, owner-listing, government, auction, builder, parcel, deed, permit, zoning, flood-layer, private-unit and private-room sources informed the daily checks; no updated area-wide aggregate was substituted."
+    "note": "The August Realtor market aggregate is retained with its original period. October 19 public listing, brokerage and IDX, owner-listing, government, auction, builder, parcel, deed, permit, zoning, flood-layer, private-unit and private-room sources informed the daily checks; no updated area-wide aggregate was substituted."
   },
   "properties": [
     {
@@ -42,8 +42,8 @@
       "daysOnMarket": 7,
       "distanceMiles": 3.1,
       "driveMinutes": 7,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "3.1 miles · about 7 minutes from the family reference property",
       "summary": "A relisted three-bedroom condominium at $149,900 under current Canopy MLS 4415401. Its 1979 construction falls outside the configured purchase-age band, and governing documents still do not establish whole-unit or room-rental authority.",
       "pros": [
@@ -226,8 +226,8 @@
       "daysOnMarket": 52,
       "distanceMiles": 19.7,
       "driveMinutes": 34,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "19.7 miles · about 34 minutes from the family reference property",
       "summary": "Lots of space and a likely main-floor private suite at a low price per square foot, offset by distance, age, and unresolved county room-rental rules.",
       "pros": [
@@ -326,8 +326,8 @@
       "daysOnMarket": 108,
       "distanceMiles": 7.5,
       "driveMinutes": 15,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.5 miles · about 15 minutes from the family reference property",
       "summary": "Current Canopy-fed sources show active under contract at $259,900 after a $15,100 reduction. The completed one-level four-bedroom home has a documented private primary bathroom and no HOA, but it is not an open active opportunity unless the contract fails; written room-rental authority remains a gate.",
       "pros": [
@@ -616,8 +616,8 @@
       "daysOnMarket": 177,
       "distanceMiles": 5.7,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.7 miles · about 13 minutes from the family reference property",
       "summary": "Current Realtor evidence presents the home as active at $300,000, but its 1947 construction remains outside the configured age band and a $25,000 seller discount is required to meet the absolute offer ceiling.",
       "pros": [
@@ -764,8 +764,8 @@
       "daysOnMarket": 52,
       "distanceMiles": 7.9,
       "driveMinutes": 17,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.9 miles · about 17 minutes from the family reference property",
       "summary": "Current public IDX inventory shows under contract with showings at $269,999; older for-sale portal pages conflict. Newer construction and no HOA reduce maintenance and association risk, although the bedroom count, private bathroom, and room-rental structure need verification.",
       "pros": [
@@ -904,8 +904,8 @@
       "daysOnMarket": 91,
       "distanceMiles": 4.6,
       "driveMinutes": 10,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.6 miles · about 10 minutes from the family reference property",
       "summary": "A 4-bedroom manufactured home at $279,000 that is now contingent. It would still require a $4,000 seller discount to reach the offer ceiling if it returns to active marketing; private-bath, title, foundation, septic, insurance, and system evidence remain unresolved.",
       "pros": [
@@ -1083,8 +1083,8 @@
       "daysOnMarket": 97,
       "distanceMiles": 3.7,
       "driveMinutes": 9,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "3.7 miles · about 9 minutes from the family reference property",
       "summary": "A simple private-living purchase at a low acquisition cost, but the listing is now under contract and HOA charges, governing documents, and financing details remain unresolved.",
       "pros": [
@@ -1214,8 +1214,8 @@
       "daysOnMarket": 45,
       "distanceMiles": 4.9,
       "driveMinutes": 11,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "A new, one-level Rock Hill home reduced to $260,000 with a documented private primary bathroom. Separate-room rental authority, final inspection, certificate of occupancy, builder charges, and construction documentation remain unresolved.",
       "pros": [
@@ -1366,8 +1366,8 @@
       "daysOnMarket": 38,
       "distanceMiles": 6,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.0 miles · about 14 minutes from the family reference property",
       "summary": "A one-level 2017 home now $10,000 below the offer ceiling with a documented private primary suite and manageable reported annual HOA dues. Room-leasing authority and the association's controlling documents remain recommendation gates.",
       "pros": [
@@ -1486,7 +1486,7 @@
     {
       "id": "mls-4405608",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-14",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -1511,8 +1511,8 @@
       "daysOnMarket": 44,
       "distanceMiles": 7.1,
       "driveMinutes": 15,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.1 miles · about 15 minutes from the family reference property",
       "summary": "A compact one-level brick ranch reduced to $239,000. The private full-bath arrangement, legal room-rental structure, and ages of major systems are not documented, so it remains a verification candidate rather than a recommendation.",
       "pros": [
@@ -1663,8 +1663,8 @@
       "daysOnMarket": 37,
       "distanceMiles": 5.4,
       "driveMinutes": 12,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.4 miles · about 12 minutes from the family reference property",
       "summary": "A one-level FSBO reduced to $110,000 with one bedroom and one full bathroom. It is excluded by the pre-1980 construction rule, and title, condition, financing, system ages, permits, and transaction terms remain unresolved.",
       "pros": [
@@ -1798,8 +1798,8 @@
       "daysOnMarket": 120,
       "distanceMiles": 6.5,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.5 miles · about 14 minutes from the family reference property",
       "summary": "A one-level three-bedroom home below the ceiling with a documented private primary bath. Older systems, property-specific legal room-rental authority, parking capacity, and official records remain unresolved.",
       "pros": [
@@ -1909,8 +1909,8 @@
       "daysOnMarket": 29,
       "distanceMiles": 6.3,
       "driveMinutes": 15,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.3 miles · about 15 minutes from the family reference property",
       "summary": "A one-level three-bedroom home well below the ceiling with public utilities and no reported HOA. The family occupant's private full bath and legal room-rental structure are not documented.",
       "pros": [
@@ -2339,8 +2339,8 @@
       "daysOnMarket": 26,
       "distanceMiles": 4.3,
       "driveMinutes": 11,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.3 miles · about 11 minutes from the family reference property",
       "summary": "A one-level home at the price ceiling with a two-car garage and low reported annual HOA dues. Current Realtor inventory presents it as contingent, while a direct detail page still lags as active; private-bath and association room-rental authority remain unknown.",
       "pros": [
@@ -2499,8 +2499,8 @@
       "daysOnMarket": 32,
       "distanceMiles": 8.1,
       "driveMinutes": 16,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "8.1 miles · about 16 minutes from the family reference property",
       "summary": "A one-level manufactured home on 1.68 acres now pending at $239,900. Financing, title, private-bath layout, well and septic capacity, major systems, and room-rental authority remain unresolved if the contract returns to market.",
       "pros": [
@@ -2719,8 +2719,8 @@
       "daysOnMarket": 40,
       "distanceMiles": 4.9,
       "driveMinutes": 11,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "This completed one-level new build at the maximum offer price has an explicitly described en-suite bath. The listing is now pending, so it is retained for tracking but is not a current purchase recommendation; separate-room rental authority, final permit closeout, and mandatory builder fees remain unresolved.",
       "pros": [
@@ -2855,7 +2855,7 @@
       }
     },
     {
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-17",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -2976,8 +2976,8 @@
       },
       "distanceMiles": 4.4,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.4 miles · about 11 minutes from the family reference property",
       "changeHistory": [
         {
@@ -3040,7 +3040,7 @@
       }
     },
     {
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-17",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -3148,8 +3148,8 @@
       },
       "distanceMiles": 6.9,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.9 miles · about 14 minutes from the family reference property",
       "changeHistory": [
         {
@@ -3316,8 +3316,8 @@
       },
       "distanceMiles": 10,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "10.0 miles · about 20 minutes from the family reference property",
       "changeHistory": [
         {
@@ -3691,8 +3691,8 @@
       },
       "distanceMiles": 2.2,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.2 miles · about 9 minutes from the family reference property",
       "changeHistory": [
         {
@@ -3938,7 +3938,7 @@
     {
       "id": "fsbo-938-e-white-st",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-15",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -3963,8 +3963,8 @@
       "daysOnMarket": 24,
       "distanceMiles": 6.8,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.8 miles · about 14 minutes from the family reference property",
       "summary": "An in-city FSBO below the ceiling with three bedrooms, two baths, parking, and two advertised parcels. The private-bath layout and legal residential and room-rental use must be resolved because the listing reports industrial zoning.",
       "pros": [
@@ -4063,7 +4063,7 @@
     {
       "id": "mls-4399533",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -4088,8 +4088,8 @@
       "daysOnMarket": 45,
       "distanceMiles": 6.4,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.4 miles · about 14 minutes from the family reference property",
       "summary": "A completed one-level new build currently active at $259,500 in today's Canopy MLS-fed index. The August contract release is now corroborated by active Zillow and Redfin pages; permit closeout, builder fees and room-rental authority remain unresolved.",
       "pros": [
@@ -4287,8 +4287,8 @@
       "daysOnMarket": 228,
       "distanceMiles": 6.9,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.9 miles · about 14 minutes from the family reference property",
       "summary": "A completed one-level new build $10,100 below the ceiling after roughly $35,000 of list-price reductions and extended market exposure. The required private full bathroom allocation, room-rental authority, final permit closeout, and builder fees remain unresolved. The listing is now contingent, so it is retained for tracking but is not a current purchase recommendation.",
       "pros": [
@@ -4632,8 +4632,8 @@
       "daysOnMarket": 57,
       "distanceMiles": 5.7,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.7 miles · about 13 minutes from the family reference property",
       "summary": "A one-level 2026 home $75,000 below the ceiling with a documented private owner suite and no reported HOA. The low price reflects Made It Home owner-occupancy, income, lender, 15-year deed, and resale restrictions; buyer eligibility and separate-room leasing authority are unresolved and block recommendation.",
       "pros": [
@@ -4769,8 +4769,8 @@
       "daysOnMarket": 70,
       "distanceMiles": 5.7,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.7 miles · about 13 minutes from the family reference property",
       "summary": "A one-level 2026 Made It Home property $75,000 below the ceiling with a documented private owner suite, now pending. Buyer eligibility, deed restrictions, room leasing, and final permit closeout remain unresolved.",
       "pros": [
@@ -4907,8 +4907,8 @@
       "daysOnMarket": 7,
       "distanceMiles": 7.9,
       "driveMinutes": 17,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.9 miles · about 17 minutes from the family reference property",
       "summary": "A one-level Made It Home property $75,000 below the ceiling with a documented private owner suite, now shown pending. Buyer eligibility, deed restrictions, permit closeout, room leasing, and contract availability remain unresolved.",
       "pros": [
@@ -5042,8 +5042,8 @@
       "daysOnMarket": 7,
       "distanceMiles": 7.4,
       "driveMinutes": 16,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.4 miles · about 16 minutes from the family reference property",
       "summary": "A one-level Made It Home property now shown pending at $200,000, with a documented private owner suite. Buyer eligibility, deed restrictions, room leasing, final permit closeout, certificate of occupancy, and the pending transaction remain unresolved.",
       "pros": [
@@ -5306,8 +5306,8 @@
       "daysOnMarket": 100,
       "distanceMiles": 7.6,
       "driveMinutes": 17,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.6 miles · about 17 minutes from the family reference property",
       "summary": "A two-bedroom townhouse $3,000 below the offer ceiling with roughly three months of market exposure. It has stairs, private-bath evidence is not explicit, and governing-document evidence for whole-unit and individual-room rentals is unavailable, invoking the strict condo cap.",
       "pros": [
@@ -5394,7 +5394,7 @@
     {
       "id": "mls-4408470",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-21",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -5419,8 +5419,8 @@
       "daysOnMarket": 34,
       "distanceMiles": 2.9,
       "driveMinutes": 11,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "2.9 miles · about 11 minutes from the family reference property",
       "summary": "A 2003 three-bedroom townhouse reduced to $226,000. The price leaves room below the ceiling, but square-footage displays conflict across public records and HOA rental authority remains unknown.",
       "pros": [
@@ -5603,8 +5603,8 @@
       "daysOnMarket": 30,
       "distanceMiles": 2.9,
       "driveMinutes": 11,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "2.9 miles · about 11 minutes from the family reference property",
       "summary": "A 2003 end-unit three-bedroom townhouse now $35,000 below the ceiling. Current brokerage inventory supports the reduced price, but HOA rental rules and private-bath allocation remain unknown.",
       "pros": [
@@ -5745,7 +5745,7 @@
     {
       "id": "mls-4389196",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-21",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -5770,8 +5770,8 @@
       "daysOnMarket": 65,
       "distanceMiles": 5.1,
       "driveMinutes": 12,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.1 miles · about 12 minutes from the family reference property",
       "summary": "A 2001 three-bedroom townhouse at $248,900 with no HOA reported. The marketing claims renovations, including roof work, but permits, invoices, warranties, private-bath allocation, and recorded covenants remain unresolved.",
       "pros": [
@@ -5915,8 +5915,8 @@
       "daysOnMarket": 27,
       "distanceMiles": 4.8,
       "driveMinutes": 10,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.8 miles · about 10 minutes from the family reference property",
       "summary": "Now shown pending at $270,000 in current Newport Lakes IDX inventory. Retained for tracking, not as an immediately available purchase. Private-bath evidence, controlling rental authority, mandatory fees and property-specific diligence remain unresolved.",
       "pros": [
@@ -6027,7 +6027,7 @@
     {
       "id": "mls-4398665",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-21",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -6052,8 +6052,8 @@
       "daysOnMarket": 56,
       "distanceMiles": 7.8,
       "driveMinutes": 17,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.8 miles · about 17 minutes from the family reference property",
       "summary": "A 2005 two-bedroom townhouse now at $245,000. Public listing evidence describes a primary en-suite, but only one rentable bedroom remains after reserving it and HOA room-rental authority is unknown.",
       "pros": [
@@ -6192,8 +6192,8 @@
       "daysOnMarket": 80,
       "distanceMiles": 5.2,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.2 miles · about 14 minutes from the family reference property",
       "summary": "A 2004 two-bedroom townhouse reduced to $229,900. The price is attractive, but only one rentable bedroom remains after reserving the family suite and association room-rental authority is unknown.",
       "pros": [
@@ -6331,8 +6331,8 @@
       "daysOnMarket": 260,
       "distanceMiles": 4.1,
       "driveMinutes": 11,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.1 miles · about 11 minutes from the family reference property",
       "summary": "A one-level short-sale listing now shown at $250,000 after prolonged exposure. The price is below the ceiling, but lender approval, private-bath layout, HOA rental authority, assessments, title, condition, and transaction timing remain unresolved.",
       "pros": [
@@ -6517,8 +6517,8 @@
       "daysOnMarket": 121,
       "distanceMiles": 6.6,
       "driveMinutes": 15,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.6 miles · about 15 minutes from the family reference property",
       "summary": "A one-level 2022 home at $274,900 after two reductions from $285,000. The split-bedroom layout and prior rental history support operational interest, but a private full bathroom, room-rental authority, current system documentation, and fees remain unresolved.",
       "pros": [
@@ -6690,8 +6690,8 @@
       "daysOnMarket": 102,
       "distanceMiles": 6.1,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.1 miles · about 13 minutes from the family reference property",
       "summary": "A one-level two-bedroom townhouse at $224,900 with no HOA reported and a 2022 electrical permit reference. Renovation and newer-window claims are not proof of system replacement, and the private-bath layout remains unverified.",
       "pros": [
@@ -6814,8 +6814,8 @@
       "daysOnMarket": 66,
       "distanceMiles": 6.1,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.1 miles · about 13 minutes from the family reference property",
       "summary": "A one-level two-bedroom townhouse at $224,900 with no HOA reported. The price is well below the ceiling, but fee-simple title, private-bath layout, room-rental authority, permit scope, and system ages remain unresolved.",
       "pros": [
@@ -6913,7 +6913,7 @@
     {
       "id": "mls-4395375",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -6938,8 +6938,8 @@
       "daysOnMarket": 65,
       "distanceMiles": 9.8,
       "driveMinutes": 20,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "9.8 miles · about 20 minutes from the family reference property",
       "summary": "A one-level 1997 home now asking $260,000 after four documented reductions from $285,000. Current Zillow, Redfin and Canopy MLS-fed evidence agrees on the new price; private-bath allocation, room-rental authority and system ages remain unresolved.",
       "pros": [
@@ -7285,7 +7285,7 @@
     {
       "id": "mls-4416830",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -7310,8 +7310,8 @@
       "daysOnMarket": 10,
       "distanceMiles": 7,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.0 miles · about 14 minutes from the family reference property",
       "summary": "A new one-level three-bedroom home at $260,000 with a split-bedroom layout. The listing describes a private primary suite, but an ensuite full bathroom, final permit closeout, warranties, and rental authority remain unverified.",
       "pros": [
@@ -7455,8 +7455,8 @@
       "daysOnMarket": 35,
       "distanceMiles": 3.8,
       "driveMinutes": 9,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "3.8 miles · about 9 minutes from the family reference property",
       "summary": "An active, one-level two-bedroom condominium reduced to $227,500. Two full bathrooms and a primary suite are listed, but an ensuite full bath, HOA dues and fees, assessments, and separate-room rental authority remain unverified.",
       "pros": [
@@ -7596,8 +7596,8 @@
       "daysOnMarket": 15,
       "distanceMiles": 6.4,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.4 miles · about 13 minutes from the family reference property",
       "summary": "A newly listed, one-level two-bedroom condominium at $135,000 with $145 monthly HOA dues. The two-full-bath layout is promising, but private-bath separation, governing documents, assessments, transaction fees, and separate-room rental authority remain unknown.",
       "pros": [
@@ -7919,8 +7919,8 @@
       "daysOnMarket": 81,
       "distanceMiles": 3.8,
       "driveMinutes": 10,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "3.8 miles · about 10 minutes from the family reference property",
       "summary": "An active 2005 three-bedroom townhouse reduced to $272,000, now $3,000 below the offer ceiling. HOA dues, private-bath layout, governing documents, assessments, transaction fees, and separate-room rental authority remain unknown.",
       "pros": [
@@ -8061,8 +8061,8 @@
       "daysOnMarket": 160,
       "distanceMiles": 7,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.0 miles · about 14 minutes from the family reference property",
       "summary": "An active one-level 2022 home at the offer ceiling after a $10,000 cumulative reduction and extended exposure. The private-bath layout and unrelated-room leasing authority remain unresolved.",
       "pros": [
@@ -8192,8 +8192,8 @@
       "daysOnMarket": 293,
       "distanceMiles": 7.7,
       "driveMinutes": 17,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "An active two-bedroom townhouse at $249,900 after a $20,000 cumulative reduction and long exposure. The $222 monthly HOA, private-bath layout, governing documents, assessments, transaction fees, and separate-room rental authority require written verification.",
       "pros": [
@@ -8326,8 +8326,8 @@
       "daysOnMarket": 88,
       "distanceMiles": 3.8,
       "driveMinutes": 10,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "3.8 miles · about 10 minutes from the family reference property",
       "summary": "A contingent 2005 townhouse at $249,000 after a $20,900 cumulative reduction. The listing reports an ensuite, but association whole-unit and separate-room rental authority, assessments, transaction fees, and contract availability remain unresolved.",
       "pros": [
@@ -8454,8 +8454,8 @@
       "daysOnMarket": 92,
       "distanceMiles": 2.7,
       "driveMinutes": 7,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "2.7 miles · about 7 minutes from the family reference property",
       "summary": "A pending two-bedroom, two-full-bath townhouse at $233,000 after two reductions. Private-bath separation, HOA dues and fees, governing documents, assessments, separate-room rental authority, and contract availability remain unresolved.",
       "pros": [
@@ -8563,7 +8563,7 @@
     {
       "id": "mls-4412274",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-24",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -8588,8 +8588,8 @@
       "daysOnMarket": 39,
       "distanceMiles": 6.5,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.5 miles · about 13 minutes from the family reference property",
       "summary": "A one-level two-bedroom condominium now reported active under contract at $127,000. Current listing text says both bedrooms have private en-suite bathrooms, but controlling rental documents, assessments, transaction fees, and separate-room authority remain unknown.",
       "pros": [
@@ -8768,8 +8768,8 @@
       "daysOnMarket": 68,
       "distanceMiles": 6.5,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.5 miles · about 13 minutes from the family reference property",
       "summary": "An active low-cost two-bedroom condo with two full bathrooms and mandatory $145 monthly HOA dues. The prior snapshot's street number was corrected from 1626 to 1656 using MLS 4396627; controlling HOA rental authority and the private-bath allocation remain unresolved.",
       "pros": [
@@ -8948,8 +8948,8 @@
       "daysOnMarket": 117,
       "distanceMiles": 6.6,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.6 miles · about 13 minutes from the family reference property",
       "summary": "An active one-level two-bedroom condominium at $135,000 with two full bathrooms and $145 monthly HOA dues. Private-bath separation, controlling rental documents, assessments, transaction fees, and separate-room authority remain unknown.",
       "pros": [
@@ -9057,7 +9057,7 @@
     {
       "id": "mls-4345351",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-24",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -9082,8 +9082,8 @@
       "daysOnMarket": 17,
       "distanceMiles": 3.8,
       "driveMinutes": 10,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "3.8 miles · about 10 minutes from the family reference property",
       "summary": "An active two-suite townhouse now asking $239,800. The primary suite and a second full bath are documented, but HOA whole-unit and individual-room rental authority, fee schedules, parking and system proof remain unresolved.",
       "pros": [
@@ -9286,8 +9286,8 @@
       "daysOnMarket": 46,
       "distanceMiles": 5.2,
       "driveMinutes": 14,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.2 miles · about 14 minutes from the family reference property",
       "summary": "A 2004 two-bedroom townhouse at $250,000 with two full bathrooms, one half bathroom, and reported 2021 HVAC replacement. Private-bath separation and controlling whole-unit and room-rental authority remain unknown.",
       "pros": [
@@ -9402,8 +9402,8 @@
       "daysOnMarket": 140,
       "distanceMiles": 20.5,
       "driveMinutes": 34,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "20.5 miles · about 34 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Richburg, listed at $262,000 under Canopy MLS 4361997. Built in 2023; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -9493,8 +9493,8 @@
       "daysOnMarket": 26,
       "distanceMiles": 5.6,
       "driveMinutes": 15,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.6 miles · about 15 minutes from the family reference property",
       "summary": "An active one-level 1983 house now publicly listed at $274,000, $1,000 below the absolute offer ceiling. The private full-bath layout, local room-rental authority, system ages, permits, parcel and flood readback, and insurance remain unresolved.",
       "pros": [
@@ -9644,8 +9644,8 @@
       "daysOnMarket": 77,
       "distanceMiles": 28.7,
       "driveMinutes": 52,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "28.7 miles · about 52 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $279,999 under Canopy MLS 4385631. Built in 2004; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -9737,8 +9737,8 @@
       "daysOnMarket": 6,
       "distanceMiles": 21.4,
       "driveMinutes": 37,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "21.4 miles · about 37 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $275,000 under Canopy MLS 4415810. Built in 1986; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -9829,8 +9829,8 @@
       "daysOnMarket": 10,
       "distanceMiles": 12.5,
       "driveMinutes": 27,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "12.5 miles · about 27 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $265,000 under Canopy MLS 4415800. Built in 2011; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -9932,8 +9932,8 @@
       "daysOnMarket": 6,
       "distanceMiles": 27.3,
       "driveMinutes": 45,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "27.3 miles · about 45 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $255,000 under Canopy MLS 4416409. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10024,8 +10024,8 @@
       "daysOnMarket": 23,
       "distanceMiles": 23.9,
       "driveMinutes": 45,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "23.9 miles · about 45 minutes from the family reference property",
       "summary": "4-bedroom, 2-bath single family residence in Chester, listed at $269,900 under Canopy MLS 4410280. Built in 1998; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10115,8 +10115,8 @@
       "daysOnMarket": 38,
       "distanceMiles": 12.2,
       "driveMinutes": 22,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "12.2 miles · about 22 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in York, listed at $259,000 under Canopy MLS 4400785. Built in 2023; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10218,8 +10218,8 @@
       "daysOnMarket": 47,
       "distanceMiles": 28.5,
       "driveMinutes": 47,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "28.5 miles · about 47 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $219,900 under Canopy MLS 4403298. Built in 2024; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10307,10 +10307,10 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 29,
       "distanceMiles": 26,
-      "driveMinutes": 41,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
-      "distanceLabel": "26.0 miles · about 41 minutes from the family reference property",
+      "driveMinutes": 43,
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceLabel": "26.0 miles · about 43 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Fort Lawn, listed at $249,900 under Canopy MLS 4409144. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
         "3 bedrooms and 2 bathrooms are reported",
@@ -10400,8 +10400,8 @@
       "daysOnMarket": 66,
       "distanceMiles": 20.1,
       "driveMinutes": 32,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "20.1 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Clover, listed at $275,000 under Canopy MLS 4383144. Built in 2021; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10502,8 +10502,8 @@
       "daysOnMarket": 32,
       "distanceMiles": 28.2,
       "driveMinutes": 49,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "28.2 miles · about 49 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $285,000 under Canopy MLS 4408682. Built in 2017; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10594,8 +10594,8 @@
       "daysOnMarket": 30,
       "distanceMiles": 5.4,
       "driveMinutes": 12,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.4 miles · about 12 minutes from the family reference property",
       "summary": "Current public IDX inventory shows under contract with showings while an older Trulia direct page still says active; the stricter status is retained. A one-level 2003 manufactured doublewide now one dollar below the $275,000 ceiling. The listing expressly describes an owner's suite with a private bath; room-rental authority, title and affixture, well/septic, insurance, and system evidence remain unresolved.",
       "pros": [
@@ -10755,8 +10755,8 @@
       "daysOnMarket": 15,
       "distanceMiles": 7.1,
       "driveMinutes": 15,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.1 miles · about 15 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Rock Hill, listed at $284,900 under Canopy MLS 4415041. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10857,8 +10857,8 @@
       "daysOnMarket": 50,
       "distanceMiles": 12.9,
       "driveMinutes": 25,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "12.9 miles · about 25 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Fort Mill, listed at $254,899 under Canopy MLS 4401644. Built in 1997; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10960,8 +10960,8 @@
       "daysOnMarket": 103,
       "distanceMiles": 18.4,
       "driveMinutes": 32,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "18.4 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Charlotte, listed at $279,899 under Canopy MLS 4383749. Built in 2004; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11052,8 +11052,8 @@
       "daysOnMarket": 16,
       "distanceMiles": 28.8,
       "driveMinutes": 48,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "28.8 miles · about 48 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $250,000 under Canopy MLS 4414991. Built in 2022; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11142,8 +11142,8 @@
       "daysOnMarket": 110,
       "distanceMiles": 24.1,
       "driveMinutes": 43,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "24.1 miles · about 43 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Chester, listed at $280,000 under Canopy MLS 4364429. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11233,8 +11233,8 @@
       "daysOnMarket": 66,
       "distanceMiles": 9.6,
       "driveMinutes": 20,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "9.6 miles · about 20 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Fort Mill, listed at $245,000 under Canopy MLS 4395888. Built in 1984; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11336,8 +11336,8 @@
       "daysOnMarket": 17,
       "distanceMiles": 26.4,
       "driveMinutes": 44,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "26.4 miles · about 44 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $265,000 under Canopy MLS 4408608. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11426,8 +11426,8 @@
       "daysOnMarket": 118,
       "distanceMiles": 16.8,
       "driveMinutes": 30,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "16.8 miles · about 30 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in Charlotte, listed at $271,500 under Canopy MLS 4377551. Built in 2004; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11518,8 +11518,8 @@
       "daysOnMarket": 132,
       "distanceMiles": 14.6,
       "driveMinutes": 28,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "14.6 miles · about 28 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in Fort Mill, listed at $285,000 under Canopy MLS 4372101. Built in 2006; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11622,8 +11622,8 @@
       "daysOnMarket": 31,
       "distanceMiles": 6.7,
       "driveMinutes": 15,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.7 miles · about 15 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in Fort Mill, listed at $272,500 under Canopy MLS 4408718. Built in 2006; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11725,8 +11725,8 @@
       "daysOnMarket": 24,
       "distanceMiles": 27.7,
       "driveMinutes": 46,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "27.7 miles · about 46 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath single family residence in Gastonia, listed at $260,000 under Canopy MLS 4410688. Built in 2019; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11816,8 +11816,8 @@
       "daysOnMarket": 65,
       "distanceMiles": 28.1,
       "driveMinutes": 46,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "28.1 miles · about 46 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Lancaster, listed at $283,990 under Canopy MLS 4398050. Built in 2025; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11908,8 +11908,8 @@
       "daysOnMarket": 23,
       "distanceMiles": 15.7,
       "driveMinutes": 31,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "15.7 miles · about 31 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $239,500 under Canopy MLS 4407173. Built in 1995; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12015,8 +12015,8 @@
       "daysOnMarket": 47,
       "distanceMiles": 14.3,
       "driveMinutes": 24,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "14.3 miles · about 24 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in Clover, listed at $284,995 under Canopy MLS 4399575. Built in 2008; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12096,7 +12096,7 @@
     {
       "id": "mls-4408246",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-24",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -12121,8 +12121,8 @@
       "daysOnMarket": 24,
       "distanceMiles": 3.6,
       "driveMinutes": 9,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "3.6 miles · about 9 minutes from the family reference property",
       "summary": "A 2006 three-bedroom, three-bath townhouse now asking $282,900. Reaching the hard $275,000 offer ceiling requires a $7,900, or 2.8%, seller discount; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12248,8 +12248,8 @@
       "daysOnMarket": 47,
       "distanceMiles": 27.8,
       "driveMinutes": 46,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "27.8 miles · about 46 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $225,000 under Canopy MLS 4394223. Built in 2015; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12381,7 +12381,7 @@
         }
       ],
       "changeHistory": [],
-      "missingRuns": 0,
+      "missingRuns": 1,
       "listingDetails": {
         "lotSize": "0.15 acres",
         "garageSpaces": 2,
@@ -12391,8 +12391,8 @@
         "subdivision": "Basildon"
       },
       "publicVerification": {
-        "asOf": "2026-09-19",
-        "marketingAttempt": "Primary public listing URL requested September 15. HTTP success or a token-free OneHome shell does not independently establish current marketing status, price, or transfer chronology; prior source-backed facts remain pending direct reconciliation. Primary public URL requested 2026-09-19: HTTP 200. This access result alone does not establish current price, status, or transfer chronology. Earlier source-backed facts are retained pending direct reconciliation. OneHome returned a token-free shell without listing details.",
+        "asOf": "2026-10-19",
+        "marketingAttempt": "The October 19 current Rock Hill IDX result set did not include MLS 4372234, and Zillow reports the listing removed July 31. This is the first recorded ordinary miss in the current two-miss lifecycle check, so the prior record is retained rather than archived. Direct current-status and exact point-route confirmation remain required.",
         "parcelAndDeed": "York County public assessor, One Map, and Register of Deeds entry points were checked; no new property-specific official readback established ownership, title, transfer, assessment, or recorded-restriction changes.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; property-specific official flood determination remains unresolved.",
         "permits": [
@@ -12431,8 +12431,8 @@
       "daysOnMarket": 242,
       "distanceMiles": 23.2,
       "driveMinutes": 43,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "23.2 miles · about 43 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Charlotte, listed at $285,000 under Canopy MLS 4326288. Built in 1994; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12524,8 +12524,8 @@
       "daysOnMarket": 159,
       "distanceMiles": 21.5,
       "driveMinutes": 35,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "21.5 miles · about 35 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $210,000 under Canopy MLS 4361423. Built in 1980; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12615,8 +12615,8 @@
       "daysOnMarket": 51,
       "distanceMiles": 26.5,
       "driveMinutes": 44,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "26.5 miles · about 44 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $259,900 under Canopy MLS 4400984. Built in 2023; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12705,8 +12705,8 @@
       "daysOnMarket": 152,
       "distanceMiles": 13.9,
       "driveMinutes": 32,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "13.9 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $208,890 under Canopy MLS 4329803. Built in 2015; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12813,8 +12813,8 @@
       "daysOnMarket": 41,
       "distanceMiles": 16.2,
       "driveMinutes": 31,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "16.2 miles · about 31 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Charlotte, listed at $280,000 under Canopy MLS 4405359. Built in 2003; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12905,10 +12905,10 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 408,
       "distanceMiles": 15.9,
-      "driveMinutes": 32,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
-      "distanceLabel": "15.9 miles · about 32 minutes from the family reference property",
+      "driveMinutes": 33,
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceLabel": "15.9 miles · about 33 minutes from the family reference property",
       "summary": "4-bedroom, 2-bath single family residence in Pineville, listed at $239,900 under Canopy MLS 4267547. Built in 1987; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
         "4 bedrooms and 2 bathrooms are reported",
@@ -12998,8 +12998,8 @@
       "daysOnMarket": 44,
       "distanceMiles": 13.5,
       "driveMinutes": 27,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "13.5 miles · about 27 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Fort Mill, listed at $259,900 under Canopy MLS 4404597. Built in 1985; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13101,10 +13101,10 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 145,
       "distanceMiles": 15.9,
-      "driveMinutes": 32,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
-      "distanceLabel": "15.9 miles · about 32 minutes from the family reference property",
+      "driveMinutes": 33,
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceLabel": "15.9 miles · about 33 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Charlotte, listed at $259,900 under Canopy MLS 4360142. Built in 2002; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
         "3 bedrooms and 2 bathrooms are reported",
@@ -13194,8 +13194,8 @@
       "daysOnMarket": 146,
       "distanceMiles": 30,
       "driveMinutes": 50,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "30.0 miles · about 50 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $240,000 under Canopy MLS 4359199. Built in 1984; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13285,8 +13285,8 @@
       "daysOnMarket": 97,
       "distanceMiles": 18.5,
       "driveMinutes": 34,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "18.5 miles · about 34 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Charlotte, listed at $222,000 under Canopy MLS 4385882. Built in 1980; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13377,8 +13377,8 @@
       "daysOnMarket": 77,
       "distanceMiles": 9.4,
       "driveMinutes": 22,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "9.4 miles · about 22 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $240,000 under Canopy MLS 4381686. Built in 1985; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13480,8 +13480,8 @@
       "daysOnMarket": 52,
       "distanceMiles": 9.7,
       "driveMinutes": 19,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "9.7 miles · about 19 minutes from the family reference property",
       "summary": "Current MLS-fed IDX shows under contract with showings at $280,000 after a September 1 $5,000 reduction; older Trulia still shows $285,000 active. A $5,000 discount to the $275,000 ceiling would be required if it returns to market; seller acceptance is unresolved. 3-bedroom, 2-bath single family residence in Rock Hill, listed at $285,000 under Canopy MLS 4394249. Built in 1999; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13619,8 +13619,8 @@
       "daysOnMarket": 516,
       "distanceMiles": 12.2,
       "driveMinutes": 22,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "12.2 miles · about 22 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $275,000 under Canopy MLS 4239130. Built in 1996; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13723,8 +13723,8 @@
       "daysOnMarket": 60,
       "distanceMiles": 23.6,
       "driveMinutes": 40,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "23.6 miles · about 40 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Gastonia, listed at $225,000 under Canopy MLS 4399513. Built in 1982; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13815,8 +13815,8 @@
       "daysOnMarket": 107,
       "distanceMiles": 27.1,
       "driveMinutes": 47,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "27.1 miles · about 47 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath single family residence in Belmont, listed at $240,000 under Canopy MLS 4373548. Built in 2000; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13906,8 +13906,8 @@
       "daysOnMarket": 74,
       "distanceMiles": 14.7,
       "driveMinutes": 26,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "14.7 miles · about 26 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Clover, listed at $259,000 under Canopy MLS 4390356. Built in 2005; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14011,8 +14011,8 @@
       "daysOnMarket": 118,
       "distanceMiles": 18.4,
       "driveMinutes": 32,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "18.4 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Charlotte, listed at $249,900 under Canopy MLS 4377263. Built in 2005; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14103,8 +14103,8 @@
       "daysOnMarket": 151,
       "distanceMiles": 15.7,
       "driveMinutes": 32,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "15.7 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Charlotte, listed at $275,000 under Canopy MLS 4363892. Built in 2005; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14195,8 +14195,8 @@
       "daysOnMarket": 82,
       "distanceMiles": 16.9,
       "driveMinutes": 32,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "16.9 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Clover, listed at $275,000 under Canopy MLS 4390988. Built in 1996; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14299,8 +14299,8 @@
       "daysOnMarket": 90,
       "distanceMiles": 13,
       "driveMinutes": 22,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "13.0 miles · about 22 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $285,000 under Canopy MLS 4388406. Built in 2025; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14401,10 +14401,10 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 117,
       "distanceMiles": 15.7,
-      "driveMinutes": 31,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
-      "distanceLabel": "15.7 miles · about 31 minutes from the family reference property",
+      "driveMinutes": 32,
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceLabel": "15.7 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Charlotte, listed at $250,000 under Canopy MLS 4377942. Built in 2004; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
         "3 bedrooms and 2 bathrooms are reported",
@@ -14494,8 +14494,8 @@
       "daysOnMarket": 195,
       "distanceMiles": 27.3,
       "driveMinutes": 45,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "27.3 miles · about 45 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $250,000 under Canopy MLS 4346419. Built in 1996; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14585,8 +14585,8 @@
       "daysOnMarket": 234,
       "distanceMiles": 25.2,
       "driveMinutes": 45,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "25.2 miles · about 45 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Chester, listed at $270,000 under Canopy MLS 4336938. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14672,8 +14672,8 @@
       "daysOnMarket": 92,
       "distanceMiles": 7.7,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "An active two-bedroom Manchester Village townhome now $10,000 below the ceiling. Each bedroom is publicly described with its own full bathroom, but HOA whole-unit and separate-room rental authority remain unknown.",
       "pros": [
@@ -14813,8 +14813,8 @@
       "daysOnMarket": 69,
       "distanceMiles": 1.2,
       "driveMinutes": 5,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "1.2 miles · about 5 minutes from the family reference property",
       "summary": "A one-level two-bedroom condo under contract at $238,000. Two full bathrooms, accessibility, and a 55-plus community are reported, but private-bath allocation, age-occupancy documents, rental authority, fees, and the current contract outcome remain unresolved.",
       "pros": [
@@ -14943,8 +14943,8 @@
       "daysOnMarket": 100,
       "distanceMiles": 4.9,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "An active multi-level end-unit condo at $250,000 after a $25,000 reduction. Public listing evidence describes two bedrooms with private full bathrooms, but governing rental documents, assessments, transaction fees, and stair practicality remain unresolved.",
       "pros": [
@@ -15210,8 +15210,8 @@
       "daysOnMarket": 74,
       "distanceMiles": 2.7,
       "driveMinutes": 7,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.7 miles · about 7 minutes from the family reference property",
       "summary": "An active two-bedroom, two-bath condo reduced to $207,000 with mandatory $125 monthly HOA dues. Private-bath allocation, governing rental authority, and property-specific diligence remain unresolved.",
       "pros": [
@@ -15292,7 +15292,7 @@
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "changeHistory": [
         {
           "date": "2026-08-25",
@@ -15384,8 +15384,8 @@
       "daysOnMarket": 165,
       "distanceMiles": 4.4,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.4 miles · about 10 minutes from the family reference property",
       "summary": "A contingent two-bedroom townhome at $200,000. Both bedrooms are publicly described with private ensuite bathrooms, but the contract outcome, rental authority, assessments, transfer fees, and HOA restrictions remain unresolved.",
       "pros": [
@@ -15670,8 +15670,8 @@
       "daysOnMarket": 60,
       "distanceMiles": 3.2,
       "driveMinutes": 7,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.2 miles · about 7 minutes from the family reference property",
       "summary": "An active one-level two-bedroom Olde Pointe condo at $240,000. Two full bathrooms and $230 monthly dues are reported, but private-bath allocation, deed restrictions, rental authority, assessments, transaction fees, and material system ages remain unresolved.",
       "pros": [
@@ -15736,7 +15736,7 @@
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "changeHistory": [
         {
           "date": "2026-08-25",
@@ -15810,8 +15810,8 @@
       "daysOnMarket": 85,
       "distanceMiles": 2.6,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.6 miles · about 10 minutes from the family reference property",
       "summary": "A contingent one-level two-bedroom townhome at $199,999. Two full bathrooms, two assigned spaces, and public utilities are reported, but private-bath allocation, contract outcome, rental authority, assessments, transfer fees, and system ages remain unresolved.",
       "pros": [
@@ -15935,8 +15935,8 @@
       "daysOnMarket": 19,
       "distanceMiles": 6.5,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.5 miles · about 13 minutes from the family reference property",
       "summary": "A tenant-occupied Eagles Landing condo under contract at $130,000. Two bedrooms, two full bathrooms, and $1,275 current whole-unit rent are reported, but the family private-bath layout, lease terms, possession timing, HOA dues, governing rental authority, and transaction fees remain unresolved.",
       "pros": [
@@ -16058,8 +16058,8 @@
       "daysOnMarket": 236,
       "distanceMiles": 7,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.0 miles · about 15 minutes from the family reference property",
       "summary": "An active Willowbrook condo listed at $145,000 after a $14,900 reduction. Unit A has only one full bathroom, so it cannot satisfy the required private full bathroom while supporting the proposed shared occupancy and is rejected.",
       "pros": [
@@ -16184,8 +16184,8 @@
       "daysOnMarket": 236,
       "distanceMiles": 7,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.0 miles · about 15 minutes from the family reference property",
       "summary": "An active Willowbrook condo listed at $145,000 after a $14,900 reduction. Unit B has only one full bathroom, so it cannot satisfy the required private full bathroom while supporting the proposed shared occupancy and is rejected.",
       "pros": [
@@ -16310,8 +16310,8 @@
       "daysOnMarket": 141,
       "distanceMiles": 17.4,
       "driveMinutes": 34,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "17.4 miles · about 34 minutes from the family reference property",
       "summary": "A one-level manufactured home under contract at $274,900, just $100 below the offer ceiling. Two full bathrooms and substantial space are reported, but a private ensuite, contract outcome, septic capacity, foundation and title eligibility, system ages, insurance, and room-rental authority remain unresolved.",
       "pros": [
@@ -16443,8 +16443,8 @@
       "daysOnMarket": 74,
       "distanceMiles": 11.5,
       "driveMinutes": 26,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "11.5 miles · about 26 minutes from the family reference property",
       "summary": "A one-level 1980 two-bedroom, two-bath home on one acre, reduced to $284,500 after 71 reported market days. It is $9,500 above the offer ceiling, and acceptance, private-bath layout, room-rental authority, well/septic capacity, permit closure, system ages, condition, and risk remain unresolved.",
       "pros": [
@@ -16573,8 +16573,8 @@
       "parcelId": "6001706008",
       "distanceMiles": 7.3,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-09-24",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.3 miles · about 15 minutes from the family reference property",
       "summary": "A one-level 2021 three-bedroom home newly active at the $275,000 ceiling. The completed original-construction permit is a useful anchor, but the family-suite bathroom allocation, room-rental authority, current system condition, and title evidence remain unresolved.",
       "pros": [
@@ -16711,7 +16711,7 @@
     {
       "id": "mls-4427526",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-24",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -16737,8 +16737,8 @@
       "parcelId": "6312301001",
       "distanceMiles": 6.2,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-09-24",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.2 miles · about 13 minutes from the family reference property",
       "summary": "A one-level 1988 two-bedroom condominium newly active at $169,000 with two full bathrooms and reported $150 monthly HOA dues. The suite layout, whole-unit rental authority, room-rental authority, assessments, insurance, and current system ages remain unknown and block recommendation.",
       "pros": [
@@ -17370,8 +17370,8 @@
       "daysOnMarket": 43,
       "distanceMiles": 4.2,
       "driveMinutes": 12,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.2 miles · about 12 minutes from the family reference property",
       "summary": "An active 2003 three-bedroom home one dollar below the offer ceiling with public sewer and quarterly HOA dues. The listing says it needs TLC; private-bath allocation, HOA rental authority, systems, fees, and condition remain unresolved.",
       "pros": [
@@ -17538,8 +17538,8 @@
       "daysOnMarket": 134,
       "distanceMiles": 5.3,
       "driveMinutes": 11,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.3 miles · about 11 minutes from the family reference property",
       "summary": "An active 2021 three-bedroom home with a documented primary suite and no reported HOA. It is $4,900 above the ceiling; only an accepted offer at or below $275,000 is permissible, and seller acceptance remains unresolved.",
       "pros": [
@@ -17662,7 +17662,7 @@
     {
       "id": "mls-4398107",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-29",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -17687,8 +17687,8 @@
       "daysOnMarket": 47,
       "distanceMiles": 7.7,
       "driveMinutes": 17,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "An active 2005 two-bedroom townhouse at $265,000 with each bedroom reported to have its own full bathroom. The $223 monthly HOA, governing documents, assessments, transaction fees, and both whole-unit and room-rental authority remain unresolved.",
       "pros": [
@@ -17866,8 +17866,8 @@
       "daysOnMarket": 231,
       "distanceMiles": 4.4,
       "driveMinutes": 12,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.4 miles · about 12 minutes from the family reference property",
       "summary": "An active 1985 two-bedroom condominium with a $120 monthly HOA and two assigned spaces. Its single full bathroom cannot provide the required private full bathroom while retaining a tenant, so it fails the family-suite requirement.",
       "pros": [
@@ -18015,8 +18015,8 @@
       "daysOnMarket": 187,
       "distanceMiles": 4.9,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "4.9 miles · about 13 minutes from the family reference property",
       "summary": "A current owner-listed 1990 two-bedroom property advertised at $139,000 with two baths. Public property records and the older brokerage record show only one full bathroom, so the bath count, private-suite feasibility, current condition, title, and active status need direct documentary verification.",
       "pros": [
@@ -18142,7 +18142,7 @@
     {
       "id": "mls-1595385",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-30",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -18295,8 +18295,8 @@
       "missingRuns": 0,
       "distanceMiles": 5.1,
       "driveMinutes": 12,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.1 miles · about 12 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-18",
@@ -18512,8 +18512,8 @@
       "missingRuns": 0,
       "distanceMiles": 13.7,
       "driveMinutes": 25,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "13.7 miles · about 25 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -18695,8 +18695,8 @@
       "missingRuns": 0,
       "distanceMiles": 5.6,
       "driveMinutes": 11,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.6 miles · about 11 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-15",
@@ -18718,7 +18718,7 @@
     {
       "id": "mls-4388044",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -18877,8 +18877,8 @@
       "missingRuns": 0,
       "distanceMiles": 4.9,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 13 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-18",
@@ -19029,8 +19029,8 @@
       "missingRuns": 0,
       "distanceMiles": 3.9,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.9 miles · about 10 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -19176,8 +19176,8 @@
       "missingRuns": 0,
       "distanceMiles": 3.2,
       "driveMinutes": 8,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.2 miles · about 8 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -19418,7 +19418,7 @@
     {
       "id": "mls-4413214",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -19603,8 +19603,8 @@
       "missingRuns": 0,
       "distanceMiles": 7.4,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.4 miles · about 15 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-18",
@@ -19633,7 +19633,7 @@
     {
       "id": "mls-4380260",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -19786,8 +19786,8 @@
       "missingRuns": 0,
       "distanceMiles": 3,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.0 miles · about 9 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-18",
@@ -19917,8 +19917,8 @@
       "missingRuns": 0,
       "distanceMiles": 10,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "10.0 miles · about 20 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -20024,8 +20024,8 @@
       "missingRuns": 0,
       "distanceMiles": 4.1,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.1 miles · about 12 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -20128,8 +20128,8 @@
       "missingRuns": 0,
       "distanceMiles": 4.7,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.7 miles · about 11 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -20260,8 +20260,8 @@
       "missingRuns": 0,
       "distanceMiles": 8.4,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "8.4 miles · about 17 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -20362,8 +20362,8 @@
       "missingRuns": 0,
       "distanceMiles": 14.1,
       "driveMinutes": 27,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "14.1 miles · about 27 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -20480,8 +20480,8 @@
       "missingRuns": 0,
       "distanceMiles": 3.8,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.8 miles · about 10 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -20610,8 +20610,8 @@
       "missingRuns": 0,
       "distanceMiles": 14.6,
       "driveMinutes": 27,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "14.6 miles · about 27 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -20716,8 +20716,8 @@
       "missingRuns": 0,
       "distanceMiles": 12.9,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.9 miles · about 24 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -20776,8 +20776,8 @@
       "daysOnMarket": 72,
       "distanceMiles": 2.7,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.7 miles · about 11 minutes from the family reference property",
       "summary": "A low-priced 1994 manufactured home in Ponys Run with mandatory $650 monthly land rent and no land ownership. Park approval, lease terms, title, financing, insurance, private-bath layout, and separate-room rental authority are unresolved and block recommendation.",
       "pros": [
@@ -20896,8 +20896,8 @@
       "daysOnMarket": 117,
       "distanceMiles": 4.8,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.8 miles · about 10 minutes from the family reference property",
       "summary": "Current public IDX inventory and Redfin pending inventory show under contract with showings at $274,000; older for-sale pages conflict. A one-level 2013 patio home listed at $277,000 after a $13,000 reduction. It would require at least $2,000 seller acceptance to meet the hard offer ceiling, and HOA room-rental authority remains unknown.",
       "pros": [
@@ -21183,8 +21183,8 @@
       },
       "distanceMiles": 2.2,
       "driveMinutes": 9,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "2.2 miles · about 9 minutes from the family reference property"
     },
     {
@@ -21325,8 +21325,8 @@
       },
       "distanceMiles": 17,
       "driveMinutes": 34,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "17.0 miles · about 34 minutes from the family reference property"
     },
     {
@@ -21469,8 +21469,8 @@
       "missingRuns": 0,
       "distanceMiles": 7.9,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.9 miles · about 17 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-04",
@@ -21499,7 +21499,7 @@
     {
       "id": "mls-4400923",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -21653,8 +21653,8 @@
       "missingRuns": 0,
       "distanceMiles": 4.9,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 13 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-18",
@@ -21808,8 +21808,8 @@
       "missingRuns": 0,
       "distanceMiles": 7.3,
       "driveMinutes": 16,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.3 miles · about 16 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -22144,8 +22144,8 @@
       "missingRuns": 0,
       "distanceMiles": 2.3,
       "driveMinutes": 7,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.3 miles · about 7 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -22309,8 +22309,8 @@
       "missingRuns": 0,
       "distanceMiles": 2.4,
       "driveMinutes": 8,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.4 miles · about 8 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -22339,7 +22339,7 @@
     {
       "id": "mls-4408349",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-11",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -22488,8 +22488,8 @@
       "missingRuns": 0,
       "distanceMiles": 4.7,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.7 miles · about 12 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-18",
@@ -22652,8 +22652,8 @@
       "missingRuns": 0,
       "distanceMiles": 4.7,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.7 miles · about 12 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -22708,8 +22708,8 @@
       "daysOnMarket": 25,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-01",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "MLS-fed public pages currently show this three-bedroom Lennar townhouse pending at $238,999 after a September 18 reduction. The primary suite has a listing-documented private bathroom. Mandatory HOA dues conflict at $172 versus about $290, and separate whole-unit and room-rental authority, parking, completion documents, and the full fee schedule still block recommendation.",
       "pros": [
@@ -22899,8 +22899,8 @@
       "daysOnMarket": 28,
       "distanceMiles": 12.5,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-09-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's current structured inventory and fresh MLS-fed evidence list this move-in-ready three-bedroom townhouse at $245,499. The private primary bath is documented, but HOA rental authority, controlling fees, occupancy, completion records, insurance, incentives and transaction charges still block recommendation.",
       "pros": [
@@ -23232,8 +23232,8 @@
       },
       "distanceMiles": 6.2,
       "driveMinutes": 13,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "6.2 miles · about 13 minutes from the family reference property"
     },
     {
@@ -23364,28 +23364,28 @@
       },
       "distanceMiles": 5.4,
       "driveMinutes": 12,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "5.4 miles · about 12 minutes from the family reference property"
     },
     {
       "id": "mls-4424120",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-10-18",
-      "lastChanged": "2026-09-15",
+      "lastSeen": "2026-10-19",
+      "lastChanged": "2026-10-19",
       "address": "1708 Chamberside Dr, Rock Hill, SC 29730",
-      "sourceUrl": "https://uphomes.com/home/1708-chamberside-dr-rock-hill-sc-29730-a4f754e7",
+      "sourceUrl": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car315333964-nccanopy/1708-chamberside-dr-rock-hill-sc-29730",
       "mls": "4424120",
       "status": "active",
-      "price": 265000,
+      "price": 259900,
       "originalPrice": 265000,
-      "priceCutPercent": 0,
+      "priceCutPercent": 1.9,
       "beds": 3,
       "baths": 2.5,
       "sqft": 1492,
-      "pricePerSqft": 178,
+      "pricePerSqft": 174,
       "marketPricePerSqft": 207,
       "yearBuilt": 2002,
       "propertyType": "Townhouse",
@@ -23393,26 +23393,27 @@
       "oneLevel": false,
       "privateBath": "unknown",
       "roomRentalLegal": "unknown",
-      "daysOnMarket": 3,
-      "summary": "A three-bedroom townhouse indexed as newly active at $265,000 after a June $190,000 sale. Current MLS 4424120 search results conflict with live pages that redirect to the closed prior listing, so status must be confirmed directly before action.",
+      "daysOnMarket": 37,
+      "summary": "Active at $259,900 after a $5,100 reduction from the September relist. The fresher Canopy MLS-fed page and Homes.com index show the lower price, while Zillow and Redfin still show $265,000. The June $190,000 transfer, private-bath layout, and governing-document rental authority still require verification.",
       "pros": [
-        "$10,000 below the maximum offer price",
+        "$15,100 below the maximum offer price after a $5,100 reduction",
         "Three bedrooms, two full bathrooms, and one half bathroom",
         "Built in 2002",
         "Listing text describes recent interior updates"
       ],
       "concerns": [
-        "Current MLS 4424120 search results report active, but several live IDX pages redirect to or expose the closed prior MLS record; broker confirmation is required before treating it as available",
+        "Current Canopy MLS-fed and Homes.com evidence shows $259,900, while Zillow and Redfin still show $265,000; direct listing-agent confirmation is required before action",
         "A private full bathroom for the family occupant is not documented and must be verified from the floor plan, seller disclosure, or inspection",
         "Room-rental zoning, registration, legal bedroom count, parking and occupancy capacity, separate-room lease authority, public-sewer capacity, safety readiness, utilities, common-space practicality, and property-specific room demand remain unresolved",
         "Official parcel and deed readback, property-specific permit history, FEMA or One Map risk, condition, insurance constraints, and independent inspection remain unresolved",
-        "The $265,000 ask is $75,000, or about 39.5%, above the reported June 2026 sale price; renovation scope, invoices, permits, workmanship, and independent value support are unresolved",
+        "The $259,900 ask is $69,900, or about 36.8%, above the reported June 2026 sale price; renovation scope, invoices, permits, workmanship, and independent value support are unresolved",
         "The listing describes updates but does not independently verify roof, HVAC, water heater, electrical, plumbing, structural work, permit closeout, warranties, or system installation dates",
         "Mandatory HOA dues are reported at $223 monthly; governing documents, assessments, transfer or capital-contribution fees, master insurance, reserves, litigation, rental surcharges, and amenity fees remain unknown",
         "Whole-unit and individual-room rental authority are independently unknown and block recommendation"
       ],
       "sourceConflicts": [
-        "Current indexed IDX results identify MLS 4424120 as active at $265,000, while live pages on multiple sites redirect to or display closed MLS 4389887. The record is retained as provisional and requires direct broker confirmation."
+        "Current Canopy MLS-fed and Homes.com evidence shows $259,900, while Zillow and Redfin still show $265,000.",
+        "The reported June 2026 $190,000 transfer and later relist require deed, renovation-scope, permit, invoice, warranty, and independent value review."
       ],
       "hoa": {
         "exists": true,
@@ -23439,6 +23440,11 @@
           "date": "2026-09-12",
           "event": "Relisted under MLS 4424120",
           "price": 265000
+        },
+        {
+          "date": "2026-10-19",
+          "event": "Price reduced; current active marketing corroborated",
+          "price": 259900
         }
       ],
       "sources": [
@@ -23456,6 +23462,21 @@
           "label": "Current UpHomes indexed MLS 4424120 corroboration",
           "url": "https://uphomes.com/home/1708-chamberside-dr-rock-hill-sc-29730-a4f754e7",
           "accessed": "2026-09-15"
+        },
+        {
+          "label": "Current Canopy MLS-fed active status and $259,900 asking price",
+          "url": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car315333964-nccanopy/1708-chamberside-dr-rock-hill-sc-29730",
+          "accessed": "2026-10-19"
+        },
+        {
+          "label": "Homes.com current Rock Hill inventory corroborating $259,900 asking price",
+          "url": "https://www.homes.com/rock-hill-sc/pool/",
+          "accessed": "2026-10-19"
+        },
+        {
+          "label": "Zillow current page retaining the older $265,000 asking price",
+          "url": "https://www.zillow.com/homedetails/1708-Chamberside-Dr-Rock-Hill-SC-29730/71256217_zpid/",
+          "accessed": "2026-10-19"
         }
       ],
       "changeHistory": [
@@ -23467,6 +23488,17 @@
               "from": null,
               "to": "added",
               "label": "New listing"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-19",
+          "changes": [
+            {
+              "field": "price",
+              "from": 265000,
+              "to": 259900,
+              "label": "Price reduced"
             }
           ]
         }
@@ -23482,8 +23514,8 @@
         "garageSpaces": 0
       },
       "publicVerification": {
-        "asOf": "2026-09-24",
-        "marketingAttempt": "The original public IDX URL returned HTTP 404 on September 24, but the current UpHomes Canopy MLS page and other indexed public pages corroborate MLS 4424120 as active at $265,000. The alternate current public page is now the primary source. Direct broker confirmation remains necessary before action.",
+        "asOf": "2026-10-19",
+        "marketingAttempt": "A current Canopy MLS-fed detail page and Homes.com inventory show MLS 4424120 active at $259,900. Zillow and Redfin retain the older $265,000 price. The fresher MLS-fed amount is used conservatively, but direct listing-agent confirmation remains required before action.",
         "parcelAndDeed": "Listing-sourced parcel identity is retained where available. York County public assessor, One Map, and Register of Deeds entry points were checked; property-specific official ownership, title, transfer, assessment, and recorded-restriction readback remain unresolved.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; a property-specific official flood determination remains unresolved.",
         "permits": [
@@ -23506,8 +23538,8 @@
       },
       "distanceMiles": 7.6,
       "driveMinutes": 17,
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-09-15",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
       "distanceLabel": "7.6 miles · about 17 minutes from the family reference property"
     },
     {
@@ -23539,8 +23571,8 @@
       "parcelId": "6620501083",
       "distanceMiles": 5.1,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-09-19",
-      "distanceMethod": "ArcGIS public geocoding with public OpenStreetMap driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 13 minutes from the family reference property",
       "summary": "An active $252,000 Lexington Commons townhouse with two upstairs private bathroom suites described by the listing agent. The $205 monthly HOA and unverified whole-unit and individual-room rental rules keep it in needs-verification status.",
       "pros": [
@@ -23732,8 +23764,8 @@
       "daysOnMarket": 5,
       "distanceMiles": 6.9,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-09-27",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.9 miles · about 14 minutes from the family reference property",
       "summary": "A newly listed one-level 3-bedroom, 2-bath Rock Hill home at the $275,000 ceiling with public water and sewer and no reported HOA. The private full-bath layout, final certificate of occupancy, permit closeout, room-rental authority, builder charges, title, and insurance remain unresolved.",
       "pros": [
@@ -24567,8 +24599,8 @@
       "daysOnMarket": null,
       "distanceMiles": 12.5,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-09-27",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live direct inventory lists move-in-ready homesite 161, a three-bedroom Titan townhouse at $246,649. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
       "pros": [
@@ -25406,8 +25438,8 @@
       "daysOnMarket": 53,
       "distanceMiles": 10.1,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-09-28",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "10.1 miles · about 20 minutes from the family reference property",
       "summary": "A one-level 3-bedroom, 2-bath home reduced to the $275,000 ceiling. Current listing evidence describes a private primary bath and no HOA, but local room-rental authority, system documentation, title, insurance, permits for claimed replacements, and seller terms remain unresolved.",
       "pros": [
@@ -25562,8 +25594,8 @@
       "daysOnMarket": 3,
       "distanceMiles": 8.6,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-09-28",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "8.6 miles · about 17 minutes from the family reference property",
       "summary": "A newly listed one-level 3-bedroom, 2-bath home one dollar below the ceiling with an explicitly described en-suite primary bath and no reported HOA. Room-rental authority, roof and other system documentation, title, insurance, parking capacity, and transaction charges remain unresolved.",
       "pros": [
@@ -25719,8 +25751,8 @@
       "daysOnMarket": 2,
       "distanceMiles": 5,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-09-28",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.0 miles · about 11 minutes from the family reference property",
       "summary": "A newly listed 3-bedroom, 2-bath townhome at $245,000 with low reported quarterly HOA dues. The exact private-full-bath allocation, whole-unit and individual-room rental authority, assessments, fees, insurance, systems, and title remain unresolved.",
       "pros": [
@@ -25875,8 +25907,8 @@
       "daysOnMarket": 3,
       "distanceMiles": 4.8,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-09-28",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.8 miles · about 11 minutes from the family reference property",
       "summary": "A newly listed one-level 2-bedroom, 2-bath townhome at $255,000 with an explicitly described primary-suite walk-in shower. The single remaining renter room, HOA and local rental authority, HVAC condition, fees, insurance, parking, and title remain unresolved.",
       "pros": [
@@ -25997,7 +26029,7 @@
     {
       "id": "mls-4403840",
       "strategy": "private-purchase",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-29",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -26023,8 +26055,8 @@
       "daysOnMarket": 76,
       "distanceMiles": 3,
       "driveMinutes": 7,
-      "distanceAsOf": "2026-09-29",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.0 miles · about 7 minutes from the family reference property",
       "summary": "Current listing-broker and Canopy MLS-fed evidence says the prior buyer's financing fell through and this one-level property returned to active marketing at $176,000. It has only one full bathroom, so it fails the private-full-bath requirement for a shared arrangement.",
       "pros": [
@@ -26238,8 +26270,8 @@
       "parcelId": "3480000054",
       "distanceMiles": 11.3,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-09-29",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "11.3 miles · about 20 minutes from the family reference property",
       "summary": "A current owner-listed 2024 townhouse at $255,000 with three bedrooms, two full bathrooms, one half bath, an attached garage, and a completed original construction permit. The $270 monthly HOA, unverified private-bath allocation, unknown governing-document rental authority, York location, and unresolved fee, parking, insurance, and operating rules block recommendation.",
       "pros": [
@@ -26416,8 +26448,8 @@
       "daysOnMarket": 0,
       "distanceMiles": 4.7,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-02",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.7 miles · about 11 minutes from the family reference property",
       "summary": "A newly listed one-level two-bedroom townhouse at $243,500. Current MLS-fed evidence reports a 2024 roof and 2026 HVAC and water heater, but those remain seller/listing claims; the private-bath layout and both forms of rental authority are unknown and block recommendation.",
       "pros": [
@@ -26568,8 +26600,8 @@
       "daysOnMarket": 0,
       "distanceMiles": 4.9,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-02",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "A four-bedroom home at the $275,000 ceiling now shown active under contract. Main-floor primary placement is documented, but private full-bath access, room-rental legality, solar obligations, and current condition remain unresolved.",
       "pros": [
@@ -26760,8 +26792,8 @@
       "daysOnMarket": 2,
       "distanceMiles": 4.4,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-02",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.4 miles · about 10 minutes from the family reference property",
       "summary": "A newly listed three-bedroom townhouse at $264,900 with a reported main-level primary suite. Current MLS-fed evidence reports $205 monthly HOA dues and a January 2026 HVAC replacement, but private full-bath access, system proof, and both forms of rental authority remain unknown.",
       "pros": [
@@ -26917,8 +26949,8 @@
       "daysOnMarket": 9,
       "distanceMiles": 7.7,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "A three-bedroom Manchester Village townhouse with a main-level room and full bath, but the exclusive private-bath layout and association rental authority are not documented and block recommendation.",
       "pros": [
@@ -27062,8 +27094,8 @@
       "daysOnMarket": 9,
       "distanceMiles": 3.6,
       "driveMinutes": 8,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.6 miles · about 8 minutes from the family reference property",
       "summary": "A low-priced one-level two-bedroom townhouse, but its single full bathroom cannot remain private for the family occupant while an unrelated tenant lives there; HOA rental authority is also unknown.",
       "pros": [
@@ -27181,7 +27213,7 @@
     {
       "id": "mls-4426547",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -27207,8 +27239,8 @@
       "daysOnMarket": 9,
       "distanceMiles": 4.4,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.4 miles · about 10 minutes from the family reference property",
       "summary": "A three-bedroom Constitution Park townhouse with public sewer and city water, but the private full-bath layout and separate association rental authority remain unknown and block recommendation.",
       "pros": [
@@ -27373,8 +27405,8 @@
       "daysOnMarket": 15,
       "distanceMiles": 4.5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.5 miles · about 12 minutes from the family reference property",
       "summary": "A one-level cash-only value-add condominium with two assigned parking spaces, but its single full bathroom fails the private-bath requirement and unresolved condition and HOA authority add material risk.",
       "pros": [
@@ -27519,8 +27551,8 @@
       "daysOnMarket": null,
       "distanceMiles": 2.2,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.2 miles · about 9 minutes from the family reference property",
       "summary": "A compact one-level two-bedroom, two-bath townhouse close to the family reference property, but exclusive private-bath layout and separate HOA rental authority are not documented.",
       "pros": [
@@ -27633,7 +27665,7 @@
     {
       "id": "mls-4425435",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -27659,8 +27691,8 @@
       "daysOnMarket": 15,
       "distanceMiles": 5.1,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 14 minutes from the family reference property",
       "summary": "A two-bedroom Lexington Commons townhouse with 2.5 baths and a listing-claimed new water heater, but private-bath layout, HOA rental authority, fee accuracy and major-system evidence remain unresolved.",
       "pros": [
@@ -27822,9 +27854,9 @@
       "daysOnMarket": 11,
       "distanceMiles": 5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
-      "distanceLabel": "5 miles · about 12 minutes from the family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceLabel": "5.0 miles · about 12 minutes from the family reference property",
       "summary": "A one-level three-bedroom townhouse with many listing-claimed upgrades, but private-bath layout, exact HOA billing, rental authority and permit or warranty proof remain unresolved.",
       "pros": [
         "$25,100 below the absolute offer ceiling at current asking price",
@@ -27969,8 +28001,8 @@
       "daysOnMarket": 5,
       "distanceMiles": 5.5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.5 miles · about 12 minutes from the family reference property",
       "summary": "A one-level three-bedroom home with a listing-documented primary suite and private full bath. Local separate-room rental authority, parking, occupancy and system evidence remain unknown and block recommendation.",
       "pros": [
@@ -28115,8 +28147,8 @@
       "daysOnMarket": 3,
       "distanceMiles": 5.9,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.9 miles · about 14 minutes from the family reference property",
       "summary": "A very low-priced 2024 manufactured home with mandatory $635 monthly lot rent. Park lease and room-rental authority, title, financing, private-bath layout, utilities, insurance and a park-parcel Zone AE intersection block recommendation.",
       "pros": [
@@ -28264,8 +28296,8 @@
       "daysOnMarket": 15,
       "distanceMiles": 4.5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.5 miles · about 12 minutes from the family reference property",
       "summary": "A tenant-occupied one-level end-unit condo with generous living area, but its single full bathroom fails the private-bath requirement and current tenancy, HOA rental authority and system evidence remain unresolved.",
       "pros": [
@@ -28409,9 +28441,9 @@
       "daysOnMarket": 1,
       "distanceMiles": 4,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
-      "distanceLabel": "4 miles · about 9 minutes from the family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceLabel": "4.0 miles · about 9 minutes from the family reference property",
       "summary": "A one-level split-bedroom condo whose primary suite is described with its own walk-in shower, supporting the private-bath requirement. Separate HOA whole-unit and room-rental authority remains unknown and blocks recommendation.",
       "pros": [
         "$50,000 below the absolute offer ceiling at current asking price",
@@ -28554,8 +28586,8 @@
       "daysOnMarket": 18,
       "distanceMiles": 5.1,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-03",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 14 minutes from the family reference property",
       "summary": "A low-priced two-bedroom 1990 home sold as-is, but its single full bathroom cannot remain private for the family occupant while supporting an unrelated tenant; legal authority and major-system evidence are also unresolved.",
       "pros": [
@@ -28702,8 +28734,8 @@
       "daysOnMarket": 6,
       "distanceMiles": 8.1,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-04",
-      "distanceMethod": "ArcGIS World Geocoder with public OSRM driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "8.1 miles · about 17 minutes from the family reference property",
       "summary": "A $200,000 one-level Made It Home new build with a documented private owner suite, already under contract. Buyer eligibility, the 15-year deed restriction, separate-room leasing authority, permit completion and insurance remain unresolved.",
       "pros": [
@@ -28861,8 +28893,8 @@
       "daysOnMarket": 47,
       "distanceMiles": 5.1,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-04",
-      "distanceMethod": "ArcGIS World Geocoder with public OSRM driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 14 minutes from the family reference property",
       "summary": "An active Lexington Commons townhouse reduced from $310,000 to the $275,000 ceiling, with a main-level primary bedroom and full bath plus two upstairs bedrooms. Exclusive private-bath allocation and both HOA rental authorities remain unknown and block recommendation.",
       "pros": [
@@ -29224,8 +29256,8 @@
       "daysOnMarket": 2,
       "distanceMiles": 7.7,
       "driveMinutes": 16,
-      "distanceAsOf": "2026-10-10",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.7 miles · about 16 minutes from the family reference property",
       "summary": "A newly active 2019 one-level three-bedroom home below the ceiling. The two-full-bath count is documented, but the family occupant's private-bath allocation and separate-room rental authority are not; both gate a shared-home recommendation.",
       "pros": [
@@ -29395,8 +29427,8 @@
       "daysOnMarket": 1,
       "distanceMiles": 5.9,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-10-10",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.9 miles · about 13 minutes from the family reference property",
       "summary": "A newly active 2021 one-level home below the ceiling with a listing-documented private primary bathroom. A September sale followed by an immediate relist makes renovation, title and seller-disclosure review especially important; local separate-room rental authority remains unknown.",
       "pros": [
@@ -29544,7 +29576,7 @@
     {
       "id": "mls-4430521",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-10",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -29570,8 +29602,8 @@
       "daysOnMarket": 3,
       "distanceMiles": 7.6,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-10-10",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.6 miles · about 15 minutes from the family reference property",
       "summary": "A 2023 one-level home at $239,900 with an expressly documented private primary bathroom. City plan evidence supports demolition and new construction activity, but the final certificate of occupancy, trade finals and separate-room rental authority remain unresolved.",
       "pros": [
@@ -29789,8 +29821,8 @@
       "daysOnMarket": 4,
       "distanceMiles": 9.6,
       "driveMinutes": 21,
-      "distanceAsOf": "2026-10-10",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "9.6 miles · about 21 minutes from the family reference property",
       "summary": "A low-priced one-level private-living option. Because the home has only one full bathroom, the private-bath requirement is met only if the family member has exclusive occupancy; no room-rental income is underwritten.",
       "pros": [
@@ -29950,8 +29982,8 @@
       "daysOnMarket": 2,
       "distanceMiles": 7.3,
       "driveMinutes": 16,
-      "distanceAsOf": "2026-10-10",
-      "distanceMethod": "ArcGIS public geocoding with an OpenStreetMap public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.3 miles · about 16 minutes from the family reference property",
       "summary": "A one-level brick private-living option under the ceiling. Its single full bathroom requires exclusive family occupancy, so no room-rental income is underwritten; the 1981 age and undocumented major systems warrant elevated diligence and reserves.",
       "pros": [
@@ -30112,8 +30144,8 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-12",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 106, a three-bedroom Drayton townhouse at $265,999 with an estimated January 15, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
       "pros": [
@@ -30281,8 +30313,8 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-12",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 105, a three-bedroom Bristol townhouse at $250,999 with an estimated January 15, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
       "pros": [
@@ -30450,8 +30482,8 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-12",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 104, a three-bedroom Drayton townhouse at $250,999 with an estimated January 19, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
       "pros": [
@@ -30619,8 +30651,8 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-12",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 103, a three-bedroom Bristol townhouse at $250,999 with an estimated January 19, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
       "pros": [
@@ -30788,8 +30820,8 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-12",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 102, a three-bedroom Drayton townhouse at $250,999 with an estimated January 20, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
       "pros": [
@@ -30957,8 +30989,8 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-12",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 101, a three-bedroom Bristol townhouse at $266,999 with an estimated January 20, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
       "pros": [
@@ -31101,7 +31133,7 @@
     {
       "id": "mls-4429145",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-13",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -31127,8 +31159,8 @@
       "daysOnMarket": 5,
       "distanceMiles": 5.3,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-13",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.3 miles · about 11 minutes from the family reference property",
       "summary": "A newly active one-level 2023 home at $250,000 with an expressly documented private primary suite. Official parcel and indexed city permit evidence support the new-home history, but final trade inspections, room-rental authority and transaction charges remain unresolved.",
       "pros": [
@@ -31332,8 +31364,8 @@
       "daysOnMarket": 15,
       "distanceMiles": 5.4,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-13",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.4 miles · about 12 minutes from the family reference property",
       "summary": "A completed one-level new build at $255,500 after two public price reductions. Current listing evidence reports two full bathrooms, but older MLS-fed evidence reports one; the required private full bathroom, permit closeout and room-rental authority remain unresolved.",
       "pros": [
@@ -31518,8 +31550,8 @@
       "daysOnMarket": 1,
       "distanceMiles": 7.7,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-15",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "A newly listed two-bedroom Manchester Village townhouse at $185,000 with a documented primary suite and private full bathroom. The low acquisition price and reported system updates are attractive, but controlling HOA rental rules, fees, permit closeout, and condition remain unresolved and block recommendation.",
       "pros": [
@@ -31688,8 +31720,8 @@
       "daysOnMarket": 36,
       "distanceMiles": 2.7,
       "driveMinutes": 8,
-      "distanceAsOf": "2026-10-17",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.7 miles · about 8 minutes from the family reference property",
       "summary": "A nearby $235,000 two-suite townhouse with two full bathrooms and one main-level suite, but it is already contingent. Separate-room rental authority, controlling HOA documents, association charges beyond monthly dues, permit closeout, flood evidence, insurance, title and system condition remain unresolved.",
       "pros": [
@@ -31851,8 +31883,8 @@
       "daysOnMarket": 1,
       "distanceMiles": 8.9,
       "driveMinutes": 18,
-      "distanceAsOf": "2026-10-17",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "8.9 miles · about 18 minutes from the family reference property",
       "summary": "A November 2 judicial-auction lead with a published $192,290 opening bid, not an ordinary marketed sale or guaranteed purchase price. Bedroom count, private-full-bath allocation, final sale availability, title, redemption, occupancy, access, condition, financing, buyer charges, HOA authority, permits and insurance remain unresolved.",
       "pros": [
@@ -31989,7 +32021,7 @@
     {
       "id": "mls-4413597",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-18",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -32015,8 +32047,8 @@
       "daysOnMarket": 62,
       "distanceMiles": 6.2,
       "driveMinutes": 16,
-      "distanceAsOf": "2026-10-18",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.2 miles · about 16 minutes from the family reference property",
       "summary": "A $200,000 one-level new build with an expressly documented private primary bathroom, but current public status sources conflict and the stricter pending status is retained. The 15-year income-linked deed restriction, owner-occupancy program terms, room-rental authority and permit closeout block recommendation.",
       "pros": [
@@ -32159,7 +32191,7 @@
     {
       "id": "mls-4429322",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-18",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -32185,8 +32217,8 @@
       "daysOnMarket": 2,
       "distanceMiles": 4.3,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-18",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.3 miles · about 10 minutes from the family reference property",
       "summary": "A newly active $257,000 Constitution Park townhouse with two primary suites, each with a private full bathroom. Mandatory HOA dues are documented, but separate whole-unit and individual-room rental authority, assessments, transaction fees, parking and system evidence remain unknown and block recommendation.",
       "pros": [
@@ -32321,7 +32353,7 @@
     {
       "id": "mls-4432702",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-18",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -32347,8 +32379,8 @@
       "daysOnMarket": 1,
       "distanceMiles": 4.2,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-18",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.2 miles · about 11 minutes from the family reference property",
       "summary": "A newly active one-level three-bedroom home at the $275,000 ceiling. York County reports 1,080 square feet, conflicting with a 2,138-square-foot current feed; the private-full-bath allocation, HOA rental authority, systems and permits remain unresolved and block recommendation.",
       "pros": [
@@ -32483,7 +32515,7 @@
     {
       "id": "mls-4411826",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-18",
       "lastSeen": "2026-10-18",
       "lastChanged": "2026-10-18",
@@ -32509,8 +32541,8 @@
       "daysOnMarket": 66,
       "distanceMiles": 2.4,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-18",
-      "distanceMethod": "ArcGIS public geocoding with OSRM public driving-route estimate from the private family reference property",
+      "distanceAsOf": "2026-10-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.4 miles · about 10 minutes from the family reference property",
       "summary": "An active two-suite townhouse at $280,000 after a $5,000 reduction and more than two months of exposure. Reaching the $275,000 ceiling requires a $5,000, or 1.8%, seller discount; acceptance, HOA rental authority, assessments, fees and system evidence remain unresolved.",
       "pros": [
@@ -32759,7 +32791,7 @@
     {
       "label": "York County official Master in Equity",
       "url": "https://www.yorkcountysc.gov/294/Master-in-Equity",
-      "accessed": "2026-10-18"
+      "accessed": "2026-10-19"
     },
     {
       "label": "York County delinquent tax sales",
@@ -32788,7 +32820,7 @@
     {
       "label": "HotPads Rock Hill one-bedroom rentals",
       "url": "https://hotpads.com/rock-hill-sc/1-bedroom-apartments-for-rent",
-      "accessed": "2026-10-18"
+      "accessed": "2026-10-19"
     },
     {
       "label": "RentCafe Rock Hill rentals",
@@ -32849,7 +32881,7 @@
     {
       "label": "SpareRoom current Rock Hill private-room inventory",
       "url": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
-      "accessed": "2026-10-17"
+      "accessed": "2026-10-19"
     },
     {
       "label": "RentCafe Rock Hill market trends",
@@ -32892,7 +32924,7 @@
     {
       "label": "Current Canopy MLS-fed Rock Hill discovery index",
       "url": "https://www.viewyorkcountyhomes.com/results-gallery/",
-      "accessed": "2026-10-18"
+      "accessed": "2026-10-19"
     },
     {
       "label": "Coldwell Banker 334 Hancock Union current listing",
@@ -32923,6 +32955,16 @@
       "label": "York County 2017 DFIRM feature service",
       "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Flood%20Hazard%20Zone%20Areas%20%28DFIRM%202017%29/FeatureServer/0",
       "accessed": "2026-10-18"
+    },
+    {
+      "label": "Current Canopy MLS-fed active status and $259,900 asking price",
+      "url": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car315333964-nccanopy/1708-chamberside-dr-rock-hill-sc-29730",
+      "accessed": "2026-10-19"
+    },
+    {
+      "label": "Homes.com current Rock Hill inventory corroborating $259,900 asking price",
+      "url": "https://www.homes.com/rock-hill-sc/pool/",
+      "accessed": "2026-10-19"
     }
   ],
   "sourceAudit": [
@@ -32930,23 +32972,23 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public inventory were reviewed. All 220 known purchase-source URLs were requested: 107 HTTP 200, 27 HTTP 202, two HTTP 301, four HTTP 307, 42 HTTP 403, one HTTP 404 and 37 HTTP 429. The only 404 belongs to an already-sold record and was not treated as new removal evidence. Current evidence produced 27 price changes, return-to-market evidence for three records and four new candidates.",
+      "asOf": "2026-10-19",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public surfaces were reviewed. All 203 unique currently marketed purchase-source URLs were requested: 108 HTTP 200, 22 HTTP 202, three HTTP 301, 36 HTTP 403 and 34 HTTP 429. Current cross-source evidence supported one price reduction at 1708 Chamberside Drive and no eligible new candidate.",
       "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, blocks, rate limits, redirects, token-free shells, snippets and stale pages are not independent status proof."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "A current Canopy MLS-fed Rock Hill index returned 163 filtered results and was reconciled with local brokerage, listing-agent and public builder pages. It corroborated the new Hancock Union, Tuckers Glenn and Moultrie listings, the Pineburr status conflict, 27 price changes and three return-to-market signals.",
+      "asOf": "2026-10-19",
+      "summary": "A current Canopy MLS-fed Rock Hill index returned 162 filtered results and was reconciled with indexed local brokerage, listing-agent and public builder pages. Twenty-eight unmatched entries were screened; all failed price, age, full-bath, status or credible-at-ceiling gates. The index supplied the fresher $259,900 Chamberside price.",
       "coverageGap": "IDX records can lag or conflict; direct seller, listing-agent, builder, association and closing confirmation remain necessary before an offer."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "summary": "HUD Home Store, Fannie Mae HomePath, Freddie Mac HomeSteps and public government-linked inventory entry points were checked. No independently verified eligible new HUD, HomePath or HomeSteps candidate with a current public price emerged.",
       "coverageGap": "Public inventory and investor-first-look details were not fully retrievable; no credentialed feed was requested or used."
     },
@@ -32954,23 +32996,23 @@
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity materials, foreclosure notices and owner-listing pages were reviewed. The November 2 Shenandoah judicial-auction lead remains gated; surfaced notices at Williams Street and older or one-bath properties were ineligible, and no new qualified owner-listed candidate emerged.",
+      "asOf": "2026-10-19",
+      "summary": "Public FSBO inventory, York County delinquent-tax and Master in Equity entry points, foreclosure notices and owner-listing pages were reviewed. Surfaced FSBO homes failed the configured age or full-bath gates, and no new qualified owner-listed or county-distressed candidate emerged.",
       "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing, occupancy, year-built, private-bath and all-charge checks."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "Auction.com, Hubzu, Xome, York County sale notices and public builder inventory were checked. Xome's visible Catawba Church lead and Auction.com's India Hook lead failed year or bathroom gates; no additional eligible auction emerged. Lennar Cannon Village single-family asks remained above the ceiling, while known townhome URLs still responded publicly.",
+      "asOf": "2026-10-19",
+      "summary": "Auction.com, Hubzu, Xome, York County sale entry points and public builder inventory were checked. Surfaced auction leads failed age or bathroom gates. Known Lennar Cannon Village townhome pages remained public at unchanged prices and construction statuses; no additional eligible candidate emerged.",
       "coverageGap": "Auction opening bids, premiums, title, redemption, condition, access, occupancy, final roster and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status and undisclosed fees."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "supported-manual-not-refreshed",
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained and fresh public Canopy MLS-fed sources were used for this run.",
       "coverageGap": "Manual saved-search coverage was unavailable this run."
     },
@@ -32978,7 +33020,7 @@
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports or direct MLS access.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure."
     },
@@ -32986,56 +33028,56 @@
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "Every known purchase source URL was re-requested and current public search surfaces were deduplicated by MLS and normalized address. New positive evidence changed 27 prices, returned 314 Friedheim Road, 1132 Carolina Avenue Extension and 104 Neely Court to active treatment, added four candidates, and produced no new positive removal evidence. Two ordinary misses are still required before archiving.",
+      "asOf": "2026-10-19",
+      "summary": "Every known currently marketed purchase source URL was re-requested, the current public IDX result set was deduplicated by MLS and normalized address, and current portal evidence was reconciled. Chamberside changed price. MLS 4372234 was absent from the current index and has one recorded ordinary miss; no record reached the two-miss archive threshold.",
       "coverageGap": "HTTP access and search snippets are not status proof. Seller acceptance, title, transfer instruments, builder availability, auction roster and contract status remain unresolved for many records."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "York County's official parcel service matched all four new candidates and supplied parcel, year, size and transfer references without exposing owner data. The official deed-search entry point was checked; complete instruments, current title, liens, easements, restrictions and transaction type remain unresolved.",
+      "asOf": "2026-10-19",
+      "summary": "York County official parcel, One Map and deed-search entry points were checked while screening current discoveries. The 548 Hutchinson Street marketing description conflicted with the official parcel year and building facts and was excluded under the configured age rule. No newly accepted candidate required a new parcel record.",
       "coverageGap": "Current ownership, title, liens, easements, restrictions, transaction type and full deed instruments remain unresolved until official instrument and closing review."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "Rock Hill and York County permit and zoning entry points were checked. Pineburr's public plan report and listing history show new-construction permits as conditional or issued rather than finaled; the other three new candidates lacked complete property-specific scope and final readback. Written occupancy, registration, parking and separate-room authority remain unresolved.",
+      "asOf": "2026-10-19",
+      "summary": "Rock Hill and York County permit and zoning entry points were checked and prior property-specific evidence was preserved. No new candidate cleared the discovery gates. Written occupancy, registration, parking, legal-bedroom and separate-room authority remain unresolved where already flagged.",
       "coverageGap": "Complete permit cards, trade finals, certificates, invoices, warranties, system dates and written zoning, occupancy and room-lease decisions remain required."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "York County One Map, the official 2017 DFIRM feature service and FEMA public entry points were checked. Parcel-geometry queries for all four new candidates returned zero intersecting DFIRM features; those results are retained only as non-affirmative evidence.",
+      "asOf": "2026-10-19",
+      "summary": "York County One Map, the official DFIRM service and FEMA public entry points were checked; prior property-specific evidence was preserved and no new candidate required a new parcel query. Zero-result GIS evidence continues to be treated as non-affirmative.",
       "coverageGap": "A zero-result GIS query does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection or insurer acceptance."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "Public searches did not produce controlling declarations, bylaws, amendments, budgets, resale certificates or separate written whole-unit and room-rental decisions for Constitution Park, Amber Ridge or The Woodlands. Reported dues were captured; Pineburr's separate 15-year deed restriction also requires instrument review.",
+      "asOf": "2026-10-19",
+      "summary": "Public searches produced no new controlling declarations, bylaws, amendments, budgets, resale certificates or separate written whole-unit and room-rental decisions for the unresolved HOA and condominium candidates. Reported dues were retained; unknown fees and special assessments remain unknown.",
       "coverageGap": "Unknown governing documents, deed restrictions, transfer or capital fees, special assessments, insurance, reserves, litigation, parking and separate rental authority block recommendation."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "Current Zillow, HotPads, Apartments.com and RentCafe Rock Hill one-bedroom rental surfaces were reviewed. Visible asks still supported the prior range, so the conservative $1,150 monthly private-unit planning benchmark was retained.",
+      "asOf": "2026-10-19",
+      "summary": "Current public Rock Hill one-bedroom and private-studio rental surfaces were reviewed. Visible asks continued to support the prior range, including a current $1,200 private-studio example, so the conservative $1,150 monthly private-unit planning benchmark was retained.",
       "coverageGap": "Asking rent is not a signed lease; availability, deposits, mandatory fees, utilities, condition and unit quality vary."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-18",
-      "summary": "All 14 configured room-comparable URLs were requested: four HTTP 200 and ten HTTP 403. Fresh public Roomies, SpareRoom and Furnished Finder search evidence continued to show a broad range, including private-bath asks around $800-$1,000 and higher furnished medium-term examples. The conservative $850 monthly planning benchmark was retained.",
+      "asOf": "2026-10-19",
+      "summary": "All 14 configured room-comparable URLs were requested: five HTTP 200 and nine HTTP 403. Fresh Roomies and SpareRoom evidence showed shared-bath rooms around $650-$900 and private-bath asks from about $650 to $1,000. The conservative $850 monthly planning benchmark was retained.",
       "coverageGap": "Blocked pages and asking rents do not prove current availability, achieved rent, property-specific demand or legal room-rental authority."
     }
   ],
