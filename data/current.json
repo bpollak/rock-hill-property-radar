@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-31",
+  "asOf": "2026-11-01",
   "runStatus": "successful",
-  "researchMethod": "Fresh public-only reconciliation of current MLS-syndicated and Canopy MLS-fed IDX pages, direct builder inventory, GSE and government inventory, FSBO and distressed sources, public auctions, parcel and deed data, permit and zoning portals, flood-risk layers, HOA evidence, and private-unit and room-rent evidence. Every retained marketed primary URL was re-requested; access blocks and rate limits are documented coverage gaps rather than removal proof. Public routes were recalculated for 235 of 236 purchase records; one ambiguous public geocode retained its prior verified route. Stable IDs and history were preserved, three builder records were archived only after a second direct-inventory miss, and unknown legal or condo authority continues to cap room-rental viability and underwritten income.",
+  "researchMethod": "Fresh public-only reconciliation of current MLS-syndicated portals, public brokerage and Canopy MLS-fed IDX evidence, direct builder inventory, GSE and government inventory, FSBO and distressed sources, public auctions, parcel and deed entry points, permit and zoning portals, flood-risk sources, HOA evidence, and private-unit and room-rent evidence. All 216 retained marketed primary URLs were requested; blocks, rate limits and timeouts remain coverage gaps rather than removal proof. Public routes were recalculated for 183 of 238 purchase records; 55 ambiguous or unavailable recalculations retained prior verified routes. Stable IDs and history were preserved, homesite 161 moved to the stricter pending status, no listing was archived, and unknown legal or condo authority continues to cap room-rental viability and underwritten income.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -9,9 +9,9 @@
     "medianSoldPrice": 357900,
     "medianPricePerSqft": 207,
     "medianDaysOnMarket": 56,
-    "asOf": "2026-10-31",
+    "asOf": "2026-11-01",
     "sourceUrl": "https://www.realtor.com/local/market/south-carolina/york-county/rock-hill",
-    "note": "Current public listing, builder, rent and market evidence was refreshed October 31, 2026. Public search remains non-exhaustive MLS coverage; unknown legal, HOA, permit, system-age, title, flood and insurance evidence remains conservative."
+    "note": "Current public listing, builder, rent and market evidence was refreshed November 1, 2026. Public search remains non-exhaustive MLS coverage; unknown legal, HOA, permit, system-age, title, flood and insurance evidence remains conservative."
   },
   "properties": [
     {
@@ -19,7 +19,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "1784 Ebenezer Rd Unit D, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1784-Ebenezer-Rd-29732/unit-D/home/52107895",
@@ -227,7 +227,7 @@
       "distanceMiles": 19.7,
       "driveMinutes": 34,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-30",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "19.7 miles · about 34 minutes from the family reference property",
       "summary": "Lots of space and a likely main-floor private suite at a low price per square foot, offset by distance, age, and unresolved county room-rental rules.",
       "pros": [
@@ -741,7 +741,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-13",
       "address": "1474 Stroupe St, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1474-Stroupe-St-29730/home/52335709",
@@ -905,7 +905,7 @@
       "distanceMiles": 4.6,
       "driveMinutes": 10,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "4.6 miles · about 10 minutes from the family reference property",
       "summary": "A 4-bedroom manufactured home at $279,000 that is now contingent. It would still require a $4,000 seller discount to reach the offer ceiling if it returns to active marketing; private-bath, title, foundation, septic, insurance, and system evidence remain unresolved.",
       "pros": [
@@ -1215,7 +1215,7 @@
       "distanceMiles": 4.9,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "A new, one-level Rock Hill home reduced to $260,000 with a documented private primary bathroom. Separate-room rental authority, final inspection, certificate of occupancy, builder charges, and construction documentation remain unresolved.",
       "pros": [
@@ -1512,7 +1512,7 @@
       "distanceMiles": 7.1,
       "driveMinutes": 15,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "7.1 miles · about 15 minutes from the family reference property",
       "summary": "A compact one-level brick ranch reduced to $239,000. The private full-bath arrangement, legal room-rental structure, and ages of major systems are not documented, so it remains a verification candidate rather than a recommendation.",
       "pros": [
@@ -1664,7 +1664,7 @@
       "distanceMiles": 5.4,
       "driveMinutes": 12,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.4 miles · about 12 minutes from the family reference property",
       "summary": "A one-level FSBO reduced to $110,000 with one bedroom and one full bathroom. It is excluded by the pre-1980 construction rule, and title, condition, financing, system ages, permits, and transaction terms remain unresolved.",
       "pros": [
@@ -1775,7 +1775,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-15",
       "address": "648 Izard St, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/648-Izard-St-29730/home/52115130",
@@ -1799,7 +1799,7 @@
       "distanceMiles": 6.5,
       "driveMinutes": 14,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "6.5 miles · about 14 minutes from the family reference property",
       "summary": "A one-level three-bedroom home below the ceiling with a documented private primary bath. Older systems, property-specific legal room-rental authority, parking capacity, and official records remain unresolved.",
       "pros": [
@@ -1886,7 +1886,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-15",
       "address": "105 Virginia St, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/105-Virginia-St-29730/home/52109487",
@@ -1910,7 +1910,7 @@
       "distanceMiles": 6.3,
       "driveMinutes": 15,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "6.3 miles · about 15 minutes from the family reference property",
       "summary": "A one-level three-bedroom home well below the ceiling with public utilities and no reported HOA. The family occupant's private full bath and legal room-rental structure are not documented.",
       "pros": [
@@ -2340,7 +2340,7 @@
       "distanceMiles": 4.3,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "4.3 miles · about 11 minutes from the family reference property",
       "summary": "A one-level home at the price ceiling with a two-car garage and low reported annual HOA dues. Current Realtor inventory presents it as contingent, while a direct detail page still lags as active; private-bath and association room-rental authority remain unknown.",
       "pros": [
@@ -2476,7 +2476,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-16",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-14",
       "address": "4858 York Hwy, Rock Hill, SC 29732",
       "sourceUrl": "https://www.compass.com/homedetails/4858-York-Hwy-York-SC-29745/WH0PT_pid/",
@@ -2696,7 +2696,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-16",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-04",
       "address": "1126 Hoyle St, Rock Hill, SC 29732",
       "sourceUrl": "https://search.savvyandcompany.com/idx/property/1126_Hoyle_Street_Rock_Hill_SC_29732%2Cres_1702482.html",
@@ -2720,7 +2720,7 @@
       "distanceMiles": 4.9,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "This completed one-level new build at the maximum offer price has an explicitly described en-suite bath. The listing is now pending, so it is retained for tracking but is not a current purchase recommendation; separate-room rental authority, final permit closeout, and mandatory builder fees remain unresolved.",
       "pros": [
@@ -2857,7 +2857,7 @@
     {
       "changeCategory": "existing",
       "firstSeen": "2026-08-17",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-30",
       "originalPrice": 300000,
       "priceCutPercent": 10,
@@ -2992,7 +2992,7 @@
       },
       "distanceMiles": 4.4,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.4 miles · about 11 minutes from the family reference property",
       "changeHistory": [
@@ -3069,7 +3069,7 @@
     {
       "changeCategory": "existing",
       "firstSeen": "2026-08-17",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-28",
       "originalPrice": 290000,
       "priceCutPercent": 8.7,
@@ -3185,7 +3185,7 @@
       },
       "distanceMiles": 6.9,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.9 miles · about 14 minutes from the family reference property",
       "changeHistory": [
@@ -3364,7 +3364,7 @@
       },
       "distanceMiles": 10,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "10.0 miles · about 20 minutes from the family reference property",
       "changeHistory": [
@@ -3563,7 +3563,7 @@
       },
       "distanceMiles": 11.1,
       "driveMinutes": 25,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "11.1 miles · about 25 minutes from the family reference property",
       "changeHistory": [
@@ -3657,7 +3657,7 @@
     {
       "changeCategory": "existing",
       "firstSeen": "2026-08-17",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-20",
       "originalPrice": 240000,
       "priceCutPercent": 0,
@@ -3739,7 +3739,7 @@
       },
       "distanceMiles": 2.2,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.2 miles · about 9 minutes from the family reference property",
       "changeHistory": [
@@ -3925,7 +3925,7 @@
       },
       "distanceMiles": 5.3,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.3 miles · about 11 minutes from the family reference property",
       "changeHistory": [
@@ -4113,7 +4113,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-28",
       "address": "314 Friedheim Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car305545712-nccanopy/314-friedheim-rd-rock-hill-sc-29730",
@@ -4137,7 +4137,7 @@
       "distanceMiles": 6.4,
       "driveMinutes": 14,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "6.4 miles · about 14 minutes from the family reference property",
       "summary": "Now under contract with showings at $250,000. The completed one-level new build has a documented private primary bathroom; permit closeout, builder fees and written room-rental authority remain unresolved.",
       "pros": [
@@ -4381,7 +4381,7 @@
       "distanceMiles": 6.9,
       "driveMinutes": 14,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "6.9 miles · about 14 minutes from the family reference property",
       "summary": "A completed one-level new build $10,100 below the ceiling after roughly $35,000 of list-price reductions and extended market exposure. The required private full bathroom allocation, room-rental authority, final permit closeout, and builder fees remain unresolved. The listing is now contingent, so it is retained for tracking but is not a current purchase recommendation.",
       "pros": [
@@ -4560,7 +4560,7 @@
       "distanceMiles": 6.8,
       "driveMinutes": 14,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "6.8 miles · about 14 minutes from the family reference property",
       "summary": "Sold September 4, 2026 for $200,000 and archived from the active decision set on current MLS-fed sale evidence. The Made It Home eligibility, deed-restriction, resale and room-leasing questions remain historical context rather than an active recommendation.",
       "pros": [
@@ -4702,7 +4702,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-19",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-02",
       "address": "305 Hagins St, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/305-Hagins-St-29730/home/164854411",
@@ -5697,7 +5697,7 @@
       "distanceMiles": 2.9,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "2.9 miles · about 11 minutes from the family reference property",
       "summary": "A 2003 end-unit three-bedroom townhouse now $35,000 below the ceiling. Current brokerage inventory supports the reduced price, but HOA rental rules and private-bath allocation remain unknown.",
       "pros": [
@@ -5840,7 +5840,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-18",
       "address": "1625 Begonia Way, Rock Hill, SC 29732",
       "sourceUrl": "https://www.trulia.com/home/1625-begonia-way-rock-hill-sc-29732-70603803",
@@ -5864,7 +5864,7 @@
       "distanceMiles": 5.1,
       "driveMinutes": 12,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.1 miles · about 12 minutes from the family reference property",
       "summary": "A 2001 three-bedroom townhouse at $248,900 with no HOA reported. The marketing claims renovations, including roof work, but permits, invoices, warranties, private-bath allocation, and recorded covenants remain unresolved.",
       "pros": [
@@ -5985,7 +5985,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-29",
       "address": "5061 Newport Lakes Dr Unit 11, Rock Hill, SC 29732",
       "sourceUrl": "https://www.greatercharlottehomeviewer.com/homedetails/sc/rock-hill/nccanopy-car308342765-nccanopy/5061-newport-lakes-dr-unit-11-rock-hill-sc-29732",
@@ -6331,7 +6331,7 @@
       "distanceMiles": 5.2,
       "driveMinutes": 14,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.2 miles · about 14 minutes from the family reference property",
       "summary": "A 2004 two-bedroom townhouse reduced to $229,900. The price is attractive, but only one rentable bedroom remains after reserving the family suite and association room-rental authority is unknown.",
       "pros": [
@@ -6446,7 +6446,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-21",
       "address": "1576 Arborgate Dr Unit 92, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1576-Arborgate-Dr-29732/unit-92/home/199628150",
@@ -6470,7 +6470,7 @@
       "distanceMiles": 4.1,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "4.1 miles · about 11 minutes from the family reference property",
       "summary": "A one-level short-sale listing now shown at $250,000 after prolonged exposure. The price is below the ceiling, but lender approval, private-bath layout, HOA rental authority, assessments, title, condition, and transaction timing remain unresolved.",
       "pros": [
@@ -6951,7 +6951,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-21",
       "address": "1089 Cherry Meadow Ln, Rock Hill, SC 29732",
       "sourceUrl": "https://www.compass.com/homedetails/1089-Cherry-Meadow-Ln-Rock-Hill-SC-29732/X2EW6_pid/",
@@ -7095,7 +7095,7 @@
     {
       "id": "mls-4395375",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-10-31",
       "lastChanged": "2026-10-31",
@@ -7121,7 +7121,7 @@
       "distanceMiles": 9.8,
       "driveMinutes": 20,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "9.8 miles · about 20 minutes from the family reference property",
       "summary": "A one-level 1997 home now asking $245,000 after five documented reductions from $285,000. Current Canopy MLS-fed evidence reports the new active price; private-bath allocation, room-rental authority and system ages remain unresolved.",
       "pros": [
@@ -7334,7 +7334,7 @@
       "distanceMiles": 2.9,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "2.9 miles · about 11 minutes from the family reference property",
       "summary": "Current public sale evidence reports a September 25, 2026 sale for $195,000, superseding the prior pending record. The property is retained as an archived record and is no longer an active purchase candidate.",
       "pros": [
@@ -7495,7 +7495,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-18",
       "address": "815 Spruce St S, Rock Hill, SC 29730",
       "sourceUrl": "https://www.trulia.com/home/815-spruce-st-s-rock-hill-sc-29730-464722388",
@@ -7805,7 +7805,7 @@
       "distanceMiles": 6.4,
       "driveMinutes": 13,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "6.4 miles · about 13 minutes from the family reference property",
       "summary": "A newly listed, one-level two-bedroom condominium at $135,000 with $145 monthly HOA dues. The two-full-bath layout is promising, but private-bath separation, governing documents, assessments, transaction fees, and separate-room rental authority remain unknown.",
       "pros": [
@@ -7941,7 +7941,7 @@
       "distanceMiles": 4.4,
       "driveMinutes": 12,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "4.4 miles · about 12 minutes from the family reference property",
       "summary": "Closed October 1, 2026 for $275,000 and archived from the active decision set. Current Canopy MLS-fed sold history supersedes the October 7 stale active observation; official deed-instrument review remains a follow-up.",
       "pros": [
@@ -8126,7 +8126,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-23",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-29",
       "address": "916 Coffee Tree Ln, Rock Hill, SC 29732",
       "sourceUrl": "https://www.trulia.com/home/916-coffee-tree-ln-rock-hill-sc-29732-71475639",
@@ -8150,7 +8150,7 @@
       "distanceMiles": 3.8,
       "driveMinutes": 10,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "3.8 miles · about 10 minutes from the family reference property",
       "summary": "An active 2005 three-bedroom townhouse reduced to $272,000, now $3,000 below the offer ceiling. HOA dues, private-bath layout, governing documents, assessments, transaction fees, and separate-room rental authority remain unknown.",
       "pros": [
@@ -8292,7 +8292,7 @@
       "distanceMiles": 7,
       "driveMinutes": 14,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "7.0 miles · about 14 minutes from the family reference property",
       "summary": "An active one-level 2022 home at the offer ceiling after a $10,000 cumulative reduction and extended exposure. The private-bath layout and unrelated-room leasing authority remain unresolved.",
       "pros": [
@@ -8399,7 +8399,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-23",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-23",
       "address": "837 Dillard Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/837-Dillard-Rd-29730/home/52065513",
@@ -8423,7 +8423,7 @@
       "distanceMiles": 7.7,
       "driveMinutes": 17,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "An active two-bedroom townhouse at $249,900 after a $20,000 cumulative reduction and long exposure. The $222 monthly HOA, private-bath layout, governing documents, assessments, transaction fees, and separate-room rental authority require written verification.",
       "pros": [
@@ -8975,7 +8975,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-30",
       "address": "1656 Eagles Pl Unit I-101, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1656-Eagles-Pl-29732/unit-I-101/home/202353073",
@@ -9313,7 +9313,7 @@
       "distanceMiles": 3.8,
       "driveMinutes": 10,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "3.8 miles · about 10 minutes from the family reference property",
       "summary": "An active two-suite townhouse now asking $239,800. The primary suite and a second full bath are documented, but HOA whole-unit and individual-room rental authority, fee schedules, parking and system proof remain unresolved.",
       "pros": [
@@ -9517,7 +9517,7 @@
       "distanceMiles": 5.2,
       "driveMinutes": 14,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.2 miles · about 14 minutes from the family reference property",
       "summary": "A 2004 two-bedroom townhouse at $250,000 with two full bathrooms, one half bathroom, and reported 2021 HVAC replacement. Private-bath separation and controlling whole-unit and room-rental authority remain unknown.",
       "pros": [
@@ -9609,7 +9609,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "662 E Lamorak Place E, Richburg, SC 29729",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1156248587~CANOPY",
@@ -9700,7 +9700,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-27",
       "address": "1831 Townes Ct, Rock Hill, SC 29730",
       "sourceUrl": "https://www.compass.com/homedetails/1831-Townes-Ct-Rock-Hill-SC-29730/Y0GWV_pid/",
@@ -9724,7 +9724,7 @@
       "distanceMiles": 5.6,
       "driveMinutes": 15,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.6 miles · about 15 minutes from the family reference property",
       "summary": "An active one-level 1983 house now publicly listed at $274,000, $1,000 below the absolute offer ceiling. The private full-bath layout, local room-rental authority, system ages, permits, parcel and flood readback, and insurance remain unresolved.",
       "pros": [
@@ -9851,7 +9851,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "864 Stowe Ln, Gastonia, NC 28056",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1174574689~CANOPY",
@@ -9875,7 +9875,7 @@
       "distanceMiles": 28.7,
       "driveMinutes": 52,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "28.7 miles · about 52 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $279,999 under Canopy MLS 4385631. Built in 2004; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -9944,7 +9944,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "2311 Firmin Ct, Gastonia, NC 28056",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1183403906~CANOPY",
@@ -9968,7 +9968,7 @@
       "distanceMiles": 21.4,
       "driveMinutes": 37,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "21.4 miles · about 37 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $275,000 under Canopy MLS 4415810. Built in 1986; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10036,7 +10036,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "721 Daves Rd, York, SC 29745-8547",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1183343097~CANOPY",
@@ -10163,7 +10163,7 @@
       "distanceMiles": 27.3,
       "driveMinutes": 45,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "27.3 miles · about 45 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $255,000 under Canopy MLS 4416409. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10231,7 +10231,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "1910 Hardin Strait Rd, Chester, SC 29706-8479",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1179243981~CANOPY",
@@ -10255,7 +10255,7 @@
       "distanceMiles": 23.9,
       "driveMinutes": 45,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "23.9 miles · about 45 minutes from the family reference property",
       "summary": "4-bedroom, 2-bath single family residence in Chester, listed at $269,900 under Canopy MLS 4410280. Built in 1998; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10322,7 +10322,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "2037 Crooked Oak Ln, York, SC 29745-9750",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1176552019~CANOPY",
@@ -10346,7 +10346,7 @@
       "distanceMiles": 12.2,
       "driveMinutes": 22,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "12.2 miles · about 22 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in York, listed at $259,000 under Canopy MLS 4400785. Built in 2023; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10425,7 +10425,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "219 N Scruggs St, Gastonia, NC 28052-2045",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1177033283~CANOPY",
@@ -10449,7 +10449,7 @@
       "distanceMiles": 28.5,
       "driveMinutes": 47,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "28.5 miles · about 47 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $219,900 under Canopy MLS 4403298. Built in 2024; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10515,7 +10515,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "5932 Shirley Rd, Fort Lawn, SC 29714",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1178626006~CANOPY",
@@ -10539,7 +10539,7 @@
       "distanceMiles": 26,
       "driveMinutes": 43,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "26.0 miles · about 43 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Fort Lawn, listed at $249,900 under Canopy MLS 4409144. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10607,7 +10607,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "119 Brown St, Clover, SC 29710-1254",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1176041047~CANOPY",
@@ -10631,7 +10631,7 @@
       "distanceMiles": 20.1,
       "driveMinutes": 32,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "20.1 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Clover, listed at $275,000 under Canopy MLS 4383144. Built in 2021; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -10709,7 +10709,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "809 Gunnar Dr, Gastonia, NC 28054-0058",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1178516252~CANOPY",
@@ -10801,7 +10801,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-13",
       "address": "5440 Winden Rd, Rock Hill, SC 29732-8186",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1178567238~CANOPY",
@@ -10962,7 +10962,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "LOT 1 Furr St, Rock Hill, SC 29730",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1182175974~CANOPY",
@@ -11191,7 +11191,7 @@
       "distanceMiles": 18.4,
       "driveMinutes": 32,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "18.4 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Charlotte, listed at $279,899 under Canopy MLS 4383749. Built in 2004; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11259,7 +11259,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "1121 Cleveland Ave, Gastonia, NC 28052-2603",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1181867806~CANOPY",
@@ -11283,7 +11283,7 @@
       "distanceMiles": 28.8,
       "driveMinutes": 48,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "28.8 miles · about 48 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $250,000 under Canopy MLS 4414991. Built in 2022; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11349,7 +11349,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "657 Still St, Chester, SC 29706-2527",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1156571800~CANOPY",
@@ -11373,7 +11373,7 @@
       "distanceMiles": 24.1,
       "driveMinutes": 43,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "24.1 miles · about 43 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Chester, listed at $280,000 under Canopy MLS 4364429. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11657,7 +11657,7 @@
       "distanceMiles": 16.8,
       "driveMinutes": 30,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "16.8 miles · about 30 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in Charlotte, listed at $271,500 under Canopy MLS 4377551. Built in 2004; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11749,7 +11749,7 @@
       "distanceMiles": 14.6,
       "driveMinutes": 28,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "14.6 miles · about 28 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in Fort Mill, listed at $285,000 under Canopy MLS 4372101. Built in 2006; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11829,7 +11829,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "209 Tail Race Ln, Fort Mill, SC 29715-6472",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1178537268~CANOPY",
@@ -11853,7 +11853,7 @@
       "distanceMiles": 6.7,
       "driveMinutes": 15,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "6.7 miles · about 15 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in Fort Mill, listed at $272,500 under Canopy MLS 4408718. Built in 2006; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -11956,7 +11956,7 @@
       "distanceMiles": 27.7,
       "driveMinutes": 46,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "27.7 miles · about 46 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath single family residence in Gastonia, listed at $260,000 under Canopy MLS 4410688. Built in 2019; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12047,7 +12047,7 @@
       "distanceMiles": 28.1,
       "driveMinutes": 46,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "28.1 miles · about 46 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Lancaster, listed at $283,990 under Canopy MLS 4398050. Built in 2025; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12115,7 +12115,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "108 Daves Rd, York, SC 29745-9532",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1178148417~CANOPY",
@@ -12139,7 +12139,7 @@
       "distanceMiles": 15.7,
       "driveMinutes": 31,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "15.7 miles · about 31 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $239,500 under Canopy MLS 4407173. Built in 1995; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12246,7 +12246,7 @@
       "distanceMiles": 14.3,
       "driveMinutes": 24,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-30",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "14.3 miles · about 24 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath townhouse in Clover, listed at $284,995 under Canopy MLS 4399575. Built in 2008; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12352,7 +12352,7 @@
       "distanceMiles": 3.6,
       "driveMinutes": 9,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "3.6 miles · about 9 minutes from the family reference property",
       "summary": "A 2006 three-bedroom townhouse now asking $279,900. Reaching the hard $275,000 offer ceiling requires a $4,900, or 1.8%, seller discount; private-bath allocation, separate whole-unit and room-rental authority, and the complete two-association fee schedule remain unresolved.",
       "pros": [
@@ -12509,7 +12509,7 @@
       "distanceMiles": 27.8,
       "driveMinutes": 46,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "27.8 miles · about 46 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $225,000 under Canopy MLS 4394223. Built in 2015; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12731,7 +12731,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "9028 Four Mile Creek Rd, Charlotte, NC 28277-9068",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1147242539~CANOPY",
@@ -12755,7 +12755,7 @@
       "distanceMiles": 23.2,
       "driveMinutes": 43,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "23.2 miles · about 43 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Charlotte, listed at $285,000 under Canopy MLS 4326288. Built in 1994; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12848,7 +12848,7 @@
       "distanceMiles": 21.5,
       "driveMinutes": 35,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "21.5 miles · about 35 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $210,000 under Canopy MLS 4361423. Built in 1980; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -12939,7 +12939,7 @@
       "distanceMiles": 26.5,
       "driveMinutes": 44,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "26.5 miles · about 44 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $259,900 under Canopy MLS 4400984. Built in 2023; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13029,7 +13029,7 @@
       "distanceMiles": 13.9,
       "driveMinutes": 32,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "13.9 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $208,890 under Canopy MLS 4329803. Built in 2015; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13113,7 +13113,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "14718 Lions Pride Ct, Charlotte, NC 28278",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1177548158~CANOPY",
@@ -13137,7 +13137,7 @@
       "distanceMiles": 16.2,
       "driveMinutes": 31,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "16.2 miles · about 31 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Charlotte, listed at $280,000 under Canopy MLS 4405359. Built in 2003; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13298,7 +13298,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "988 Cranberry Cir, Fort Mill, SC 29715-7310",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1177203372~CANOPY",
@@ -13322,7 +13322,7 @@
       "distanceMiles": 13.5,
       "driveMinutes": 27,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "13.5 miles · about 27 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Fort Mill, listed at $259,900 under Canopy MLS 4404597. Built in 1985; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13426,7 +13426,7 @@
       "distanceMiles": 15.9,
       "driveMinutes": 33,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "15.9 miles · about 33 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Charlotte, listed at $259,900 under Canopy MLS 4360142. Built in 2002; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13494,7 +13494,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "1919 Oak Hollow Rd, Gastonia, NC 28054",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1155470466~CANOPY",
@@ -13518,7 +13518,7 @@
       "distanceMiles": 30,
       "driveMinutes": 50,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "30.0 miles · about 50 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $240,000 under Canopy MLS 4359199. Built in 1984; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13609,7 +13609,7 @@
       "distanceMiles": 18.5,
       "driveMinutes": 34,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "18.5 miles · about 34 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Charlotte, listed at $222,000 under Canopy MLS 4385882. Built in 1980; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13677,7 +13677,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "908 Buddys Choice Rd, York, SC 29745-9126",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1172360909~CANOPY",
@@ -13701,7 +13701,7 @@
       "distanceMiles": 9.4,
       "driveMinutes": 22,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "9.4 miles · about 22 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $240,000 under Canopy MLS 4381686. Built in 1985; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13804,7 +13804,7 @@
       "distanceMiles": 9.7,
       "driveMinutes": 19,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "9.7 miles · about 19 minutes from the family reference property",
       "summary": "Current MLS-fed IDX shows under contract with showings at $280,000 after a September 1 $5,000 reduction; older Trulia still shows $285,000 active. A $5,000 discount to the $275,000 ceiling would be required if it returns to market; seller acceptance is unresolved. 3-bedroom, 2-bath single family residence in Rock Hill, listed at $285,000 under Canopy MLS 4394249. Built in 1999; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -13919,7 +13919,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "348 John Thrift Rd, York, SC 29745",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1109513400~CANOPY",
@@ -13943,7 +13943,7 @@
       "distanceMiles": 12.2,
       "driveMinutes": 22,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "12.2 miles · about 22 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in York, listed at $275,000 under Canopy MLS 4239130. Built in 1996; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14023,7 +14023,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "100 Willow Run Dr Unit 22, Gastonia, NC 28056-9287",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1176309949~CANOPY",
@@ -14047,7 +14047,7 @@
       "distanceMiles": 23.6,
       "driveMinutes": 40,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "23.6 miles · about 40 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Gastonia, listed at $225,000 under Canopy MLS 4399513. Built in 1982; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14115,7 +14115,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "251 Rankin Rd, Belmont, NC 28101",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1158361317~CANOPY",
@@ -14139,7 +14139,7 @@
       "distanceMiles": 27.1,
       "driveMinutes": 47,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-30",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "27.1 miles · about 47 minutes from the family reference property",
       "summary": "3-bedroom, 3-bath single family residence in Belmont, listed at $240,000 under Canopy MLS 4373548. Built in 2000; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14206,7 +14206,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "2050 Shady Pond Dr, Clover, SC 29710",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1173328360~CANOPY",
@@ -14311,7 +14311,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "8134 Kings Creek Dr, Charlotte, NC 28273-5618",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1159282390~CANOPY",
@@ -14335,7 +14335,7 @@
       "distanceMiles": 18.4,
       "driveMinutes": 32,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "18.4 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath townhouse in Charlotte, listed at $249,900 under Canopy MLS 4377263. Built in 2005; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14403,7 +14403,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "11873 Ridgeway Park Dr, Charlotte, NC 28277-2989",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1156431154~CANOPY",
@@ -14427,7 +14427,7 @@
       "distanceMiles": 15.7,
       "driveMinutes": 32,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "15.7 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Charlotte, listed at $275,000 under Canopy MLS 4363892. Built in 2005; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14519,7 +14519,7 @@
       "distanceMiles": 16.9,
       "driveMinutes": 32,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "16.9 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Clover, listed at $275,000 under Canopy MLS 4390988. Built in 1996; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14599,7 +14599,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "208 Nottingham Dr, York, SC 29745-1345",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1171971039~CANOPY",
@@ -14726,7 +14726,7 @@
       "distanceMiles": 15.7,
       "driveMinutes": 32,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "15.7 miles · about 32 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath condominium in Charlotte, listed at $250,000 under Canopy MLS 4377942. Built in 2004; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14818,7 +14818,7 @@
       "distanceMiles": 27.3,
       "driveMinutes": 45,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "27.3 miles · about 45 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Gastonia, listed at $250,000 under Canopy MLS 4346419. Built in 1996; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14885,7 +14885,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-24",
       "address": "764 Old York Rd, Chester, SC 29706",
       "sourceUrl": "https://portal.onehome.com/en-US/property/aotf~1151102977~CANOPY",
@@ -14909,7 +14909,7 @@
       "distanceMiles": 25.2,
       "driveMinutes": 45,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "25.2 miles · about 45 minutes from the family reference property",
       "summary": "3-bedroom, 2-bath single family residence in Chester, listed at $270,000 under Canopy MLS 4336938. Built in 2026; private-bath allocation and separate-room rental authority remain unresolved.",
       "pros": [
@@ -14995,7 +14995,7 @@
       "daysOnMarket": 92,
       "distanceMiles": 7.7,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "An active two-bedroom Manchester Village townhome now $10,000 below the ceiling. Each bedroom is publicly described with its own full bathroom, but HOA whole-unit and separate-room rental authority remain unknown.",
@@ -15136,7 +15136,7 @@
       "daysOnMarket": 69,
       "distanceMiles": 1.2,
       "driveMinutes": 5,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "1.2 miles · about 5 minutes from the family reference property",
       "summary": "A one-level two-bedroom condo under contract at $238,000. Two full bathrooms, accessibility, and a 55-plus community are reported, but private-bath allocation, age-occupancy documents, rental authority, fees, and the current contract outcome remain unresolved.",
@@ -15266,7 +15266,7 @@
       "daysOnMarket": 100,
       "distanceMiles": 4.9,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "An active multi-level end-unit condo at $250,000 after a $25,000 reduction. Public listing evidence describes two bedrooms with private full bathrooms, but governing rental documents, assessments, transaction fees, and stair practicality remain unresolved.",
@@ -15388,7 +15388,7 @@
       "daysOnMarket": 99,
       "distanceMiles": 4.3,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.3 miles · about 10 minutes from the family reference property",
       "summary": "No longer currently marketed: MLS listing removed on 2026-08-15. Preserved for history; previous asking price is not a current offer or automated valuation.",
@@ -15533,7 +15533,7 @@
       "daysOnMarket": 74,
       "distanceMiles": 2.7,
       "driveMinutes": 7,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.7 miles · about 7 minutes from the family reference property",
       "summary": "An active two-bedroom, two-bath condo reduced to $207,000 with mandatory $125 monthly HOA dues. Private-bath allocation, governing rental authority, and property-specific diligence remain unresolved.",
@@ -15613,7 +15613,7 @@
         }
       ],
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-18",
       "changeCategory": "existing",
       "changeHistory": [
@@ -15707,7 +15707,7 @@
       "daysOnMarket": 165,
       "distanceMiles": 4.4,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.4 miles · about 10 minutes from the family reference property",
       "summary": "A contingent two-bedroom townhome at $200,000. Both bedrooms are publicly described with private ensuite bathrooms, but the contract outcome, rental authority, assessments, transfer fees, and HOA restrictions remain unresolved.",
@@ -15839,7 +15839,7 @@
       "daysOnMarket": 182,
       "distanceMiles": 1.2,
       "driveMinutes": 5,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "1.2 miles · about 5 minutes from the family reference property",
       "summary": "Closed October 2, 2026 for $210,000 and archived from the active decision set on positive MLS-fed sale evidence. The association's rental rules, fees and governing documents remain unresolved historical context, not an active recommendation.",
@@ -15993,7 +15993,7 @@
       "daysOnMarket": 60,
       "distanceMiles": 3.2,
       "driveMinutes": 7,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.2 miles · about 7 minutes from the family reference property",
       "summary": "An active one-level two-bedroom Olde Pointe condo at $240,000. Two full bathrooms and $230 monthly dues are reported, but private-bath allocation, deed restrictions, rental authority, assessments, transaction fees, and material system ages remain unresolved.",
@@ -16133,7 +16133,7 @@
       "daysOnMarket": 85,
       "distanceMiles": 2.6,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.6 miles · about 10 minutes from the family reference property",
       "summary": "A contingent one-level two-bedroom townhome at $199,999. Two full bathrooms, two assigned spaces, and public utilities are reported, but private-bath allocation, contract outcome, rental authority, assessments, transfer fees, and system ages remain unresolved.",
@@ -16258,7 +16258,7 @@
       "daysOnMarket": 19,
       "distanceMiles": 6.5,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.5 miles · about 13 minutes from the family reference property",
       "summary": "A tenant-occupied Eagles Landing condo under contract at $130,000. Two bedrooms, two full bathrooms, and $1,275 current whole-unit rent are reported, but the family private-bath layout, lease terms, possession timing, HOA dues, governing rental authority, and transaction fees remain unresolved.",
@@ -16381,7 +16381,7 @@
       "daysOnMarket": 236,
       "distanceMiles": 7,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.0 miles · about 15 minutes from the family reference property",
       "summary": "An active Willowbrook condo listed at $145,000 after a $14,900 reduction. Unit A has only one full bathroom, so it cannot satisfy the required private full bathroom while supporting the proposed shared occupancy and is rejected.",
@@ -16507,7 +16507,7 @@
       "daysOnMarket": 236,
       "distanceMiles": 7,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.0 miles · about 15 minutes from the family reference property",
       "summary": "An active Willowbrook condo listed at $145,000 after a $14,900 reduction. Unit B has only one full bathroom, so it cannot satisfy the required private full bathroom while supporting the proposed shared occupancy and is rejected.",
@@ -16633,7 +16633,7 @@
       "daysOnMarket": 141,
       "distanceMiles": 17.4,
       "driveMinutes": 34,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "17.4 miles · about 34 minutes from the family reference property",
       "summary": "A one-level manufactured home under contract at $274,900, just $100 below the offer ceiling. Two full bathrooms and substantial space are reported, but a private ensuite, contract outcome, septic capacity, foundation and title eligibility, system ages, insurance, and room-rental authority remain unresolved.",
@@ -16767,7 +16767,7 @@
       "distanceMiles": 11.5,
       "driveMinutes": 26,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "11.5 miles · about 26 minutes from the family reference property",
       "summary": "A one-level 1980 two-bedroom, two-bath home on one acre, reduced to $284,500 after 71 reported market days. It is $9,500 above the offer ceiling, and acceptance, private-bath layout, room-rental authority, well/septic capacity, permit closure, system ages, condition, and risk remain unresolved.",
       "pros": [
@@ -16896,7 +16896,7 @@
       "parcelId": "6001706008",
       "distanceMiles": 7.3,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.3 miles · about 15 minutes from the family reference property",
       "summary": "A one-level 2021 three-bedroom home newly active at the $275,000 ceiling. The completed original-construction permit is a useful anchor, but the family-suite bathroom allocation, room-rental authority, current system condition, and title evidence remain unresolved.",
@@ -17036,7 +17036,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-21",
       "address": "1062 Farm Pond Ln Unit 1A, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1062-Farm-Pond-Ln-29732/home/205658282",
@@ -17060,7 +17060,7 @@
       "parcelId": "6312301001",
       "distanceMiles": 6.2,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.2 miles · about 13 minutes from the family reference property",
       "summary": "A one-level 1988 two-bedroom condominium newly active at $169,000 with two full bathrooms and reported $150 monthly HOA dues. The suite layout, whole-unit rental authority, room-rental authority, assessments, insurance, and current system ages remain unknown and block recommendation.",
@@ -17342,7 +17342,7 @@
       "daysOnMarket": 42,
       "distanceMiles": 6.7,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.7 miles · about 15 minutes from the family reference property",
       "summary": "An active one-level 2004 home at $239,000 with three bedrooms, two full bathrooms, no reported HOA, and a listing claim of a 2024 roof. The family private-bath layout, room-rental authority, permit closeout, system ages, and property-specific risk evidence remain unresolved.",
@@ -17503,7 +17503,7 @@
       "distanceMiles": 15.5,
       "driveMinutes": 31,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "15.5 miles · about 31 minutes from the family reference property",
       "summary": "Closed October 9, 2026 for $246,000 and archived from the active decision set. Current Canopy MLS-fed sold history supersedes stale active pages; official deed-instrument review remains a follow-up.",
       "pros": [
@@ -17692,7 +17692,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-29",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-29",
       "address": "1543 Tuckers Glenn Dr, Rock Hill, SC 29732",
       "sourceUrl": "https://www.housesofsouthcharlotte.com/property-search/detail/93/4405907/1543-tuckers-glenn-dr-rock-hill-sc-29732/",
@@ -17714,10 +17714,10 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 43,
       "distanceMiles": 4.2,
-      "driveMinutes": 12,
+      "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
-      "distanceLabel": "4.2 miles · about 12 minutes from the family reference property",
+      "distanceAsOf": "2026-11-01",
+      "distanceLabel": "4.2 miles · about 11 minutes from the family reference property",
       "summary": "An active 2003 three-bedroom home one dollar below the offer ceiling with public sewer and quarterly HOA dues. The listing says it needs TLC; private-bath allocation, HOA rental authority, systems, fees, and condition remain unresolved.",
       "pros": [
         "Within the absolute offer ceiling",
@@ -17860,7 +17860,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-08-29",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-29",
       "address": "1151 Calhoun St, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1151-Calhoun-St-29732/home/164936414",
@@ -17884,7 +17884,7 @@
       "distanceMiles": 5.3,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.3 miles · about 11 minutes from the family reference property",
       "summary": "An active 2021 three-bedroom home with a documented primary suite and no reported HOA. It is $4,900 above the ceiling; only an accepted offer at or below $275,000 is permissible, and seller acceptance remains unresolved.",
       "pros": [
@@ -18238,7 +18238,7 @@
       "distanceMiles": 4.4,
       "driveMinutes": 12,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "4.4 miles · about 12 minutes from the family reference property",
       "summary": "An active 1985 two-bedroom condominium with a $120 monthly HOA and two assigned spaces. Its single full bathroom cannot provide the required private full bathroom while retaining a tenant, so it fails the family-suite requirement.",
       "pros": [
@@ -18387,7 +18387,7 @@
       "distanceMiles": 4.9,
       "driveMinutes": 13,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "4.9 miles · about 13 minutes from the family reference property",
       "summary": "A current owner-listed 1990 two-bedroom property advertised at $139,000 with two baths. Public property records and the older brokerage record show only one full bathroom, so the bath count, private-suite feasibility, current condition, title, and active status need direct documentary verification.",
       "pros": [
@@ -18698,7 +18698,7 @@
       "distanceMiles": 5.1,
       "driveMinutes": 12,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.1 miles · about 12 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-23",
@@ -18915,7 +18915,7 @@
       "distanceMiles": 13.7,
       "driveMinutes": 25,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "13.7 miles · about 25 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-09-19",
@@ -18968,7 +18968,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-08-30",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-08-30",
       "address": "403 N Wilson St Apt 106, Rock Hill, SC 29730",
       "sourceUrl": "https://homefinder.com/realestateandhomes-detail/403-Wilson-St-N-Apt-106_Rock-Hill_SC_29730_M63420-25344",
@@ -19098,7 +19098,7 @@
       "distanceMiles": 5.6,
       "driveMinutes": 11,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.6 miles · about 11 minutes from the family reference property",
       "publicVerification": {
         "asOf": "2026-10-15",
@@ -19122,7 +19122,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-01",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-18",
       "address": "1756 Hidden Creek Dr, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1756-Hidden-Creek-Dr-29732/home/52067779",
@@ -19279,7 +19279,7 @@
       "missingRuns": 0,
       "distanceMiles": 4.9,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 13 minutes from the family reference property",
       "publicVerification": {
@@ -19431,7 +19431,7 @@
       "missingRuns": 0,
       "distanceMiles": 3.9,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.9 miles · about 10 minutes from the family reference property",
       "publicVerification": {
@@ -19463,7 +19463,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-01",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-01",
       "address": "221 Pointe Cir, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/221-Pointe-Cir-29732/home/52108036",
@@ -19578,7 +19578,7 @@
       "missingRuns": 0,
       "distanceMiles": 3.2,
       "driveMinutes": 8,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.2 miles · about 8 minutes from the family reference property",
       "publicVerification": {
@@ -19790,7 +19790,7 @@
       "missingRuns": 0,
       "distanceMiles": 4.5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.5 miles · about 12 minutes from the family reference property",
       "publicVerification": {
@@ -20046,7 +20046,7 @@
       "missingRuns": 0,
       "distanceMiles": 7.4,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.4 miles · about 15 minutes from the family reference property",
       "publicVerification": {
@@ -20250,7 +20250,7 @@
       "missingRuns": 0,
       "distanceMiles": 3,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.0 miles · about 9 minutes from the family reference property",
       "publicVerification": {
@@ -20403,7 +20403,7 @@
       "missingRuns": 0,
       "distanceMiles": 10,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "10.0 miles · about 20 minutes from the family reference property",
       "publicVerification": {
@@ -20533,7 +20533,7 @@
       "missingRuns": 0,
       "distanceMiles": 4.1,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.1 miles · about 12 minutes from the family reference property",
       "publicVerification": {
@@ -20565,7 +20565,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-02",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-02",
       "address": "1649 Diary Dr, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1649-Diary-Dr-29732/home/52070009",
@@ -20637,7 +20637,7 @@
       "missingRuns": 0,
       "distanceMiles": 4.7,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.7 miles · about 11 minutes from the family reference property",
       "publicVerification": {
@@ -20669,7 +20669,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-09-02",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-10",
       "address": "1011 Glenarden Dr, Rock Hill, SC 29730",
       "sourceUrl": "https://www.coldwellbanker.com/sc/rock-hill/1011-glenarden-dr/lid-P00800000HGYVNZJlQBg73TxN28mP8ZTw0JS4DOR",
@@ -20769,7 +20769,7 @@
       "missingRuns": 0,
       "distanceMiles": 8.4,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "8.4 miles · about 17 minutes from the family reference property",
       "publicVerification": {
@@ -20801,7 +20801,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-09-02",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-21",
       "address": "3910 Winter Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/3910-Winter-Rd-29730/home/52125951",
@@ -20894,7 +20894,7 @@
       "missingRuns": 0,
       "distanceMiles": 14.1,
       "driveMinutes": 27,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "14.1 miles · about 27 minutes from the family reference property",
       "publicVerification": {
@@ -21012,7 +21012,7 @@
       "missingRuns": 0,
       "distanceMiles": 3.8,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.8 miles · about 10 minutes from the family reference property",
       "publicVerification": {
@@ -21046,7 +21046,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-02",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-04",
       "address": "229 Primrose Walk, Fort Mill, SC 29715",
       "sourceUrl": "https://www.redfin.com/SC/Fort-Mill/229-Primrose-Walk-29715/home/52076544",
@@ -21142,7 +21142,7 @@
       "missingRuns": 0,
       "distanceMiles": 14.6,
       "driveMinutes": 27,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "14.6 miles · about 27 minutes from the family reference property",
       "publicVerification": {
@@ -21174,7 +21174,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-02",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-02",
       "address": "152 Charterhouse Ln, Fort Mill, SC 29715",
       "sourceUrl": "https://www.redfin.com/SC/Fort-Mill/152-Charterhouse-Ln-29715/home/52079073",
@@ -21248,7 +21248,7 @@
       "missingRuns": 0,
       "distanceMiles": 12.9,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.9 miles · about 24 minutes from the family reference property",
       "publicVerification": {
@@ -21599,7 +21599,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-08",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-08",
       "address": "484 Lexie Ln, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/484-Lexie-Ln-29732/home/52064336",
@@ -21716,7 +21716,7 @@
       "distanceMiles": 2.2,
       "driveMinutes": 9,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "2.2 miles · about 9 minutes from the family reference property"
     },
     {
@@ -21724,7 +21724,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-09-08",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-29",
       "address": "2228 Lannie Ln, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/2228-Lannie-Ln-29730/home/52193901",
@@ -21880,7 +21880,7 @@
       "distanceMiles": 17,
       "driveMinutes": 34,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "17.0 miles · about 34 minutes from the family reference property"
     },
     {
@@ -22023,7 +22023,7 @@
       "missingRuns": 0,
       "distanceMiles": 7.9,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.9 miles · about 17 minutes from the family reference property",
       "publicVerification": {
@@ -22229,7 +22229,7 @@
       "missingRuns": 0,
       "distanceMiles": 4.9,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 13 minutes from the family reference property",
       "publicVerification": {
@@ -22261,7 +22261,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-09-10",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-10",
       "address": "1066 Tremont Ave, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1066-Tremont-Ave-29730/home/52116317",
@@ -22384,7 +22384,7 @@
       "missingRuns": 0,
       "distanceMiles": 7.3,
       "driveMinutes": 16,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.3 miles · about 16 minutes from the family reference property",
       "publicVerification": {
@@ -22560,7 +22560,7 @@
       "missingRuns": 0,
       "distanceMiles": 4.2,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.2 miles · about 12 minutes from the family reference property",
       "publicVerification": {
@@ -22592,7 +22592,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-11",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-11",
       "address": "434 Bending Bough Ln, Rock Hill, SC 29732",
       "sourceUrl": "https://www.mhvillage.com/homes/3471257",
@@ -22720,7 +22720,7 @@
       "missingRuns": 0,
       "distanceMiles": 2.3,
       "driveMinutes": 7,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.3 miles · about 7 minutes from the family reference property",
       "publicVerification": {
@@ -22885,7 +22885,7 @@
       "missingRuns": 0,
       "distanceMiles": 2.4,
       "driveMinutes": 8,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.4 miles · about 8 minutes from the family reference property",
       "publicVerification": {
@@ -23064,7 +23064,7 @@
       "missingRuns": 0,
       "distanceMiles": 4.7,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.7 miles · about 12 minutes from the family reference property",
       "publicVerification": {
@@ -23096,7 +23096,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-11",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-11",
       "address": "1436 Flintwood Dr, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1436-Flintwood-Dr-29732/home/201463592",
@@ -23228,7 +23228,7 @@
       "missingRuns": 0,
       "distanceMiles": 4.7,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.7 miles · about 12 minutes from the family reference property",
       "publicVerification": {
@@ -23260,7 +23260,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-12",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-01",
       "address": "712 Sparano Loop Unit 175, York, SC 29745",
       "sourceUrl": "https://www.redfin.com/SC/York/712-Sparano-Loop-29745/unit-175/home/205400712",
@@ -23284,7 +23284,7 @@
       "daysOnMarket": 25,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "MLS-fed public pages currently show this three-bedroom Lennar townhouse pending at $238,999 after a September 18 reduction. The primary suite has a listing-documented private bathroom. Mandatory HOA dues conflict at $172 versus about $290, and separate whole-unit and room-rental authority, parking, completion documents, and the full fee schedule still block recommendation.",
@@ -23830,7 +23830,7 @@
       "distanceMiles": 6.2,
       "driveMinutes": 13,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "6.2 miles · about 13 minutes from the family reference property"
     },
     {
@@ -23838,7 +23838,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-30",
       "address": "1218 Calhoun St, Rock Hill, SC 29732",
       "sourceUrl": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car315200066-nccanopy/1218-calhoun-st-rock-hill-sc-29732",
@@ -23993,7 +23993,7 @@
       "distanceMiles": 5.4,
       "driveMinutes": 12,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "5.4 miles · about 12 minutes from the family reference property"
     },
     {
@@ -24167,7 +24167,7 @@
       "distanceMiles": 7.6,
       "driveMinutes": 17,
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceLabel": "7.6 miles · about 17 minutes from the family reference property"
     },
     {
@@ -24175,7 +24175,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-04",
       "address": "1719 Hidden Creek Dr, Rock Hill, SC 29732",
       "sourceUrl": "https://www.highgarden-charlotte.com/1719-Hidden-Creek-Dr-Rock-Hill-SC-29732/mls4425298",
@@ -24199,7 +24199,7 @@
       "parcelId": "6620501083",
       "distanceMiles": 5.1,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 13 minutes from the family reference property",
       "summary": "An active $252,000 Lexington Commons townhouse with two upstairs private bathroom suites described by the listing agent. The $205 monthly HOA and unverified whole-unit and individual-room rental rules keep it in needs-verification status.",
@@ -24368,7 +24368,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-09-27",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-27",
       "address": "660 Flint St, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/660-Flint-St-29730/home/205647760",
@@ -24392,7 +24392,7 @@
       "daysOnMarket": 5,
       "distanceMiles": 6.9,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.9 miles · about 14 minutes from the family reference property",
       "summary": "A newly listed one-level 3-bedroom, 2-bath Rock Hill home at the $275,000 ceiling with public water and sewer and no reported HOA. The private full-bath layout, final certificate of occupancy, permit closeout, room-rental authority, builder charges, title, and insurance remain unresolved.",
@@ -24564,7 +24564,7 @@
       "daysOnMarket": 192,
       "distanceMiles": 12.5,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
       "summary": "No longer present in Lennar's live Cannon Village inventory after two consecutive daily availability misses. Preserved as an archived record; the prior builder price is not a current offer.",
@@ -24768,7 +24768,7 @@
       "daysOnMarket": 43,
       "distanceMiles": 12.5,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live direct inventory lists move-in ready homesite 159, a three-bedroom Titan townhouse at $250,449. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -25310,14 +25310,14 @@
     {
       "id": "builder-29016600161",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-09-27",
-      "lastSeen": "2026-10-30",
-      "lastChanged": "2026-10-27",
+      "lastSeen": "2026-11-01",
+      "lastChanged": "2026-11-01",
       "address": "646 Sparano Loop Unit 161, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600161",
       "parcelId": "0701601708",
-      "status": "active",
+      "status": "pending",
       "price": 237000,
       "originalPrice": 256849,
       "priceCutPercent": 7.7,
@@ -25332,13 +25332,13 @@
       "oneLevel": false,
       "privateBath": "yes",
       "roomRentalLegal": "unknown",
-      "daysOnMarket": 1,
+      "daysOnMarket": 17,
       "distanceMiles": 12.5,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's live direct inventory lists move-in ready homesite 161, a three-bedroom Titan townhouse at $237,000. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
+      "summary": "A current public IDX source reports Cannon Village homesite 161 pending at $237,000, while the former direct Lennar homesite URL now redirects to the generic Titan plan. The owner's private full bathroom is documented, but backup availability, HOA rental authority, fees, permits, completion, title and insurance still block recommendation.",
       "pros": [
         "$38,000 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a documented owner’s en-suite plus a second full bath and powder room",
@@ -25347,7 +25347,7 @@
         "County water and sewer are reported by MLS or builder materials"
       ],
       "concerns": [
-        "Lennar's direct page lists $237,000 and move-in ready; obtain a dated builder price sheet and identify lender, incentive, deposit, closing-cost, and availability conditions.",
+        "Current public IDX evidence reports Pending at $237,000 and the former direct Lennar homesite URL redirects to the generic plan. Confirm contract status, backup-offer availability, price, incentives, deposit, closing-cost and completion terms directly with the builder or listing agent.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer/capital fees, amenity charges, and builder closing schedule.",
         "Whole-unit rental and individual-room rental authority are separately unknown. Recorded declarations, bylaws, rules, amendments, management decisions, local zoning, rental registration, occupancy limits, and insurer approval are required.",
         "A two-car garage is documented, but parking allocation and enforceability for three unrelated occupants require written confirmation.",
@@ -25359,7 +25359,7 @@
         "Utilities allocation, common-space practicality, locks, smoke and carbon-monoxide protection, association maintenance boundaries, litigation, resale restrictions and leasing surcharges remain unknown."
       ],
       "sourceConflicts": [
-        "Current Lennar direct origin evidence controls the provisional $237,000 price and availability; cached search results and older indexed or MLS-fed pages retain prior prices or availability states."
+        "Current public IDX evidence reports Pending at $237,000; the former direct Lennar homesite URL redirects to the generic Titan plan, so direct builder or listing-agent confirmation of contract and backup-offer status is required."
       ],
       "hoa": {
         "exists": true,
@@ -25395,6 +25395,11 @@
         {
           "date": "2026-10-27",
           "event": "Direct builder price reduced",
+          "price": 237000
+        },
+        {
+          "date": "2026-11-01",
+          "event": "Public IDX status changed to pending; direct homesite URL redirected to generic plan",
           "price": 237000
         }
       ],
@@ -25468,6 +25473,16 @@
           "label": "October 29 Lennar current direct inventory",
           "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
           "accessed": "2026-10-29"
+        },
+        {
+          "label": "November 1 current public IDX pending status at $237,000",
+          "url": "https://www.palmettopark.com/york/cannon-village",
+          "accessed": "2026-11-01"
+        },
+        {
+          "label": "November 1 former direct Lennar homesite URL redirected to generic Titan plan",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600161",
+          "accessed": "2026-11-01"
         }
       ],
       "changeHistory": [
@@ -25525,9 +25540,20 @@
               "label": "Direct builder price reduced to $237,000"
             }
           ]
+        },
+        {
+          "date": "2026-11-01",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "pending",
+              "label": "Current public IDX status changed to pending"
+            }
+          ]
         }
       ],
-      "missingRuns": 1,
+      "missingRuns": 0,
       "listingDetails": {
         "parcelId": "0701601708",
         "zoning": "R-5 reported by MLS for the community; official homesite confirmation pending",
@@ -25538,8 +25564,8 @@
         "completion": "Move-in ready per current builder inventory; certificate of occupancy not independently obtained"
       },
       "publicVerification": {
-        "asOf": "2026-10-29",
-        "marketingAttempt": "Lennar’s live direct inventory continued to show this homesite on October 29, 2026. Price, incentives, completion, title, fees, permits, warranties, association authority, and insurance still require direct documentation.",
+        "asOf": "2026-11-01",
+        "marketingAttempt": "Current public IDX evidence reports homesite 161 Pending at $237,000 on November 1, 2026. The former direct Lennar homesite URL redirects to the generic Titan plan. Contract status, backup-offer availability, current builder terms, completion, title, fees, permits, warranties, association authority and insurance remain unresolved.",
         "parcelAndDeed": "York County GIS matched parcel 0701601708, address and homesite 161. Recorded transfer references appear to cover builder or bulk transactions and are not treated as individual retail price. Current title, liens, easements, restrictions and instrument contents remain unresolved.",
         "flood": "A parcel-geometry query against York County's 2017 DFIRM layer returned zero intersecting flood-hazard features. This is not an affirmative FEMA determination; grading, drainage, master-policy coverage and insurer acceptance remain required.",
         "permits": [
@@ -25589,7 +25615,7 @@
       "daysOnMarket": 47,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "No longer present in Lennar's live Cannon Village inventory after two consecutive daily availability misses. Preserved as an archived record; the prior builder price is not a current offer.",
@@ -25792,7 +25818,7 @@
       "daysOnMarket": null,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "No longer present in Lennar's live Cannon Village inventory after two consecutive daily availability misses. Preserved as an archived record; the prior builder price is not a current offer.",
@@ -26001,7 +26027,7 @@
       "daysOnMarket": 47,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "No longer present in Lennar's live Cannon Village inventory after two consecutive daily availability misses. Preserved as an archived record; the prior builder price is not a current offer.",
@@ -26202,7 +26228,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-28",
       "address": "2772 Ramble Wood Ct, Rock Hill, SC 29730",
       "sourceUrl": "https://www.palmettopark.com/homes/rock-hill/2772-ramble-wood-court",
@@ -26226,7 +26252,7 @@
       "daysOnMarket": 53,
       "distanceMiles": 10.1,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "10.1 miles · about 20 minutes from the family reference property",
       "summary": "A one-level 3-bedroom, 2-bath home reduced to the $275,000 ceiling. Current listing evidence describes a private primary bath and no HOA, but local room-rental authority, system documentation, title, insurance, permits for claimed replacements, and seller terms remain unresolved.",
@@ -26358,7 +26384,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-22",
       "address": "455 Castlewood Cir, Rock Hill, SC 29730",
       "sourceUrl": "https://www.highgarden-charlotte.com/455-Castlewood-Cir-Rock-Hill-SC-29730/mls4426042",
@@ -26382,7 +26408,7 @@
       "daysOnMarket": 27,
       "distanceMiles": 8.6,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "8.6 miles · about 17 minutes from the family reference property",
       "summary": "A one-level 3-bedroom, 2-bath home now $5,001 below the ceiling with an explicitly described en-suite primary bath and no reported HOA. Room-rental authority, roof and other system documentation, title, insurance, parking capacity, and transaction charges remain unresolved.",
@@ -26560,7 +26586,7 @@
       "daysOnMarket": 2,
       "distanceMiles": 5,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.0 miles · about 11 minutes from the family reference property",
       "summary": "A newly listed 3-bedroom, 2-bath townhome at $245,000 with low reported quarterly HOA dues. The exact private-full-bath allocation, whole-unit and individual-room rental authority, assessments, fees, insurance, systems, and title remain unresolved.",
@@ -26692,7 +26718,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-09-28",
       "address": "1720 Clemmon Sanders Cir, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1720-Clemmon-Sanders-Cir-29732/home/52066516",
@@ -26716,7 +26742,7 @@
       "daysOnMarket": 3,
       "distanceMiles": 4.8,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.8 miles · about 11 minutes from the family reference property",
       "summary": "A newly listed one-level 2-bedroom, 2-bath townhome at $255,000 with an explicitly described primary-suite walk-in shower. The single remaining renter room, HOA and local rental authority, HVAC condition, fees, insurance, parking, and title remain unresolved.",
@@ -26864,7 +26890,7 @@
       "daysOnMarket": 76,
       "distanceMiles": 3,
       "driveMinutes": 7,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.0 miles · about 7 minutes from the family reference property",
       "summary": "Current listing-broker and Canopy MLS-fed evidence says the prior buyer's financing fell through and this one-level property returned to active marketing at $176,000. It has only one full bathroom, so it fails the private-full-bath requirement for a shared arrangement.",
@@ -27079,7 +27105,7 @@
       "parcelId": "3480000054",
       "distanceMiles": 11.3,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "11.3 miles · about 20 minutes from the family reference property",
       "summary": "A current owner-listed 2024 townhouse at $255,000 with three bedrooms, two full bathrooms, one half bath, an attached garage, and a completed original construction permit. The $270 monthly HOA, unverified private-bath allocation, unknown governing-document rental authority, York location, and unresolved fee, parking, insurance, and operating rules block recommendation.",
@@ -27233,7 +27259,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-02",
       "address": "1645 Diary Dr, Rock Hill, SC 29732",
       "sourceUrl": "https://uphomes.com/home/1645-diary-dr-rock-hill-sc-29732-f42f889c",
@@ -27257,7 +27283,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 4.7,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.7 miles · about 11 minutes from the family reference property",
       "summary": "A newly listed one-level two-bedroom townhouse at $243,500. Current MLS-fed evidence reports a 2024 roof and 2026 HVAC and water heater, but those remain seller/listing claims; the private-bath layout and both forms of rental authority are unknown and block recommendation.",
@@ -27385,7 +27411,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-13",
       "address": "333 Bynum Ave, Rock Hill, SC 29732",
       "sourceUrl": "https://uphomes.com/home/333-bynum-ave-rock-hill-sc-29732-02777af4",
@@ -27409,7 +27435,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 4.9,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "A four-bedroom home at the $275,000 ceiling now shown active under contract. Main-floor primary placement is documented, but private full-bath access, room-rental legality, solar obligations, and current condition remain unresolved.",
@@ -27577,7 +27603,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-02",
       "address": "1240 Liberty Bell Ct, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1240-Liberty-Bell-Ct-29732/home/52075538",
@@ -27601,7 +27627,7 @@
       "daysOnMarket": 2,
       "distanceMiles": 4.4,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.4 miles · about 10 minutes from the family reference property",
       "summary": "A newly listed three-bedroom townhouse at $264,900 with a reported main-level primary suite. Current MLS-fed evidence reports $205 monthly HOA dues and a January 2026 HVAC replacement, but private full-bath access, system proof, and both forms of rental authority remain unknown.",
@@ -27758,7 +27784,7 @@
       "daysOnMarket": 33,
       "distanceMiles": 7.7,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "An active Manchester Village townhouse reduced to $240,000. Its main-level room and full bath remain promising, but exclusive private-bath allocation and controlling association rental authority are not documented and block recommendation.",
@@ -27926,7 +27952,7 @@
       "daysOnMarket": 9,
       "distanceMiles": 3.6,
       "driveMinutes": 8,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.6 miles · about 8 minutes from the family reference property",
       "summary": "A low-priced one-level two-bedroom townhouse, but its single full bathroom cannot remain private for the family occupant while an unrelated tenant lives there; HOA rental authority is also unknown.",
@@ -28093,7 +28119,7 @@
       "daysOnMarket": 9,
       "distanceMiles": 4.4,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.4 miles · about 10 minutes from the family reference property",
       "summary": "A three-bedroom Constitution Park townhouse with public sewer and city water, but the private full-bath layout and separate association rental authority remain unknown and block recommendation.",
@@ -28259,7 +28285,7 @@
       "daysOnMarket": 15,
       "distanceMiles": 4.5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.5 miles · about 12 minutes from the family reference property",
       "summary": "A one-level cash-only value-add condominium with two assigned parking spaces, but its single full bathroom fails the private-bath requirement and unresolved condition and HOA authority add material risk.",
@@ -28426,7 +28452,7 @@
       "daysOnMarket": null,
       "distanceMiles": 2.2,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "2.2 miles · about 9 minutes from the family reference property",
       "summary": "A compact one-level two-bedroom, two-bath townhouse close to the family reference property, but exclusive private-bath layout and separate HOA rental authority are not documented.",
@@ -28566,7 +28592,7 @@
       "daysOnMarket": 15,
       "distanceMiles": 5.1,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 14 minutes from the family reference property",
       "summary": "A two-bedroom Lexington Commons townhouse with 2.5 baths and a listing-claimed new water heater, but private-bath layout, HOA rental authority, fee accuracy and major-system evidence remain unresolved.",
@@ -28729,7 +28755,7 @@
       "daysOnMarket": 11,
       "distanceMiles": 5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.0 miles · about 12 minutes from the family reference property",
       "summary": "A one-level three-bedroom townhouse with many listing-claimed upgrades, but private-bath layout, exact HOA billing, rental authority and permit or warranty proof remain unresolved.",
@@ -28852,7 +28878,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-10-03",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-03",
       "address": "834 Horseman Dr, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/834-Horseman-Dr-29730/home/52070043",
@@ -28876,7 +28902,7 @@
       "daysOnMarket": 5,
       "distanceMiles": 5.5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.5 miles · about 12 minutes from the family reference property",
       "summary": "A one-level three-bedroom home with a listing-documented primary suite and private full bath. Local separate-room rental authority, parking, occupancy and system evidence remain unknown and block recommendation.",
@@ -29022,7 +29048,7 @@
       "daysOnMarket": 3,
       "distanceMiles": 5.9,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.9 miles · about 14 minutes from the family reference property",
       "summary": "A very low-priced 2024 manufactured home with mandatory $635 monthly lot rent. Park lease and room-rental authority, title, financing, private-bath layout, utilities, insurance and a park-parcel Zone AE intersection block recommendation.",
@@ -29171,7 +29197,7 @@
       "daysOnMarket": 15,
       "distanceMiles": 4.5,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.5 miles · about 12 minutes from the family reference property",
       "summary": "A tenant-occupied one-level end-unit condo with generous living area, but its single full bathroom fails the private-bath requirement and current tenancy, HOA rental authority and system evidence remain unresolved.",
@@ -29313,7 +29339,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-03",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-03",
       "address": "1821 Fairlawn Ct, Rock Hill, SC 29732",
       "sourceUrl": "https://www.coldwellbankerhomes.com/sc/rock-hill/1821-fairlawn-ct/pid_73941682/",
@@ -29337,7 +29363,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 4,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.0 miles · about 9 minutes from the family reference property",
       "summary": "A one-level split-bedroom condo whose primary suite is described with its own walk-in shower, supporting the private-bath requirement. Separate HOA whole-unit and room-rental authority remains unknown and blocks recommendation.",
@@ -29482,7 +29508,7 @@
       "daysOnMarket": 18,
       "distanceMiles": 5.1,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 14 minutes from the family reference property",
       "summary": "A low-priced two-bedroom 1990 home sold as-is, but its single full bathroom cannot remain private for the family occupant while supporting an unrelated tenant; legal authority and major-system evidence are also unresolved.",
@@ -29630,7 +29656,7 @@
       "daysOnMarket": 6,
       "distanceMiles": 8.1,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "8.1 miles · about 17 minutes from the family reference property",
       "summary": "A $200,000 one-level Made It Home new build with a documented private owner suite, already under contract. Buyer eligibility, the 15-year deed restriction, separate-room leasing authority, permit completion and insurance remain unresolved.",
@@ -29789,7 +29815,7 @@
       "daysOnMarket": 47,
       "distanceMiles": 5.1,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 14 minutes from the family reference property",
       "summary": "An active Lexington Commons townhouse reduced from $310,000 to the $275,000 ceiling, with a main-level primary bedroom and full bath plus two upstairs bedrooms. Exclusive private-bath allocation and both HOA rental authorities remain unknown and block recommendation.",
@@ -29984,7 +30010,7 @@
       "daysOnMarket": 9,
       "distanceMiles": 11.4,
       "driveMinutes": 25,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "11.4 miles · about 25 minutes from the family reference property",
       "summary": "Current Canopy MLS-fed evidence now reports Under Contract-Show at $250,000. The property remains unavailable for ordinary purchase unless the contract is released; its private-use strategy, age, systems, well, septic, permit, title, flood, condition, and insurance diligence remain open.",
@@ -30389,7 +30415,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 5.9,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.9 miles · about 13 minutes from the family reference property",
       "summary": "A newly active 2021 one-level home below the ceiling with a listing-documented private primary bathroom. A September sale followed by an immediate relist makes renovation, title and seller-disclosure review especially important; local separate-room rental authority remains unknown.",
@@ -30586,7 +30612,7 @@
       "daysOnMarket": 22,
       "distanceMiles": 7.6,
       "driveMinutes": 15,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.6 miles · about 15 minutes from the family reference property",
       "summary": "A 2023 one-level home reduced to $222,500 with an expressly documented private primary bathroom. City plan evidence supports demolition and new construction activity, but the final certificate of occupancy, trade finals and separate-room rental authority remain unresolved.",
@@ -30849,7 +30875,7 @@
       "strategy": "private-purchase",
       "changeCategory": "existing",
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-28",
       "address": "967 Church Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car318874381-nccanopy/967-church-rd-rock-hill-sc-29730",
@@ -30873,7 +30899,7 @@
       "daysOnMarket": 20,
       "distanceMiles": 9.6,
       "driveMinutes": 21,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "9.6 miles · about 21 minutes from the family reference property",
       "summary": "Now pending with no showings at $226,000 and retained for tracking rather than immediate purchase. Its sole full bathroom can satisfy the private-bath requirement only under exclusive private occupancy; no room income is underwritten.",
@@ -31031,7 +31057,7 @@
       "strategy": "private-purchase",
       "changeCategory": "existing",
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-10",
       "address": "1109 Pinewood Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/1109-Pinewood-Rd-29730/home/52116308",
@@ -31055,7 +31081,7 @@
       "daysOnMarket": 2,
       "distanceMiles": 7.3,
       "driveMinutes": 16,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.3 miles · about 16 minutes from the family reference property",
       "summary": "A one-level brick private-living option under the ceiling. Its single full bathroom requires exclusive family occupancy, so no room-rental income is underwritten; the 1981 age and undocumented major systems warrant elevated diligence and reserves.",
@@ -31391,7 +31417,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 105, a three-bedroom Bristol townhouse at $250,999 with an estimated January 15, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -31542,7 +31568,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-12",
       "address": "711 Sparano Loop Unit 104, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600104",
@@ -31565,7 +31591,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 104, a three-bedroom Drayton townhouse at $250,999 with an estimated January 19, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -31716,7 +31742,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-12",
       "address": "715 Sparano Loop Unit 103, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/bristol/29017600103",
@@ -31739,7 +31765,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 103, a three-bedroom Bristol townhouse at $250,999 with an estimated January 19, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -31890,7 +31916,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-12",
       "address": "719 Sparano Loop Unit 102, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600102",
@@ -31913,7 +31939,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 102, a three-bedroom Drayton townhouse at $250,999 with an estimated January 20, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -32087,7 +32113,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 101, a three-bedroom Bristol townhouse at $266,999 with an estimated January 20, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -32283,7 +32309,7 @@
       "daysOnMarket": 19,
       "distanceMiles": 5.3,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.3 miles · about 11 minutes from the family reference property",
       "summary": "Now under contract with showings at $245,000. The one-level 2023 home has a documented private primary suite, but final trade inspections, room-rental authority and transaction charges remain unresolved.",
@@ -32530,7 +32556,7 @@
       "daysOnMarket": 15,
       "distanceMiles": 5.4,
       "driveMinutes": 12,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.4 miles · about 12 minutes from the family reference property",
       "summary": "A completed one-level new build at $255,500 after two public price reductions. Current listing evidence reports two full bathrooms, but older MLS-fed evidence reports one; the required private full bathroom, permit closeout and room-rental authority remain unresolved.",
@@ -32738,7 +32764,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 7.7,
       "driveMinutes": 17,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "7.7 miles · about 17 minutes from the family reference property",
       "summary": "A newly listed two-bedroom Manchester Village townhouse at $185,000 with a documented primary suite and private full bathroom. The low acquisition price and reported system updates are attractive, but controlling HOA rental rules, fees, permit closeout, and condition remain unresolved and block recommendation.",
@@ -32906,7 +32932,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-17",
       "address": "4337 Macey Ln, Rock Hill, SC 29732",
       "sourceUrl": "https://www.redfin.com/SC/Rock-Hill/4337-Macey-Ln-29732/home/52072137",
@@ -33093,7 +33119,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 8.9,
       "driveMinutes": 18,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "8.9 miles · about 18 minutes from the family reference property",
       "summary": "A November 2 judicial-auction lead with a published $192,290 opening bid, not an ordinary marketed sale or guaranteed purchase price. Bedroom count, private-full-bath allocation, final sale availability, title, redemption, occupancy, access, condition, financing, buyer charges, HOA authority, permits and insurance remain unresolved.",
@@ -33257,7 +33283,7 @@
       "daysOnMarket": 62,
       "distanceMiles": 6.2,
       "driveMinutes": 16,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.2 miles · about 16 minutes from the family reference property",
       "summary": "A $200,000 one-level new build with an expressly documented private primary bathroom, but current public status sources conflict and the stricter pending status is retained. The 15-year income-linked deed restriction, owner-occupancy program terms, room-rental authority and permit closeout block recommendation.",
@@ -33427,7 +33453,7 @@
       "daysOnMarket": 2,
       "distanceMiles": 4.3,
       "driveMinutes": 10,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.3 miles · about 10 minutes from the family reference property",
       "summary": "A newly active $257,000 Constitution Park townhouse with two primary suites, each with a private full bathroom. Mandatory HOA dues are documented, but separate whole-unit and individual-room rental authority, assessments, transaction fees, parking and system evidence remain unknown and block recommendation.",
@@ -33589,7 +33615,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 4.2,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.2 miles · about 11 minutes from the family reference property",
       "summary": "A newly active one-level three-bedroom home at the $275,000 ceiling. York County reports 1,080 square feet, conflicting with a 2,138-square-foot current feed; the private-full-bath allocation, HOA rental authority, systems and permits remain unresolved and block recommendation.",
@@ -33913,7 +33939,7 @@
       "daysOnMarket": 8,
       "distanceMiles": 10,
       "driveMinutes": 20,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "10.0 miles · about 20 minutes from the family reference property",
       "summary": "Now pending with no showings at $220,000. The one-level 1994 home has a documented attached primary bathroom, but HVAC operation, major-system ages, the recent parcel transfer, title, condition and insurance remain unresolved.",
@@ -34122,7 +34148,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 6.4,
       "driveMinutes": 13,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.4 miles · about 13 minutes from the family reference property",
       "summary": "A newly active one-level 2001 home at $269,900 with three bedrooms and two full bathrooms. The listing claims a new roof and city-approved permitted renovation, but private-bath allocation, the complete permit record, title chronology and written separate-room rental authority remain unresolved.",
@@ -34279,7 +34305,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-24",
       "address": "1646 Main St W, Rock Hill, SC 29732",
       "sourceUrl": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car321328501-nccanopy/1646-main-st-w-rock-hill-sc-29732",
@@ -34303,7 +34329,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 5.1,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "5.1 miles · about 11 minutes from the family reference property",
       "summary": "An active 2023 four-bedroom relist at the exact $275,000 offer ceiling with a main-level primary suite and no reported HOA. The listing does not explicitly establish an attached private full bathroom, and local room-rental authority, permit closeout, title and major-system documentation remain unresolved.",
@@ -34468,7 +34494,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-25",
       "address": "656 Sparano Loop Unit 163, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/calisto/29016600163",
@@ -34491,7 +34517,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.5,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 163, a three-bedroom Calisto townhouse at $269,999 with estimated completion December 18, 2026. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -34642,7 +34668,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-25",
       "address": "660 Sparano Loop Unit 164, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600164",
@@ -34816,7 +34842,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-25",
       "address": "664 Sparano Loop Unit 165, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600165",
@@ -34990,7 +35016,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-25",
       "address": "668 Sparano Loop Unit 166, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600166",
@@ -35164,7 +35190,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-25",
       "address": "672 Sparano Loop Unit 167, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/titan/29016600167",
@@ -35187,7 +35213,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.5,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 167, a three-bedroom Titan townhouse at $259,499 with estimated completion December 23, 2026. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -35338,7 +35364,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-25",
       "address": "676 Sparano Loop Unit 168, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection/calisto/29016600168",
@@ -35361,7 +35387,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 12.5,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.5 miles · about 24 minutes from the family reference property",
       "summary": "Lennar's live inventory newly exposes under-construction homesite 168, a three-bedroom Calisto townhouse at $269,999 with estimated completion December 23, 2026. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
@@ -35695,7 +35721,7 @@
       "strategy": "shared-home",
       "changeCategory": "existing",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-29",
       "address": "2980 Sims Rd, Rock Hill, SC 29730",
       "sourceUrl": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car321890034-nccanopy/2980-sims-rd-rock-hill-sc-29730",
@@ -35719,7 +35745,7 @@
       "daysOnMarket": 0,
       "distanceMiles": 10.6,
       "driveMinutes": 24,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "10.6 miles · about 24 minutes from the family reference property",
       "summary": "A newly listed 1989 singlewide at $100,000 on about 0.91 acre. The price is low, but the home needs work, the HVAC is not functioning, the primary bathroom needs repairs, and private-full-bath usability, manufactured title and affixture, septic, well, systems, permits, insurance, and legal room-rental authority remain unresolved.",
@@ -35855,7 +35881,7 @@
       "strategy": "shared-condo",
       "changeCategory": "existing",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-29",
       "address": "1271 Charlotte Ave, Rock Hill, SC 29732",
       "sourceUrl": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car321676043-nccanopy/1271-charlotte-ave-rock-hill-sc-29732",
@@ -35879,7 +35905,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 4.9,
       "driveMinutes": 11,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "4.9 miles · about 11 minutes from the family reference property",
       "summary": "A newly marketed two-bedroom Brentwood condo at $199,000 with two full and two half baths, one garage space, two assigned spaces and $200 monthly HOA dues. The listing does not prove an exclusive private full bathroom for the family occupant, and controlling HOA whole-unit and individual-room rental authority, full fees, assessments, parking and occupancy rules, systems, permits, insurance and title remain unresolved.",
@@ -36020,7 +36046,7 @@
     {
       "id": "mls-4439515",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-31",
       "lastSeen": "2026-10-31",
       "lastChanged": "2026-10-31",
@@ -36046,7 +36072,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 6.6,
       "driveMinutes": 14,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "6.6 miles · about 14 minutes from the family reference property",
       "summary": "A newly active one-level 2004 townhouse at $235,000 with two full bathrooms, historical same-unit evidence of a private primary bathroom, two assigned parking spaces and a reported 2019 HVAC replacement. Controlling HOA rental rules, the current fee schedule, local room-rental authority, permits, insurance and system documentation remain unresolved.",
@@ -36213,9 +36239,9 @@
     {
       "id": "mls-4439403",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-31",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "lastChanged": "2026-10-31",
       "address": "535 Calen Ln, Rock Hill, SC 29732",
       "sourceUrl": "https://www.viewyorkcountyhomes.com/homedetails/sc/rock-hill/nccanopy-car322060332-nccanopy/535-calen-ln-rock-hill-sc-29732",
@@ -36239,7 +36265,7 @@
       "daysOnMarket": 1,
       "distanceMiles": 3.7,
       "driveMinutes": 9,
-      "distanceAsOf": "2026-10-31",
+      "distanceAsOf": "2026-11-01",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "3.7 miles · about 9 minutes from the family reference property",
       "summary": "A newly active 2017 three-bedroom townhouse at $270,000 with two upper-level full bathrooms, a main-level half bath, a one-car garage and current seller financing incentives. Private-bath allocation, controlling HOA rental rules, complete fees, permits, title, insurance and system documentation remain unresolved.",
@@ -36484,15 +36510,18 @@
     },
     {
       "label": "Rock Hill public permit portal",
-      "url": "https://rhbuild.cityofrockhill.com/evolvepublic/"
+      "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+      "accessed": "2026-11-01"
     },
     {
       "label": "York County permit portal",
-      "url": "https://evolvepublic.yorkcountygov.com/"
+      "url": "https://evolvepublic.yorkcountygov.com/",
+      "accessed": "2026-11-01"
     },
     {
       "label": "FEMA Flood Map Service Center",
-      "url": "https://msc.fema.gov/portal/home"
+      "url": "https://msc.fema.gov/portal/home",
+      "accessed": "2026-11-01"
     },
     {
       "label": "HUD homes for sale",
@@ -36501,47 +36530,47 @@
     {
       "label": "Fannie Mae HomePath",
       "url": "https://homepath.fanniemae.com/property-finder",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Freddie Mac HomeSteps",
       "url": "https://www.homesteps.com/",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "York County official Master in Equity",
       "url": "https://www.yorkcountysc.gov/294/Master-in-Equity",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "York County delinquent tax sales",
       "url": "https://www.yorkcountysc.gov/216/Tax-Collection",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Movoto Rock Hill listings",
       "url": "https://www.movoto.com/rock-hill-sc/",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Zillow Rock Hill FSBO inventory",
       "url": "https://www.zillow.com/rock-hill-sc/fsbo/",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Auction.com Rock Hill inventory",
       "url": "https://www.auction.com/residential/sc/york-county/rock-hill/",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Hubzu property search",
       "url": "https://www.hubzu.com/",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Xome Rock Hill inventory",
       "url": "https://www.xome.com/realestate/SC/Rock-Hill",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "HotPads Rock Hill one-bedroom rentals",
@@ -36564,7 +36593,8 @@
     },
     {
       "label": "Furnished Finder Rock Hill housing",
-      "url": "https://www.furnishedfinder.com/housing/us--sc--rock-hill"
+      "url": "https://www.furnishedfinder.com/housing/us--sc--rock-hill",
+      "accessed": "2026-11-01"
     },
     {
       "label": "Brock and Scott York County foreclosure notices",
@@ -36584,7 +36614,8 @@
     },
     {
       "label": "Rock Hill current private-room evidence",
-      "url": "https://www.furnishedfinder.com/property/214086_1"
+      "url": "https://www.furnishedfinder.com/property/214086_1",
+      "accessed": "2026-11-01"
     },
     {
       "label": "Rock Hill newest public Realtor.com inventory",
@@ -36593,12 +36624,12 @@
     {
       "label": "HUD Home Store",
       "url": "https://www.hudhomestore.gov/",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Fannie Mae HomePath",
       "url": "https://www.homepath.com/",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Habitat Development Corporation of Rock Hill new construction",
@@ -36611,7 +36642,7 @@
     {
       "label": "SpareRoom current Rock Hill private-room inventory",
       "url": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "RentCafe Rock Hill market trends",
@@ -36635,7 +36666,8 @@
     },
     {
       "label": "City of York public permit portal",
-      "url": "https://evolve-public.infovisionsoftware.com/YorkCity/?portal=permit"
+      "url": "https://evolve-public.infovisionsoftware.com/YorkCity/?portal=permit",
+      "accessed": "2026-11-01"
     },
     {
       "label": "Brock & Scott South Carolina public foreclosure notices",
@@ -36715,12 +36747,12 @@
     {
       "label": "Roomies current Rock Hill room inventory",
       "url": "https://www.roomies.com/rooms/rock-hill-sc",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "SpareRoom current Rock Hill room inventory",
       "url": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
-      "accessed": "2026-10-27"
+      "accessed": "2026-11-01"
     },
     {
       "label": "October 24 Coldwell Banker 507 Old High active listing",
@@ -36740,12 +36772,12 @@
     {
       "label": "October 24 Auction.com 1501 Andora scheduled foreclosure",
       "url": "https://cdn.auction.com/details/1501-andora-dr-rock-hill-sc-2191965",
-      "accessed": "2026-10-24"
+      "accessed": "2026-11-01"
     },
     {
       "label": "October 25 Lennar Cannon Village Townes Cosmos inventory",
       "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/cosmos-collection",
-      "accessed": "2026-10-25"
+      "accessed": "2026-11-01"
     },
     {
       "label": "October 25 Realtor York County builder-inventory corroboration",
@@ -36755,7 +36787,7 @@
     {
       "label": "October 25 Auction.com 1501 Andora scheduled foreclosure",
       "url": "https://cdn.auction.com/details/1501-andora-dr-rock-hill-sc-2191965",
-      "accessed": "2026-10-25"
+      "accessed": "2026-11-01"
     },
     {
       "label": "HotPads current Rock Hill one-bedroom rent evidence",
@@ -36775,7 +36807,7 @@
     {
       "label": "Lennar Cannon Village Townes current inventory",
       "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
-      "accessed": "2026-10-26"
+      "accessed": "2026-11-01"
     },
     {
       "label": "Brock & Scott current York County foreclosure roster",
@@ -36790,17 +36822,17 @@
     {
       "label": "October 29 Lennar Cannon Village Townes current direct inventory",
       "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
-      "accessed": "2026-10-29"
+      "accessed": "2026-11-01"
     },
     {
       "label": "October 29 Auction.com 1501 Andora scheduled foreclosure",
       "url": "https://cdn.auction.com/details/1501-andora-dr-rock-hill-sc-2191965",
-      "accessed": "2026-10-29"
+      "accessed": "2026-11-01"
     },
     {
       "label": "October 29 Furnished Finder Rock Hill room inventory",
       "url": "https://www.furnishedfinder.com/housing/us--sc--rock-hill",
-      "accessed": "2026-10-29"
+      "accessed": "2026-11-01"
     },
     {
       "label": "October 29 RentCafe Rock Hill one-bedroom evidence",
@@ -36815,12 +36847,12 @@
     {
       "label": "October 30 Lennar Cannon Village Townes current direct inventory",
       "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
-      "accessed": "2026-10-30"
+      "accessed": "2026-11-01"
     },
     {
       "label": "October 30 Auction.com 1501 Andora scheduled foreclosure",
       "url": "https://cdn.auction.com/details/1501-andora-dr-rock-hill-sc-2191965",
-      "accessed": "2026-10-30"
+      "accessed": "2026-11-01"
     },
     {
       "label": "October 30 Zillow Rock Hill rental market evidence",
@@ -36841,6 +36873,36 @@
       "label": "October 30 SpareRoom Rock Hill room inventory",
       "url": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
       "accessed": "2026-10-30"
+    },
+    {
+      "label": "November 1 current public Rock Hill brokerage and IDX discovery",
+      "url": "https://www.onecharlotte.com/south-carolina/cities/rock-hill-sc/",
+      "accessed": "2026-11-01"
+    },
+    {
+      "label": "November 1 Cannon Village current public IDX status",
+      "url": "https://www.palmettopark.com/york/cannon-village",
+      "accessed": "2026-11-01"
+    },
+    {
+      "label": "November 1 Xome Rock Hill public auction inventory",
+      "url": "https://www.xome.com/auctions/sc/rock-hill",
+      "accessed": "2026-11-01"
+    },
+    {
+      "label": "November 1 current SpareRoom Rock Hill room inventory",
+      "url": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
+      "accessed": "2026-11-01"
+    },
+    {
+      "label": "November 1 current Roomies Rock Hill room inventory",
+      "url": "https://www.roomies.com/rooms/rock-hill-sc/private",
+      "accessed": "2026-11-01"
+    },
+    {
+      "label": "November 1 current Furnished Finder Rock Hill room inventory",
+      "url": "https://www.furnishedfinder.com/housing/us--sc--rock-hill",
+      "accessed": "2026-11-01"
     }
   ],
   "sourceAudit": [
@@ -36848,23 +36910,23 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public surfaces were reviewed. All 214 retained currently marketed purchase primary URLs were requested: 117 HTTP 200, 29 HTTP 202, two HTTP 301, one HTTP 307, 32 HTTP 403 and 33 HTTP 429. Fresh current portal evidence supported two new active listings and one price reduction.",
-      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, blocks, rate limits, snippets and stale pages are not independent status or removal proof."
+      "asOf": "2026-11-01",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public surfaces were reviewed. All 216 retained marketed purchase primary URLs were requested: 65 HTTP 200, 29 HTTP 202, one HTTP 307, 25 HTTP 403, 31 HTTP 429 and 65 timeouts or request errors. Current portal and indexed evidence produced no eligible new candidate and supported the stricter pending status for Cannon Village homesite 161.",
+      "coverageGap": "Public discovery is not exhaustive MLS coverage. HTTP success, blocks, rate limits, timeouts, snippets and stale pages are not independent removal evidence."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Fresh public Canopy MLS-fed Rock Hill discovery produced 169 unique under-$300,000, two-bedroom/two-bath-or-better cards across two pages. All 169 detail pages returned HTTP 200 and were reconciled by MLS number and normalized address. MLS 4439403 and 4439515 were new; MLS 4395375 fell to $245,000. Direct Lennar evidence showed eleven tracked Cannon Village homes; homesite 161 was absent for its first consecutive run.",
-      "coverageGap": "Targeted public IDX discovery may omit listings and is not exhaustive MLS coverage. Direct seller, listing-agent, builder, association and closing confirmation remain necessary before an offer."
+      "asOf": "2026-11-01",
+      "summary": "Fresh public brokerage and IDX results were reconciled by MLS number and normalized address. New indexed results at 233 Florence and 934 Pebble failed the 1980 construction gate; 368 Pendleton and 1003 Hull failed the two-full-bath gate; 825 Lacebark remained coming soon. Cannon Village homesite 161 is now Pending at $237,000 and its former direct Lennar homesite URL redirects to the generic plan.",
+      "coverageGap": "The preferred Canopy MLS-fed discovery host timed out during this run, so alternative public IDX and indexed brokerage surfaces were used. Targeted public discovery remains non-exhaustive; direct seller, listing-agent and builder confirmation is required."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
+      "asOf": "2026-11-01",
       "summary": "HUD Home Store, Fannie Mae HomePath and Freddie Mac HomeSteps public entry points and indexed public results were checked. No independently verified eligible new Rock Hill-area candidate with a current public purchase price emerged.",
       "coverageGap": "Public inventory and investor-first-look details were not fully retrievable; no credentialed feed was requested or used."
     },
@@ -36872,31 +36934,31 @@
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Public Zillow and Redfin FSBO inventory, York County delinquent-tax and Master in Equity entry points, owner-listing pages and foreclosure notices were reviewed. Current under-ceiling FSBO results were already tracked or failed age, bedroom, private-full-bath or status gates; no new eligible owner-listed candidate emerged.",
+      "asOf": "2026-11-01",
+      "summary": "Public Zillow and Redfin FSBO inventory, York County delinquent-tax and Master in Equity entry points, owner-listing pages and foreclosure notices were reviewed. Current under-ceiling FSBO results were already tracked or failed age, bedroom, private-full-bath or active-status gates; no eligible new owner-listed candidate emerged.",
       "coverageGap": "Distressed and owner inventory requires current sale status, title, redemption, bid, condition, access, financing, occupancy, year-built, private-bath and all-charge checks; blocked or stale pages are coverage gaps, not absence evidence."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Auction.com, Hubzu, Xome, York County sale entry points and public builder inventory were checked. Xome displayed 26 results within the expanded area, including a one-bath Rock Hill foreclosure that fails the private-full-bath gate; public foreclosure notices had unresolved bids, title, access, occupancy, condition and financing. Lennar displayed eleven tracked Cannon Village homes.",
+      "asOf": "2026-11-01",
+      "summary": "Auction.com, Hubzu, Xome, York County sale entry points and public builder inventory were checked. Xome showed Rock Hill foreclosure leads with unknown bids or one full bathroom; no eligible ordinary purchase candidate emerged. Eleven Cannon Village homesites remained directly accessible, while homesite 161 redirected to a generic plan and current public IDX evidence reports Pending.",
       "coverageGap": "Auction estimates and opening or credit bids are not guaranteed purchase prices; premiums, title, redemption, condition, access, occupancy, final roster and financing remain unresolved. Builder prices can depend on incentives, affiliated financing, completion status and undisclosed fees."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "supported-manual-not-refreshed",
-      "asOf": "2026-10-31",
-      "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained and fresh public Canopy MLS-fed sources were used for this run.",
+      "asOf": "2026-11-01",
+      "summary": "No new user-authorized saved-search snapshot was supplied; sanitized prior evidence was retained and fresh public sources were used for this run.",
       "coverageGap": "Manual saved-search coverage was unavailable this run."
     },
     {
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-10-31",
+      "asOf": "2026-11-01",
       "summary": "Not queried by policy; public research continued without third-party credentials, paid keys, broker exports or direct MLS access.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure."
     },
@@ -36904,57 +36966,57 @@
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Every retained marketed purchase primary URL was re-requested, 169 fresh Canopy MLS-fed detail pages were reconciled by MLS and address, direct builder inventory was reconciled by homesite, and stored transfer chronology was reviewed. Two active listings were added, one price reduction was recorded and no property met the positive-removal or two-miss archive threshold.",
-      "coverageGap": "HTTP access and search snippets are not status proof. Seller acceptance, title, transfer instruments, builder availability, auction roster and contract status remain unresolved for many records."
+      "asOf": "2026-11-01",
+      "summary": "All 216 retained marketed primary URLs were re-requested and current public portal, IDX and builder evidence was reconciled with stored listing and transfer history. Homesite 161 moved from active to pending; no property met positive-removal or two-consecutive-ordinary-miss archival criteria.",
+      "coverageGap": "HTTP blocks, rate limits, timeouts and search snippets are not removal proof. Seller acceptance, title, transfer instruments, builder availability, auction rosters and contract status remain unresolved for many records."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Stored York County parcel, assessment and deed evidence was reviewed for retained candidates. Official parcel records matched both new listings, including parcel identity, construction year, finished area and prior transfer references. Current title, liens, restrictions and complete instruments remain unresolved.",
+      "asOf": "2026-11-01",
+      "summary": "Stored York County parcel, assessment and deed evidence was reviewed for retained candidates and official entry points were rechecked. No new property-specific official record changed parcel identity, ownership, transfer, title or assessment evidence.",
       "coverageGap": "Current ownership authority, title, liens, easements, restrictions and complete deed instruments require official record and closing-attorney review."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Stored property-specific permit, zoning, occupancy and rental-legality evidence was reviewed for retained candidates. The City official zoning layer returned MF-15 for 535 Calen and no point feature for 435 Guiness; no complete exact-address permit card or written separate-room lease decision was obtained for either new listing.",
+      "asOf": "2026-11-01",
+      "summary": "Stored property-specific permit, zoning, occupancy and rental-legality evidence was reviewed, and Rock Hill and York County public permit and zoning entry points were checked. No new complete exact-address permit card, system-final evidence, certificate of occupancy or written separate-room lease decision was obtained.",
       "coverageGap": "Complete permit cards, trade finals, certificates, invoices, warranties, system dates and written zoning, occupancy and room-lease decisions remain required."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Stored FEMA and York County One Map or DFIRM evidence was reviewed for retained candidates. Official county DFIRM point queries returned no intersecting flood feature for either new listing; neither result was promoted to affirmative flood clearance.",
-      "coverageGap": "A zero-result GIS query does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection or insurer acceptance."
+      "asOf": "2026-11-01",
+      "summary": "Stored FEMA and York County One Map or DFIRM evidence was reviewed for retained candidates and public entry points were checked. No new property-specific evidence was promoted to affirmative flood clearance.",
+      "coverageGap": "A zero-result or inaccessible GIS query does not replace an affirmative FEMA determination, parcel survey, drainage review, inspection or insurer acceptance."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "HOA evidence, separate whole-unit and individual-room authority, dues, assessments, transfer or capital charges, mandatory amenity or builder fees, master insurance and follow-ups were reviewed. 535 Calen reports $180 monthly plus $293.55 annually; 435 Guiness requires HOA membership but its exact current fee schedule conflicts or is omitted. No controlling rental rule was obtained.",
+      "asOf": "2026-11-01",
+      "summary": "HOA evidence, separate whole-unit and individual-room authority, dues, assessments, transfer or capital charges, mandatory amenity or builder fees, master insurance and follow-ups were reviewed. No controlling Cannon Village rental rule, complete fee schedule or master-insurance evidence was obtained; homesite 161 is pending.",
       "coverageGap": "Unknown whole-unit or individual-room rental authority remains unknown and blocks recommendation where room income is required; unavailable charges remain unknown rather than zero."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Zillow Rentals, Apartments.com, HotPads and RentCafe public evidence was refreshed. Current evidence shows one-bedroom asks or averages around $1,200 to $1,319, including Apartments.com at $1,299, Zillow at $1,200 and RentCafe at $1,319; the conservative $1,150 private-unit planning benchmark was retained.",
+      "asOf": "2026-11-01",
+      "summary": "Zillow Rentals, Apartments.com, HotPads and RentCafe public evidence was reviewed. Current one-bedroom evidence remains near $1,200 to $1,319, with a November public median around $1,270; the conservative $1,150 private-unit planning benchmark was retained.",
       "coverageGap": "Asking rents are not executed leases, may exclude utilities or fees, and are not property-specific."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-10-31",
-      "summary": "Roomies, Furnished Finder and SpareRoom public evidence was refreshed. All 14 configured direct comparable URLs were requested: five HTTP 200 and nine HTTP 403. Fresh Rock Hill examples ranged from about $600 to $1,400, with multiple private-bath asks from $750 to $1,200; the conservative $850 room benchmark remains unchanged.",
-      "coverageGap": "Blocked pages and asking rents are not availability proof, executed leases, or evidence that room rental is lawful at a purchase candidate."
+      "asOf": "2026-11-01",
+      "summary": "Roomies, Furnished Finder and SpareRoom public evidence was refreshed. All 14 configured direct comparable URLs were requested: four HTTP 200, nine HTTP 403 and one timeout. Current indexed Rock Hill asks ranged from about $500 to $1,400, with active-looking private-bath asks from $650 to $1,200; one prior $850 ad is no longer accepting applications and was downgraded to recently rented. The conservative $850 room benchmark remains unchanged.",
+      "coverageGap": "Blocked pages, timeouts and asking rents are not availability proof, executed leases, or evidence that room rental is lawful at a purchase candidate."
     }
   ],
   "importSummary": {
