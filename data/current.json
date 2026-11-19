@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-18",
+  "asOf": "2026-11-19",
   "runStatus": "successful",
-  "researchMethod": "Fresh public-only reconciliation of all 14 configured discovery, verification and rent-evidence categories. All 236 retained marketed purchase primary URLs and all 14 direct room-comparable URLs were re-requested; a current Canopy MLS-fed public search established two new under-ceiling candidates and one relist, direct Lennar inventory was reconciled, and public national portals, FSBO, GSE, auction and York County distressed sources were checked. The run added two active candidates, changed one relisted candidate, archived none and refreshed 238 of 238 public driving routes while retaining 0 prior verified routes after public geocoding or routing failures. Stable IDs and history were preserved; public search is not exhaustive MLS coverage, and unknown legal, private-bath, HOA, permit, system-age, title, flood, fee and insurance evidence remains conservative.",
+  "researchMethod": "Fresh public-only reconciliation of all 14 configured discovery, verification and rent-evidence categories. All 238 retained marketed purchase primary URLs and all 14 direct room-comparable URLs were re-requested; a current Canopy MLS-fed public search established one new under-ceiling candidate, direct Lennar inventory was reconciled, and public national portals, FSBO, GSE, auction and York County distressed sources were checked. The run added one active candidate, changed none, archived none and refreshed 237 of 238 public driving routes while retaining one prior verified route after a public routing failure. Stable IDs and history were preserved; public search is not exhaustive MLS coverage, and unknown legal, private-bath, HOA, permit, system-age, title, flood, fee and insurance evidence remains conservative.",
   "market": {
     "location": "Rock Hill area, South Carolina",
     "radiusMiles": 30,
@@ -9,11 +9,177 @@
     "medianSoldPrice": 320500,
     "medianPricePerSqft": 204,
     "medianDaysOnMarket": 65,
-    "asOf": "2026-11-18",
+    "asOf": "2026-11-19",
     "sourceUrl": "https://www.realtor.com/local/market/south-carolina/york-county/rock-hill",
-    "note": "Current public listing, builder, rental, FSBO, GSE, auction, distressed and market evidence was refreshed November 18, 2026. Existing market indicators are retained because the targeted public search did not provide a complete replacement dataset. Public search is not exhaustive MLS coverage; unknown diligence remains conservative."
+    "note": "Current public listing, builder, rental, FSBO, GSE, auction, distressed and market evidence was refreshed November 19, 2026. Existing market indicators are retained because the targeted public search did not provide a complete replacement dataset. Public search is not exhaustive MLS coverage; unknown diligence remains conservative."
   },
   "properties": [
+    {
+      "id": "mls-4444523",
+      "strategy": "shared-home",
+      "changeCategory": "new",
+      "firstSeen": "2026-11-19",
+      "lastSeen": "2026-11-19",
+      "lastChanged": "2026-11-19",
+      "address": "327 Baker St, Rock Hill, SC 29730",
+      "sourceUrl": "https://www.homefront.com/homes/sc/rock-hill/property/327-baker-street-0fc75bc6-aa28-3ff7-ae20-dfc17b1cef65",
+      "mls": "4444523",
+      "parcelId": "6002102015",
+      "status": "active",
+      "price": 239900,
+      "originalPrice": 239900,
+      "priceCutPercent": 0,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1085,
+      "pricePerSqft": 221.1,
+      "marketPricePerSqft": 204,
+      "yearBuilt": 2026,
+      "propertyType": "One-level new-construction single-family home",
+      "hoaMonthly": 0,
+      "oneLevel": true,
+      "privateBath": "unknown",
+      "roomRentalLegal": "unknown",
+      "daysOnMarket": 1,
+      "distanceMiles": 7.3,
+      "driveMinutes": 15,
+      "distanceAsOf": "2026-11-19",
+      "distanceMethod": "ArcGIS public point-address geocoding with a public OpenStreetMap driving-route estimate from the private family reference property",
+      "distanceLabel": "7.3 miles · about 15 minutes from the family reference property",
+      "summary": "A newly active $239,900 one-level new-construction home with three bedrooms and two full bathrooms. The listing calls construction complete, but the public permit remains issued and does not show required final inspections or a certificate of occupancy. Private-bath allocation and separate-room rental authority also remain unresolved.",
+      "pros": [
+        "$35,100 below the absolute offer ceiling",
+        "One-level three-bedroom, two-full-bath layout",
+        "Official permit evidence documents the stated 1,085 heated square feet and three-bedroom, two-bath scope",
+        "Public water and sewer are reported",
+        "7.3 miles · about 15 minutes from the family reference property"
+      ],
+      "concerns": [
+        "The listing reports completed new construction, but City permit 202607394 remains Issued and the public inspection history does not show final building/trade approvals, final landscaping, final stormwater/public-works approval or a certificate of occupancy. This conflict blocks recommendation until the City confirms lawful occupancy.",
+        "The listing confirms two full bathrooms but does not establish that one can remain a private full bathroom for the family occupant.",
+        "Separate-room rental authority, occupancy limits, parking capacity and property-specific room demand remain unresolved; underwriting uses the conservative unknown-authority cap and reduced room income.",
+        "The York County parcel layer still classifies the parcel as residential vacant with no finished area or year built, so the completed improvement has not yet propagated to the official parcel record.",
+        "The listing claims new construction, architectural-shingle roofing, a heat pump and an electric water heater, but public records do not yet show final trade approvals, invoices, warranties or confirmed installation dates.",
+        "The listing reports no HOA, but recorded covenants, mandatory recurring charges, special assessments, transfer fees, capital contributions and builder fees have not been ruled out through title and written seller evidence.",
+        "Public listing and official parcel sources differ on the 2025 land-transfer date; the complete deed and consideration require direct review.",
+        "A county DFIRM point query returned no intersecting feature, but this is not an affirmative FEMA determination, drainage review, survey, elevation certificate or insurer acceptance."
+      ],
+      "sourceConflicts": [
+        "The listing describes construction as completed, while City permit 202607394 remains Issued and lacks publicly recorded final inspections and a certificate of occupancy.",
+        "The current listing reports a completed 2026 home, while the official parcel layer still classifies the parcel as residential vacant with no year built or finished square footage.",
+        "Public listing history reports a February 2025 land sale, while the official parcel layer reports a March 2025 transfer; the deed controls."
+      ],
+      "hoa": {
+        "exists": false,
+        "wholeUnitRental": "unknown",
+        "roomRental": "unknown",
+        "evidence": [
+          "The current listing reports no HOA."
+        ],
+        "confidence": "low",
+        "followUp": "Confirm through title, recorded covenants and written seller evidence that no association, mandatory amenity charge, special assessment, transfer fee, capital contribution, builder fee or rental restriction applies."
+      },
+      "listingHistory": [
+        {
+          "date": "2025-03-14",
+          "event": "Official parcel layer reports vacant-land transfer",
+          "price": 49900
+        },
+        {
+          "date": "2026-11-18",
+          "event": "Current Canopy MLS listing observed active",
+          "price": 239900
+        }
+      ],
+      "sources": [
+        {
+          "label": "Homefront current Canopy MLS listing",
+          "url": "https://www.homefront.com/homes/sc/rock-hill/property/327-baker-street-0fc75bc6-aa28-3ff7-ae20-dfc17b1cef65",
+          "accessed": "2026-11-19"
+        },
+        {
+          "label": "JPAR current Canopy MLS property details",
+          "url": "https://www.jpar.com/property/44-4444523-327-baker-street-rock-hill-SC-29730",
+          "accessed": "2026-11-19"
+        },
+        {
+          "label": "York County official parcel feature service",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Parcels/FeatureServer/0",
+          "accessed": "2026-11-19"
+        },
+        {
+          "label": "York County public deed search",
+          "url": "https://search.yorkdeeds.com/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "label": "City of Rock Hill official zoning layer",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/ArcGIS/rest/services/Rock%20Hill%20Zoning/FeatureServer/0",
+          "accessed": "2026-11-19"
+        },
+        {
+          "label": "City of Rock Hill public permit portal",
+          "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "label": "York County official 2017 DFIRM flood layer",
+          "url": "https://services1.arcgis.com/2AGLxyiJoNiVHKwq/arcgis/rest/services/Flood%20Hazard%20Zone%20Areas%20%28DFIRM%202017%29/FeatureServer/0",
+          "accessed": "2026-11-19"
+        },
+        {
+          "label": "FEMA Flood Map Service Center",
+          "url": "https://msc.fema.gov/portal/home",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "changeHistory": [
+        {
+          "date": "2026-11-19",
+          "changes": [
+            {
+              "field": "listing",
+              "from": null,
+              "to": "added",
+              "label": "New active public listing"
+            }
+          ]
+        }
+      ],
+      "missingRuns": 0,
+      "listingDetails": {
+        "parcelId": "6002102015",
+        "zoning": "SF-4 in the official City zoning layer; separate-room rental authority, occupancy and parking rules require written confirmation",
+        "subdivision": "Sunset Park Extension subdivision phase 1",
+        "sewer": "Public sewer reported and City permit records show an approved water/sewer inspection September 28, 2026; final utility and occupancy acceptance remain unresolved",
+        "water": "Public water reported and City permit records show an approved water/sewer inspection September 28, 2026; final utility and occupancy acceptance remain unresolved",
+        "parking": "Driveway and legal off-street capacity were not established from authoritative public evidence",
+        "foundation": "Slab reported; footing, underslab plumbing and slab inspections were approved, but final structural and drainage acceptance remain unresolved",
+        "roof": "Architectural-shingle roof reported as new; final building approval, installation date, invoice, warranty and condition evidence are not public",
+        "hvac": "Heat pump and central air reported as new; public permit records identify the mechanical contractor but do not show a final mechanical approval, invoice, warranty or confirmed installation date",
+        "plumbing": "Public permit records show approved underslab plumbing and rough inspection stages, but final plumbing approval, materials, warranties and present condition remain unresolved",
+        "waterHeater": "Electric water heater reported as new; final plumbing/electrical approval, installation date, invoice, warranty and condition evidence are not public"
+      },
+      "publicVerification": {
+        "asOf": "2026-11-19",
+        "marketingAttempt": "Fresh Canopy MLS-fed public evidence reports active status at $239,900, listed November 18 under MLS 4444523.",
+        "parcelAndDeed": "York County official parcel evidence matches parcel 6002102015 and subdivision phase 1, but still classifies it as residential vacant with no year built or finished area. The official layer reports a March 2025 vacant-land transfer at $49,900; complete deed, current ownership authority, title, liens, restrictions and builder conveyance evidence remain unresolved.",
+        "zoning": "An official City zoning point query returned SF-4. Separate-room rental, occupancy, registration and parking authority remain unresolved pending written interpretation.",
+        "flood": "A York County official 2017 DFIRM point query returned no intersecting flood-hazard feature. This is not an affirmative FEMA determination, parcel survey, drainage analysis, elevation certificate or insurer acceptance.",
+        "permits": [
+          {
+            "jurisdiction": "City of Rock Hill",
+            "url": "https://rhbuild.cityofrockhill.com/evolvepublic/",
+            "result": "Permit 202607394 documents a one-story, three-bedroom, two-bath detached home with 1,085 heated square feet. Footing, underslab plumbing, slab, exterior sheathing, house wrap, framing/roughs, insulation, water/sewer and temporary power inspections are shown approved, but the permit remains Issued and no required final building/trade approvals or certificate of occupancy are publicly recorded.",
+            "permitHeaders": [
+              "202607394 — Single Family Residential Detached — Issued 2026-07-07; finals and CO not publicly recorded",
+              "202300322 — Demolition — Completed 2023-01-19"
+            ],
+            "caveat": "The listing's completed-construction claim is not equivalent to final inspection or lawful occupancy. Obtain City confirmation of every final approval and the certificate of occupancy before recommendation or closing."
+          }
+        ]
+      }
+    },
     {
       "id": "mls-4289875",
       "strategy": "shared-condo",
@@ -19924,7 +20090,7 @@
     {
       "id": "mls-4413214",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-11-18",
       "lastChanged": "2026-11-18",
@@ -41392,7 +41558,7 @@
     {
       "id": "mls-4443828",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-18",
       "lastSeen": "2026-11-18",
       "lastChanged": "2026-11-18",
@@ -41548,7 +41714,7 @@
     {
       "id": "mls-4444291",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-18",
       "lastSeen": "2026-11-18",
       "lastChanged": "2026-11-18",
@@ -42634,23 +42800,23 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public surfaces were reconciled. All 236 retained marketed purchase primary URLs were re-requested: 133 HTTP 200, 35 HTTP 202, 32 HTTP 403, one HTTP 404 and 35 HTTP 429. The isolated 404 was not treated as removal proof.",
+      "asOf": "2026-11-19",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto public surfaces were reconciled. All 238 retained marketed purchase primary URLs were re-requested: 133 HTTP 200, 38 HTTP 202, 32 HTTP 403, one HTTP 404 and 34 HTTP 429. The isolated 404 was not treated as removal proof.",
       "coverageGap": "Public discovery is not exhaustive MLS coverage. Blocks, rate limits, stale pages and isolated failures remain coverage gaps."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "A fresh Canopy MLS-fed Redfin search established active MLS 4443828 at 614 Mega Drive, active MLS 4444291 at 303 Hancock Union Lane and the relist of 1132 Carolina Avenue Extension under MLS 4444025. Direct Lennar inventory retained eleven Cannon Village Townes homes within the current $238,399 to $264,999 range.",
-      "coverageGap": "Targeted public IDX discovery can omit listings and is not direct MLS access. Seller, listing-agent and builder terms require confirmation."
+      "asOf": "2026-11-19",
+      "summary": "A fresh Canopy MLS-fed public search current through November 19 established active MLS 4444523 at 327 Baker Street. Direct Lennar inventory retained eleven active Cannon Village Townes homes at unchanged prices.",
+      "coverageGap": "The fresh brokerage search used an expired TLS certificate and required transport-only certificate bypass; targeted public IDX discovery can omit listings and is not direct MLS access. Seller, listing-agent and builder terms require confirmation."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
+      "asOf": "2026-11-19",
       "summary": "HUD Home Store, Fannie Mae HomePath and Freddie Mac HomeSteps public entry points and indexed results were checked; no independently verified eligible new Rock Hill-area property with an ordinary current purchase price emerged.",
       "coverageGap": "Direct public search surfaces were incomplete or shell-based. No credentialed feed was requested or used."
     },
@@ -42658,23 +42824,23 @@
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "Current Zillow FSBO, public owner-listing, York County Master in Equity and delinquent-tax surfaces were reviewed. Known candidates were rechecked and no additional eligible ordinary-sale record with resolved price and private-bath evidence was established.",
-      "coverageGap": "Distressed and owner inventory still needs title, redemption, bid, condition, access, financing, occupancy, fee and private-bath evidence."
+      "asOf": "2026-11-19",
+      "summary": "Current Zillow FSBO, public owner-listing, York County Master in Equity and delinquent-tax surfaces were reviewed. A Harbor Oaks manufactured-home advertisement was withheld because it sells the home in a park without establishing land ownership, mandatory lot rent or complete acquisition cost. No additional admissible ordinary-sale record was established.",
+      "coverageGap": "Distressed and owner inventory still needs title, land tenure, lot rent, redemption, bid, condition, access, financing, occupancy, fee and private-bath evidence."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "Auction.com, Hubzu, Xome, York County sale evidence and direct builder inventory were checked. An indexed auction lead at 1521 Tuckers Glenn Drive lacked a usable auction price and terms and conflicted with off-market portal evidence, so it was not modeled. Eleven Lennar townhomes remained directly available.",
-      "coverageGap": "Auction price, title, premiums, possession, redemption, condition and financing remain unresolved. Builder incentives and fees require written confirmation."
+      "asOf": "2026-11-19",
+      "summary": "Auction.com, Hubzu, Xome, York County sale evidence and direct builder inventory were checked. Public auction leads lacked usable purchase prices or terms. Eleven Lennar townhomes remained directly available. New-construction MLS 4444523 was added, but its public City permit remains Issued without recorded finals or a certificate of occupancy.",
+      "coverageGap": "Auction price, title, premiums, possession, redemption, condition and financing remain unresolved. Builder incentives, final approvals, warranties and fees require written confirmation."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "supported-manual-not-refreshed",
-      "asOf": "2026-11-18",
+      "asOf": "2026-11-19",
       "summary": "No new user-authorized saved-search snapshot was supplied; prior sanitized evidence was retained and fresh public sources were used.",
       "coverageGap": "Manual saved-search coverage was unavailable this run."
     },
@@ -42682,7 +42848,7 @@
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-11-18",
+      "asOf": "2026-11-19",
       "summary": "Not queried by policy; the run used public sources without requesting paid keys, broker exports or direct MLS credentials.",
       "coverageGap": "No credentialed MLS or paid-feed coverage; documented limitation, not a run failure."
     },
@@ -42690,56 +42856,56 @@
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "Every known marketed listing was rechecked through its primary public URL and available corroboration. Carolina Avenue returned to active marketing under a new MLS at $235,000. Two new active listings were added. No record met positive-removal or two-miss archival criteria.",
+      "asOf": "2026-11-19",
+      "summary": "Every known marketed listing was rechecked through its primary public URL and available corroboration. One newly active listing was added. No existing record had a supported material change, and no record met positive-removal or two-miss archival criteria.",
       "coverageGap": "Public pages can lag contracts, transfers and removals; direct agent, seller and deed confirmation remains required before action."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "York County official parcel and deed entry points were checked. Mega matched parcel 6280606012 and official year 2000; Hancock Union matched parcel 5951301031 and official year 2006. Both have unresolved or conflicting transfer chronology requiring direct deed review.",
-      "coverageGap": "Exact ownership, title, liens, restrictions, assessment, tax district and transaction readback remain unresolved where public interfaces were incomplete or ambiguous."
+      "asOf": "2026-11-19",
+      "summary": "York County official parcel and deed entry points were checked for the new candidate. Baker matched parcel 6002102015, but the official layer still classifies it as residential vacant with no finished area or year built and reports a March 2025 land transfer at $49,900.",
+      "coverageGap": "The completed improvement has not propagated to the parcel layer. Exact ownership, builder conveyance, title, liens, restrictions, assessment, tax district and complete deed chronology require direct review."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "City permit and official zoning records were checked for both new candidates. Mega returned PUD-R and a completed 2014 HVAC change-out permit with final approval in 2015. Hancock Union returned PUD and a completed 2006 original construction permit with certificate of occupancy and listed trade finals. Neither received affirmative separate-room rental approval.",
-      "coverageGap": "Unknown legal authority caps room-rentability and reduces underwritten income. Later system claims, zoning interpretation and occupancy rules require written evidence."
+      "asOf": "2026-11-19",
+      "summary": "Official City records returned SF-4 for Baker and permit 202607394 for a one-story, three-bedroom, two-bath home. Intermediate inspections are documented, but the permit remains Issued without publicly recorded final building/trade approvals or a certificate of occupancy. Separate-room rental authority is unknown.",
+      "coverageGap": "The missing finals and certificate of occupancy block recommendation. Unknown legal authority caps room-rentability and reduces underwritten income; written zoning and occupancy confirmation remains required."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "York County official 2017 DFIRM and FEMA entry points were checked. Neither new candidate intersected a county DFIRM point feature, but no affirmative lender determination, drainage review, elevation certificate, survey or insurer acceptance was established.",
+      "asOf": "2026-11-19",
+      "summary": "York County official 2017 DFIRM and FEMA entry points were checked. Baker did not intersect a county DFIRM point feature, but no affirmative lender determination, drainage review, elevation certificate, survey or insurer acceptance was established.",
       "coverageGap": "A point screen is not a survey, elevation certificate, lender flood determination, drainage inspection or insurance quote."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "Known HOA and condo candidates retained separate whole-unit and individual-room rental authority states. Hancock Union reports mandatory $205 monthly dues, but controlling documents, rental authority, assessments, transaction charges, master insurance, reserves and litigation remain unknown and block recommendation.",
-      "coverageGap": "Unknown whole-unit or room-rental authority, assessments, fees and master insurance remain recommendation blockers for HOA-dependent shared candidates."
+      "asOf": "2026-11-19",
+      "summary": "Known HOA and condo candidates retained separate whole-unit and individual-room rental authority states. Baker reports no HOA, but recorded covenants, builder fees and every mandatory recurring or transaction-specific charge remain unresolved pending title and written seller evidence.",
+      "coverageGap": "Unknown whole-unit or room-rental authority, assessments, transfer fees, capital contributions, builder fees and master insurance remain recommendation blockers where applicable."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "RentCafe, Apartments.com, Zillow and indexed Rock Hill one-bedroom evidence were refreshed. Ordinary current asks remained near $1,099 to $1,300, supporting retention of the conservative $1,150 private-unit planning benchmark; asks are not executed leases.",
+      "asOf": "2026-11-19",
+      "summary": "RentCafe, Apartments.com, Zillow and indexed Rock Hill one-bedroom evidence were refreshed. Current one-bedroom asks generally remained near $1,260 to $1,520, supporting retention of the conservative $1,150 private-unit planning benchmark; asks are not executed leases.",
       "coverageGap": "Provider blocks, duplicate communities, concessions, fees and availability prevent exhaustive coverage and property-specific demand proof."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-18",
-      "summary": "All 14 configured direct room-comparable URLs were re-requested: four HTTP 200 and ten HTTP 403. Fresh Roomies and SpareRoom surfaces showed private-bath asks including $795, $850, $930, $950, $995 and $1,000; the $850 planning benchmark was retained with sparse-source, vacancy and authorization haircuts.",
+      "asOf": "2026-11-19",
+      "summary": "All 14 configured direct room-comparable URLs were re-requested: five HTTP 200 and nine HTTP 403. Fresh Roomies and SpareRoom surfaces showed private-bath asks from $650 to $995, including current $850, $930 and $950 examples; the $850 planning benchmark was retained with sparse-source, vacancy and authorization haircuts.",
       "coverageGap": "Blocked requests and asking rents are access limitations, not proof of current availability or achieved rent; utilities, furnishing, term and bathroom allocation require confirmation."
     }
   ],
@@ -42751,9 +42917,9 @@
     "added": 53,
     "withheld": 1,
     "deduplication": "MLS number first, normalized street address second",
-    "freshPublicDiscoveryCards": 88,
-    "freshPublicNew": 2,
-    "freshPublicChanged": 1,
+    "freshPublicDiscoveryCards": 36,
+    "freshPublicNew": 1,
+    "freshPublicChanged": 0,
     "routeWithheld": 0
   }
 }
