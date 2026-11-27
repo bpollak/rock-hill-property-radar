@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-26",
+  "asOf": "2026-11-27",
   "runStatus": "successful",
   "researchMethod": "Fresh public-only November 25 reconciliation of all 14 configured discovery, verification and rent-evidence categories. All 240 retained currently marketed purchase primary URLs and all 14 configured room-comparable URLs were re-requested. Fresh public Canopy MLS-fed Rock Hill discovery produced 172 unique cards across two pages and established one eligible new candidate, eleven price reductions and one coming-soon-to-active change; three isolated primary 404 responses remain first misses rather than removal proof. National portals, public brokerage and IDX pages, FSBO, direct builders, HUD and GSE inventory, Auction.com, Hubzu, Xome, York County distressed sources, parcel, deed, permit, zoning, flood, HOA and rent evidence were checked. Stable IDs and chronology were preserved; public research is not exhaustive MLS coverage, and unresolved legal, HOA, private-bath, permit, system-age, title, flood, fee and insurance evidence remains conservative.",
   "market": {
@@ -11,7 +11,7 @@
     "medianDaysOnMarket": 65,
     "asOf": "2026-11-21",
     "sourceUrl": "https://www.realtor.com/local/market/south-carolina/york-county/rock-hill",
-    "note": "The retained area-wide aggregate keeps its original period. November 26 public listing, brokerage and IDX, owner-listing, government, auction, builder, parcel, deed, permit, zoning, flood-layer, HOA, private-unit and private-room sources informed the daily checks; no unsupported market-wide aggregate was substituted."
+    "note": "The retained area-wide aggregate keeps its original period. November 27 public listing, brokerage and IDX, owner-listing, government, auction, builder, parcel, deed, permit, zoning, flood-layer, HOA, private-unit and private-room sources informed the daily checks; no unsupported market-wide aggregate was substituted."
   },
   "properties": [
     {
@@ -3021,7 +3021,7 @@
       }
     },
     {
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-17",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -4320,7 +4320,7 @@
     {
       "id": "mls-4399533",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -4925,7 +4925,7 @@
     {
       "id": "mls-4380387",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-19",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -6266,7 +6266,7 @@
     {
       "id": "mls-4406565",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-21",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -6781,7 +6781,7 @@
     {
       "id": "mls-4329347",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -7512,7 +7512,7 @@
     {
       "id": "mls-4395375",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -17128,7 +17128,7 @@
     {
       "id": "mls-4394505",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-05",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -18716,7 +18716,7 @@
     {
       "id": "mls-4335830",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-08-29",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -24421,7 +24421,7 @@
     {
       "id": "mls-4422628",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-15",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -26613,7 +26613,7 @@
     {
       "id": "builder-29017600176",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-27",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -27758,7 +27758,7 @@
     {
       "id": "mls-4403840",
       "strategy": "private-purchase",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-09-29",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -30685,7 +30685,7 @@
     {
       "id": "mls-4427356",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-04",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -30860,7 +30860,7 @@
     {
       "id": "mls-4415646",
       "strategy": "shared-condo",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-04",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -31678,7 +31678,7 @@
     {
       "id": "mls-4430521",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-10",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -32865,14 +32865,14 @@
     {
       "id": "builder-29017600104",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-25",
-      "lastChanged": "2026-11-20",
+      "lastSeen": "2026-11-27",
+      "lastChanged": "2026-11-27",
       "address": "711 Sparano Loop Unit 104, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600104",
       "parcelId": "0701601651",
-      "status": "active",
+      "status": "off-market",
       "price": 235399,
       "originalPrice": 250999,
       "priceCutPercent": 6.2,
@@ -32893,7 +32893,7 @@
       "distanceAsOf": "2026-11-26",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's live inventory newly exposes under-construction homesite 104, a three-bedroom Drayton townhouse at $235,399 with an estimated January 19, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
+      "summary": "Lennar's direct structured inventory omitted this homesite on both November 26 and November 27, and the homesite URL now redirects to the generic Drayton plan page. The record is archived under the two-consecutive-miss rule; its prior $235,399 price is not current inventory.",
       "pros": [
         "$39,601 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a builder-documented owner’s en-suite plus a second full bath and powder room",
@@ -32902,7 +32902,7 @@
         "Direct builder inventory identifies estimated completion on January 19, 2027"
       ],
       "concerns": [
-        "Lennar's direct page lists $235,399; obtain a dated builder price sheet and identify lender, incentive, deposit, closing-cost, completion, and availability conditions.",
+        "The homesite is no longer present in direct builder inventory; availability, replacement homesite, incentives and any accepted contract are unknown.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer or capital fees, amenity charges, and builder closing schedule.",
         "Whole-unit rental and individual-room rental authority are separately unknown. Recorded declarations, bylaws, rules, amendments, written management decisions, local zoning, rental registration, occupancy limits, and insurer approval are required.",
         "Only a one-car garage is documented; parking allocation and enforceability for three unrelated occupants require written confirmation.",
@@ -32914,7 +32914,8 @@
         "Utilities allocation, common-space practicality, locks, smoke and carbon-monoxide protection, association maintenance boundaries, litigation, resale restrictions, and leasing surcharges remain unknown."
       ],
       "sourceConflicts": [
-        "No current MLS number or independent listing date was established; direct builder inventory controls the provisional price and availability."
+        "No current MLS number or independent listing date was established; direct builder inventory controls the provisional price and availability.",
+        "The homesite was absent from Lennar's direct structured inventory on two consecutive daily checks, and its former detail URL redirects to the generic plan page. No current independent listing was found."
       ],
       "hoa": {
         "exists": true,
@@ -32950,6 +32951,11 @@
         {
           "date": "2026-11-20",
           "event": "Direct builder price reduction",
+          "price": 235399
+        },
+        {
+          "date": "2026-11-27",
+          "event": "Archived after two consecutive direct-builder inventory misses",
           "price": 235399
         }
       ],
@@ -33028,6 +33034,11 @@
           "label": "November 20 Lennar direct inventory price and availability",
           "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600104",
           "accessed": "2026-11-20"
+        },
+        {
+          "label": "November 27 Lennar direct inventory and homesite-removal check",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-11-27"
         }
       ],
       "changeHistory": [
@@ -33121,6 +33132,17 @@
               "label": "Cumulative reduction from original builder price"
             }
           ]
+        },
+        {
+          "date": "2026-11-27",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Archived after two consecutive direct-builder inventory misses"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
@@ -33134,8 +33156,8 @@
         "completion": "Under construction with estimated completion January 19, 2027; permits, trade finals, certificate of occupancy, warranties, and delivery date not independently obtained"
       },
       "publicVerification": {
-        "asOf": "2026-11-20",
-        "marketingAttempt": "Lennar's live direct inventory showed $235,399 on November 16, 2026. Price, incentives, title, fees, permits, certificate, warranties, association authority and insurance still require direct documentation.",
+        "asOf": "2026-11-27",
+        "marketingAttempt": "Lennar's direct structured inventory omitted the homesite on both November 26 and November 27, 2026, and its former detail URL redirects to the generic Drayton plan page. No current independent listing was found, so the record is archived under the two-miss rule.",
         "parcelAndDeed": "York County GIS matched parcel 0701601651, the address, Cannon Village subdivision, and homesite 104. The recorded transfer reference is associated with a $1,330,872 developer or bulk transaction and is not treated as individual retail price. Current title, liens, easements, restrictions, ownership, and instrument contents remain unresolved.",
         "flood": "A parcel-geometry query against York County's 2017 DFIRM layer returned zero intersecting flood-hazard features. This is not an affirmative FEMA determination; grading, drainage, master-policy coverage, survey, and insurer acceptance remain required.",
         "permits": [
@@ -33393,14 +33415,14 @@
     {
       "id": "builder-29017600102",
       "strategy": "shared-condo",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-25",
-      "lastChanged": "2026-11-20",
+      "lastSeen": "2026-11-27",
+      "lastChanged": "2026-11-27",
       "address": "719 Sparano Loop Unit 102, York, SC 29745",
       "sourceUrl": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600102",
       "parcelId": "0701601649",
-      "status": "active",
+      "status": "off-market",
       "price": 235399,
       "originalPrice": 250999,
       "priceCutPercent": 6.2,
@@ -33421,7 +33443,7 @@
       "distanceAsOf": "2026-11-26",
       "distanceMethod": "ArcGIS public point-address geocoding with OSRM public driving-route estimate from the private family reference property",
       "distanceLabel": "12.6 miles · about 24 minutes from the family reference property",
-      "summary": "Lennar's live inventory newly exposes under-construction homesite 102, a three-bedroom Drayton townhouse at $235,399 with an estimated January 20, 2027 completion. The owner's private full bathroom is documented, but HOA rental authority, controlling fees, occupancy, parking, permit and completion records, insurance, incentive conditions, and builder charges still block recommendation.",
+      "summary": "Lennar's direct structured inventory omitted this homesite on both November 26 and November 27, and the homesite URL now redirects to the generic Drayton plan page. The record is archived under the two-consecutive-miss rule; its prior $235,399 price is not current inventory.",
       "pros": [
         "$39,601 below the absolute offer ceiling at current builder pricing",
         "Three bedrooms with a builder-documented owner’s en-suite plus a second full bath and powder room",
@@ -33430,7 +33452,7 @@
         "Direct builder inventory identifies estimated completion on January 20, 2027"
       ],
       "concerns": [
-        "Lennar's direct page lists $235,399; obtain a dated builder price sheet and identify lender, incentive, deposit, closing-cost, completion, and availability conditions.",
+        "The homesite is no longer present in direct builder inventory; availability, replacement homesite, incentives and any accepted contract are unknown.",
         "Lennar reports approximately $290 monthly HOA dues. Obtain the current statement, budget, reserve information, special-assessment history, master insurance, transfer or capital fees, amenity charges, and builder closing schedule.",
         "Whole-unit rental and individual-room rental authority are separately unknown. Recorded declarations, bylaws, rules, amendments, written management decisions, local zoning, rental registration, occupancy limits, and insurer approval are required.",
         "Only a one-car garage is documented; parking allocation and enforceability for three unrelated occupants require written confirmation.",
@@ -33442,7 +33464,8 @@
         "Utilities allocation, common-space practicality, locks, smoke and carbon-monoxide protection, association maintenance boundaries, litigation, resale restrictions, and leasing surcharges remain unknown."
       ],
       "sourceConflicts": [
-        "No current MLS number or independent listing date was established; direct builder inventory controls the provisional price and availability."
+        "No current MLS number or independent listing date was established; direct builder inventory controls the provisional price and availability.",
+        "The homesite was absent from Lennar's direct structured inventory on two consecutive daily checks, and its former detail URL redirects to the generic plan page. No current independent listing was found."
       ],
       "hoa": {
         "exists": true,
@@ -33478,6 +33501,11 @@
         {
           "date": "2026-11-20",
           "event": "Direct builder price reduction",
+          "price": 235399
+        },
+        {
+          "date": "2026-11-27",
+          "event": "Archived after two consecutive direct-builder inventory misses",
           "price": 235399
         }
       ],
@@ -33556,6 +33584,11 @@
           "label": "November 20 Lennar direct inventory price and availability",
           "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes/glen-collection/drayton/29017600102",
           "accessed": "2026-11-20"
+        },
+        {
+          "label": "November 27 Lennar direct inventory and homesite-removal check",
+          "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+          "accessed": "2026-11-27"
         }
       ],
       "changeHistory": [
@@ -33649,6 +33682,17 @@
               "label": "Cumulative reduction from original builder price"
             }
           ]
+        },
+        {
+          "date": "2026-11-27",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "off-market",
+              "label": "Archived after two consecutive direct-builder inventory misses"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
@@ -33662,8 +33706,8 @@
         "completion": "Under construction with estimated completion January 20, 2027; permits, trade finals, certificate of occupancy, warranties, and delivery date not independently obtained"
       },
       "publicVerification": {
-        "asOf": "2026-11-20",
-        "marketingAttempt": "Lennar's live direct inventory showed $235,399 on November 16, 2026. Price, incentives, title, fees, permits, certificate, warranties, association authority and insurance still require direct documentation.",
+        "asOf": "2026-11-27",
+        "marketingAttempt": "Lennar's direct structured inventory omitted the homesite on both November 26 and November 27, 2026, and its former detail URL redirects to the generic Drayton plan page. No current independent listing was found, so the record is archived under the two-miss rule.",
         "parcelAndDeed": "York County GIS matched parcel 0701601649, the address, Cannon Village subdivision, and homesite 102. The recorded transfer reference is associated with a $1,330,872 developer or bulk transaction and is not treated as individual retail price. Current title, liens, easements, restrictions, ownership, and instrument contents remain unresolved.",
         "flood": "A parcel-geometry query against York County's 2017 DFIRM layer returned zero intersecting flood-hazard features. This is not an affirmative FEMA determination; grading, drainage, master-policy coverage, survey, and insurer acceptance remain required.",
         "permits": [
@@ -33882,7 +33926,7 @@
     {
       "id": "mls-4429145",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-13",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -34145,7 +34189,7 @@
     {
       "id": "mls-4428099",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-13",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -38092,7 +38136,7 @@
     {
       "id": "mls-4438691",
       "strategy": "shared-home",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-10-29",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -38869,7 +38913,7 @@
     {
       "id": "mls-4403861",
       "strategy": "private-purchase",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-04",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -40974,7 +41018,7 @@
       "firstSeen": "2026-11-13",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
-      "changeCategory": "changed",
+      "changeCategory": "existing",
       "roomRentalLegal": "unknown",
       "missingRuns": 0,
       "changeHistory": [
@@ -43002,21 +43046,21 @@
     {
       "id": "mls-4388364",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-11-20",
-      "lastSeen": "2026-11-25",
-      "lastChanged": "2026-11-21",
+      "lastSeen": "2026-11-27",
+      "lastChanged": "2026-11-27",
       "address": "1018 Love Valley Rd, Clover, SC 29710",
-      "sourceUrl": "https://www.auction.com/details/1018-love-valley-rd-clover-sc-2236032",
+      "sourceUrl": "https://www.auction.com/details/1018-love-valley-rd-clover-sc-2263415",
       "mls": "4388364",
-      "status": "pending",
-      "price": 95000,
+      "status": "auction-scheduled",
+      "price": 25000,
       "originalPrice": 45000,
       "priceCutPercent": 0,
       "beds": 3,
       "baths": 2,
       "sqft": 1100,
-      "pricePerSqft": 86,
+      "pricePerSqft": 22.7,
       "marketPricePerSqft": 124,
       "yearBuilt": 1980,
       "propertyType": "Bank-owned manufactured home auction",
@@ -43026,7 +43070,7 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 35,
       "parcelId": "7820000106",
-      "summary": "Auction.com now reports In Contracting after the $95,000 bid event. Final accepted price, buyer premium, contract terms, title, possession and closing remain unresolved; no offer above $275,000 is modeled or recommended.",
+      "summary": "Auction.com reopened this bank-owned manufactured-home lead for a new online auction with a $25,000 opening bid. The auction has not produced a final accepted price, and current evidence adds a two-parcel access disclosure while leaving title, private-bath, condition, well, septic, permit, insurance and manufactured-home identity unresolved.",
       "pros": [
         "Current $95,000 bid is well below the $275,000 ceiling before the mandatory buyer premium, but it is not a final acquisition price",
         "Three bedrooms and two full bathrooms are reported",
@@ -43034,9 +43078,9 @@
         "No HOA dues are reported by prior MLS-fed evidence"
       ],
       "concerns": [
-        "The auction is still in progress, so the current $95,000 bid is not a final purchase price. Never bid or model an offer above $275,000; seller acceptance and final reserve-compliant price remain unresolved.",
-        "Auction.com reports a mandatory 5% buyer premium, or $4,750 at the current bid, plus 5% or $2,500 earnest money due within one business day. At the current bid, price plus buyer premium would be at least $99,750 before repairs and other closing charges.",
-        "Auction.com reports cash-only terms, no interior access and that the property will require extensive repairs at the buyer's expense. Condition, occupancy, possession, title exceptions, closing timing and complete purchase-agreement obligations require attorney review.",
+        "The $25,000 opening bid is not a final acquisition price. The current auction has not established a winning bid or accepted price; never bid or model an offer above $275,000.",
+        "The current listing says the sale includes two parcels, including the parcel providing legal road access. Exact parcel boundaries, deeded access, title, liens, manufactured title and affixture require attorney and survey review.",
+        "Buyer premium, earnest money, closing costs, financing limits, inspection access, possession and complete purchase-agreement terms must be reconfirmed for this new auction event; prior-event terms are not assumed to carry forward.",
         "Auction evidence reports a 1980 mobile home, 1,100 square feet and 2.3 acres, while prior MLS-fed sources report a 1994 manufactured home, 1,088 square feet and 3.76 acres. Exact improvement identity, manufactured title, permanent affixture, foundation certification and parcel boundaries are unresolved.",
         "Two full bathrooms are reported, but no source establishes that one full bathroom is private to the family bedroom.",
         "Prior MLS evidence says a well is needed and septic is installed. Potable water, well rights and installation cost, septic permit and bedroom capacity, reserve field, inspection and repair exposure remain unresolved.",
@@ -43068,8 +43112,8 @@
         "auction": "Current bid $95,000 with reserve reported met; mandatory 5% buyer premium, cash-only terms, no interior access and extensive-repair disclosure"
       },
       "publicVerification": {
-        "asOf": "2026-11-21",
-        "marketingAttempt": "Auction.com's current public page reports In Contracting on November 21, 2026. The prior $95,000 bid is not treated as a confirmed final accepted acquisition price.",
+        "asOf": "2026-11-27",
+        "marketingAttempt": "Auction.com reports a new bank-owned auction event with a $25,000 opening bid and a two-parcel access disclosure. A winning bid, accepted price, complete current-event charges, contract, title and closing remain unresolved.",
         "parcelAndDeed": "Public York County-derived evidence identifies parcel 7820000106. Public history reports a February 2026 $20,000 trustee deed and the prior MLS listing was removed October 15, 2026. Current ownership, manufactured title and affixture, deed contents, liens, easements, restrictions, parcel boundaries and closing title remain unresolved.",
         "zoning": "Prior MLS-fed and public-record evidence reports York County RUD zoning. Written confirmation of manufactured-home conformity, unrelated-roommate occupancy, separate-room leasing, parking and septic capacity remains required.",
         "flood": "FEMA Flood Map Service Center and York County One Map entry points were checked; no affirmative property-specific FEMA determination, survey, elevation certificate, drainage review or insurer acceptance was established.",
@@ -43129,6 +43173,11 @@
           "label": "November 21 Auction.com In Contracting status",
           "url": "https://www.auction.com/details/1018-love-valley-rd-clover-sc-2236032",
           "accessed": "2026-11-21"
+        },
+        {
+          "label": "November 27 Auction.com current event, opening bid, two-parcel access note and property details",
+          "url": "https://www.auction.com/details/1018-love-valley-rd-clover-sc-2263415",
+          "accessed": "2026-11-27"
         }
       ],
       "listingHistory": [
@@ -43166,6 +43215,11 @@
           "date": "2026-11-21",
           "event": "Auction.com status changed to In Contracting",
           "price": 95000
+        },
+        {
+          "date": "2026-11-27",
+          "event": "New Auction.com event opened",
+          "price": 25000
         }
       ],
       "changeHistory": [
@@ -43190,6 +43244,23 @@
               "label": "Auction.com status changed to In Contracting"
             }
           ]
+        },
+        {
+          "date": "2026-11-27",
+          "changes": [
+            {
+              "field": "status",
+              "from": "pending",
+              "to": "auction-scheduled",
+              "label": "New Auction.com event opened"
+            },
+            {
+              "field": "price",
+              "from": 95000,
+              "to": 25000,
+              "label": "Current event opening bid replaced prior-event bid"
+            }
+          ]
         }
       ],
       "missingRuns": 0,
@@ -43202,21 +43273,21 @@
     {
       "id": "auction-1082-whitehall-hill",
       "strategy": "shared-home",
-      "changeCategory": "existing",
+      "changeCategory": "changed",
       "firstSeen": "2026-11-21",
-      "lastSeen": "2026-11-25",
-      "lastChanged": "2026-11-21",
+      "lastSeen": "2026-11-27",
+      "lastChanged": "2026-11-27",
       "address": "1082 Whitehall Hill Rd, York, SC 29745",
       "sourceUrl": "https://www.xome.com/auctions/1082-whitehall-hill-rd-york-sc-29745-429048359",
       "mls": null,
-      "status": "active",
-      "price": 170000,
-      "originalPrice": 170000,
+      "status": "auction-scheduled",
+      "price": 243750,
+      "originalPrice": 243750,
       "priceCutPercent": 0,
       "beds": 3,
       "baths": 2.5,
       "sqft": 2030,
-      "pricePerSqft": 84,
+      "pricePerSqft": 120.1,
       "marketPricePerSqft": 163,
       "yearBuilt": 2021,
       "propertyType": "Single-family foreclosure auction",
@@ -43226,7 +43297,7 @@
       "roomRentalLegal": "unknown",
       "daysOnMarket": 0,
       "parcelId": "0700103210",
-      "summary": "A current Xome second-chance foreclosure auction with a $170,000 starting bid and no buyer premium. Reserve is not met, the final accepted price is unknown, and occupied cash-only quitclaim terms make this a verification-only lead despite a recent build and price below the ceiling.",
+      "summary": "Xome scheduled a new November 28–December 2 second-chance auction with a nominal $1,000 starting bid and a disclosed $243,750 reserve. The dashboard underwrites the reserve rather than the non-accepted starting bid; reserve satisfaction, final accepted price, title, possession and all property diligence remain unresolved.",
       "pros": [
         "Starting bid is $105,000 below the maximum offer price, but it is not a final accepted price",
         "Three bedrooms and 2.5 bathrooms are reported",
@@ -43234,7 +43305,7 @@
         "No buyer premium is reported for the current event"
       ],
       "concerns": [
-        "The $170,000 starting bid is not a final acquisition price and the reserve is not met. Never bid or model above $275,000; seller acceptance remains unresolved.",
+        "The current event starts at $1,000 but discloses a $243,750 reserve that is not met. The reserve is used as the conservative current price input; the final accepted acquisition price remains unknown and no offer above $275,000 is modeled or recommended.",
         "Xome reports cash-only terms, no inspection or financing contingencies, an occupied property with no trespass, quitclaim deed, buyer closing costs and 3% or $3,000 earnest money. Title, possession and lawful eviction exposure require attorney review.",
         "Two and one-half bathrooms are reported, but no source proves that a full bathroom is private to the family bedroom.",
         "The reported $330 annual HOA charge is included conservatively, but governing documents, whole-unit and individual-room rental authority, special assessments, transfer or capital-contribution fees and other mandatory charges remain unknown.",
@@ -43265,8 +43336,8 @@
         "auction": "Second-chance auction beginning November 21 at $170,000; reserve not met; cash only; occupied; quitclaim deed"
       },
       "publicVerification": {
-        "asOf": "2026-11-21",
-        "marketingAttempt": "Xome reports a current second-chance foreclosure auction beginning November 21, 2026 at a $170,000 starting bid, with reserve not met and no buyer premium. Final accepted price remains unknown.",
+        "asOf": "2026-11-27",
+        "marketingAttempt": "Xome reports a November 28 through December 2 second-chance auction with a $1,000 starting bid, a disclosed $243,750 reserve that is not met, cash-only terms, no buyer premium, occupied status and no interior access. The reserve is used for conservative underwriting; final accepted price remains unknown.",
         "parcelAndDeed": "Public evidence identifies parcel 0700103210, a 2024 sale at $333,000 and a November 2, 2026 Master in Equity event reportedly sold to the bank. Current deed contents, liens, exceptions, quitclaim consequences and marketable title remain unresolved.",
         "zoning": "A public source reports City of York R-5 zoning. Written confirmation of unrelated-roommate occupancy, separate-room leasing, parking and occupancy limits remains required.",
         "flood": "FEMA and York County One Map entry points were checked; no affirmative property-specific official flood determination, elevation certificate or insurer acceptance was established.",
@@ -43311,6 +43382,11 @@
           "label": "FEMA Flood Map Service Center",
           "url": "https://msc.fema.gov/portal/home",
           "accessed": "2026-11-21"
+        },
+        {
+          "label": "November 27 Xome current event, starting bid, reserve status, dates and property terms",
+          "url": "https://www.xome.com/auctions/1082-whitehall-hill-rd-york-sc-29745-429048359",
+          "accessed": "2026-11-27"
         }
       ],
       "listingHistory": [
@@ -43332,6 +43408,11 @@
           "date": "2026-11-21",
           "event": "Xome second-chance auction marketing begins",
           "price": 170000
+        },
+        {
+          "date": "2026-11-27",
+          "event": "New Xome second-chance event scheduled; reserve used for underwriting",
+          "price": 243750
         }
       ],
       "changeHistory": [
@@ -43343,6 +43424,23 @@
               "from": null,
               "to": "added",
               "label": "New public candidate"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-27",
+          "changes": [
+            {
+              "field": "status",
+              "from": "active",
+              "to": "auction-scheduled",
+              "label": "New Xome second-chance event scheduled"
+            },
+            {
+              "field": "price",
+              "from": 170000,
+              "to": 243750,
+              "label": "Disclosed reserve replaced prior-event starting bid for conservative underwriting"
             }
           ]
         }
@@ -43808,7 +43906,7 @@
     {
       "id": "mls-4397221",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -43959,7 +44057,7 @@
     {
       "id": "mls-4399163",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -44110,7 +44208,7 @@
     {
       "id": "mls-4410733",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -44266,7 +44364,7 @@
     {
       "id": "mls-4429444",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -44417,7 +44515,7 @@
     {
       "id": "mls-4372051",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -44578,7 +44676,7 @@
     {
       "id": "mls-4442510",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -44739,7 +44837,7 @@
     {
       "id": "mls-4401257",
       "strategy": "shared-condo",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -44900,7 +44998,7 @@
     {
       "id": "mls-4427974",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -45061,7 +45159,7 @@
     {
       "id": "mls-4415405",
       "strategy": "shared-home",
-      "changeCategory": "new",
+      "changeCategory": "existing",
       "firstSeen": "2026-11-26",
       "lastSeen": "2026-11-26",
       "lastChanged": "2026-11-26",
@@ -46374,6 +46472,46 @@
       "label": "November 26 RentCafe one-bedroom asks",
       "url": "https://www.rentcafe.com/apartments-for-rent/rock-hill-sc/1-bedroom/",
       "accessed": "2026-11-26"
+    },
+    {
+      "label": "November 27 fresh Canopy MLS-fed public discovery",
+      "url": "https://www.viewyorkcountyhomes.com/search/quick?acl_city=Rock%20Hill%2CSC&city=Rock%20Hill%2CSC&forceopen=12&minbeds=2&minbaths=2&maxprice=300000&perpage=100&photos=1&soldproperty=0&sortby=newest&type=quick",
+      "accessed": "2026-11-27"
+    },
+    {
+      "label": "November 27 direct Lennar builder inventory",
+      "url": "https://www.lennar.com/new-homes/south-carolina/charlotte/york/cannon-village-townes",
+      "accessed": "2026-11-27"
+    },
+    {
+      "label": "November 27 Auction.com Love Valley event",
+      "url": "https://www.auction.com/details/1018-love-valley-rd-clover-sc-2263415",
+      "accessed": "2026-11-27"
+    },
+    {
+      "label": "November 27 Xome Whitehall Hill event",
+      "url": "https://www.xome.com/auctions/1082-whitehall-hill-rd-york-sc-29745-429048359",
+      "accessed": "2026-11-27"
+    },
+    {
+      "label": "November 27 Xome Rock Hill auction inventory",
+      "url": "https://www.xome.com/auctions/sc/rock-hill",
+      "accessed": "2026-11-27"
+    },
+    {
+      "label": "November 27 SpareRoom Rock Hill asks",
+      "url": "https://www.spareroom.com/rooms-for-rent/sc/york_county/rock_hill",
+      "accessed": "2026-11-27"
+    },
+    {
+      "label": "November 27 Roomies Rock Hill asks",
+      "url": "https://www.roomies.com/rooms/rock-hill-sc",
+      "accessed": "2026-11-27"
+    },
+    {
+      "label": "November 27 Furnished Finder Rock Hill asks",
+      "url": "https://www.furnishedfinder.com/housing/us--sc--rock-hill",
+      "accessed": "2026-11-27"
     }
   ],
   "sourceAudit": [
@@ -46381,23 +46519,23 @@
       "category": "MLS-syndicated portals",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto were reconciled. Of 254 retained non-removed primary URLs, 129 returned HTTP 200, 41 returned 202, two returned 301, eight returned 307, 36 returned 403, three returned 404 and 35 returned 429.",
+      "asOf": "2026-11-27",
+      "summary": "Realtor.com, Redfin, Zillow, Homes.com and Movoto were reconciled. Of 249 retained currently marketed primary URLs, 130 returned HTTP 200, 41 returned 202, two returned 301, three returned 307, 37 returned 403, two returned 404 and 34 returned 429.",
       "coverageGap": "Public discovery is not exhaustive MLS coverage. Blocks, rate limits, stale pages, redirects and isolated failures remain coverage gaps."
     },
     {
       "category": "Public brokerage and IDX pages",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "Fresh public Canopy MLS-fed Rock Hill discovery produced 172 unique cards across two pages. Nine eligible new candidates and seventeen current status changes were reconciled. Direct Lennar structured inventory showed ten current homesites, including one reactivation and price cut.",
+      "asOf": "2026-11-27",
+      "summary": "Fresh public Canopy MLS-fed Rock Hill discovery produced 172 unique cards across two pages. No admissible new active candidate or matched-listing price change emerged. Direct Lennar structured inventory retained ten homesites; homesites 102 and 104 were archived after two consecutive inventory misses and detail-page redirects.",
       "coverageGap": "Public IDX search can omit listings and is not direct MLS access; seller and agent confirmation remains necessary."
     },
     {
       "category": "Government and GSE inventory",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "summary": "HUD Home Store, Fannie Mae HomePath and Freddie Mac HomeSteps public entry points and indexed results were checked; no independently verified eligible new candidate emerged.",
       "coverageGap": "Public search surfaces were incomplete or shell-based. No credentialed feed was requested or used."
     },
@@ -46405,23 +46543,23 @@
       "category": "Non-MLS and distressed inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "Current public FSBO, York County Master in Equity, delinquent-tax and foreclosure surfaces were checked. No independently verified eligible new owner-listed or county-distressed candidate emerged.",
+      "asOf": "2026-11-27",
+      "summary": "Current public FSBO, York County Master in Equity, delinquent-tax and foreclosure surfaces were checked. Current under-ceiling owner listings were already tracked or failed the construction-year, bathroom or current-status gates; no eligible new owner-listed or county-distressed candidate emerged.",
       "coverageGap": "Distressed and owner inventory still requires title, bid, redemption, possession, condition, access, financing, fee and private-bath evidence."
     },
     {
       "category": "Public auction and new-construction inventory",
       "policyStatus": "conditional",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "Auction.com, Hubzu, Xome and public builder inventory were checked. Future foreclosure leads lacked a verified opening or accepted-price package and were withheld. Lennar homesite 176 returned to direct inventory at $235,499.",
-      "coverageGap": "Auction estimates are not accepted prices. Reserve, title, possession, buyer costs, upset-bid periods and property access remain unresolved."
+      "asOf": "2026-11-27",
+      "summary": "Auction.com, Hubzu, Xome and public builder inventory were checked. Love Valley reopened at a $25,000 opening bid, Whitehall Hill received a new event with a $243,750 reserve, and two Lennar homesites were archived after consecutive misses. A January 11 Rock Hill foreclosure lead was withheld because its opening price, bedroom and bathroom package, year, title, access and condition are unresolved.",
+      "coverageGap": "Auction estimates and starting bids are not accepted prices. Reserve, title, possession, buyer costs, upset-bid periods and property access remain unresolved."
     },
     {
       "category": "User-authorized OneHome / Canopy MLS saved search",
       "policyStatus": "supported-manual",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "summary": "The durable sanitized snapshot was retained and reconciled against fresh public evidence; no private access token was requested or stored.",
       "coverageGap": "A new user-authorized refresh was not available this run; the saved snapshot is supplementary rather than exhaustive."
     },
@@ -46429,7 +46567,7 @@
       "category": "Credentialed listing feeds",
       "policyStatus": "not-used",
       "runResult": "not-used",
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "summary": "Canopy Grid, Zillow Bridge, RentCast, BatchData and ATTOM were not queried, consistent with policy.",
       "coverageGap": "This documented limitation is not a run failure; public sources remain non-exhaustive."
     },
@@ -46437,56 +46575,56 @@
       "category": "Current marketing status and transfer chronology",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "Every known non-removed primary URL was re-requested. Fresh detail evidence established nine new listings, seventeen returns to active status, one builder reactivation with a price cut and one archive after consecutive misses plus positive off-market evidence.",
+      "asOf": "2026-11-27",
+      "summary": "Every known currently marketed primary URL was re-requested. Love Valley and Whitehall Hill received later auction events. Two builder homesites met the consecutive-miss rule and were archived after their detail URLs redirected to a generic plan page. Two other primary 404s retain conflicting current alternative evidence and were not archived.",
       "coverageGap": "403, 404 and 429 responses require alternatives; stale or inaccessible pages alone are never removal proof."
     },
     {
       "category": "Parcel, assessment, and deed",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "York County official parcel, One Map and deed entry points were checked for all new candidates. Parcel identity, construction year, area and transfer references were captured with conflicts preserved.",
+      "asOf": "2026-11-27",
+      "summary": "York County official parcel, assessor and deed entry points were checked. Existing property-specific evidence and conflicts were preserved; the two changed auction leads still require complete parcel, deed, title, lien, access and manufactured-home readback.",
       "coverageGap": "Interactive county systems and incomplete instruments prevented complete title, lien, easement and restriction readback."
     },
     {
       "category": "Permits, zoning, and rental legality",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "City and county permit and zoning entry points were checked. Property-specific permit leads and zoning were captured where available, while listing renovation claims remain distinct from permits, invoices, warranties and installation dates.",
+      "asOf": "2026-11-27",
+      "summary": "City and county permit, zoning and rental entry points were checked. No new completed permit, trade-final, certificate, written separate-room authority or system-installation evidence was established for the changed auction records.",
       "coverageGap": "Zero-result portals do not prove no work. Written separate-room rental, occupancy and registration interpretations remain outstanding."
     },
     {
       "category": "Flood and physical risk",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "FEMA and York County official DFIRM entry points were checked. New-candidate point queries returned no intersecting features, recorded as non-affirmative rather than verified clearance.",
+      "asOf": "2026-11-27",
+      "summary": "FEMA and York County official DFIRM entry points were checked. Existing property-specific evidence was preserved; no new affirmative determination, survey, elevation certificate, drainage review or insurer acceptance was established for the changed auction records.",
       "coverageGap": "No-feature results do not replace an official determination, survey, drainage review or insurer acceptance."
     },
     {
       "category": "HOA governing documents",
       "policyStatus": "manual-evidence-required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "Known association charges were carried into underwriting, including approximately $235 monthly for Woodlands townhouses and $18 for Spring View. Whole-unit and individual-room rental authority, assessments, transfer charges and master insurance remain unknown.",
+      "asOf": "2026-11-27",
+      "summary": "No new controlling declaration, amendment, fee statement, assessment history, master-insurance evidence or written whole-unit or individual-room rental decision was found. Existing HOA charges remain in underwriting and unknown authority continues to block recommendation.",
       "coverageGap": "Recorded declarations, amendments, fee statements and written separate rental interpretations remain manual follow-ups."
     },
     {
       "category": "Private-unit rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "Zillow Rentals, Apartments.com, HotPads and RentCafe public one-bedroom evidence were refreshed. Current asks continue to support the conservative $1,150 private-unit benchmark.",
+      "asOf": "2026-11-27",
+      "summary": "Zillow Rentals, Apartments.com, HotPads and RentCafe public one-bedroom evidence were refreshed. Current asks remain above the conservative $1,150 private-unit planning benchmark, so the benchmark was retained.",
       "coverageGap": "Asking rents are not executed leases and can omit concessions, fees, utilities and qualification rules."
     },
     {
       "category": "Individual-room rent",
       "policyStatus": "required",
       "runResult": "completed-with-documented-gaps",
-      "asOf": "2026-11-26",
-      "summary": "All 14 configured direct comparable URLs were re-requested: four returned HTTP 200 and ten returned HTTP 403. Fresh Roomies, SpareRoom and Furnished Finder evidence showed private-bath asks from $650 to $1,400; the conservative $850 benchmark remains supported.",
+      "asOf": "2026-11-27",
+      "summary": "All 14 configured direct comparable URLs were re-requested: four returned HTTP 200 and ten returned HTTP 403. Fresh Roomies, SpareRoom and Furnished Finder evidence showed private-bath asks from about $795 to $1,400; the conservative $850 benchmark remains supported.",
       "coverageGap": "Room asks do not establish demand or legal authority at any purchase property; availability, term, furnishing, utilities and bathroom allocation remain coverage gaps."
     }
   ],
@@ -46499,8 +46637,8 @@
     "withheld": 1,
     "deduplication": "MLS number first, normalized street address second",
     "freshPublicDiscoveryCards": 172,
-    "freshPublicNew": 9,
-    "freshPublicChanged": 19,
-    "routeWithheld": 2
+    "freshPublicNew": 0,
+    "freshPublicChanged": 4,
+    "routeWithheld": 0
   }
 }
